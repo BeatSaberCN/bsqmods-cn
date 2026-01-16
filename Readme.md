@@ -24,6 +24,8 @@ deno run update
 
 database仅用于增量翻译，新增mod不会合并至dist中。
 
+请将新mod放置于cn_mods下，注意json格式需要直接匹配镜像源mod格式。格式中的hash为qmod文件的sha-1。
+
 # API
 
 bsqmods同款api，支持以下：

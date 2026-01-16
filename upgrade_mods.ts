@@ -1,6 +1,7 @@
 import https from "node:https";
-import {ManagedModJson, ModJson} from "./mod_types.ts"
-import { writeFileSync } from "node:fs";
+import {ManagedModJson, ModItem, ModJson} from "./mod_types.ts"
+import { globSync, readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
 
 function get_mod_json():Promise<ModJson>{
     return new Promise<ModJson>((resolve,reject)=>{
@@ -28,6 +29,40 @@ function get_versions_json():Promise<string>{
     })
 }
 
+function add_cn_mods(mod_json:ModJson){
+    // 塞入硬编码的中文mod
+    {
+        for(const version_folder of globSync("cn_mods/*")){
+            const game_version = version_folder.substring("cn_mods/".length)
+
+            const mod_json_for_this_version = []
+            for(const mod_json_file of globSync(join(version_folder, "*.json"))){
+                const mod:ModItem = JSON.parse(readFileSync(mod_json_file, {encoding:"utf-8"}))
+                mod_json_for_this_version.push(mod)
+            }
+            mod_json_for_this_version.sort((a,b)=>{
+                const as = a.version.split(".")
+                const bs = b.version.split(".")
+                for(let i=0;i<as.length && i<bs.length;i++){
+                    if(+as[i] < +bs[i]){
+                        return -1
+                    }
+                    if(+as[i] > +bs[i])
+                        return 1
+                }
+                if(as.length < bs.length)
+                    return -1
+                if(as.length > bs.length)
+                    return 1
+                return 0
+            })
+
+            for(const mod of mod_json_for_this_version)
+                mod_json[game_version].push(mod)
+        }
+    }
+}
+
 if(import.meta.main){
     const versions_json_str = await get_versions_json()
     // download the mods
@@ -40,6 +75,9 @@ if(import.meta.main){
 
     // save database
     managed.saveTranslateToDisk("database")
+
+    // the reference is kept by managed, so it works
+    add_cn_mods(mod_json)
 
     // render json pages
     managed.saveRenderedJsonsToDisk("dist")

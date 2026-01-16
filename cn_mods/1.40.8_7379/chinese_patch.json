@@ -1,0 +1,27 @@
+{
+  "name": "PolyglotInject / 中文模组",
+  "description": "中文补丁",
+  "id": "PolyglotInject",
+  "version": "0.8.0",
+  "author": "qe201020335",
+  "authorIcon": "https://avatars.githubusercontent.com/u/31044781?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/qe201020335/PolyglotInject/releases/download/v0.8.0%2Bbs1.40.8_7379/PolyglotInject-0.8.0-bs1.40.8_7379.qmod",
+  "dependencies": [
+    {
+      "version": "^6.0.0",
+      "id": "beatsaber-hook"
+    },
+    {
+      "version": "^4.0.0",
+      "id": "paper2_scotland2"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/qe201020335/PolyglotInject/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": "https://github.com/qe201020335/PolyglotInject/",
+  "hash": "cc94137fd0cd09d0e6c5e407db12137d76bb783a"
+}
