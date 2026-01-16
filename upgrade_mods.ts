@@ -2,6 +2,7 @@ import https from "node:https";
 import {ManagedModJson, ModItem, ModJson} from "./mod_types.ts"
 import { globSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { buildConfig } from "./build_info.ts";
 
 function get_mod_json():Promise<ModJson>{
     return new Promise<ModJson>((resolve,reject)=>{
@@ -64,6 +65,13 @@ function add_cn_mods(mod_json:ModJson){
 }
 
 if(import.meta.main){
+
+    {
+        const buildTime = new Date()
+        buildConfig.buildTime = buildTime.toString()
+        buildConfig.buildTimestamp = buildTime.getTime()
+    }
+
     const versions_json_str = await get_versions_json()
     // download the mods
     const mod_json = await get_mod_json()
@@ -85,4 +93,6 @@ if(import.meta.main){
     // we don't use the versions from the databse
     // we download it directly from bsqmods
     writeFileSync("dist/versions.json", versions_json_str, { encoding: "utf-8" })
+
+    writeFileSync("dist/build_info.json", JSON.stringify(buildConfig, null, 2), { encoding: "utf-8"})
 }
