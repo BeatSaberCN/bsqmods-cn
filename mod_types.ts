@@ -166,17 +166,21 @@ export class ManagedModJson{
                     cloned_mod[key] = (mod as ClonedMod)[key]
                 }
 
-                const fix_property = (prop:string)=>{
+                const fix_property = (prop:string, keep_english: boolean)=>{
                     const translated_prop = prop + "_zh"
                     if(cloned_mod[translated_prop] && cloned_mod[translated_prop] != null){
                         cloned_mod[prop + "_en"] = cloned_mod[prop]
-                        cloned_mod[prop] = cloned_mod[translated_prop]
+                        if(keep_english){
+                            cloned_mod[prop] += " / " + cloned_mod[translated_prop]
+                        }else{
+                            cloned_mod[prop] = cloned_mod[translated_prop]
+                        }
                     }
                     delete cloned_mod[translated_prop]
                 }
 
-                fix_property("name")
-                fix_property("description")
+                fix_property("name", true)
+                fix_property("description", false)
 
                 const json_text = JSON.stringify(cloned_mod, null, 2)
                 writeFileSync(join(folderForVersion, mod_json_name), json_text, {encoding:"utf-8"})
