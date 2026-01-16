@@ -27,13 +27,13 @@ jobs:
 
       - name: Setup Deno
         # uses: denoland/setup-deno@v1
-        uses: denoland/setup-deno
+        uses: denoland/setup-deno@v2
         
       - name: upgrade mods
         run: deno run upgrade
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
       
