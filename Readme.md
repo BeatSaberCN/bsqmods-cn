@@ -1,4 +1,8 @@
-# 中文bsqmods下游
+# 关于此项目
+
+此项目为[bsqmods](https://github.com/QuestPackageManager/bsqmods)的一个中文本地化下游。
+
+# 更新方式
 
 请[安装deno](https://docs.deno.com/runtime/getting_started/installation/)。
 
