@@ -20,6 +20,6 @@
   "funding": [],
   "website": null,
   "hash": "2bb1cbe66b21882d55dd600ecdca4f2e131b8f8d",
-  "description_zh": null,
+  "description_zh": "让游戏在版本切换时能够保留玩家数据（分数/控制器偏移等等）",
   "name_zh": null
 }

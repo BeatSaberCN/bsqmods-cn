@@ -15,6 +15,6 @@
   "funding": [],
   "website": "https://github.com/Tatenshi/RandomSongPicker/",
   "hash": "6ebe36a56b6db48bcc073e2c8df1806cb682e549",
-  "description_zh": null,
+  "description_zh": "添加一个按钮，从当前列表中随机选择一个歌曲",
   "name_zh": null
 }

@@ -32,6 +32,6 @@
   "funding": [],
   "website": "https://github.com/darknight1050/CrashReporter/",
   "hash": "1fa77e55b67934fc7f8203acc686a61da69d3959",
-  "description_zh": null,
+  "description_zh": "自动上传崩溃日志。",
   "name_zh": null
 }

@@ -28,6 +28,6 @@
   "funding": [],
   "website": "https://github.com/Metalit/PlayerDataKeeper/",
   "hash": "ff773e2eec2570031858d7c253deb4945f221598",
-  "description_zh": null,
+  "description_zh": "让游戏在版本切换时能够保留玩家数据（分数/控制器偏移等等）",
   "name_zh": null
 }

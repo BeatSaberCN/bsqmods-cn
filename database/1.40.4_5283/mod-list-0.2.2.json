@@ -34,6 +34,6 @@
   ],
   "website": "https://github.com/DanTheMan827-BeatSaber/Quest.ModList/",
   "hash": "654cd3651d4a988120444f17045aa700be6d838f",
-  "description_zh": null,
+  "description_zh": "在游戏中显示已经安装的模组，在启动游戏时提示警告来指示是否有模组加载失败。",
   "name_zh": null
 }

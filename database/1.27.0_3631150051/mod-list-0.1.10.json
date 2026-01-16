@@ -28,6 +28,6 @@
   "funding": [],
   "website": null,
   "hash": "d2049aef0f53119f4a73107a8cf72d0e001b260c",
-  "description_zh": null,
+  "description_zh": "在游戏中显示已经安装的模组，在启动游戏时提示警告来指示是否有模组加载失败。",
   "name_zh": null
 }

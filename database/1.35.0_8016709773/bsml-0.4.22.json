@@ -32,6 +32,6 @@
   ],
   "website": null,
   "hash": "f4a7356afa00132a9ba12b48751b6f8c68b093be",
-  "description_zh": null,
+  "description_zh": "一个UI库，解析BeatSaberMarkupLanguage（节奏光剑标记语言）来创建UI界面",
   "name_zh": null
 }

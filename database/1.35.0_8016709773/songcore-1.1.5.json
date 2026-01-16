@@ -35,6 +35,6 @@
   ],
   "website": "https://github.com/raineaeternal/Quest-SongCore/",
   "hash": "3dc2cf9fe3b9c88fa40fe050220c771ed0ba346d",
-  "description_zh": null,
+  "description_zh": "谱面加载、谱面依赖处理和游戏相关工具",
   "name_zh": null
 }

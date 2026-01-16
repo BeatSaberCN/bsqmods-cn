@@ -34,6 +34,6 @@
   ],
   "website": "https://github.com/FrozenAlex/SmoothedController/",
   "hash": "f00a6809c8d8bcee55a35002bd0f4263712fef4d",
-  "description_zh": null,
+  "description_zh": "在菜单中平滑控制器位置来减少震动，让UI更容易操控等等",
   "name_zh": null
 }
