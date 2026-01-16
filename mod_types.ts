@@ -16,6 +16,9 @@ export interface ModItem {
 export type ModList = Array<ModItem>;
 export type ModJson = Record<string, ModList>;
 
+// deno-lint-ignore no-explicit-any
+type ClonedMod = any
+
 function path_safe(path:string){
     if(path.indexOf("/") == -1 && path.indexOf("\\") == -1)
         return true
@@ -135,6 +138,8 @@ export class ManagedModJson{
             mkdirSync(folder)
         writeFileSync(join(folder, "versions.json"), JSON.stringify(versions))
 
+        const cloned_mods_json:Record<string, Array<ClonedMod>> = {}
+
         for(const version in this.json){
             if(!path_safe(version))
                 continue
@@ -144,6 +149,10 @@ export class ManagedModJson{
             const folderForVersion = join(folder, version)
             if(!existsSync(folderForVersion))
                 mkdirSync(folderForVersion, { recursive: true })
+
+            const cloned_mod_version:Array<ClonedMod> = []
+            cloned_mods_json[version] = cloned_mod_version
+
             for(const mod of this.json[version]){
                 const mod_json_name = `${mod.id}-${mod.version}.json`
                 if(!path_safe(mod_json_name))
@@ -152,11 +161,9 @@ export class ManagedModJson{
                     continue
                 }
 
-                // deno-lint-ignore no-explicit-any
-                const cloned_mod:any = {}
+                const cloned_mod:ClonedMod = {}
                 for(const key in mod){
-                    // deno-lint-ignore no-explicit-any
-                    cloned_mod[key] = (mod as any)[key]
+                    cloned_mod[key] = (mod as ClonedMod)[key]
                 }
 
                 const fix_property = (prop:string)=>{
@@ -177,11 +184,14 @@ export class ManagedModJson{
                 if(!version_mods[mod.id])
                     version_mods[mod.id] = {}
                 version_mods[mod.id][mod.version] = cloned_mod
+
+                cloned_mod_version.push(cloned_mod)
             }
 
             const version_mods_json = JSON.stringify(version_mods, null, 2)
             writeFileSync(join(folder, version + ".json"), version_mods_json, { encoding:"utf-8" })
         }
+        writeFileSync(join(folder, "mods.json"), JSON.stringify(cloned_mods_json), {encoding:"utf-8"})
     }
 }
 

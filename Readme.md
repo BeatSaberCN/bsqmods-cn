@@ -19,3 +19,12 @@ deno run update
 - 根据修改后的上游列表，生成dist目录
 
 database仅用于增量翻译，新增mod不会合并至dist中。
+
+# API
+
+bsqmods同款api，支持以下：
+
+- https://beatsabercn.github.io/bsqmods-cn/mods.json
+- ~~https://beatsabercn.github.io/bsqmods-cn/mods-grouped.json~~(没有支持)
+- https://beatsabercn.github.io/bsqmods-cn/versions.json
+- [https://beatsabercn.github.io/bsqmods-cn/[version].json](https://beatsabercn.github.io/bsqmods-cn/1.37.0_9064817954.json)
