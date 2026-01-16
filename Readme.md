@@ -24,6 +24,13 @@ deno run update
 
 database仅用于增量翻译，新增mod不会合并至dist中。
 
+
+有多个json存在可以只翻译其中一个，运行`deno run update`就会自动全同步。如果同一个英文有多个不同的中文，就会“随机”选择一个。
+
+中英文同步是根据相同mod ID来的。如果一个mod ID下旧版本与新版本的英文相同，就会自动同步中文内容。
+
+# 中文镜像源新增mod
+
 请将新mod放置于cn_mods下，注意json格式需要直接匹配镜像源mod格式。格式中的hash为qmod文件的sha-1。
 
 # API
