@@ -29,8 +29,8 @@ jobs:
         # uses: denoland/setup-deno@v1
         uses: denoland/setup-deno@v2
         
-      - name: upgrade mods
-        run: deno run upgrade
+      - name: update mods
+        run: deno run update
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
