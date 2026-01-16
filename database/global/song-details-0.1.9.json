@@ -1,0 +1,29 @@
+{
+  "name": "SongDetails",
+  "description": "Library that provides details about songs from BeatSaver",
+  "id": "song-details",
+  "version": "0.1.9",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/51795403?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/RedBrumbler/SongDetails/releases/download/v0.1.9/SongDetails.qmod",
+  "dependencies": [
+    {
+      "id": "paper",
+      "version": "^1.2.9"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/RedBrumbler/SongDetails/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": "https://github.com/RedBrumbler/SongDetails/",
+  "hash": "bedf428bf37378b7f7badad5b9d4f4ea3f1786ba",
+  "description_zh": null,
+  "name_zh": null
+}

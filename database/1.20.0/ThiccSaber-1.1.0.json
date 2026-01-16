@@ -1,0 +1,33 @@
+{
+  "name": "Thicc Saber",
+  "description": "A simple mod which allows you to control the dimensions of notes!",
+  "id": "ThiccSaber",
+  "version": "1.1.0",
+  "author": "Bobby Shmurner",
+  "authorIcon": "https://avatars.githubusercontent.com/u/34596112?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/BobbyShmurner/ThiccSaber/releases/download/v1.1.0/Thicc_Saber-v1.1.0.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.21.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.0"
+    },
+    {
+      "id": "questui",
+      "version": "^0.13.0"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/BobbyShmurner/ThiccSaber/",
+  "cover": "http://mods.bsquest.xyz/covers/6f7882a24f5c7511c629609fbd86ffbca19ebedb.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/6f7882a24f5c7511c629609fbd86ffbca19ebedb.png",
+  "funding": [],
+  "website": null,
+  "hash": "b745f4b62870696f8d9966a9179c8dd4c524f710",
+  "description_zh": null,
+  "name_zh": null
+}

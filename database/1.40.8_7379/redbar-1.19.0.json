@@ -1,0 +1,37 @@
+{
+  "name": "RedBar",
+  "description": "Changes the color of the health bar according to your health",
+  "id": "redbar",
+  "version": "1.19.0",
+  "author": "ComputerElite, kodenamekrak",
+  "authorIcon": "https://avatars.githubusercontent.com/u/170962081?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/vcmikuu/Red-bar/releases/download/v1.19.0/RedBar.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.55"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/vcmikuu/Red-bar/",
+  "cover": "http://mods.bsquest.xyz/covers/8254d9d8da8aa7854e7327b5ab01c3868641af3e.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/8254d9d8da8aa7854e7327b5ab01c3868641af3e.jpg",
+  "funding": [],
+  "website": "https://github.com/vcmikuu/Red-bar/",
+  "hash": "2fb853432226cd43a70205ccc87fce8a756864f6",
+  "description_zh": null,
+  "name_zh": null
+}

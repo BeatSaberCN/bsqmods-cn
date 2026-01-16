@@ -1,0 +1,33 @@
+{
+  "name": "RedBar",
+  "description": "Change the color of your health bar according to your health",
+  "id": "RedBar",
+  "version": "1.12.0",
+  "author": "ComputerElite",
+  "authorIcon": "https://avatars.githubusercontent.com/u/71177995?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/ComputerElite/RedBar/releases/download/1.13.0/RedBar.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.32.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.22"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.10"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/ComputerElite/RedBar/",
+  "cover": "http://mods.bsquest.xyz/covers/65fa82304c9d40fcd4cc111fba5a3e64d98e1552.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/65fa82304c9d40fcd4cc111fba5a3e64d98e1552.png",
+  "funding": [],
+  "website": null,
+  "hash": "96f99c7d9a7a761c9379de0163557472799b7de6",
+  "description_zh": null,
+  "name_zh": null
+}

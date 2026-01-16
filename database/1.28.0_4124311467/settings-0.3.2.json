@@ -1,0 +1,25 @@
+{
+  "name": "StopForgettingMySettings",
+  "description": "Makes the game remember override environment settings.",
+  "id": "settings",
+  "version": "0.3.2",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/110287845?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/settings-0.3.2-8e815a072991156414ffc7e5dce4e0d414303539.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.33.0"
+    }
+  ],
+  "isLibrary": false,
+  "source": null,
+  "cover": "http://mods.bsquest.xyz/covers/3b1c55833cff730e6bdd2f90227b88e89111291d.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/3b1c55833cff730e6bdd2f90227b88e89111291d.png",
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

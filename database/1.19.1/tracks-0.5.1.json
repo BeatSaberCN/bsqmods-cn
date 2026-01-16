@@ -1,0 +1,25 @@
+{
+  "name": "Tracks",
+  "description": "Animation for Noodle and Chroma. Requires CustomJSONData. Don't delete",
+  "id": "tracks",
+  "version": "0.5.1",
+  "author": "StackDoubleFlow",
+  "authorIcon": "https://avatars.githubusercontent.com/u/80212088?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/bsq-ports/Tracks/releases/download/v0.5.1/tracks.qmod",
+  "dependencies": [
+    {
+      "id": "custom-json-data",
+      "version": "^0.16.0"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/bsq-ports/Tracks/",
+  "cover": "http://mods.bsquest.xyz/covers/2e82b252a6d3921b45fed7ec8c29edf3d410580d.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/2e82b252a6d3921b45fed7ec8c29edf3d410580d.png",
+  "funding": [],
+  "website": "https://github.com/bsq-ports/Tracks/",
+  "hash": "108bddf0fb30af5e3f23e35f9407d85ca8df9cc8",
+  "description_zh": null,
+  "name_zh": null
+}

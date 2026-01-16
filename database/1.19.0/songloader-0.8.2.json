@@ -1,0 +1,33 @@
+{
+  "name": "songloader",
+  "description": "Load Custom Songs at Runtime",
+  "id": "songloader",
+  "version": "0.8.2",
+  "author": "darknight1050",
+  "authorIcon": "https://avatars.githubusercontent.com/u/18632205?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/darknight1050/SongLoader/releases/download/v0.8.2/SongLoader.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.19.1"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.4"
+    },
+    {
+      "id": "questui",
+      "version": "^0.12.6"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/darknight1050/SongLoader/",
+  "cover": "http://mods.bsquest.xyz/covers/83c8215a3455df15d421dfa0cf2e9bdc23d18e95.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/83c8215a3455df15d421dfa0cf2e9bdc23d18e95.png",
+  "funding": [],
+  "website": "https://github.com/darknight1050/SongLoader/",
+  "hash": "4bfa42f8d8b7b6a53cdc4fc57dd1cf749fcb7e45",
+  "description_zh": null,
+  "name_zh": null
+}

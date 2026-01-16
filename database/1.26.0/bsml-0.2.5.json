@@ -1,0 +1,41 @@
+{
+  "name": "BSML",
+  "description": "Library that parses BeatSaber Markup Language to create UI elements",
+  "id": "bsml",
+  "version": "0.2.5",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/51795403?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/RedBrumbler/Quest-BSML/releases/download/v0.2.5/BSML.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.29.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.22"
+    },
+    {
+      "id": "paper",
+      "version": "^1.2.9"
+    },
+    {
+      "id": "tinyxml2",
+      "version": "^9.0.5"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/RedBrumbler/Quest-BSML/",
+  "cover": "http://mods.bsquest.xyz/covers/1712d2bf011fa713c82cb1aa0773a93a0420b882.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/1712d2bf011fa713c82cb1aa0773a93a0420b882.png",
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": "https://github.com/RedBrumbler/Quest-BSML/",
+  "hash": "08316d1c10ee9a7edbc2c43432e418c2d5aa947d",
+  "description_zh": null,
+  "name_zh": null
+}

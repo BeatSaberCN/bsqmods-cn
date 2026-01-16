@@ -1,0 +1,20 @@
+{
+  "name": "Qustom Banners",
+  "description": "adds banners to your game!",
+  "id": "QustomBanners",
+  "version": "0.1.0",
+  "author": "77Z, Phaze",
+  "authorIcon": "https://avatars.githubusercontent.com/u/46038462?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/77Z/QustomBanners/releases/download/release/QustomBanners.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/77Z/QustomBanners/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": "163b53dfed93578d8101826d2e5cb796ffac9a0f",
+  "description_zh": null,
+  "name_zh": null
+}

@@ -1,0 +1,20 @@
+{
+  "name": "AutoDebris",
+  "description": "Automatically enables or disables debris based on the NPS of the song, or playlist that a song is in.",
+  "id": "auto-debris",
+  "version": "0.1.3",
+  "author": "Laurie",
+  "authorIcon": "https://avatars.githubusercontent.com/u/110287845?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/b93f746b826117d1e04f3ad1a45e31ac6df76987.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": null,
+  "cover": "http://mods.bsquest.xyz/covers/f460b4b9a69109764d76818835e6eb3a3d144d55.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/f460b4b9a69109764d76818835e6eb3a3d144d55.jpg",
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

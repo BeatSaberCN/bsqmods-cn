@@ -1,0 +1,33 @@
+{
+  "name": "ChatUI",
+  "description": "Shows your Twitch Chat Ingame",
+  "id": "chatui",
+  "version": "0.2.12",
+  "author": "darknight1050",
+  "authorIcon": "https://avatars.githubusercontent.com/u/18632205?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/darknight1050/ChatUI/releases/download/v0.2.12/ChatUI.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.33.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.23"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.11"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/darknight1050/ChatUI/",
+  "cover": "http://mods.bsquest.xyz/covers/8d13000d8198c5369c98d9d8af63825b14501fc4.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/8d13000d8198c5369c98d9d8af63825b14501fc4.png",
+  "funding": [],
+  "website": null,
+  "hash": "72e1996397f9770cabb26c8ea9722e9052ed8a4f",
+  "description_zh": null,
+  "name_zh": null
+}

@@ -1,0 +1,41 @@
+{
+  "name": "BeatSaviorData",
+  "description": "Gives a detailed overview of your performance when finishing a level!",
+  "id": "beatsaviordata",
+  "version": "2.0.2",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Metalit/QuestBeatSaviourData/releases/download/v2.0.2/BeatSaviorData.qmod",
+  "dependencies": [
+    {
+      "id": "bs-utils",
+      "version": "^0.7.0"
+    },
+    {
+      "id": "codegen",
+      "version": "^0.32.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.22"
+    },
+    {
+      "id": "overswing",
+      "version": "^0.1.0"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.5"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/QuestBeatSaviourData/",
+  "cover": "http://mods.bsquest.xyz/covers/ccc497683d3d0e105c296a043d171112106ae791.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/ccc497683d3d0e105c296a043d171112106ae791.png",
+  "funding": [],
+  "website": null,
+  "hash": "10cfc8352d864069fe4b97468c901be2a31c17d0",
+  "description_zh": null,
+  "name_zh": null
+}

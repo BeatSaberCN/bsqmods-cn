@@ -1,0 +1,37 @@
+{
+  "name": "Clock Mod",
+  "description": "Displays the time in game. Alternatively also the Battery Percentage",
+  "id": "ClockMod",
+  "version": "1.5.3",
+  "author": "BoopetyDoopety,  EnderdracheLP",
+  "authorIcon": "https://avatars.githubusercontent.com/u/81266776?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/EnderdracheLP/ClockMod/releases/download/1.5.3/ClockMod.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.21.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.8"
+    },
+    {
+      "id": "questui",
+      "version": "^0.13.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/EnderdracheLP/ClockMod/",
+  "cover": "http://mods.bsquest.xyz/covers/862da91ac7a8354440ae95a3373e6f38aff3d593.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/862da91ac7a8354440ae95a3373e6f38aff3d593.jpg",
+  "funding": [
+    "https://github.com/sponsors/Michael-R-ELP",
+    "https://patreon.com/EnderdracheLP",
+    "https://ko-fi.com/enderdrachelp"
+  ],
+  "website": null,
+  "hash": "843263d4359aa93d882a3d6e12a13928a4ef5656",
+  "description_zh": null,
+  "name_zh": null
+}

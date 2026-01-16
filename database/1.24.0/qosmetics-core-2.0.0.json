@@ -1,0 +1,45 @@
+{
+  "name": "Qosmetics Core",
+  "description": "Qosmetics Core module that handles menu placement and generic utils for other modules",
+  "id": "qosmetics-core",
+  "version": "2.0.0",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/98164508?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Qosmetics/Qosmetics-Core/releases/download/v2.0.0/QosmeticsCore.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.25.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.18"
+    },
+    {
+      "id": "diglett",
+      "version": "^2.1.1"
+    },
+    {
+      "id": "paper",
+      "version": "^1.2.8"
+    },
+    {
+      "id": "questui",
+      "version": "^0.16.4"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/Qosmetics/Qosmetics-Core/",
+  "cover": "http://mods.bsquest.xyz/covers/14f081282c6ef9400516ad09158af2c01786c0df.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/14f081282c6ef9400516ad09158af2c01786c0df.png",
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": "https://github.com/Qosmetics/Qosmetics-Core/",
+  "hash": "baaae66e135f6f1c13fc4f0b667b146fd785b8bf",
+  "description_zh": null,
+  "name_zh": null
+}

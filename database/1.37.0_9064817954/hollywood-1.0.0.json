@@ -1,0 +1,29 @@
+{
+  "name": "Hollywood",
+  "description": "Record videos on your quest!",
+  "id": "hollywood",
+  "version": "1.0.0",
+  "author": "Metalit, Fernthedev, Henwill8",
+  "authorIcon": "https://avatars.githubusercontent.com/u/15272073?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/Fernthedev/HollywoodQuest/releases/download/v1.0.0/Hollywood.qmod",
+  "dependencies": [
+    {
+      "id": "custom-types",
+      "version": "^0.17.10"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.4"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/Fernthedev/HollywoodQuest/",
+  "cover": "http://mods.bsquest.xyz/covers/c39459975f3be54e01da7d271782ab30c5d29abf.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/c39459975f3be54e01da7d271782ab30c5d29abf.png",
+  "funding": [],
+  "website": "https://github.com/Fernthedev/HollywoodQuest/",
+  "hash": "c275c55b02b1a0d7185ca55bf586de152d4798a2",
+  "description_zh": null,
+  "name_zh": null
+}

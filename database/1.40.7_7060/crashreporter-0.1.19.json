@@ -1,0 +1,37 @@
+{
+  "name": "CrashReporter",
+  "description": "Automatically upload crashes.",
+  "id": "crashreporter",
+  "version": "0.1.19",
+  "author": "darknight1050",
+  "authorIcon": "https://avatars.githubusercontent.com/u/18632205?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/darknight1050/CrashReporter/releases/download/v0.1.19/CrashReporter.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.54"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/darknight1050/CrashReporter/",
+  "cover": "http://mods.bsquest.xyz/covers/35ba52457b8b114ad594761b648da7eacfdbb298.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/35ba52457b8b114ad594761b648da7eacfdbb298.png",
+  "funding": [],
+  "website": "https://github.com/darknight1050/CrashReporter/",
+  "hash": "f3836f510c897fd07ec09f97e7f2f246ed3d911d",
+  "description_zh": null,
+  "name_zh": null
+}

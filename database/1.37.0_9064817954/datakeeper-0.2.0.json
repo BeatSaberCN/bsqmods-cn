@@ -1,0 +1,29 @@
+{
+  "name": "PlayerDataKeeper",
+  "description": "Preserves your player data (scores, controller offset, etc) between updates or any other time it might be lost",
+  "id": "datakeeper",
+  "version": "0.2.0",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/Metalit/PlayerDataKeeper/releases/download/v0.2.0/PlayerDataKeeper.qmod",
+  "dependencies": [
+    {
+      "id": "custom-types",
+      "version": "^0.17.6"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/PlayerDataKeeper/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": "https://github.com/Metalit/PlayerDataKeeper/",
+  "hash": "c9bad4d1465b2ed1dc14b3950c3aff7f9bead525",
+  "description_zh": null,
+  "name_zh": null
+}

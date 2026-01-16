@@ -1,0 +1,24 @@
+{
+  "name": "SongBrowser",
+  "description": "Browsing your songs has never been easier!",
+  "id": "songbrowser",
+  "version": "1.0.1",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/51795403?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/songbrowser-1.0.1-a6e428784e41ff332862c56e965119b22013baf2.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/RedBrumbler/SongBrowser/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": null,
+  "hash": "a6e428784e41ff332862c56e965119b22013baf2",
+  "description_zh": null,
+  "name_zh": null
+}

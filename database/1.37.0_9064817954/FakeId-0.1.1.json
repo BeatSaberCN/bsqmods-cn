@@ -1,0 +1,27 @@
+{
+  "name": "Fake ID",
+  "description": "Sets the player age to an adult.",
+  "id": "FakeId",
+  "version": "0.1.1",
+  "author": "DanTheMan827",
+  "authorIcon": "https://avatars.githubusercontent.com/u/176073241?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/DanTheMan827-BeatSaber/Quest.FakeID/releases/download/v0.1.1/Fake.ID.for.1.37.0_9064817954.qmod",
+  "dependencies": [
+    {
+      "id": "paper",
+      "version": "^3.7.0"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/DanTheMan827-BeatSaber/Quest.FakeID/",
+  "cover": "http://mods.bsquest.xyz/covers/8fec1fd4d8c6c29bb82a8737df1099f611823068.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/8fec1fd4d8c6c29bb82a8737df1099f611823068.png",
+  "funding": [
+    "https://github.com/sponsors/dantheman827"
+  ],
+  "website": "https://github.com/DanTheMan827-BeatSaber/Quest.FakeID/",
+  "hash": "3f7537633e69d0976c93cc3f7b18d7e79da90526",
+  "description_zh": null,
+  "name_zh": null
+}

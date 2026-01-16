@@ -1,0 +1,37 @@
+{
+  "name": "Weeb Saber",
+  "description": "Weeb-ifies your Beat Saber",
+  "id": "weebsaber",
+  "version": "0.1.2",
+  "author": "jonas",
+  "authorIcon": "https://avatars.githubusercontent.com/u/65252066?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/weebsaber-0.1.2-3767cca8ea53eb42266067d0dc5d624b318bde11.qmod",
+  "dependencies": [
+    {
+      "id": "bsml",
+      "version": "^0.3.1"
+    },
+    {
+      "id": "codegen",
+      "version": "^0.33.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.24"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.12"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/jxnxsdev/WeebSaber/",
+  "cover": "http://mods.bsquest.xyz/covers/aac7a33e4449439a743a3f3c438c74fa8cea2fb3.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/aac7a33e4449439a743a3f3c438c74fa8cea2fb3.png",
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

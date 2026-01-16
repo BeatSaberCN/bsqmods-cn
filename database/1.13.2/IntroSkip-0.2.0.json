@@ -1,0 +1,20 @@
+{
+  "name": "Intro Skip",
+  "description": "Skip the intro and outro of maps",
+  "id": "IntroSkip",
+  "version": "0.2.0",
+  "author": "Polly51104",
+  "authorIcon": "https://avatars.githubusercontent.com/u/43818215?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/henwill8/IntroSkip/releases/download/0.2.0/introskip_v0.2.0.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/henwill8/IntroSkip/",
+  "cover": "http://mods.bsquest.xyz/covers/d7f41e4cbc4c0858e5a870c66370bea3afa43420.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/d7f41e4cbc4c0858e5a870c66370bea3afa43420.png",
+  "funding": [],
+  "website": null,
+  "hash": "80c72b8be1263c481aea3f364a4abc4ada00860d",
+  "description_zh": null,
+  "name_zh": null
+}

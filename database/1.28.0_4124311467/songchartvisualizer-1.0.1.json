@@ -1,0 +1,37 @@
+{
+  "name": "SongChartVisualizer",
+  "description": null,
+  "id": "songchartvisualizer",
+  "version": "1.0.1",
+  "author": "Eris, KodenameKRAK",
+  "authorIcon": "https://avatars.githubusercontent.com/u/106346717?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/kodenamekrak/SongChartVisualizer/releases/download/1.0.1/SongChartVisualizer.qmod",
+  "dependencies": [
+    {
+      "id": "bsml",
+      "version": "^0.3.2"
+    },
+    {
+      "id": "codegen",
+      "version": "^0.33.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.24"
+    },
+    {
+      "id": "lapiz",
+      "version": "^0.1.11"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/kodenamekrak/SongChartVisualizer/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": "8c9b9e7337bbe35343195aa9568b261aab4fb523",
+  "description_zh": null,
+  "name_zh": null
+}

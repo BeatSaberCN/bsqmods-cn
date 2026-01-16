@@ -1,0 +1,36 @@
+{
+  "name": "SongCore",
+  "description": "Adds songloading, map requirement handling and related utilities to the game.",
+  "id": "songcore",
+  "version": "1.1.13",
+  "author": "Raine & RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/64136899?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/raineaeternal/Quest-SongCore/releases/download/v1.1.13/SongCore.qmod",
+  "dependencies": [
+    {
+      "id": "custom-types",
+      "version": "^0.17.8"
+    },
+    {
+      "id": "lapiz",
+      "version": "^0.2.11"
+    },
+    {
+      "id": "paper",
+      "version": "^3.0.0"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/raineaeternal/Quest-SongCore/",
+  "cover": "http://mods.bsquest.xyz/covers/ddadcf70629704cb6426ccc0df84add18894c5fa.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/ddadcf70629704cb6426ccc0df84add18894c5fa.jpg",
+  "funding": [
+    "https://github.com/sponsors/raineio",
+    "https://ko-fi.com/rainymods"
+  ],
+  "website": null,
+  "hash": "efe9680c1cd6d1cb7513b3d03633e1b162a06be8",
+  "description_zh": null,
+  "name_zh": null
+}

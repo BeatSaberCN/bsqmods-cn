@@ -1,0 +1,29 @@
+{
+  "name": "QuestUI",
+  "description": "A library used to add Mod Settings and other UI.",
+  "id": "questui",
+  "version": "0.13.1",
+  "author": "darknight1050, RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/18632205?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/darknight1050/questui/releases/download/v0.13.1/QuestUI.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.19.3"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.6"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/darknight1050/questui/",
+  "cover": "http://mods.bsquest.xyz/covers/62ad52edeb45f99b8f87971f9a97addeac3a8257.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/62ad52edeb45f99b8f87971f9a97addeac3a8257.png",
+  "funding": [],
+  "website": null,
+  "hash": "f11279adac470261e92d7f5d8d91d4e17edb65a2",
+  "description_zh": null,
+  "name_zh": null
+}

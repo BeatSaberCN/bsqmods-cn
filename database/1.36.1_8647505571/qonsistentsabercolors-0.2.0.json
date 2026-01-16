@@ -1,0 +1,33 @@
+{
+  "name": "QonsistentSaberColors",
+  "description": "Menu saber colors reflect in game saber colors.",
+  "id": "qonsistentsabercolors",
+  "version": "0.2.0",
+  "author": "KodenameKRAK, Henri",
+  "authorIcon": "https://avatars.githubusercontent.com/u/106346717?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/kodenamekrak/QonsistentSaberColors/releases/download/0.2.0/QonsistentSaberColors.qmod",
+  "dependencies": [
+    {
+      "id": "bsml",
+      "version": "^0.4.26"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.17.6"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/kodenamekrak/QonsistentSaberColors/",
+  "cover": "http://mods.bsquest.xyz/covers/d87906efd8af76534ddd86239fac6834c9645f2f.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/d87906efd8af76534ddd86239fac6834c9645f2f.jpg",
+  "funding": [],
+  "website": null,
+  "hash": "f647b2280018bd000b86d8e033880ef39a7047e3",
+  "description_zh": null,
+  "name_zh": null
+}

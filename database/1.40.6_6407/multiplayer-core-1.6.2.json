@@ -1,0 +1,57 @@
+{
+  "name": "MultiplayerCore",
+  "description": "Adds custom songs to Beat Saber Multiplayer.",
+  "id": "multiplayer-core",
+  "version": "1.6.2",
+  "author": "EnderdracheLP, cubic, RedBrumbler, Goobie, LookAtHippo, EnderdracheLP, cubic",
+  "authorIcon": "https://avatars.githubusercontent.com/u/81266776?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/EnderdracheLP/MultiplayerCore.Quest/releases/download/1.6.2/MultiplayerCore_1.6.2.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "beatsaverplusplus",
+      "version": "^0.2.1"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.53"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "lapiz",
+      "version": "^0.2.21"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    },
+    {
+      "id": "songcore",
+      "version": "^1.1.22"
+    },
+    {
+      "id": "web-utils",
+      "version": "^0.6.7"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/EnderdracheLP/MultiplayerCore.Quest/",
+  "cover": "http://mods.bsquest.xyz/covers/75a164a0f4d597a1a3539dfc1c3aba465c4419bd.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/75a164a0f4d597a1a3539dfc1c3aba465c4419bd.png",
+  "funding": [
+    "https://github.com/sponsors/Michael-R-ELP",
+    "https://patreon.com/EnderdracheLP",
+    "https://ko-fi.com/enderdrachelp"
+  ],
+  "website": "https://github.com/EnderdracheLP/MultiplayerCore.Quest/",
+  "hash": "4bd69e46da6ad627036568f42a597bb3294e4985",
+  "description_zh": null,
+  "name_zh": null
+}

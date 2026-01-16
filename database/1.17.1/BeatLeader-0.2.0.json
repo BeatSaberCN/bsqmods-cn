@@ -1,0 +1,22 @@
+{
+  "name": "BeatLeader",
+  "description": null,
+  "id": "BeatLeader",
+  "version": "0.2.0",
+  "author": "NSGolova",
+  "authorIcon": "https://avatars.githubusercontent.com/u/98843512?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/BeatLeader/beatleader-qmod/releases/download/v0.2.0/BeatLeader-1_17_1.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/BeatLeader/beatleader-qmod/",
+  "cover": "http://mods.bsquest.xyz/covers/b05121c3d76806157da16e610b39d0a303fa3596.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/b05121c3d76806157da16e610b39d0a303fa3596.png",
+  "funding": [
+    "https://patreon.com/BeatLeader"
+  ],
+  "website": "https://github.com/BeatLeader/beatleader-qmod/",
+  "hash": "f4ac6fe75dd536b8c0dd5d60c9f9304aef92ddf9",
+  "description_zh": null,
+  "name_zh": null
+}

@@ -1,0 +1,33 @@
+{
+  "name": "AccMiss",
+  "description": "Miss when you acc bad",
+  "id": "accmiss",
+  "version": "0.1.0",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Metalit/AccMiss/releases/download/v0.1.0/AccMiss.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.32.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.22"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.0"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/AccMiss/",
+  "cover": "http://mods.bsquest.xyz/covers/4576fa0198b7d907b00b381cd7085b567043d966.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/4576fa0198b7d907b00b381cd7085b567043d966.png",
+  "funding": [],
+  "website": null,
+  "hash": "f873a9e2e6df3e8768cc28f3193f122bb1a19de0",
+  "description_zh": null,
+  "name_zh": null
+}

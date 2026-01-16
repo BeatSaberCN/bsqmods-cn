@@ -1,0 +1,33 @@
+{
+  "name": "FingerSaber",
+  "description": "Beat Saber At Your Finger Tips. @drumtool",
+  "id": "fingersaber",
+  "version": "0.1.8",
+  "author": "Henri",
+  "authorIcon": "https://avatars.githubusercontent.com/u/38835729?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/im-henri/FingerSaber/releases/download/v0.1.8/FingerSaber018.qmod",
+  "dependencies": [
+    {
+      "id": "bsml",
+      "version": "^0.4.43"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.17.6"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/im-henri/FingerSaber/",
+  "cover": "http://mods.bsquest.xyz/covers/a0714d5e4434569ceecfcdf58d4527effa617925.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/a0714d5e4434569ceecfcdf58d4527effa617925.jpg",
+  "funding": [],
+  "website": "https://github.com/im-henri/FingerSaber/",
+  "hash": "88413fea39588d33a297f0defa8fbade0f3ecc58",
+  "description_zh": null,
+  "name_zh": null
+}

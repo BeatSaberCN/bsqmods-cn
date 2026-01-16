@@ -1,0 +1,41 @@
+{
+  "name": "PlaylistManager",
+  "description": "Create and manage playlists ingame!",
+  "id": "playlistmanager",
+  "version": "1.0.0",
+  "author": "Metalit, darknight1050",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Metalit/PlaylistManager/releases/download/v1.0.0/PlaylistManager.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.22.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.0"
+    },
+    {
+      "id": "questui",
+      "version": "^0.13.0"
+    },
+    {
+      "id": "songdownloader",
+      "version": "^0.4.0"
+    },
+    {
+      "id": "songloader",
+      "version": "^0.9.0"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/PlaylistManager/",
+  "cover": "http://mods.bsquest.xyz/covers/2105c7495da2c957fa554e995b7e1780aa333f3a.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/2105c7495da2c957fa554e995b7e1780aa333f3a.png",
+  "funding": [],
+  "website": null,
+  "hash": "49210a66656b23345ced2508e868f2a89ddb7486",
+  "description_zh": null,
+  "name_zh": null
+}

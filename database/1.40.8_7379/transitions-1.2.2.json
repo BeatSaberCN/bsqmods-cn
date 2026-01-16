@@ -1,0 +1,37 @@
+{
+  "name": "Transitions",
+  "description": "Speed up or remove boring transitions in the game",
+  "id": "transitions",
+  "version": "1.2.2",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/Metalit/Transitions/releases/download/v1.2.2/Transitions.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.53"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/Transitions/",
+  "cover": "http://mods.bsquest.xyz/covers/edc4a403469bf37b3701b08805748f9118c36e04.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/edc4a403469bf37b3701b08805748f9118c36e04.png",
+  "funding": [],
+  "website": "https://github.com/Metalit/Transitions/",
+  "hash": "483d1ae819494c8f31db43b6b9ad7998f0a881ec",
+  "description_zh": null,
+  "name_zh": null
+}

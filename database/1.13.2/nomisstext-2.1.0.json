@@ -1,0 +1,20 @@
+{
+  "name": "No Miss Text",
+  "description": "Made with permission from Pink. Original mod by Pink and CyanSnow.\r\n\r\nRemoves the miss and bad cut text along with the combo break animation! You can also hide how bad you are :thonkerguns:",
+  "id": "nomisstext",
+  "version": "2.1.0",
+  "author": "gabriella",
+  "authorIcon": "https://avatars.githubusercontent.com/u/24527481?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Gxorge/NoMissText/releases/download/v2.1.0/nomisstext_v2.1.0.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/Gxorge/NoMissText/",
+  "cover": "http://mods.bsquest.xyz/covers/e8de159d6f16076af4cfd3c8077be74ded9925a1.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/e8de159d6f16076af4cfd3c8077be74ded9925a1.png",
+  "funding": [],
+  "website": null,
+  "hash": "1ca8f9ec184f2d1252a1c24dd121e35869840cf5",
+  "description_zh": null,
+  "name_zh": null
+}

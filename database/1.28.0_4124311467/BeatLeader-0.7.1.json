@@ -1,0 +1,43 @@
+{
+  "name": "BeatLeader",
+  "description": "beatleader.xyz | In-game leaderboards for custom and OST maps | Score replays | Clans, events, playlists and much more",
+  "id": "BeatLeader",
+  "version": "0.7.1",
+  "author": "NSGolova",
+  "authorIcon": "https://avatars.githubusercontent.com/u/98843512?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/BeatLeader/beatleader-qmod/releases/download/v0.7.1/BeatLeader.qmod",
+  "dependencies": [
+    {
+      "id": "bs-utils",
+      "version": "^0.7.0"
+    },
+    {
+      "id": "codegen",
+      "version": "^0.33.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.23"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.11"
+    },
+    {
+      "id": "songloader",
+      "version": "^0.10.15"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/BeatLeader/beatleader-qmod/",
+  "cover": "http://mods.bsquest.xyz/covers/ba40fc34f1f1044b617ad263f2c3176d6c91ea0e.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/ba40fc34f1f1044b617ad263f2c3176d6c91ea0e.png",
+  "funding": [
+    "https://patreon.com/BeatLeader"
+  ],
+  "website": null,
+  "hash": "cc6b571bdbb7b7d39f5ec3677531a8135a5468bc",
+  "description_zh": null,
+  "name_zh": null
+}

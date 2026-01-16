@@ -1,0 +1,31 @@
+{
+  "name": "BTS Yeeter",
+  "description": "Stops the annoying BTS characters from spawning whilst playing their maps.",
+  "id": "bts-yeeter",
+  "version": "0.3.8",
+  "author": "gabriella ✨#6859",
+  "authorIcon": "https://avatars.githubusercontent.com/u/176073241?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/DanTheMan827-BeatSaber/Quest.BtsYeeter/releases/download/v0.3.8%2B1.40.8_7379/BTS.Yeeter.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/DanTheMan827-BeatSaber/Quest.BtsYeeter/",
+  "cover": "http://mods.bsquest.xyz/covers/959cc84a6ed7c3de55d333b7a921724ee2235da6.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/959cc84a6ed7c3de55d333b7a921724ee2235da6.png",
+  "funding": [
+    "https://github.com/sponsors/dantheman827"
+  ],
+  "website": "https://github.com/DanTheMan827-BeatSaber/Quest.BtsYeeter/",
+  "hash": "50e68d4c6d958b7d4fc72a4c84b8822b92868589",
+  "description_zh": null,
+  "name_zh": null
+}

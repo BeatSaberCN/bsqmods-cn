@@ -1,0 +1,37 @@
+{
+  "name": "Intro Skip",
+  "description": "Skip the intro and outro of maps",
+  "id": "IntroSkip",
+  "version": "1.1.0",
+  "author": "Polly51104",
+  "authorIcon": "https://avatars.githubusercontent.com/u/56835953?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Royston1999/IntroSkip-Quest/releases/download/v1.1.0/IntroSkip_v1.1.0.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.33.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.23"
+    },
+    {
+      "id": "lapiz",
+      "version": "^0.1.11"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.11"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Royston1999/IntroSkip-Quest/",
+  "cover": "http://mods.bsquest.xyz/covers/734559cca25fd52713d39c426ef1556c27567e1b.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/734559cca25fd52713d39c426ef1556c27567e1b.png",
+  "funding": [],
+  "website": null,
+  "hash": "63daf1968f8ad3a916b6484dc05ad22f42237216",
+  "description_zh": null,
+  "name_zh": null
+}

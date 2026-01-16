@@ -1,0 +1,29 @@
+{
+  "name": "Bandoot SoundPack",
+  "description": "The Bandoot Sound Pack contains Sounds used by Bandoot.",
+  "id": "Bandoot-SoundPack",
+  "version": "1.0.6",
+  "author": "EnderdracheLP",
+  "authorIcon": "https://avatars.githubusercontent.com/u/81266776?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/EnderdracheLP/QuestSounds/releases/download/1.1.0/Bandoot-SoundPack.qmod",
+  "dependencies": [
+    {
+      "id": "QuestSounds",
+      "version": "1.*"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/EnderdracheLP/QuestSounds/",
+  "cover": "http://mods.bsquest.xyz/covers/1e757747fcbe8d8c33d9461cffc23e927493f541.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/1e757747fcbe8d8c33d9461cffc23e927493f541.jpg",
+  "funding": [
+    "https://github.com/sponsors/Michael-R-ELP",
+    "https://patreon.com/EnderdracheLP",
+    "https://ko-fi.com/enderdrachelp"
+  ],
+  "website": "https://github.com/EnderdracheLP/QuestSounds/",
+  "hash": "a8da3fda25ce00689e4cb41972ba80d24959e296",
+  "description_zh": null,
+  "name_zh": null
+}

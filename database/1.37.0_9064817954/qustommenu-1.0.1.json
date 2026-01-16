@@ -1,0 +1,33 @@
+{
+  "name": "Qustom Menu",
+  "description": "Customise the Beat Saber menu",
+  "id": "qustommenu",
+  "version": "1.0.1",
+  "author": "jxnxsdev",
+  "authorIcon": "https://avatars.githubusercontent.com/u/65252066?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/jxnxsdev/QustomMenu/releases/download/1.0.1/Qustom.Menu.qmod",
+  "dependencies": [
+    {
+      "id": "bsml",
+      "version": "^0.4.42"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.17.8"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/jxnxsdev/QustomMenu/",
+  "cover": "http://mods.bsquest.xyz/covers/23abe967989a678bf7e7455b423f0cc871d7f189.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/23abe967989a678bf7e7455b423f0cc871d7f189.png",
+  "funding": [],
+  "website": "https://github.com/jxnxsdev/QustomMenu/",
+  "hash": "2d139c2a67d40bf24f817cbd90662773e466d2ef",
+  "description_zh": null,
+  "name_zh": null
+}

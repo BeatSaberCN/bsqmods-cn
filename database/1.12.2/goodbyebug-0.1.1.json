@@ -1,0 +1,20 @@
+{
+  "name": "Goodbye Bug",
+  "description": "Fixed bug:\r\n    - Fixes playlist scrolling in the wrong direction when you got more than 8 playlists.",
+  "id": "goodbyebug",
+  "version": "0.1.1",
+  "author": "Lillie",
+  "authorIcon": "https://avatars.githubusercontent.com/u/110287845?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/goodbyebug-0.1.1-50ce253fae242a48e8dfff9ba0e6f95a9ea5b88a.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": null,
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

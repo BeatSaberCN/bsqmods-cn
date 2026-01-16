@@ -1,0 +1,29 @@
+{
+  "name": "Friday Night Funkin SoundPack",
+  "description": "The Friday Night Funkin Sound Pack contains Sounds from the Game Friday Night Funkint to funk along to in Beat Saber.",
+  "id": "FNF-SoundPack",
+  "version": "1.0.1",
+  "author": "EnderdracheLP",
+  "authorIcon": "https://avatars.githubusercontent.com/u/81266776?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/EnderdracheLP/QuestSounds/releases/download/1.0.1/FNF-SoundPack.qmod",
+  "dependencies": [
+    {
+      "id": "QuestSounds",
+      "version": "1.*"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/EnderdracheLP/QuestSounds/",
+  "cover": "http://mods.bsquest.xyz/covers/0ac6c30686dca7af73e8df72f8defacac5928854.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/0ac6c30686dca7af73e8df72f8defacac5928854.png",
+  "funding": [
+    "https://github.com/sponsors/Michael-R-ELP",
+    "https://patreon.com/EnderdracheLP",
+    "https://ko-fi.com/enderdrachelp"
+  ],
+  "website": "https://github.com/EnderdracheLP/QuestSounds/",
+  "hash": "fd7e129b63887b9f14feb76d098a00319f6304c0",
+  "description_zh": null,
+  "name_zh": null
+}

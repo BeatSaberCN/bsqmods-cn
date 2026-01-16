@@ -1,0 +1,20 @@
+{
+  "name": "Slice Details",
+  "description": "View extra information about your swings",
+  "id": "slicedetails",
+  "version": "1.1.0",
+  "author": "Polly51104",
+  "authorIcon": "https://avatars.githubusercontent.com/u/56835953?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Royston1999/SliceDetails-Quest/releases/download/v1.1.0/slicedetails_v1.1.0.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/Royston1999/SliceDetails-Quest/",
+  "cover": "http://mods.bsquest.xyz/covers/42912fda90358c47e3c84a071f8dd6bfebe20bdc.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/42912fda90358c47e3c84a071f8dd6bfebe20bdc.jpg",
+  "funding": [],
+  "website": null,
+  "hash": "67eaacc5f5e5e0f50507fbe487c84d69c5708351",
+  "description_zh": null,
+  "name_zh": null
+}

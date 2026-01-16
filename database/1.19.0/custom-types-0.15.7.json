@@ -1,0 +1,20 @@
+{
+  "name": "custom-types",
+  "description": "Core mod required for other mods to function!",
+  "id": "custom-types",
+  "version": "0.15.7",
+  "author": "Sc2ad",
+  "authorIcon": "https://avatars.githubusercontent.com/u/10663758?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/sc2ad/Il2CppQuestTypePatching/releases/download/v0.15.7/CustomTypes.qmod",
+  "dependencies": [],
+  "isLibrary": true,
+  "source": "https://github.com/sc2ad/Il2CppQuestTypePatching/",
+  "cover": "http://mods.bsquest.xyz/covers/049d0c74e926179e239730c9f6d6fa81789db373.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/049d0c74e926179e239730c9f6d6fa81789db373.png",
+  "funding": [],
+  "website": "https://github.com/sc2ad/Il2CppQuestTypePatching/",
+  "hash": "e80e0587c9bc0db90cc18aa7807279807c03974c",
+  "description_zh": null,
+  "name_zh": null
+}

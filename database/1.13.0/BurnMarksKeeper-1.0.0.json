@@ -1,0 +1,20 @@
+{
+  "name": "Burn Marks Keeper",
+  "description": "Stops your burn marks from ever disappearing when you collide your sabers with the ground! \r\nRequires PinkCore.",
+  "id": "BurnMarksKeeper",
+  "version": "1.0.0",
+  "author": "Pink",
+  "authorIcon": "https://avatars.githubusercontent.com/u/62712899?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/ModdingPink/BurnMarksKeeper/releases/download/1.0.0/BurnMarksKeeper.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/ModdingPink/BurnMarksKeeper/",
+  "cover": "http://mods.bsquest.xyz/covers/d0f9503126fe8450b9a09df241a468ad561a1f8e.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/d0f9503126fe8450b9a09df241a468ad561a1f8e.jpg",
+  "funding": [],
+  "website": null,
+  "hash": "fac9f370cb4344010372c1f92deb242f4a7471c7",
+  "description_zh": null,
+  "name_zh": null
+}

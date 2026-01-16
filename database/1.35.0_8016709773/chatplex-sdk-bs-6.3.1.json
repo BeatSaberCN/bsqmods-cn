@@ -1,0 +1,39 @@
+{
+  "name": "ChatPlexSDK-BS",
+  "description": "ChatPlex BeatSaber modding SDK (Dependence for other mods)",
+  "id": "chatplex-sdk-bs",
+  "version": "6.3.1",
+  "author": "HardCPP",
+  "authorIcon": "https://avatars.githubusercontent.com/u/2964819?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.1/ChatPlexSDK-BS.qmod",
+  "dependencies": [
+    {
+      "id": "bsml",
+      "version": "^0.4.20"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.17.6"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.3"
+    },
+    {
+      "id": "songcore",
+      "version": "^1.1.9"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/hardcpp/QuestChatPlexSDK-BS/",
+  "cover": "http://mods.bsquest.xyz/covers/2fb56b166fee9e4514563b5da2c7274d36514673.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/2fb56b166fee9e4514563b5da2c7274d36514673.png",
+  "funding": [
+    "https://patreon.com/BeatSaberPlus"
+  ],
+  "website": "https://github.com/hardcpp/QuestChatPlexSDK-BS/",
+  "hash": "7e9765f0dfc4d662ff059b24885b49c4acbb6dbb",
+  "description_zh": null,
+  "name_zh": null
+}

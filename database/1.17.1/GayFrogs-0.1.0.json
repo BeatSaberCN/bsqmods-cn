@@ -1,0 +1,20 @@
+{
+  "name": "GAY FROGS!",
+  "description": "I DON'T LIKE EM' PUTTIN' CHEMICALS IN THE WATER THAT TURNED THE FREAKIN' FROGS GAY!!!",
+  "id": "GayFrogs",
+  "version": "0.1.0",
+  "author": "Millzy",
+  "authorIcon": "https://avatars.githubusercontent.com/u/110287845?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/GayFrogs-0.1.0-4dbead75a4cb830af95863ee233645f8055c8d59.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": null,
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

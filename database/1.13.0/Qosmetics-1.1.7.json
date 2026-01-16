@@ -1,0 +1,24 @@
+{
+  "name": "Qosmetics",
+  "description": "Quest Cosmetics on a whole new level!",
+  "id": "Qosmetics",
+  "version": "1.1.7",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/51795403?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/RedBrumbler/Qosmetics/releases/download/1.1.7/Qosmetics.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/RedBrumbler/Qosmetics/",
+  "cover": "http://mods.bsquest.xyz/covers/d6da9c03fbe87692a39d98120f1772b663f74d57.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/d6da9c03fbe87692a39d98120f1772b663f74d57.gif",
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": null,
+  "hash": "a83ffad9d19e39a147f73d0f9aaa2b109f7e560a",
+  "description_zh": null,
+  "name_zh": null
+}

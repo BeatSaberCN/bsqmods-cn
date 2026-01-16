@@ -1,0 +1,35 @@
+{
+  "name": "QBeatSaberPlus-NoteTweaker",
+  "description": "Feel good!",
+  "id": "qbeatsaberplus-notetweaker",
+  "version": "6.3.2",
+  "author": "HardCPP",
+  "authorIcon": "https://avatars.githubusercontent.com/u/2964819?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/hardcpp/QBeatSaberPlus-NoteTweaker/releases/download/v6.3.2/QBeatSaberPlus-NoteTweaker.qmod",
+  "dependencies": [
+    {
+      "id": "chatplex-sdk-bs",
+      "version": "^6.3.2"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.17.8"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/hardcpp/QBeatSaberPlus-NoteTweaker/",
+  "cover": "http://mods.bsquest.xyz/covers/2abbb2f0f86a1e2e1c6e9a4e419afdbf67ebb8b0.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/2abbb2f0f86a1e2e1c6e9a4e419afdbf67ebb8b0.png",
+  "funding": [
+    "https://patreon.com/BeatSaberPlus"
+  ],
+  "website": "https://github.com/hardcpp/QBeatSaberPlus-NoteTweaker/",
+  "hash": "38f3759edd051b14f6c3e112a72d882cdae34526",
+  "description_zh": null,
+  "name_zh": null
+}

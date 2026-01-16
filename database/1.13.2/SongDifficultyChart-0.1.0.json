@@ -1,0 +1,20 @@
+{
+  "name": "Song Difficulty Chart",
+  "description": null,
+  "id": "SongDifficultyChart",
+  "version": "0.1.0",
+  "author": "Henwill8",
+  "authorIcon": "https://avatars.githubusercontent.com/u/43818215?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/henwill8/SongDifficultyChart/releases/download/v0.1.0/songDifficultyChart_v0.1.0.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/henwill8/SongDifficultyChart/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": "71f926dff53c8db87353448eccf0a8d7e14cbf97",
+  "description_zh": null,
+  "name_zh": null
+}

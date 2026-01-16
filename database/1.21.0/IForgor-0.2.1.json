@@ -1,0 +1,20 @@
+{
+  "name": "I Forgor",
+  "description": "I Forgor",
+  "id": "IForgor",
+  "version": "0.2.1",
+  "author": "Ckosmic,  ported by FutureMapper",
+  "authorIcon": "https://avatars.githubusercontent.com/u/110287845?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/IForgor-0.2.1-3e03d279900d6aff180380dd8c0363c08ff021b0.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": null,
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

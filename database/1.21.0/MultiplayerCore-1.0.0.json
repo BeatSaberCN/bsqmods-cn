@@ -1,0 +1,45 @@
+{
+  "name": "MultiplayerCore",
+  "description": "Port of MultiplayerCore, the PC mod that adds features to BeatTogether Multiplayer.",
+  "id": "MultiplayerCore",
+  "version": "1.0.0",
+  "author": "EnderdracheLP,  cubic, Goobie",
+  "authorIcon": "https://avatars.githubusercontent.com/u/81266776?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/EnderdracheLP/MultiplayerCore.Quest/releases/download/1.0.0/MultiplayerCore_1.21-1.0.0.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.22.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.9"
+    },
+    {
+      "id": "questui",
+      "version": "^0.13.5"
+    },
+    {
+      "id": "songdownloader",
+      "version": "^0.4.4"
+    },
+    {
+      "id": "songloader",
+      "version": "^0.9.3"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/EnderdracheLP/MultiplayerCore.Quest/",
+  "cover": "http://mods.bsquest.xyz/covers/75a164a0f4d597a1a3539dfc1c3aba465c4419bd.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/75a164a0f4d597a1a3539dfc1c3aba465c4419bd.png",
+  "funding": [
+    "https://github.com/sponsors/Michael-R-ELP",
+    "https://patreon.com/EnderdracheLP",
+    "https://ko-fi.com/enderdrachelp"
+  ],
+  "website": null,
+  "hash": "5be7f6b55e752c0edf46833314d3249994983c61",
+  "description_zh": null,
+  "name_zh": null
+}

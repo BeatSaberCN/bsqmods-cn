@@ -1,0 +1,33 @@
+{
+  "name": "Acculight",
+  "description": "changes the lighting on the result screen depending on the accuracy gained in the song",
+  "id": "acculight",
+  "version": "0.1.2",
+  "author": "Oli",
+  "authorIcon": "https://avatars.githubusercontent.com/u/88791447?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/oli-ctrl/acculight/releases/download/v0.1.2/Acculight.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.28.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.21"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/oli-ctrl/acculight/",
+  "cover": "http://mods.bsquest.xyz/covers/0c911313c773a6c064dfb2563503b0b7e8d93a7f.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/0c911313c773a6c064dfb2563503b0b7e8d93a7f.png",
+  "funding": [],
+  "website": null,
+  "hash": "b0e727ec45e25e7fb2211eedf95324472434e785",
+  "description_zh": null,
+  "name_zh": null
+}

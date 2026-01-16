@@ -1,0 +1,45 @@
+{
+  "name": "Replay",
+  "description": "Watch back your best scores!",
+  "id": "replay",
+  "version": "0.1.0",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Metalit/Replay/releases/download/0.1.1/Replay.qmod",
+  "dependencies": [
+    {
+      "id": "bs-utils",
+      "version": "^0.7.0"
+    },
+    {
+      "id": "codegen",
+      "version": "^0.28.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.21"
+    },
+    {
+      "id": "hollywood",
+      "version": "^0.1.0"
+    },
+    {
+      "id": "paper",
+      "version": "^1.2.9"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.5"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/Replay/",
+  "cover": "http://mods.bsquest.xyz/covers/100e33ce4e80af35c354c2608a5be540089004d3.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/100e33ce4e80af35c354c2608a5be540089004d3.png",
+  "funding": [],
+  "website": null,
+  "hash": "4f119babcbb46886f54875f827cb9d3e5f6f3783",
+  "description_zh": null,
+  "name_zh": null
+}

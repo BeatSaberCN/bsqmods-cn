@@ -1,0 +1,20 @@
+{
+  "name": "BTS Yeeter",
+  "description": "This is a little mod that removes the BTS gremlins that fly around their maps.",
+  "id": "bts-yeeter",
+  "version": "0.1.0",
+  "author": "gabriella",
+  "authorIcon": "https://avatars.githubusercontent.com/u/24527481?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Gxorge/BTSYeeter/releases/download/v0.1.0/bts-yeeter_v0.1.0.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/Gxorge/BTSYeeter/",
+  "cover": "http://mods.bsquest.xyz/covers/959cc84a6ed7c3de55d333b7a921724ee2235da6.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/959cc84a6ed7c3de55d333b7a921724ee2235da6.png",
+  "funding": [],
+  "website": null,
+  "hash": "7fce7189bc9af5848cdeabf181d4dabeace96e86",
+  "description_zh": null,
+  "name_zh": null
+}

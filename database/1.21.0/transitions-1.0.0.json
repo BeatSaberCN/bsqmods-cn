@@ -1,0 +1,33 @@
+{
+  "name": "Transitions",
+  "description": "Speed up or remove boring transitions in the game",
+  "id": "transitions",
+  "version": "1.0.0",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Metalit/Transitions/releases/download/v1.0.0/Transitions.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.22.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.8"
+    },
+    {
+      "id": "questui",
+      "version": "^0.13.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/Transitions/",
+  "cover": "http://mods.bsquest.xyz/covers/f08193390445809f82f52d8f10fc45039cca7cdb.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/f08193390445809f82f52d8f10fc45039cca7cdb.png",
+  "funding": [],
+  "website": null,
+  "hash": "f2f96d7a6a218a39991761c1e3fbe28ec96cb948",
+  "description_zh": null,
+  "name_zh": null
+}

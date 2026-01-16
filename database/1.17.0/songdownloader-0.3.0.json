@@ -1,0 +1,20 @@
+{
+  "name": "SongDownloader",
+  "description": null,
+  "id": "songdownloader",
+  "version": "0.3.0",
+  "author": "darknight1050, EnderdracheLP",
+  "authorIcon": "https://avatars.githubusercontent.com/u/18632205?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/darknight1050/SongDownloader/releases/download/v0.3.0/songdownloader.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/darknight1050/SongDownloader/",
+  "cover": "http://mods.bsquest.xyz/covers/f325004bdca5bb1d2702886e12ad0ba059840dbf.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/f325004bdca5bb1d2702886e12ad0ba059840dbf.png",
+  "funding": [],
+  "website": "https://github.com/darknight1050/SongDownloader/",
+  "hash": "1704cb24c9e007df5e6bc875903e8f515d13b60b",
+  "description_zh": null,
+  "name_zh": null
+}

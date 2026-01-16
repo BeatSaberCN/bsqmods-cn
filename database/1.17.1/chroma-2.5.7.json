@@ -1,0 +1,29 @@
+{
+  "name": "Chroma",
+  "description": "Colors!",
+  "id": "chroma",
+  "version": "2.5.7",
+  "author": "FernTheDev,  nyamimi~, Aeroluna",
+  "authorIcon": "https://avatars.githubusercontent.com/u/80212088?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/bsq-ports/Chroma/releases/download/v2.5.7/chroma.qmod",
+  "dependencies": [
+    {
+      "id": "custom-json-data",
+      "version": ">=0.14.2"
+    },
+    {
+      "id": "tracks",
+      "version": ">=0.4.6"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/bsq-ports/Chroma/",
+  "cover": "http://mods.bsquest.xyz/covers/f9756ec5aaa102d06460164611efbbdaf966072b.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/f9756ec5aaa102d06460164611efbbdaf966072b.png",
+  "funding": [],
+  "website": null,
+  "hash": "063f60921fc66dfb283288583972e8b8fc450b8a",
+  "description_zh": null,
+  "name_zh": null
+}

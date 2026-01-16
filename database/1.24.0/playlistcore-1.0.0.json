@@ -1,0 +1,41 @@
+{
+  "name": "PlaylistCore",
+  "description": "Loads playlists and provides lots of functionality to other mods.",
+  "id": "playlistcore",
+  "version": "1.0.0",
+  "author": "Metalit, darknight1050",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Metalit/PlaylistCore/releases/download/v1.0.0/PlaylistCore.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.25.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.15"
+    },
+    {
+      "id": "questui",
+      "version": "^0.16.2"
+    },
+    {
+      "id": "songdownloader",
+      "version": "^0.4.9"
+    },
+    {
+      "id": "songloader",
+      "version": "^0.10.1"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/PlaylistCore/",
+  "cover": "http://mods.bsquest.xyz/covers/877c7f8c8be1fa91f613f2efdb465e95d799104b.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/877c7f8c8be1fa91f613f2efdb465e95d799104b.png",
+  "funding": [],
+  "website": "https://github.com/Metalit/PlaylistCore/",
+  "hash": "6ee0bf07815934321c55efaf36c30e6332db8de8",
+  "description_zh": null,
+  "name_zh": null
+}

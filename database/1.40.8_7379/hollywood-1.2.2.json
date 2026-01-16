@@ -1,0 +1,37 @@
+{
+  "name": "Hollywood",
+  "description": "Record videos on your quest!",
+  "id": "hollywood",
+  "version": "1.2.2",
+  "author": "Metalit, Fernthedev, Henwill8",
+  "authorIcon": "https://avatars.githubusercontent.com/u/15272073?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/Fernthedev/HollywoodQuest/releases/download/v1.2.2/Hollywood.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "metacore",
+      "version": "^1.3.3"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/Fernthedev/HollywoodQuest/",
+  "cover": "http://mods.bsquest.xyz/covers/c39459975f3be54e01da7d271782ab30c5d29abf.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/c39459975f3be54e01da7d271782ab30c5d29abf.png",
+  "funding": [],
+  "website": "https://github.com/Fernthedev/HollywoodQuest/",
+  "hash": "4e7a2b75974fa2596797496ad9c0bd5999dcd5f8",
+  "description_zh": null,
+  "name_zh": null
+}

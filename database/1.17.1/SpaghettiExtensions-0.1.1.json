@@ -1,0 +1,20 @@
+{
+  "name": "SpaghettiExtensions",
+  "description": "i got bored",
+  "id": "SpaghettiExtensions",
+  "version": "0.1.1",
+  "author": "Phaze#6193",
+  "authorIcon": "https://avatars.githubusercontent.com/u/57566773?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/SpaghettiExtensions-0.1.1-972bb8f8bb6e61c931ad8a892fc884d12c98cd53.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/phaze-the-dumb/qum-mod/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Scribble",
+  "description": "Let the Bob Ross in you take over!",
+  "id": "scribble",
+  "version": "1.0.0",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/51795403?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/RedBrumbler/Scribble/releases/download/v1.0.0/Scribble.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": null,
+  "cover": "http://mods.bsquest.xyz/covers/247c0fd54a5764a620bcf55f389fd138bedefd0d.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/247c0fd54a5764a620bcf55f389fd138bedefd0d.gif",
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": null,
+  "hash": "dbdec134785412f3c1e8c243301c67c03e717a59",
+  "description_zh": null,
+  "name_zh": null
+}

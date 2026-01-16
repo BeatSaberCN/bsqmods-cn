@@ -1,0 +1,24 @@
+{
+  "name": "Anti Vertigo",
+  "description": "Spawn a bigger base platform for people with vertigo so they can play comfortably",
+  "id": "AntiVertigo",
+  "version": "1.0.2",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/51795403?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/RedBrumbler/AntiVertigo/releases/download/v1.0.2/AntiVertigo.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/RedBrumbler/AntiVertigo/",
+  "cover": "http://mods.bsquest.xyz/covers/a165db8ecd1dd1b2fe517e1eeb050619915cc2f6.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/a165db8ecd1dd1b2fe517e1eeb050619915cc2f6.png",
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": null,
+  "hash": "3def5d52998f0f3dabfd406ef0d3a57f41b22b73",
+  "description_zh": null,
+  "name_zh": null
+}

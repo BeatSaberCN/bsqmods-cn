@@ -1,0 +1,49 @@
+{
+  "name": "Replay",
+  "description": "Watch back your best scores!",
+  "id": "replay",
+  "version": "0.5.0",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/Metalit/Replay/releases/download/v0.5.0/Replay.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.55"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "hollywood",
+      "version": "^1.2.2"
+    },
+    {
+      "id": "metacore",
+      "version": "^1.6.1"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    },
+    {
+      "id": "web-utils",
+      "version": "^0.6.8"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/Replay/",
+  "cover": "http://mods.bsquest.xyz/covers/100e33ce4e80af35c354c2608a5be540089004d3.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/100e33ce4e80af35c354c2608a5be540089004d3.png",
+  "funding": [],
+  "website": "https://github.com/Metalit/Replay/",
+  "hash": "86d6966dc81b73adbbc79a6ca0fccaaf1e29c9c0",
+  "description_zh": null,
+  "name_zh": null
+}

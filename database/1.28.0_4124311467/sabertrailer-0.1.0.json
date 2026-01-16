@@ -1,0 +1,33 @@
+{
+  "name": "SaberTrailer",
+  "description": "Make simple but powerful changes to your saber trail",
+  "id": "sabertrailer",
+  "version": "0.1.0",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Metalit/SaberTrailer/releases/download/v0.1.1/SaberTrailer.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.33.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.22"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.10"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/SaberTrailer/",
+  "cover": "http://mods.bsquest.xyz/covers/1745323c4c11d205c3ff2661b4a02a1d306cb725.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/1745323c4c11d205c3ff2661b4a02a1d306cb725.png",
+  "funding": [],
+  "website": null,
+  "hash": "4d0ada299cbae7d05480415c9e0a26330ec47350",
+  "description_zh": null,
+  "name_zh": null
+}

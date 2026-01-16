@@ -1,0 +1,20 @@
+{
+  "name": "Paper",
+  "description": "Logging library for mods light as paper",
+  "id": "paper",
+  "version": "1.0.4",
+  "author": "Fernthedev",
+  "authorIcon": "https://avatars.githubusercontent.com/u/15272073?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Fernthedev/paperlog/releases/download/v1.0.4/paperlog.qmod",
+  "dependencies": [],
+  "isLibrary": true,
+  "source": "https://github.com/Fernthedev/paperlog/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": "https://github.com/Fernthedev/paperlog/",
+  "hash": "e8db44eb89b9df3f10580b5ec1e5c2fbcf89279b",
+  "description_zh": null,
+  "name_zh": null
+}

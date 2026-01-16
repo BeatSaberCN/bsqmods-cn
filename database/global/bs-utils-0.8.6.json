@@ -1,0 +1,29 @@
+{
+  "name": "bs-utils",
+  "description": "Utils library",
+  "id": "bs-utils",
+  "version": "0.8.6",
+  "author": "Sc2ad",
+  "authorIcon": "https://avatars.githubusercontent.com/u/80212088?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/bsq-ports/QuestBS-Utils/releases/download/v0.8.6/BS-Utils.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.1"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.1"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/bsq-ports/QuestBS-Utils/",
+  "cover": "http://mods.bsquest.xyz/covers/6759c20e8e6efe9548eca62d83b21c8a36cbd022.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/6759c20e8e6efe9548eca62d83b21c8a36cbd022.png",
+  "funding": [],
+  "website": "https://github.com/bsq-ports/QuestBS-Utils/",
+  "hash": "29ee51ac866188f1493e95f0330827f1b5963981",
+  "description_zh": null,
+  "name_zh": null
+}

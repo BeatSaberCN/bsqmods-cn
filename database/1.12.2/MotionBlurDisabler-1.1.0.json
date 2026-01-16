@@ -1,0 +1,20 @@
+{
+  "name": "Motion Blur Disabler",
+  "description": "It disables the white area on the trail.",
+  "id": "MotionBlurDisabler",
+  "version": "1.1.0",
+  "author": "ComputerElite",
+  "authorIcon": "https://avatars.githubusercontent.com/u/110287845?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/MotionBlurDisabler-0.1.0-3a8d4779753d92e8e81849e91937f993cef5da5c.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": null,
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

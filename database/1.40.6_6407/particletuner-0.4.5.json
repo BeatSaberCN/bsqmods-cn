@@ -1,0 +1,37 @@
+{
+  "name": "ParticleTuner",
+  "description": "Lets you tweak individual particle settings! And has rainbow particles!",
+  "id": "particletuner",
+  "version": "0.4.5",
+  "author": "KodenameKRAK",
+  "authorIcon": "https://avatars.githubusercontent.com/u/106346717?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/kodenamekrak/ParticleTuner/releases/download/v0.4.5/ParticleTuner.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.1"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.52"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.2"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/kodenamekrak/ParticleTuner/",
+  "cover": "http://mods.bsquest.xyz/covers/50b79bb4a07b3bf52b4450abd746464d2f47c4d1.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/50b79bb4a07b3bf52b4450abd746464d2f47c4d1.gif",
+  "funding": [],
+  "website": "https://github.com/kodenamekrak/ParticleTuner/",
+  "hash": "942bbcfd4d502a96e9a678a388de40b545bbafbc",
+  "description_zh": null,
+  "name_zh": null
+}

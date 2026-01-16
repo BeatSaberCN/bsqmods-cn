@@ -1,0 +1,37 @@
+{
+  "name": "ImageCoverExpander",
+  "description": "Expands the song artwork to cover the right side of the level select.",
+  "id": "imagecoverexpander",
+  "version": "0.2.4",
+  "author": "laynia",
+  "authorIcon": "https://avatars.githubusercontent.com/u/170962081?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/vcmikuu/ImageCoverExpander/releases/download/v0.2.4/ImageCoverExpander.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.55"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/vcmikuu/ImageCoverExpander/",
+  "cover": "http://mods.bsquest.xyz/covers/5eee72bfbb9576c522869b072426da9ab1a625e4.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/5eee72bfbb9576c522869b072426da9ab1a625e4.jpg",
+  "funding": [],
+  "website": "https://github.com/vcmikuu/ImageCoverExpander/",
+  "hash": "016d807cd324754f9e186b8d596a1ceea27211c5",
+  "description_zh": null,
+  "name_zh": null
+}

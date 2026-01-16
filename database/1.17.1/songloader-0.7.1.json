@@ -1,0 +1,20 @@
+{
+  "name": "SongLoader",
+  "description": null,
+  "id": "songloader",
+  "version": "0.7.1",
+  "author": "darknight1050",
+  "authorIcon": "https://avatars.githubusercontent.com/u/18632205?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/darknight1050/SongLoader/releases/download/v0.7.1/songloader.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/darknight1050/SongLoader/",
+  "cover": "http://mods.bsquest.xyz/covers/83c8215a3455df15d421dfa0cf2e9bdc23d18e95.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/83c8215a3455df15d421dfa0cf2e9bdc23d18e95.png",
+  "funding": [],
+  "website": "https://github.com/darknight1050/SongLoader/",
+  "hash": "39aaf2304969d0b41d08fa2c4c687251c5aab6c7",
+  "description_zh": null,
+  "name_zh": null
+}

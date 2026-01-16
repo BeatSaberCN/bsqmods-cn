@@ -1,0 +1,33 @@
+{
+  "name": "Saber Tailor",
+  "description": "Edit controller settings for each saber independently. Also includes Kinsi's Controller Settings Helper mod",
+  "id": "sabertailor",
+  "version": "1.1.1",
+  "author": "Polly51104",
+  "authorIcon": "https://avatars.githubusercontent.com/u/110287845?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/sabertailor-1.1.1-fd1fb24d493cda249773c423585a65731f33becd.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.28.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.22"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.5"
+    }
+  ],
+  "isLibrary": false,
+  "source": null,
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

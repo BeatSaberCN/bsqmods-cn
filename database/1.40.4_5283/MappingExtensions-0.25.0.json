@@ -1,0 +1,41 @@
+{
+  "name": "Mapping Extensions",
+  "description": "This adds a host of new things you can do with your maps as a mapper, and allows you to play said maps as a player. An update of the port of the PC original mod by Kyle 1413. Previously maintained by zoller27osu.",
+  "id": "MappingExtensions",
+  "version": "0.25.0",
+  "author": "StackDoubleFlow, rxzz0, & rcelyte",
+  "authorIcon": "https://avatars.githubusercontent.com/u/25163630?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/rcelyte/MappingExtensions/releases/download/0.25.0/MappingExtensions.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "custom-json-data",
+      "version": "^0.23.0"
+    },
+    {
+      "id": "NoodleExtensions",
+      "version": "^1.5.4"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    },
+    {
+      "id": "songcore",
+      "version": "^1.1.20"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/rcelyte/MappingExtensions/",
+  "cover": "http://mods.bsquest.xyz/covers/606265ac5be0cdace60826d736d4e7e5d0cdcfb7.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/606265ac5be0cdace60826d736d4e7e5d0cdcfb7.jpg",
+  "funding": [],
+  "website": "https://github.com/rcelyte/MappingExtensions/",
+  "hash": "b40e8567104d96f2029b505fac9ce27e9935a775",
+  "description_zh": null,
+  "name_zh": null
+}

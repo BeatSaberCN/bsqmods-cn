@@ -1,0 +1,41 @@
+{
+  "name": "Slice Details",
+  "description": "View extra information about your swings",
+  "id": "slicedetails",
+  "version": "2.1.2",
+  "author": "Polly51104",
+  "authorIcon": "https://avatars.githubusercontent.com/u/56835953?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/Royston1999/SliceDetails-Quest/releases/download/v2.1.2/SliceDetails_v2.1.2.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.54"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "lapiz",
+      "version": "^0.2.22"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Royston1999/SliceDetails-Quest/",
+  "cover": "http://mods.bsquest.xyz/covers/42912fda90358c47e3c84a071f8dd6bfebe20bdc.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/42912fda90358c47e3c84a071f8dd6bfebe20bdc.jpg",
+  "funding": [],
+  "website": "https://github.com/Royston1999/SliceDetails-Quest/",
+  "hash": "3ba9fc70bd93f0498cc4138a7a5ebb7c5e7293fc",
+  "description_zh": null,
+  "name_zh": null
+}

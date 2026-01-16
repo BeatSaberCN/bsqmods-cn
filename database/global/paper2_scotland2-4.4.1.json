@@ -1,0 +1,20 @@
+{
+  "name": "Paperlog Scotland2",
+  "description": "Paperlog Bootstrapper for Scotland2 modloader",
+  "id": "paper2_scotland2",
+  "version": "4.4.1",
+  "author": "Fernthedev",
+  "authorIcon": "https://avatars.githubusercontent.com/u/15272073?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/Fernthedev/paperlog/releases/download/v4.4.1/paper2_scotland2.qmod",
+  "dependencies": [],
+  "isLibrary": true,
+  "source": "https://github.com/Fernthedev/paperlog/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": "https://github.com/Fernthedev/paperlog/",
+  "hash": "0b77f792e71dc21c4ba9c61fb5d299bfbc7a0c0a",
+  "description_zh": null,
+  "name_zh": null
+}

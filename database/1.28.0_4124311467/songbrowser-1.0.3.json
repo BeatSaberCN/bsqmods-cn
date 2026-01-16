@@ -1,0 +1,20 @@
+{
+  "name": "SongBrowser",
+  "description": "Browsing your songs has never been easier!",
+  "id": "songbrowser",
+  "version": "1.0.3",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/16144471?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/esheltone/SongBrowser/releases/download/v1.0.3/SongBrowser.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/esheltone/SongBrowser/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": "a21f2630eb868e0280de8db80ad16d8d3899899f",
+  "description_zh": null,
+  "name_zh": null
+}

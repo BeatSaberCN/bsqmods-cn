@@ -1,0 +1,33 @@
+{
+  "name": "RedBar",
+  "description": null,
+  "id": "RedBar",
+  "version": "1.14.0",
+  "author": "ComputerElite",
+  "authorIcon": "https://avatars.githubusercontent.com/u/71177995?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/ComputerElite/RedBar/releases/download/1.14.0/RedBar.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.33.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.23"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.11"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/ComputerElite/RedBar/",
+  "cover": "http://mods.bsquest.xyz/covers/65fa82304c9d40fcd4cc111fba5a3e64d98e1552.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/65fa82304c9d40fcd4cc111fba5a3e64d98e1552.png",
+  "funding": [],
+  "website": null,
+  "hash": "147a98c61ffdc827847f68e1f2137fe0ee4ee436",
+  "description_zh": null,
+  "name_zh": null
+}

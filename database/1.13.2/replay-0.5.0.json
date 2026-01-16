@@ -1,0 +1,20 @@
+{
+  "name": "Replay",
+  "description": "Watch back your best scores!",
+  "id": "replay",
+  "version": "0.5.0",
+  "author": "Henwill8",
+  "authorIcon": "https://avatars.githubusercontent.com/u/43818215?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/henwill8/ReplayDownload/releases/download/0.5.0/replay_v0.5.0.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/henwill8/ReplayDownload/",
+  "cover": "http://mods.bsquest.xyz/covers/740f014f2a8774069efc07bbd746e2471723ff30.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/740f014f2a8774069efc07bbd746e2471723ff30.png",
+  "funding": [],
+  "website": null,
+  "hash": "c544218eca7b84997218bc963cc902dfce9f16fc",
+  "description_zh": null,
+  "name_zh": null
+}

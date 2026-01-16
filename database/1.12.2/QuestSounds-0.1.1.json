@@ -1,0 +1,20 @@
+{
+  "name": "QuestSounds",
+  "description": "QuestSounds or QSounds for short, allows the user to change sounds without asset mods, \r\njust drop them into default path or your custom path!\r\n\r\nFeatures:\r\n  Support for OGG, MP3 and WAV file formats!\r\n  Creates QuestSounds folder at /sdcard/ModData/com.beatgames.beatsaber/Mods/\r\n  AFTER YOU HAVE RAN THE MOD ONCE\r\n  Config for disabling and enabling Custom Sounds!\r\n  Custom filepaths in config, so you can decide where you want the sounds!\r\n\r\nPlanned features:\r\n- Settings Menu to select Sounds.\r\n- More Sounds to customize",
+  "id": "QuestSounds",
+  "version": "0.1.1",
+  "author": "EnderdracheLP, Lillie",
+  "authorIcon": "https://avatars.githubusercontent.com/u/110287845?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/questsounds-0.1.1-ae869ddc068542ed9d51bc87834454de62547bac.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": null,
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

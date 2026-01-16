@@ -1,0 +1,49 @@
+{
+  "name": "Qosmetics Whackers",
+  "description": "Qosmetics module that adds Whacker capabilities",
+  "id": "qosmetics-sabers",
+  "version": "0.1.1",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/98164508?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Qosmetics/Qosmetics-Sabers/releases/download/v0.1.1/QosmeticsWhackers.qmod",
+  "dependencies": [
+    {
+      "id": "bsml",
+      "version": "^0.2.3"
+    },
+    {
+      "id": "codegen",
+      "version": "^0.28.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.21"
+    },
+    {
+      "id": "lapiz",
+      "version": "^0.1.4"
+    },
+    {
+      "id": "paper",
+      "version": "^1.2.4"
+    },
+    {
+      "id": "qosmetics-core",
+      "version": "^2.1.0"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Qosmetics/Qosmetics-Sabers/",
+  "cover": "http://mods.bsquest.xyz/covers/cf72f311c5926d025e33eb951ab5cf85df2df5a2.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/cf72f311c5926d025e33eb951ab5cf85df2df5a2.png",
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": null,
+  "hash": "0733cfc4a4926647c3ee572788109df65ab529df",
+  "description_zh": null,
+  "name_zh": null
+}

@@ -1,0 +1,41 @@
+{
+  "name": "InvertedArrows",
+  "description": "Customize all arrow directions on a beatmap",
+  "id": "invertedarrows",
+  "version": "1.0.6",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/51795403?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/RedBrumbler/InvertedArrows/releases/download/v1.0.6/InvertedArrows.qmod",
+  "dependencies": [
+    {
+      "id": "bs-utils",
+      "version": "^0.7.1"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.2.0"
+    },
+    {
+      "id": "codegen",
+      "version": "^0.28.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.21"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/RedBrumbler/InvertedArrows/",
+  "cover": "http://mods.bsquest.xyz/covers/a330cea9e32246b2c1af00acb1fec09f72dd62e2.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/a330cea9e32246b2c1af00acb1fec09f72dd62e2.png",
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": null,
+  "hash": "6be8a8f9c6f424ea85347124d6cfc85fbdb5149a",
+  "description_zh": null,
+  "name_zh": null
+}

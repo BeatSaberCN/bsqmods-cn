@@ -1,0 +1,47 @@
+{
+  "name": "BeatLeader",
+  "description": "beatleader.xyz | In-game leaderboards for custom and OST maps | Score replays | Clans, events, playlists and much more",
+  "id": "BeatLeader",
+  "version": "0.8.62",
+  "author": "NSGolova",
+  "authorIcon": "https://avatars.githubusercontent.com/u/98843512?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/BeatLeader/beatleader-qmod/releases/download/v0.8.62/BeatLeader.qmod",
+  "dependencies": [
+    {
+      "id": "bs-utils",
+      "version": "^0.8.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.34"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.17.8"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.3"
+    },
+    {
+      "id": "playlistcore",
+      "version": "^1.4.0"
+    },
+    {
+      "id": "songcore",
+      "version": "^1.1.13"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/BeatLeader/beatleader-qmod/",
+  "cover": "http://mods.bsquest.xyz/covers/ba40fc34f1f1044b617ad263f2c3176d6c91ea0e.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/ba40fc34f1f1044b617ad263f2c3176d6c91ea0e.png",
+  "funding": [
+    "https://patreon.com/BeatLeader"
+  ],
+  "website": "https://github.com/BeatLeader/beatleader-qmod/",
+  "hash": "19ecd30e17134479570e04dd5c9e7f9507d98b4d",
+  "description_zh": null,
+  "name_zh": null
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Qosmetics Cyoobs",
+  "description": "Qosmetics module that adds Cyoob capabilities",
+  "id": "qosmetics-notes",
+  "version": "0.1.0",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/98164508?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Qosmetics/Qosmetics-Notes/releases/download/v0.1.0/QosmeticsCyoobs.qmod",
+  "dependencies": [
+    {
+      "id": "bs-utils",
+      "version": "^0.7.0"
+    },
+    {
+      "id": "codegen",
+      "version": "^0.25.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.18"
+    },
+    {
+      "id": "diglett",
+      "version": "^2.0.2"
+    },
+    {
+      "id": "paper",
+      "version": "^1.2.4"
+    },
+    {
+      "id": "qosmetics-core",
+      "version": "^2.0.0"
+    },
+    {
+      "id": "questui",
+      "version": "^0.16.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Qosmetics/Qosmetics-Notes/",
+  "cover": "http://mods.bsquest.xyz/covers/2787a0f77c7011fee8118328e4bab4a878a0c90c.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/2787a0f77c7011fee8118328e4bab4a878a0c90c.png",
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": null,
+  "hash": "f84f36d69794d3d7b355e1a2135166e41daa511b",
+  "description_zh": null,
+  "name_zh": null
+}

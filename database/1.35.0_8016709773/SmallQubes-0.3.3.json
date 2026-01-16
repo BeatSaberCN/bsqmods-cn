@@ -1,0 +1,33 @@
+{
+  "name": "SmallQubes",
+  "description": "Adds a slider to change default cubes size",
+  "id": "SmallQubes",
+  "version": "0.3.3",
+  "author": "NSGolova",
+  "authorIcon": "https://avatars.githubusercontent.com/u/8793817?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/NSGolova/SmallQubes/releases/download/v0.3.3/SmallQubes_1.35.0.qmod",
+  "dependencies": [
+    {
+      "id": "bsml",
+      "version": "^0.4.24"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.17.0"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/NSGolova/SmallQubes/",
+  "cover": "http://mods.bsquest.xyz/covers/84894d0aff9f9543c0219ad213b03eb90347595a.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/84894d0aff9f9543c0219ad213b03eb90347595a.png",
+  "funding": [],
+  "website": "https://github.com/NSGolova/SmallQubes/",
+  "hash": "00e8a5ed9039d9347ae08631279132f071618eab",
+  "description_zh": null,
+  "name_zh": null
+}

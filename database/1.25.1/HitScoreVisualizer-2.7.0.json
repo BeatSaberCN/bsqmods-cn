@@ -1,0 +1,33 @@
+{
+  "name": "HitScoreVisualizer",
+  "description": "Changes the scores that pop up when you hit notes",
+  "id": "HitScoreVisualizer",
+  "version": "2.7.0",
+  "author": "Christoffyw,  Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/55860414?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/christopherweinhardt/HitScoreVisualizer/releases/download/2.7.0/HitScoreVisualizer.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.28.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.21"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/christopherweinhardt/HitScoreVisualizer/",
+  "cover": "http://mods.bsquest.xyz/covers/41b915f6e36dabcc45441dbd2f3ca9179c04a8a0.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/41b915f6e36dabcc45441dbd2f3ca9179c04a8a0.jpg",
+  "funding": [],
+  "website": null,
+  "hash": "aff8baaa0d3e0453c0492efd83cf579ef92c2996",
+  "description_zh": null,
+  "name_zh": null
+}

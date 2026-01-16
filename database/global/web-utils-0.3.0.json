@@ -1,0 +1,24 @@
+{
+  "name": "WebUtils",
+  "description": "library to provide easier ways of downloading things from the web",
+  "id": "web-utils",
+  "version": "0.3.0",
+  "author": "RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/51795403?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/RedBrumbler/WebUtils/releases/download/v0.3.0/WebUtils.qmod",
+  "dependencies": [],
+  "isLibrary": true,
+  "source": "https://github.com/RedBrumbler/WebUtils/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [
+    "https://patreon.com/Qosmetics",
+    "https://ko-fi.com/redbrumbler",
+    "https://www.paypal.me/redbrumblerofficial"
+  ],
+  "website": "https://github.com/RedBrumbler/WebUtils/",
+  "hash": "c0d32fd3d4a876bbd41c6919ebfac8e4882490d7",
+  "description_zh": null,
+  "name_zh": null
+}

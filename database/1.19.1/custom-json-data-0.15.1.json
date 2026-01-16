@@ -1,0 +1,25 @@
+{
+  "name": "CustomJSONData",
+  "description": "Funny maps go brrr",
+  "id": "custom-json-data",
+  "version": "0.15.1",
+  "author": "StackDoubleFlow",
+  "authorIcon": "https://avatars.githubusercontent.com/u/80212088?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/bsq-ports/CustomJSONData/releases/download/v0.15.1/custom-json-data.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.19.0"
+    }
+  ],
+  "isLibrary": true,
+  "source": "https://github.com/bsq-ports/CustomJSONData/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": "https://github.com/bsq-ports/CustomJSONData/",
+  "hash": "12543263ee912841291fac2372aac5342de26ced",
+  "description_zh": null,
+  "name_zh": null
+}

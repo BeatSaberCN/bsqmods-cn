@@ -1,0 +1,39 @@
+{
+  "name": "Smoothed Controller",
+  "description": "Smoothes your Controller position while in menus to make it less shaky, making the UI easier to use, etc.",
+  "id": "smoothedcontroller",
+  "version": "1.7.0",
+  "author": "Kaitlyn, Kinsi55",
+  "authorIcon": "https://avatars.githubusercontent.com/u/8300099?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/FrozenAlex/SmoothedController/releases/download/v1.7.0/Smoothed.Controller.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.0"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.49"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.2"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.5.0"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/FrozenAlex/SmoothedController/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [
+    "https://patreon.com/ItsKaitlyn03"
+  ],
+  "website": "https://github.com/FrozenAlex/SmoothedController/",
+  "hash": "f86a25ed08d97f4f4eb7cb1cb7f5d65d26d73bcf",
+  "description_zh": null,
+  "name_zh": null
+}

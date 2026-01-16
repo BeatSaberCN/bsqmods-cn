@@ -1,0 +1,33 @@
+{
+  "name": "Unicode",
+  "description": "Finally, 𒈙",
+  "id": "unicode",
+  "version": "0.1.4",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/Metalit/UnicodeQuest/releases/download/v0.1.4/Unicode.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.0"
+    },
+    {
+      "id": "metacore",
+      "version": "^1.0.0"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.5.0"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/UnicodeQuest/",
+  "cover": "http://mods.bsquest.xyz/covers/f4479db622d3566abbdb372bff7686c168a2f8de.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/f4479db622d3566abbdb372bff7686c168a2f8de.png",
+  "funding": [],
+  "website": "https://github.com/Metalit/UnicodeQuest/",
+  "hash": "4d9bb5aa4978e06df07e3a115fc4df6092e94e93",
+  "description_zh": null,
+  "name_zh": null
+}

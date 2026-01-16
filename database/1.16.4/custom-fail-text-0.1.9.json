@@ -1,0 +1,20 @@
+{
+  "name": "CustomFailText",
+  "description": "Allows you to customise the text that you see when you fail a level.",
+  "id": "custom-fail-text",
+  "version": "0.1.9",
+  "author": "Lauriethefish",
+  "authorIcon": "https://avatars.githubusercontent.com/u/44222319?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Lauriethefish/CustomFailText/releases/download/0.1.9/custom-fail-text_v0.1.9.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/Lauriethefish/CustomFailText/",
+  "cover": "http://mods.bsquest.xyz/covers/50808bc2140fc08213501ca41e284be0a190d655.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/50808bc2140fc08213501ca41e284be0a190d655.png",
+  "funding": [],
+  "website": null,
+  "hash": "84c247c25e4b95d532e5873f3034596c171f2261",
+  "description_zh": null,
+  "name_zh": null
+}

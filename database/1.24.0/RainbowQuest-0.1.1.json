@@ -1,0 +1,20 @@
+{
+  "name": "Rainbow Quest",
+  "description": "Makes blocks and obstacles rainbow :D. By: Unifox",
+  "id": "RainbowQuest",
+  "version": "0.1.1",
+  "author": "Unifox",
+  "authorIcon": "https://avatars.githubusercontent.com/u/154956593?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Unifox-BeatSaberThings/RainbowQuest/releases/download/v0.1.1/RainbowQuest.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/Unifox-BeatSaberThings/RainbowQuest/",
+  "cover": "http://mods.bsquest.xyz/covers/300f0f59eb103c8560fa6d2108680a43c7a60996.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/300f0f59eb103c8560fa6d2108680a43c7a60996.png",
+  "funding": [],
+  "website": null,
+  "hash": "7fc45b297385499b2a9282d76eb4dccc5fbdf9e8",
+  "description_zh": null,
+  "name_zh": null
+}

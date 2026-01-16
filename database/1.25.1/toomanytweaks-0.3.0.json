@@ -1,0 +1,33 @@
+{
+  "name": "TooManyTweaks",
+  "description": "Adds many togglable tweaks and options to tailor the game to your desire.",
+  "id": "toomanytweaks",
+  "version": "0.3.0",
+  "author": "IMB11",
+  "authorIcon": "https://avatars.githubusercontent.com/u/93472213?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/IMB11/TooManyTweaks/releases/download/0.3.0/toomanytweaks-0.3.0+1251.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.28.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "*"
+    },
+    {
+      "id": "questui",
+      "version": "*"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/IMB11/TooManyTweaks/",
+  "cover": "http://mods.bsquest.xyz/covers/b94d0ea837386fb093ea2b3a5cf86e027b3b6563.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/b94d0ea837386fb093ea2b3a5cf86e027b3b6563.png",
+  "funding": [],
+  "website": null,
+  "hash": "c9d14a68c0660ce51c12fcd1119684884414ab92",
+  "description_zh": null,
+  "name_zh": null
+}

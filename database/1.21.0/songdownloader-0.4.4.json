@@ -1,0 +1,37 @@
+{
+  "name": "songdownloader",
+  "description": "Download Custom Songs at Runtime",
+  "id": "songdownloader",
+  "version": "0.4.4",
+  "author": "darknight1050, EnderdracheLP, Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/18632205?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/darknight1050/SongDownloader/releases/download/v0.4.4/SongDownloader.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.22.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.8"
+    },
+    {
+      "id": "questui",
+      "version": "^0.13.5"
+    },
+    {
+      "id": "songloader",
+      "version": "^0.9.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/darknight1050/SongDownloader/",
+  "cover": "http://mods.bsquest.xyz/covers/f325004bdca5bb1d2702886e12ad0ba059840dbf.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/f325004bdca5bb1d2702886e12ad0ba059840dbf.png",
+  "funding": [],
+  "website": null,
+  "hash": "b8dabeb57798e4ab12528ec6ab4b908c20059b9c",
+  "description_zh": null,
+  "name_zh": null
+}

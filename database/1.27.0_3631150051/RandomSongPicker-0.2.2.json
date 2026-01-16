@@ -1,0 +1,33 @@
+{
+  "name": "RandomSongPicker",
+  "description": "Adds a button, that picks a random song out of the current list",
+  "id": "RandomSongPicker",
+  "version": "0.2.2",
+  "author": "Tatenshi",
+  "authorIcon": "https://avatars.githubusercontent.com/u/55283269?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Tatenshi/RandomSongPicker/releases/download/v0.2.2/RandomSongPicker_1_27_0.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.32.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.22"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.10"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Tatenshi/RandomSongPicker/",
+  "cover": "http://mods.bsquest.xyz/covers/1aecb6b7c2280ce9743ddcebe731ddf3a95b175c.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/1aecb6b7c2280ce9743ddcebe731ddf3a95b175c.jpg",
+  "funding": [],
+  "website": null,
+  "hash": "3c41aef3bbed8ab0589094a2f6031cb3e550d883",
+  "description_zh": null,
+  "name_zh": null
+}

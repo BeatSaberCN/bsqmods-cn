@@ -1,0 +1,25 @@
+{
+  "name": "TrickSaber",
+  "description": "Do tricks and stuff",
+  "id": "TrickSaber",
+  "version": "0.3.7",
+  "author": "FernTheDev,  Michael Zoller, ToniMacaroni",
+  "authorIcon": "https://avatars.githubusercontent.com/u/15272073?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Fernthedev/Quest-Trick-Saber/releases/download/v0.3.7/TrickSaber_v0.3.7.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "=0.12.5"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Fernthedev/Quest-Trick-Saber/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": "13b4754a14930a5f493b3e1ccc48397c14ff3383",
+  "description_zh": null,
+  "name_zh": null
+}

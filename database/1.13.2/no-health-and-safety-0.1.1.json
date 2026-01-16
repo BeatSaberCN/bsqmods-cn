@@ -1,0 +1,20 @@
+{
+  "name": "No Health And Safety",
+  "description": "Removes that annoying health and safety pop-up after starting the game.",
+  "id": "no-health-and-safety",
+  "version": "0.1.1",
+  "author": "Lauriethefish#6700",
+  "authorIcon": "https://avatars.githubusercontent.com/u/44222319?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Lauriethefish/NoHealthAndSafety/releases/download/0.1.1/no-health-and-safety_v0.1.1.zip",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/Lauriethefish/NoHealthAndSafety/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": "eeba69deefa04817fb9168c464473308e4db6b56",
+  "description_zh": null,
+  "name_zh": null
+}

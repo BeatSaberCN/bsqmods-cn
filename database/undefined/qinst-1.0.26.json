@@ -1,0 +1,20 @@
+{
+  "name": "qInstaller",
+  "description": "Literally just a json file which allows you to install .qsaber, .qwall and .qbloq files using ModsBeforeFriday. NOTE: These are outdated formats. New models should be compiled to the newer formats!",
+  "id": "qinst",
+  "version": "1.0.26",
+  "author": "jxnxsdev",
+  "authorIcon": "https://avatars.githubusercontent.com/u/65252066?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/qinst-1.0.26-6e248acaaad82cd9641e633e1494a019bc7b4ef3.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/jxnxsdev/qInstaller/",
+  "cover": "http://mods.bsquest.xyz/covers/49bc7ad235528f32a27d72109d0a8a7be4831c9c.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/49bc7ad235528f32a27d72109d0a8a7be4831c9c.png",
+  "funding": [],
+  "website": "https://github.com/jxnxsdev/qInstaller/",
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

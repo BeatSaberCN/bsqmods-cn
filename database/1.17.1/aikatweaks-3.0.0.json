@@ -1,0 +1,22 @@
+{
+  "name": "AikaTweaks",
+  "description": "Various tweaks for Beat Saber.",
+  "id": "aikatweaks",
+  "version": "3.0.0",
+  "author": "Aika, xyonico",
+  "authorIcon": "https://avatars.githubusercontent.com/u/87990853?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/whatdahopper/AnyTweaks/releases/download/v3.0.0/aikatweaks_v3.0.0.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/whatdahopper/AnyTweaks/",
+  "cover": "http://mods.bsquest.xyz/covers/b93ab1921c0f31df68206a4c23a1311e75e00721.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/b93ab1921c0f31df68206a4c23a1311e75e00721.png",
+  "funding": [
+    "https://patreon.com/ItsKaitlyn03"
+  ],
+  "website": null,
+  "hash": "8e64f4f78b2be318365c86823f8b3cdfa59f8419",
+  "description_zh": null,
+  "name_zh": null
+}

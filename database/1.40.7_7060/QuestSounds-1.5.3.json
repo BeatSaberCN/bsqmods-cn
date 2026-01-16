@@ -1,0 +1,41 @@
+{
+  "name": "QuestSounds",
+  "description": "Allows users to change their sfx sounds and in-game music easily!",
+  "id": "QuestSounds",
+  "version": "1.5.3",
+  "author": "Rugtveit, EnderdracheLP",
+  "authorIcon": "https://avatars.githubusercontent.com/u/81266776?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/EnderdracheLP/QuestSounds/releases/download/1.5.3/QuestSounds_1.5.3.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.54"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/EnderdracheLP/QuestSounds/",
+  "cover": "http://mods.bsquest.xyz/covers/1e757747fcbe8d8c33d9461cffc23e927493f541.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/1e757747fcbe8d8c33d9461cffc23e927493f541.jpg",
+  "funding": [
+    "https://github.com/sponsors/Michael-R-ELP",
+    "https://patreon.com/EnderdracheLP",
+    "https://ko-fi.com/enderdrachelp"
+  ],
+  "website": "https://github.com/EnderdracheLP/QuestSounds/",
+  "hash": "9a37bd53ff82da9f85f960db285730a1ad9b1b69",
+  "description_zh": null,
+  "name_zh": null
+}

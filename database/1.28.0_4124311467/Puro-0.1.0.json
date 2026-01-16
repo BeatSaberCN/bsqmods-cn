@@ -1,0 +1,20 @@
+{
+  "name": "Puro",
+  "description": "A fluffy latex monster.",
+  "id": "Puro",
+  "version": "0.1.0",
+  "author": "Raemien",
+  "authorIcon": "https://avatars.githubusercontent.com/u/110287845?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/Puro-0.1.0-65fec74b3465d1ee834fd7182866bcd42a549f48.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": null,
+  "cover": "http://mods.bsquest.xyz/covers/25a73d98366e03c3b2437e5ee303d8f0016aa2a3.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/25a73d98366e03c3b2437e5ee303d8f0016aa2a3.png",
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

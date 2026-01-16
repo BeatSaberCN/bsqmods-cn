@@ -1,0 +1,37 @@
+{
+  "name": "Score Percentage",
+  "description": "shows extra information after completing a level",
+  "id": "scorepercentage",
+  "version": "3.2.1",
+  "author": "Polly51104",
+  "authorIcon": "https://avatars.githubusercontent.com/u/56835953?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Royston1999/ScorePercentage-Quest/releases/download/v3.2.1/ScorePercentage_v3.2.1.qmod",
+  "dependencies": [
+    {
+      "id": "bs-utils",
+      "version": "^0.7.0"
+    },
+    {
+      "id": "codegen",
+      "version": "^0.33.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.23"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.11"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Royston1999/ScorePercentage-Quest/",
+  "cover": "http://mods.bsquest.xyz/covers/eb46a6ac3c1915295af653786d3e146f411bba5e.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/eb46a6ac3c1915295af653786d3e146f411bba5e.jpg",
+  "funding": [],
+  "website": null,
+  "hash": "36a7c3ce32fb56662b4007b8d72294db9554fa85",
+  "description_zh": null,
+  "name_zh": null
+}

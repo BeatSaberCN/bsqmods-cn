@@ -1,0 +1,37 @@
+{
+  "name": "HitsoundTweaqs",
+  "description": "Adds more configurability to hitsounds, and fixes several base game bugs to make them more reliable and consistent",
+  "id": "HitsoundTweaqs",
+  "version": "1.0.0",
+  "author": "GalaxyMaster2 (ported by NSGolova using Gemini 2.5)",
+  "authorIcon": "https://avatars.githubusercontent.com/u/8793817?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/NSGolova/HitsoundTweaqs/releases/download/v1.0.0/HitsoundTweaqs.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.1"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.51"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.2"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.1"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/NSGolova/HitsoundTweaqs/",
+  "cover": "http://mods.bsquest.xyz/covers/10bae16df311c58b7528b6782c6b20b2ef37278f.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/10bae16df311c58b7528b6782c6b20b2ef37278f.png",
+  "funding": [],
+  "website": "https://github.com/NSGolova/HitsoundTweaqs/",
+  "hash": "d01f3d9a9a08b961d00bb7036204241ea78cc1de",
+  "description_zh": null,
+  "name_zh": null
+}

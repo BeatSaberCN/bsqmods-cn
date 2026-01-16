@@ -1,0 +1,41 @@
+{
+  "name": "Clock Mod",
+  "description": "Displays the time in game. Alternatively also the Battery Percentage",
+  "id": "ClockMod",
+  "version": "1.13.0",
+  "author": "BoopetyDoopety, EnderdracheLP",
+  "authorIcon": "https://avatars.githubusercontent.com/u/81266776?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/EnderdracheLP/ClockMod/releases/download/1.13.0/ClockMod_1.13.0.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.54"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/EnderdracheLP/ClockMod/",
+  "cover": "http://mods.bsquest.xyz/covers/862da91ac7a8354440ae95a3373e6f38aff3d593.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/862da91ac7a8354440ae95a3373e6f38aff3d593.jpg",
+  "funding": [
+    "https://github.com/sponsors/Michael-R-ELP",
+    "https://patreon.com/EnderdracheLP",
+    "https://ko-fi.com/enderdrachelp"
+  ],
+  "website": "https://github.com/EnderdracheLP/ClockMod/",
+  "hash": "2786ebe8cf93fbc6a201e05f85721c39caa29fc3",
+  "description_zh": null,
+  "name_zh": null
+}

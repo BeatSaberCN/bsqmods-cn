@@ -1,0 +1,20 @@
+{
+  "name": "Quest Custom Menu Text",
+  "description": "Changes the menu text to a user-configurable text object",
+  "id": "QustomMenuText",
+  "version": "0.3.2",
+  "author": "headassbtw",
+  "authorIcon": "https://avatars.githubusercontent.com/u/110287845?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/QustomMenuText-0.3.2-c9c2bc67e2425477fe1190187c9f79da39cda59d.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": null,
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": null,
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

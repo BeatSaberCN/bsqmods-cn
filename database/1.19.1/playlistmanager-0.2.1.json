@@ -1,0 +1,37 @@
+{
+  "name": "playlistmanager",
+  "description": "Adds custom playlists to the game",
+  "id": "playlistmanager",
+  "version": "0.2.1",
+  "author": "darknight1050",
+  "authorIcon": "https://avatars.githubusercontent.com/u/18632205?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/darknight1050/PlaylistManager/releases/download/v0.2.1/PlaylistManager.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.20.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.6"
+    },
+    {
+      "id": "questui",
+      "version": "^0.13.2"
+    },
+    {
+      "id": "songloader",
+      "version": "^0.8.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/darknight1050/PlaylistManager/",
+  "cover": "http://mods.bsquest.xyz/covers/2105c7495da2c957fa554e995b7e1780aa333f3a.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/2105c7495da2c957fa554e995b7e1780aa333f3a.png",
+  "funding": [],
+  "website": null,
+  "hash": "794203841083ba12ac68d122e35f4617ad4cbc87",
+  "description_zh": null,
+  "name_zh": null
+}

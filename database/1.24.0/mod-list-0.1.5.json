@@ -1,0 +1,33 @@
+{
+  "name": "ModList",
+  "description": "Displays your installed mods inside the game and gives you a warning prompt upon starting the game to tell you if a mod failed to load.",
+  "id": "mod-list",
+  "version": "0.1.5",
+  "author": "Lauriethefish",
+  "authorIcon": "https://avatars.githubusercontent.com/u/44222319?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Lauriethefish/ModList/releases/download/0.1.5/mod-list_v0.1.5.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.25.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.14"
+    },
+    {
+      "id": "questui",
+      "version": "^0.16.2"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Lauriethefish/ModList/",
+  "cover": "http://mods.bsquest.xyz/covers/2b3d732add4362504e5b6046c53329c66c1bdc2f.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/2b3d732add4362504e5b6046c53329c66c1bdc2f.png",
+  "funding": [],
+  "website": null,
+  "hash": "08a9623d927c12ff9c183c4ab8348f9bef29a22c",
+  "description_zh": null,
+  "name_zh": null
+}

@@ -1,0 +1,41 @@
+{
+  "name": "TrickSaber Lite",
+  "description": "This mod is not that stable like it seems, improvements will be rolling out soon!\nPerform spins and throws with your sabers!",
+  "id": "tricksaberlite",
+  "version": "0.1.0",
+  "author": "laynia",
+  "authorIcon": "https://avatars.githubusercontent.com/u/170962081?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/vcmikuu/TrickSaber-Lite/releases/download/v0.1.0/TrickSaber.Lite.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.53"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.3"
+    },
+    {
+      "id": "metacore",
+      "version": "^1.3.0"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/vcmikuu/TrickSaber-Lite/",
+  "cover": "http://mods.bsquest.xyz/covers/7dcc46510fa5fbde338beaa2fe2045d5d848c1fc.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/7dcc46510fa5fbde338beaa2fe2045d5d848c1fc.png",
+  "funding": [],
+  "website": "https://github.com/vcmikuu/TrickSaber-Lite/",
+  "hash": "41afd561aad440da4ae062bb438f6eec4b7c8405",
+  "description_zh": null,
+  "name_zh": null
+}

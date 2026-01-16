@@ -1,0 +1,33 @@
+{
+  "name": "NoParticles",
+  "description": "Allows you to disable various particles throughout the game",
+  "id": "NoParticles",
+  "version": "0.1.5",
+  "author": "AllyPallyUK, updated by KodenameKRAK",
+  "authorIcon": "https://avatars.githubusercontent.com/u/106346717?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/kodenamekrak/NoParticles/releases/download/0.1.5/NoParticles-1.25.1-2.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.28.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.21"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/kodenamekrak/NoParticles/",
+  "cover": "http://mods.bsquest.xyz/covers/98075262fb7dcfcf2b53c4c9f4bfab1aeddc9f25.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/98075262fb7dcfcf2b53c4c9f4bfab1aeddc9f25.png",
+  "funding": [],
+  "website": null,
+  "hash": "c6ab9574756b107d17f9b6cebb66ad6333a953c1",
+  "description_zh": null,
+  "name_zh": null
+}

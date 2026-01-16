@@ -1,0 +1,33 @@
+{
+  "name": "CrashReporter",
+  "description": "Automatically upload crashes.",
+  "id": "crashreporter",
+  "version": "0.1.0",
+  "author": "darknight1050",
+  "authorIcon": "https://avatars.githubusercontent.com/u/18632205?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/darknight1050/CrashReporter/releases/download/v0.1.0/CrashReporter.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.25.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.19"
+    },
+    {
+      "id": "questui",
+      "version": "^0.16.4"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/darknight1050/CrashReporter/",
+  "cover": "http://mods.bsquest.xyz/covers/35ba52457b8b114ad594761b648da7eacfdbb298.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/35ba52457b8b114ad594761b648da7eacfdbb298.png",
+  "funding": [],
+  "website": "https://github.com/darknight1050/CrashReporter/",
+  "hash": "af29c20b88561c36c601e46740c91f3c085437d2",
+  "description_zh": null,
+  "name_zh": null
+}

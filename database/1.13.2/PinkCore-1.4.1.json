@@ -1,0 +1,20 @@
+{
+  "name": "PinkCore",
+  "description": "PinkCore, formerly known as PinkUtils is a core mod that ports over many required features which ensures a smooth PC-Like experience.",
+  "id": "PinkCore",
+  "version": "1.4.1",
+  "author": "Pink, StackDoubleFlow, Lillie, RedBrumbler",
+  "authorIcon": "https://avatars.githubusercontent.com/u/62712899?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/ModdingPink/PinkCore/releases/download/1.4.1/PinkCoreV1.4.1.zip",
+  "dependencies": [],
+  "isLibrary": true,
+  "source": "https://github.com/ModdingPink/PinkCore/",
+  "cover": "http://mods.bsquest.xyz/covers/a71a939bf863f630fdaf2027a7feade037de21ed.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/a71a939bf863f630fdaf2027a7feade037de21ed.jpg",
+  "funding": [],
+  "website": null,
+  "hash": "b0ec21134695fa0b9c588607a4c28c096ba23f7b",
+  "description_zh": null,
+  "name_zh": null
+}

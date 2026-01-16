@@ -1,0 +1,20 @@
+{
+  "name": "flamingo",
+  "description": "General purpose Android hook library",
+  "id": "flamingo",
+  "version": "0.1.2",
+  "author": "Sc2ad",
+  "authorIcon": "https://avatars.githubusercontent.com/u/10663758?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/sc2ad/Flamingo/releases/download/v0.1.2/flamingo.qmod",
+  "dependencies": [],
+  "isLibrary": true,
+  "source": "https://github.com/sc2ad/Flamingo/",
+  "cover": null,
+  "ogCover": null,
+  "funding": [],
+  "website": "https://github.com/sc2ad/Flamingo/",
+  "hash": "5d960468c13c75f4b8be680577cbb5305806fbdc",
+  "description_zh": null,
+  "name_zh": null
+}

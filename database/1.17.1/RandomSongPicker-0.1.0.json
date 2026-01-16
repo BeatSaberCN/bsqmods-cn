@@ -1,0 +1,20 @@
+{
+  "name": "RandomSongPicker",
+  "description": "Pick a random custom song!",
+  "id": "RandomSongPicker",
+  "version": "0.1.0",
+  "author": "Tatenshi",
+  "authorIcon": "https://avatars.githubusercontent.com/u/55283269?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/Tatenshi/RandomSongPicker/releases/download/v0.1.0/RandomSongPicker_1_17_1.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/Tatenshi/RandomSongPicker/",
+  "cover": "http://mods.bsquest.xyz/covers/1aecb6b7c2280ce9743ddcebe731ddf3a95b175c.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/1aecb6b7c2280ce9743ddcebe731ddf3a95b175c.jpg",
+  "funding": [],
+  "website": "https://github.com/Tatenshi/RandomSongPicker/",
+  "hash": "8bbcf6cf0c03f616333ab177faed17d75e052252",
+  "description_zh": null,
+  "name_zh": null
+}

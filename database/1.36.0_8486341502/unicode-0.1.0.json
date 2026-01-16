@@ -1,0 +1,25 @@
+{
+  "name": "Unicode",
+  "description": "Finally, 𒈙",
+  "id": "unicode",
+  "version": "0.1.0",
+  "author": "Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/48568911?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/Metalit/UnicodeQuest/releases/download/v0.1.0/Unicode.qmod",
+  "dependencies": [
+    {
+      "id": "paper",
+      "version": "^3.6.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/Metalit/UnicodeQuest/",
+  "cover": "http://mods.bsquest.xyz/covers/f4479db622d3566abbdb372bff7686c168a2f8de.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/f4479db622d3566abbdb372bff7686c168a2f8de.png",
+  "funding": [],
+  "website": "https://github.com/Metalit/UnicodeQuest/",
+  "hash": "0ca7105f2150a264f6ee7eeb969e720d082dc19a",
+  "description_zh": null,
+  "name_zh": null
+}

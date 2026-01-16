@@ -1,0 +1,20 @@
+{
+  "name": "Note Vortex",
+  "description": "A simple beat saber mod for 1.17.1 that allows control over notes",
+  "id": "noteVortex",
+  "version": "0.1.2",
+  "author": "AllyPallyUK",
+  "authorIcon": "https://avatars.githubusercontent.com/u/79868211?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/AllyPallyUK/NoteVortex/releases/download/V1.0.2/noteVortex_v0.1.2.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/AllyPallyUK/NoteVortex/",
+  "cover": "http://mods.bsquest.xyz/covers/15cb6c674d9f49ef87553c708e1c92b32a63c511.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/15cb6c674d9f49ef87553c708e1c92b32a63c511.png",
+  "funding": [],
+  "website": "https://github.com/AllyPallyUK/NoteVortex/",
+  "hash": "ffb918798efc82d19ca8c2c49f85d822fe08867c",
+  "description_zh": null,
+  "name_zh": null
+}

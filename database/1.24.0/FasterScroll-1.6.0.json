@@ -1,0 +1,20 @@
+{
+  "name": "Faster Scroll",
+  "description": "Find your songs faster using this mod.",
+  "id": "FasterScroll",
+  "version": "1.6.0",
+  "author": "Christoffyw",
+  "authorIcon": "https://avatars.githubusercontent.com/u/55860414?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/christopherweinhardt/FasterScrollQuest/releases/download/v1.6.0/FasterScroll.qmod",
+  "dependencies": [],
+  "isLibrary": false,
+  "source": "https://github.com/christopherweinhardt/FasterScrollQuest/",
+  "cover": "http://mods.bsquest.xyz/covers/ddb8e70c19317ba81e5c15c0e27b6dedbd6f1e46.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/ddb8e70c19317ba81e5c15c0e27b6dedbd6f1e46.jpg",
+  "funding": [],
+  "website": null,
+  "hash": "731f64dd876053cd8aa5ae0de8a9911c2223a46b",
+  "description_zh": null,
+  "name_zh": null
+}

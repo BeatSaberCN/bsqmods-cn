@@ -1,0 +1,45 @@
+{
+  "name": "SongDownloader",
+  "description": "Download Custom Songs at Runtime",
+  "id": "songdownloader",
+  "version": "0.8.5",
+  "author": "darknight1050, EnderdracheLP, Metalit",
+  "authorIcon": "https://avatars.githubusercontent.com/u/18632205?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/darknight1050/SongDownloader/releases/download/v0.8.5/SongDownloader.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "version": "^6.4.2"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.52"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.18.2"
+    },
+    {
+      "id": "paper2_scotland2",
+      "version": "^4.6.4"
+    },
+    {
+      "id": "playlistcore",
+      "version": "^1.5.1"
+    },
+    {
+      "id": "songcore",
+      "version": "^1.1.21"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/darknight1050/SongDownloader/",
+  "cover": "http://mods.bsquest.xyz/covers/f325004bdca5bb1d2702886e12ad0ba059840dbf.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/f325004bdca5bb1d2702886e12ad0ba059840dbf.png",
+  "funding": [],
+  "website": "https://github.com/darknight1050/SongDownloader/",
+  "hash": "b648849467fbbb5fe6459a53c0f7b357d17786ea",
+  "description_zh": null,
+  "name_zh": null
+}

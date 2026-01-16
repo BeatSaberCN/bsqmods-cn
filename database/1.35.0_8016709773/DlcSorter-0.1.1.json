@@ -1,0 +1,27 @@
+{
+  "name": "DlcSorter",
+  "description": "Sorts the DLC packs alphabetically.",
+  "id": "DlcSorter",
+  "version": "0.1.1",
+  "author": "DanTheMan827",
+  "authorIcon": "https://avatars.githubusercontent.com/u/790119?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/DanTheMan827-BeatSaber/Quest.DlcSorter/releases/download/v0.1.1/DlcSorter.qmod",
+  "dependencies": [
+    {
+      "id": "paper",
+      "version": "^3.0.0"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/DanTheMan827-BeatSaber/Quest.DlcSorter/",
+  "cover": "http://mods.bsquest.xyz/covers/e53c5a81af1ef2b80c26184566e423ba472ac92c.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/e53c5a81af1ef2b80c26184566e423ba472ac92c.png",
+  "funding": [
+    "https://github.com/sponsors/dantheman827"
+  ],
+  "website": null,
+  "hash": "1507c39985131f783fb7768a2b8ab397c327de93",
+  "description_zh": null,
+  "name_zh": null
+}

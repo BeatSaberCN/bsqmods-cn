@@ -1,0 +1,37 @@
+{
+  "name": "Pause Remapper",
+  "description": "Allows the user to change which buttons pause the game!",
+  "id": "PauseRemapper",
+  "version": "1.2.0",
+  "author": "Speecil",
+  "authorIcon": "https://avatars.githubusercontent.com/u/90689870?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/speecil/PauseRemapper/releases/download/v1.2.0/PauseRemapper.qmod",
+  "dependencies": [
+    {
+      "id": "bsml",
+      "version": "^0.2.10"
+    },
+    {
+      "id": "codegen",
+      "version": "^0.32.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.22"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.10"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/speecil/PauseRemapper/",
+  "cover": "http://mods.bsquest.xyz/covers/90dcaecb5036a70f5ab31bd046f317eff2f2d313.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/90dcaecb5036a70f5ab31bd046f317eff2f2d313.png",
+  "funding": [],
+  "website": null,
+  "hash": "572121ba2aa31e2c78f0ab258ea4c0ed709c9574",
+  "description_zh": null,
+  "name_zh": null
+}

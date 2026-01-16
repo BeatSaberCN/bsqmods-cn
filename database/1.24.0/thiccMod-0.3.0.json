@@ -1,0 +1,29 @@
+{
+  "name": "Thicc Mod",
+  "description": "Have you ever wanted to play beat saber, but the bloqs were the size of your mother? Well look no further! Thicc Mod has got you covered!",
+  "id": "thiccMod",
+  "version": "0.3.0",
+  "author": "speecil",
+  "authorIcon": "https://avatars.githubusercontent.com/u/90689870?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror-2/thiccMod-0.3.0-1c7e593ec8fef3643daf4830696d848c04961f6b.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.25.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.18"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/speecil/Thicc-Mod",
+  "cover": "http://mods.bsquest.xyz/covers/6fffb8d1a13bb7f338814847cc9e10e7c6fd155f.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/6fffb8d1a13bb7f338814847cc9e10e7c6fd155f.png",
+  "funding": [],
+  "website": "https://github.com/speecil/Thicc-Mod",
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}

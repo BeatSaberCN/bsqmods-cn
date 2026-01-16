@@ -1,0 +1,51 @@
+{
+  "name": "BetterSongSearch",
+  "description": "Search and download songs with a lot of filtering and sorting options and without frustration!",
+  "id": "BetterSongSearch",
+  "version": "2.2.4",
+  "author": "FrozenAlex, FernTheDev, FutureMapper, and Christoffyw",
+  "authorIcon": "https://avatars.githubusercontent.com/u/80212088?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/bsq-ports/BetterSongSearchQuest/releases/download/v2.2.4-bs-1.37.0/BetterSongSearch.qmod",
+  "dependencies": [
+    {
+      "id": "beatsaverplusplus",
+      "version": "^0.1.6"
+    },
+    {
+      "id": "bsml",
+      "version": "^0.4.43"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.17.10"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.4"
+    },
+    {
+      "id": "song-details",
+      "version": "^1.0.1"
+    },
+    {
+      "id": "songcore",
+      "version": "^1.1.14"
+    },
+    {
+      "id": "web-utils",
+      "version": "^0.6.6"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/bsq-ports/BetterSongSearchQuest/",
+  "cover": "http://mods.bsquest.xyz/covers/136ab8856eed044a8e6a1471651fc933aeb5b1b9.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/136ab8856eed044a8e6a1471651fc933aeb5b1b9.png",
+  "funding": [
+    "https://ko-fi.com/FrozenAlex"
+  ],
+  "website": "https://github.com/bsq-ports/BetterSongSearchQuest/",
+  "hash": "216b10f722057bed058f5c5c58049e896a08be25",
+  "description_zh": null,
+  "name_zh": null
+}

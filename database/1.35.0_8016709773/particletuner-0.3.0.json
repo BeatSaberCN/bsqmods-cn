@@ -1,0 +1,33 @@
+{
+  "name": "ParticleTuner",
+  "description": "Lets you tweak individual particle settings! And has rainbow particles!",
+  "id": "particletuner",
+  "version": "0.3.0",
+  "author": "KodenameKRAK",
+  "authorIcon": "https://avatars.githubusercontent.com/u/106346717?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/kodenamekrak/ParticleTuner/releases/download/v0.3.0/ParticleTuner.qmod",
+  "dependencies": [
+    {
+      "id": "bsml",
+      "version": "^0.4.20"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.17.6"
+    },
+    {
+      "id": "paper",
+      "version": "^3.6.3"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/kodenamekrak/ParticleTuner/",
+  "cover": "http://mods.bsquest.xyz/covers/bf8eeea8bf3862061117ea69c6291acb53cd0315.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/bf8eeea8bf3862061117ea69c6291acb53cd0315.gif",
+  "funding": [],
+  "website": null,
+  "hash": "04cac387ff5b5828d40570fb4b15fa0fae3c8d09",
+  "description_zh": null,
+  "name_zh": null
+}

@@ -1,0 +1,33 @@
+{
+  "name": "SmallQubes",
+  "description": null,
+  "id": "SmallQubes",
+  "version": "0.2.2",
+  "author": "NSGolova",
+  "authorIcon": "https://avatars.githubusercontent.com/u/8793817?v=4",
+  "modloader": "QuestLoader",
+  "download": "https://github.com/NSGolova/SmallQubes/releases/download/v0.2.2/SmallQubes.qmod",
+  "dependencies": [
+    {
+      "id": "codegen",
+      "version": "^0.33.0"
+    },
+    {
+      "id": "custom-types",
+      "version": "^0.15.23"
+    },
+    {
+      "id": "questui",
+      "version": "^0.17.11"
+    }
+  ],
+  "isLibrary": false,
+  "source": "https://github.com/NSGolova/SmallQubes/",
+  "cover": "http://mods.bsquest.xyz/covers/84894d0aff9f9543c0219ad213b03eb90347595a.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/84894d0aff9f9543c0219ad213b03eb90347595a.png",
+  "funding": [],
+  "website": null,
+  "hash": "a175d26e8a78b82a06415a0eb0b12936b7736580",
+  "description_zh": null,
+  "name_zh": null
+}

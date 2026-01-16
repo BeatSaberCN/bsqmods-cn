@@ -1,0 +1,20 @@
+{
+  "name": "SafeStorage",
+  "description": "Allows for safe storage and encryption of strings to prevent users from accidentally doxxing themselfs",
+  "id": "safestorage",
+  "version": "1.0.0",
+  "author": "hdgamer1404Jonas",
+  "authorIcon": "https://avatars.githubusercontent.com/u/65252066?v=4",
+  "modloader": "Scotland2",
+  "download": "https://github.com/QuestPackageManager/bsqmods/releases/download/mod-mirror/safestorage-1.0.0-9800b9bcb408267441fd5b76cb984e023b1a1a32.qmod",
+  "dependencies": [],
+  "isLibrary": true,
+  "source": "https://github.com/jxnxsdev/SafeStorage/",
+  "cover": "http://mods.bsquest.xyz/covers/9e16b258105964423ffea2d872ca1f30cd659cb2.png",
+  "ogCover": "http://mods.bsquest.xyz/covers/originals/9e16b258105964423ffea2d872ca1f30cd659cb2.png",
+  "funding": [],
+  "website": "https://github.com/jxnxsdev/SafeStorage/",
+  "hash": null,
+  "description_zh": null,
+  "name_zh": null
+}
