@@ -1,4 +1,4 @@
-import { StrictMode, useState } from 'react'
+import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 
 const mods = await import("./mods.json")
@@ -29,7 +29,7 @@ function App() {
   </div>
 }
 
-function ModCard({ data }) {
+function ModCard({ data }:{data:any}) {
   const [zh_mode, set_zh_mode] = useState(true)
   let desc_switch_btns = null
   if(data.description_en){
@@ -48,7 +48,7 @@ function ModCard({ data }) {
     
 }
 
-function ModWithSameIdCard({ datas }) {
+function ModWithSameIdCard({ datas }:{datas:any}) {
   const [ver, setver] = useState(datas.length - 1)
 
   const options = []
@@ -61,7 +61,7 @@ function ModWithSameIdCard({ datas }) {
   const selector = <select style={{
     display:"inline",
     width:"fit-content"
-  }} className="form-select" defaultValue={datas.length - 1} onChange={x => setver(x.target.value)}>
+  }} className="form-select" defaultValue={datas.length - 1} onChange={x => setver(+(x.target.value))}>
     {options}
   </select>
 
@@ -81,20 +81,18 @@ function ModWithSameIdCard({ datas }) {
     </div></>
 }
 
-function ModList({ gameVersion }) {
-  const version_mods = mods.default[gameVersion]
-  console.log(mods)
+function ModList({ gameVersion }:{gameVersion:string}) {
+  const version_mods = (mods as any).default[gameVersion]
   if (!version_mods) {
     return <>该版本无可展示模组信息</>
   }
 
   const group_by_ids = new Map<string, Array<any>>()
 
-  const selected_ids = new Map<string, { ver: any, setver: any }>()
   for (let mod of version_mods) {
     if (!group_by_ids.has(mod.id))
       group_by_ids.set(mod.id, [])
-    group_by_ids.get(mod.id).push(mod)
+    group_by_ids.get(mod.id)!.push(mod)
   }
 
   let arr = []
