@@ -1,0 +1,11 @@
+
+.root-container{
+    margin: 40px 20px
+}
+
+@media screen and (min-width: 900px) {
+
+.root-container{
+    margin: 40px 80px
+}
+}
