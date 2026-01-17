@@ -16,7 +16,7 @@ function App() {
     <h1>bsqmods中文源</h1>
     <p>该镜像源由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。</p>
     <p>最后同步时间为北京时间 {buildDate}。</p>
-    <p>并非所有的游戏版本均提供社区模组支持，请以模组软件为准！</p>
+    <p>并非所有的游戏版本均提供社区模组支持，请以模组软件和上游为准！</p>
     <select className="form-select" onChange={(x) => {
       set_show_version(x.target.value)
     }}>
@@ -32,6 +32,8 @@ function App() {
 function ModCard({ data }:{data:any}) {
   const [zh_mode, set_zh_mode] = useState(true)
   let desc_switch_btns = null
+  if(data == undefined)
+    return <>错误，数据为空</>
   if(data.description_en){
     let current_is_zh = true
     desc_switch_btns = <button className="btn btn-link btn-small" onClick={()=>{
@@ -73,9 +75,8 @@ function ModWithSameIdCard({ datas }:{datas:any}) {
       margin:"4px",
       width:"100%"
     }}>
-        <div className="card-body"> <ModCard key={ver} data={datas[ver]} />
+        <div className="card-body"> <ModCard key={ver} data={datas[Math.min(ver, datas.length-1)]} />
         {selector}
-
       </div>
     </div>
     </div></>
