@@ -14,9 +14,10 @@ function App() {
 
   }}>
     <h1>bsqmods中文源</h1>
-    <p>该镜像源由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。</p>
+    <p><a href="https://github.com/BeatSaberCN/bsqmods-cn">该中文镜像源</a>由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。</p>
     <p>最后同步时间为北京时间 {buildDate}。</p>
     <p>并非所有的游戏版本均提供社区模组支持，请以模组软件和上游为准！</p>
+    <p>中文内容均为手工制作，如发现任何问题请通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。同时欢迎提交PR。</p>
     <select className="form-select" onChange={(x) => {
       set_show_version(x.target.value)
     }}>
