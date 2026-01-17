@@ -27,6 +27,8 @@ jobs:
       - name: update mods
         run: deno run update
 
+      - name: generate site
+        run: python build_website_project.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

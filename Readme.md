@@ -29,6 +29,15 @@ database仅用于增量翻译，新增mod不会合并至dist中。
 
 中英文同步是根据相同mod ID来的。如果一个mod ID下旧版本与新版本的英文相同，就会自动同步中文内容。
 
+# 网页渲染
+
+需要按顺序运行以下指令:
+
+```cmd
+deno run update
+python build_website_project.py
+```
+
 # 中文镜像源新增mod
 
 请将新mod放置于cn_mods下，注意json格式需要直接匹配镜像源mod格式。格式中的hash为qmod文件的sha-1。
