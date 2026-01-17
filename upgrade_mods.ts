@@ -95,4 +95,10 @@ if(import.meta.main){
     writeFileSync("dist/versions.json", versions_json_str, { encoding: "utf-8" })
 
     writeFileSync("dist/build_info.json", JSON.stringify(buildConfig, null, 2), { encoding: "utf-8"})
+
+    // copy json file to web page source code, to make it avaliable later
+    writeFileSync("website-project/src/mods.json", readFileSync("dist/mods.json"))
+    writeFileSync("website-project/src/build_info.json", readFileSync("dist/build_info.json"))
+    writeFileSync("website-project/src/versions.json", readFileSync("dist/versions.json"))
+    
 }
