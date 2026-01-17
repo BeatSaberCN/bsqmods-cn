@@ -146,10 +146,6 @@ export class ManagedModJson{
             // deno-lint-ignore no-explicit-any
             const version_mods : Record<string /* mod id */ , Record<string /* mod version */, any> > = { }
 
-            const folderForVersion = join(folder, version)
-            if(!existsSync(folderForVersion))
-                mkdirSync(folderForVersion, { recursive: true })
-
             const cloned_mod_version:Array<ClonedMod> = []
             cloned_mods_json[version] = cloned_mod_version
 
@@ -181,9 +177,6 @@ export class ManagedModJson{
 
                 fix_property("name", true)
                 fix_property("description", false)
-
-                const json_text = JSON.stringify(cloned_mod, null, 2)
-                writeFileSync(join(folderForVersion, mod_json_name), json_text, {encoding:"utf-8"})
 
                 if(!version_mods[mod.id])
                     version_mods[mod.id] = {}
