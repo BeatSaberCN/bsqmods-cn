@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 
@@ -8,65 +9,96 @@ const buildDate = new Date(build_info.buildTimestamp).toLocaleString("zh-CN", { 
 
 import "./mods.css"
 
+createRoot(document.getElementById('root')!).render(
+  <App />
+)
+
 function App() {
   const [show_version, set_show_version] = useState(versions[0])
   return <div className="root-container" style={{
 
   }}>
     <h1>bsqmods中文源</h1>
-    <p><a href="https://github.com/BeatSaberCN/bsqmods-cn">该中文镜像源</a>由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。</p>
-    <p>最后同步时间为北京时间 {buildDate}。</p>
-    <p>并非所有的游戏版本均提供社区模组支持，请以模组软件和上游为准！</p>
-    <p>中文内容均为手工制作，如发现任何问题请通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。同时欢迎提交PR。</p>
-    <select className="form-select" onChange={(x) => {
+    <p><span className="badge text-bg-primary">最后同步：{buildDate}</span></p>
+    <div className="alert alert-primary" role="alert">
+      <a href="https://github.com/BeatSaberCN/bsqmods-cn">该中文镜像源</a>由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。<br/>
+      中文均人工制作，任何问题请通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。同时欢迎提交PR。
+    </div>
+
+    <p>游戏版本：<select style={{display:"inline",width:"fit-content"}} className="form-select form-select-sm" onChange={(x) => {
       set_show_version(x.target.value)
     }}>
       {
         versions.map(ver => <option key={ver}>{ver}</option>)
       }
     </select>
+    </p>
     <hr />
     <ModList gameVersion={show_version} />
   </div>
 }
 
-function ModCard({ data }:{data:any}) {
-  const [zh_mode, set_zh_mode] = useState(true)
-  let desc_switch_btns = null
-  if(data == undefined)
-    return <>错误，数据为空</>
-  if(data.description_en){
-    let current_is_zh = true
-    desc_switch_btns = <button className="btn btn-link btn-small" onClick={()=>{
-      current_is_zh = !current_is_zh
-      set_zh_mode(current_is_zh)
-    }}>中/英</button>
-  }
-  return <>
-        <h5 className="card-title">{data.name}</h5>
-      <hr/>{data.version}
-      <p>{zh_mode ? data.description : data.description_en}</p>
-      {desc_switch_btns}
-  </>
-    
+interface ModItem {
+  id:string,
+  name:string,
+  description:string,
+  description_en?:string,
+  version:string,
+  cover?:string|null
+}
+interface ModJson {
+  default:Record<string, Array<ModItem>>
 }
 
-function ModWithSameIdCard({ datas }:{datas:any}) {
+
+function ModList({ gameVersion }:{gameVersion:string}) {
+  const version_mods = (mods as ModJson).default[gameVersion]
+  if (!version_mods) {
+    return <>该版本无可展示模组信息</>
+  }
+
+  const group_by_ids = new Map<string, Array<ModItem>>()
+
+  for (const mod of version_mods) {
+    if (!group_by_ids.has(mod.id))
+      group_by_ids.set(mod.id, [])
+    group_by_ids.get(mod.id)!.push(mod)
+  }
+
+  const arr = []
+  for (const id of group_by_ids) {
+    arr.push(<ModWithSameIdCard key={id[1][0].id} datas={id[1]} />)
+  }
+  return <><div className="row">{arr}</div></>
+}
+
+function ModWithSameIdCard({ datas }:{datas:Array<ModItem>}) {
   const [ver, setver] = useState(datas.length - 1)
 
   const options = []
 
   for (let i = 0; i < datas.length; i++) {
     const x = datas[i]
-    options.push(<option key={x.version} value={i}>{x.version}</option>)
+    const _i = i
+    options.push(<li><a className="dropdown-item" href="javascript:void" onClick={()=>setver(_i)}>{x.version}</a></li>)
   }
 
-  const selector = <select style={{
-    display:"inline",
-    width:"fit-content"
-  }} className="form-select" defaultValue={datas.length - 1} onChange={x => setver(+(x.target.value))}>
-    {options}
-  </select>
+  const selector = <div className="dropdown" style={{display:"inline-block"}}>
+    <button className="btn btn-sm btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      {datas[Math.min(datas.length-1, ver)].version}
+    </button>
+    <ul className="dropdown-menu">
+      {options}
+    </ul>
+  </div>
+
+
+  // const selector = <select style={{
+  //   display:"inline",
+  //   width:"fit-content"
+  // }} className="form-select form-select-sm" defaultValue={datas.length - 1} onChange={x => setver(+(x.target.value))}>
+  //   {options}
+  // </select>
 
   return <>
     <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3">
@@ -76,35 +108,48 @@ function ModWithSameIdCard({ datas }:{datas:any}) {
       margin:"4px",
       width:"100%"
     }}>
-        <div className="card-body"> <ModCard key={ver} data={datas[Math.min(ver, datas.length-1)]} />
-        {selector}
-      </div>
+      <ModCard key={ver} data={datas[Math.min(ver, datas.length-1)]} version_selector={selector} />
     </div>
     </div></>
 }
 
-function ModList({ gameVersion }:{gameVersion:string}) {
-  const version_mods = (mods as any).default[gameVersion]
-  if (!version_mods) {
-    return <>该版本无可展示模组信息</>
+
+function ModCard({ data, version_selector }:{data:ModItem, version_selector:any}) {
+  const [zh_mode, set_zh_mode] = useState(true)
+  if(data == undefined)
+    return <>错误，数据为空</>
+  let eng_checkbox = null
+  if(data.description_en){
+    const cbid = `cb-${data.id}-${data.version}`
+    eng_checkbox = <div className="form-check form-switch" style={{display:"inline-block"}}>
+        <input type="checkbox" className="form-check-input" role="switch"  id={cbid} onChange={e=>{
+          set_zh_mode(!e.target.checked)
+        }}></input>
+        <label className="form-check-label" htmlFor={cbid}>原文</label>
+    </div>
   }
 
-  const group_by_ids = new Map<string, Array<any>>()
-
-  for (let mod of version_mods) {
-    if (!group_by_ids.has(mod.id))
-      group_by_ids.set(mod.id, [])
-    group_by_ids.get(mod.id)!.push(mod)
+  let image_div = <span style={{
+    width:"100%",height:"40px",
+    fontSize:"xx-small",display:"inline-block",
+    textAlign:"center",verticalAlign:"middle",
+    backgroundColor:"#80808033",
+    color:"gray"
+  }}><span style={{verticalAlign:"middle",display:"inline-block",marginTop:"10px"}}>无封面</span></span>
+  
+  
+  if(data.cover && data.cover != "" && data.cover != null){
+    image_div = <img src={data.cover} style={{width:"100%",backgroundColor:"black"}} />
   }
+  return <>
+    
+    <div className="card-body">
+        <h5 className="card-title"><div style={{display:"inline-block",width:"20%",verticalAlign:"top"}}>{image_div}</div> <div style={{display:"inline-block", width:"70%"}}>{data.name}</div></h5>
+        <div style={{fontSize:"small",textAlign:"right"}}>{eng_checkbox}{version_selector}</div>
+        <p>{zh_mode ? data.description : data.description_en}</p>
+    </div>
+  </>
+  
 
-  let arr = []
-  for (let id of group_by_ids) {
-    arr.push(<ModWithSameIdCard key={id[1][0].id} datas={id[1]} />)
-  }
-  return <><div className="row">{arr}</div></>
+    
 }
-
-
-createRoot(document.getElementById('root')!).render(
-  <App />
-)
