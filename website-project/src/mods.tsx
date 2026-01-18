@@ -28,20 +28,21 @@ function App() {
 
   }}>
     <h1>bsqmods中文源</h1>
-    <p><span className="badge text-bg-success">最后同步时间：{buildDate}</span></p>
-    <div className="alert alert-primary" role="alert">
-      <a href="https://github.com/BeatSaberCN/bsqmods-cn">该中文镜像源</a>由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。<br/>
-      中文均人工制作，任何问题请通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。同时欢迎提交PR。
-    </div>
-
-    <p>游戏版本：<select style={{display:"inline",width:"fit-content"}} className="form-select form-select-sm" onChange={(x) => {
+    <p>
+    游戏版本：<select style={{display:"inline",width:"fit-content"}} className="form-select form-select-sm" onChange={(x) => {
       set_show_version(x.target.value)
     }}>
       {
         versions.map(ver => <option key={ver}>{ver}</option>)
       }
-    </select>
-    </p>
+    </select>&nbsp;
+    <span className="badge text-bg-success">最后同步时间：{buildDate}</span></p>
+    <div className="alert alert-primary" role="alert">
+      <a href="https://github.com/BeatSaberCN/bsqmods-cn">该中文镜像源</a>由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。<br/>
+      中文均人工制作，任何问题请通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。同时欢迎提交PR。
+    </div>
+
+
     <hr />
     <ModList gameVersion={show_version} />
   </div>
@@ -131,8 +132,8 @@ function ModCard({ data, version_selector }:{data:ModItem, version_selector:any}
   if(data.description_en){
     const cbid = `cb-${data.id}-${data.version}`
     eng_checkbox = <>
-      <input type="checkbox" className="btn-check" id={cbid} autocomplete="off" onChange={e=>set_zh_mode(!e.target.checked)} />
-      <label className="btn btn-sm" style={{color:"var(--bs-link-color)"}} for={cbid}>原文</label>
+      <input type="checkbox" className="btn-check" id={cbid} autoComplete="off" onChange={e=>set_zh_mode(!e.target.checked)} />
+      <label className="btn btn-sm" style={{color:"var(--bs-link-color)"}} htmlFor={cbid}>原文</label>
     </>
 
 
@@ -161,16 +162,16 @@ function ModCard({ data, version_selector }:{data:ModItem, version_selector:any}
   const [showFloat, setShowFloat] = useState(false)
   if(isCoverUrlLoadable(data.cover)){
 
-    image_div = <><img src={data.cover as string} onMouseEnter={()=>setShowFloat(true)} onMouseLeave={()=>setShowFloat(false)} style={{width:"100%",backgroundColor:"black"}} />
-      <span style={{display:"inline-block",width:"0",height:"0",position:"relative"}}><img src={data.cover as string} style={{
+    image_div = <><span style={{display:"inline-block",width:"0",height:"0",position:"relative",verticalAlign:"top"}}><img src={data.cover as string} style={{
         zIndex:999,
         position:"absolute",
         display:(showFloat ? "" : "none"),
         maxWidth:"300px",
-        left:"-150px",
-        bottom:"20px",
+        left:"-8px",
+        bottom:"8px",
         border:"4px solid #1ed8f6"
-        }} /></span>
+        }} /></span><img src={data.cover as string} onMouseEnter={()=>setShowFloat(true)} onMouseLeave={()=>setShowFloat(false)} style={{width:"100%",backgroundColor:"black"}} />
+      
       </>
   }
   return <>
