@@ -9,6 +9,15 @@ const buildDate = new Date(build_info.buildTimestamp).toLocaleString("zh-CN", { 
 
 import "./mods.css"
 
+function isCoverUrlLoadable(url:unknown){
+  if(url == null || url == undefined)
+    return false
+  if(typeof(url) == "string"){
+    return url.startsWith("http://") || url.startsWith("https://")
+  }
+  return false
+}
+
 createRoot(document.getElementById('root')!).render(
   <App />
 )
@@ -19,7 +28,7 @@ function App() {
 
   }}>
     <h1>bsqmods中文源</h1>
-    <p><span className="badge text-bg-primary">最后同步：{buildDate}</span></p>
+    <p><span className="badge text-bg-success">最后同步时间：{buildDate}</span></p>
     <div className="alert alert-primary" role="alert">
       <a href="https://github.com/BeatSaberCN/bsqmods-cn">该中文镜像源</a>由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。<br/>
       中文均人工制作，任何问题请通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。同时欢迎提交PR。
@@ -121,12 +130,23 @@ function ModCard({ data, version_selector }:{data:ModItem, version_selector:any}
   let eng_checkbox = null
   if(data.description_en){
     const cbid = `cb-${data.id}-${data.version}`
-    eng_checkbox = <div className="form-check form-switch" style={{display:"inline-block"}}>
-        <input type="checkbox" className="form-check-input" role="switch"  id={cbid} onChange={e=>{
-          set_zh_mode(!e.target.checked)
-        }}></input>
-        <label className="form-check-label" htmlFor={cbid}>原文</label>
-    </div>
+    eng_checkbox = <>
+      <input type="checkbox" className="btn-check" id={cbid} autocomplete="off" onChange={e=>set_zh_mode(!e.target.checked)} />
+      <label className="btn btn-sm" style={{color:"var(--bs-link-color)"}} for={cbid}>原文</label>
+    </>
+
+
+    //  eng_checkbox = <div className="form-check form-switch" style={{display:"inline-block"}}>
+    //      <input type="checkbox" className="form-check-input" role="switch"  id={cbid} onChange={e=>{
+    //        set_zh_mode(!e.target.checked)
+    //      }}></input>
+    //      <label className="form-check-label" htmlFor={cbid}>原文</label>
+    //  </div>
+  }
+
+  let cover_link = null
+  if(isCoverUrlLoadable(data.cover)){
+    cover_link = <a href={data.cover as string} target="_blank" className="btn btn-link btn-sm">封面</a>
   }
 
   let image_div = <span style={{
@@ -138,14 +158,26 @@ function ModCard({ data, version_selector }:{data:ModItem, version_selector:any}
   }}><span style={{verticalAlign:"middle",display:"inline-block",marginTop:"10px"}}>无封面</span></span>
   
   
-  if(data.cover && data.cover != "" && data.cover != null){
-    image_div = <img src={data.cover} style={{width:"100%",backgroundColor:"black"}} />
+  const [showFloat, setShowFloat] = useState(false)
+  if(isCoverUrlLoadable(data.cover)){
+
+    image_div = <><img src={data.cover as string} onMouseEnter={()=>setShowFloat(true)} onMouseLeave={()=>setShowFloat(false)} style={{width:"100%",backgroundColor:"black"}} />
+      <span style={{display:"inline-block",width:"0",height:"0",position:"relative"}}><img src={data.cover as string} style={{
+        zIndex:999,
+        position:"absolute",
+        display:(showFloat ? "" : "none"),
+        maxWidth:"300px",
+        left:"-150px",
+        bottom:"20px",
+        border:"4px solid #1ed8f6"
+        }} /></span>
+      </>
   }
   return <>
     
     <div className="card-body">
         <h5 className="card-title"><div style={{display:"inline-block",width:"20%",verticalAlign:"top"}}>{image_div}</div> <div style={{display:"inline-block", width:"70%"}}>{data.name}</div></h5>
-        <div style={{fontSize:"small",textAlign:"right"}}>{eng_checkbox}{version_selector}</div>
+        <div style={{fontSize:"small",textAlign:"right", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>{eng_checkbox}{cover_link}{version_selector}</div>
         <p>{zh_mode ? data.description : data.description_en}</p>
     </div>
   </>
