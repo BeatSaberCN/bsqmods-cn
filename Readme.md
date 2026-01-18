@@ -46,12 +46,12 @@ python build_website_project.py
 
 bsqmods同款api，支持以下：
 
-- https://beatsabercn.github.io/bsqmods-cn/mods.json
-- ~~https://beatsabercn.github.io/bsqmods-cn/mods-grouped.json~~ (暂无支持)
-- https://beatsabercn.github.io/bsqmods-cn/versions.json
-- [https://beatsabercn.github.io/bsqmods-cn/[version].json](https://beatsabercn.github.io/bsqmods-cn/1.37.0_9064817954.json)
+- https://mods.bsaber.cn/mods.json
+- ~~https://mods.bsaber.cn/mods-grouped.json~~ (暂无支持)
+- https://mods.bsaber.cn/versions.json
+- [https://mods.bsaber.cn/[version].json](https://mods.bsaber.cn/1.37.0_9064817954.json)
 
 
 以及中文特有的api：
 
-- https://beatsabercn.github.io/bsqmods-cn/build_info.json 显示最后一次构建信息
+- https://mods.bsaber.cn/build_info.json 显示最后一次构建信息
