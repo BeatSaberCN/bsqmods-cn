@@ -193,15 +193,15 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
 
   let cn_source = null
   if(data._isAddedByCNSource){
-    cn_source = <span class="badge text-bg-info">中文源</span>
+    cn_source = <span className="badge text-bg-info">中文源</span>
   }
   let core_mod = null
   if(isCoreMod(gamever, data.id)){
-    core_mod = <span class="badge text-bg-danger">核心</span>
+    core_mod = <span className="badge text-bg-danger">核心</span>
   }
   let is_library = null
   if(data.isLibrary){
-    is_library =  <>&nbsp;<span class="badge text-bg-secondary">库</span></>
+    is_library =  <>&nbsp;<span className="badge text-bg-secondary">库</span></>
   }
   let cover_link = null
   if(isCoverUrlLoadable(data.cover)){
