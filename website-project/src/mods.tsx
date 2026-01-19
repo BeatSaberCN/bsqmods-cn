@@ -63,7 +63,7 @@ function App() {
       defaultValue={default_version}
     >
       {
-        versions.map(ver => <option key={ver}>{hasCoreMod(ver)?"":"(不可用)"}{ver}</option>)
+        versions.map(ver => <option key={ver} value={ver}>{hasCoreMod(ver)?"":"(不可用)"}{ver}</option>)
       }
     </select>&nbsp;
     <span className="badge text-bg-success">最后同步时间：{buildDate}</span></p>
