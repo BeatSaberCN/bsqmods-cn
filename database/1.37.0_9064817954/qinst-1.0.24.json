@@ -15,6 +15,6 @@
   "funding": [],
   "website": null,
   "hash": null,
-  "description_zh": null,
-  "name_zh": null
+  "description_zh": "能让你在ModsBeforeFriday或其它模组工具上安装.qsaber, .qwall以及.qbloq格式的文件。\n\n注意：这些格式已经过时了。你应该尽量用.whacker, .cyoob和.box文件。",
+  "name_zh": "很棒的旧版本Qosmetics安装器"
 }

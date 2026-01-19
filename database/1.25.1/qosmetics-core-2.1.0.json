@@ -40,6 +40,6 @@
   ],
   "website": "https://github.com/Qosmetics/Qosmetics-Core/",
   "hash": "889cc70825a3eef49a4cfb6d550635202a2584a2",
-  "description_zh": null,
-  "name_zh": null
+  "description_zh": "Qosmetics的核心模组，为其它模组提供菜单占位和一些通用逻辑。",
+  "name_zh": "Qosmetics核心"
 }

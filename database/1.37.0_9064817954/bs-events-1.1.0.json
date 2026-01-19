@@ -24,6 +24,6 @@
   "funding": [],
   "website": "https://github.com/kodenamekrak/BSEvents/",
   "hash": "11f45c58e8a3fcfe0159f5332d5228592870ae8a",
-  "description_zh": null,
-  "name_zh": null
+  "description_zh": "增加了各种能让其它模组订阅的事件。",
+  "name_zh": "BS事件"
 }

@@ -28,6 +28,6 @@
   "funding": [],
   "website": "https://github.com/bsq-ports/Tracks/",
   "hash": "dd72da9618b6c35bc349cdb6f54adad36a109b0d",
-  "description_zh": null,
+  "description_zh": "Noodle和Chroma的动画。依赖CustomJSONData。别删掉了。",
   "name_zh": null
 }
