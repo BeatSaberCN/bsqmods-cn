@@ -227,7 +227,8 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
     author = <span style={{
       marginLeft:"16px",
       marginTop:"4px",
-      display:"inline-block"
+      display:"inline-block",
+      lineHeight:"normal"
     }}>{author}</span>
   }
 
@@ -237,7 +238,7 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
     textAlign:"center",verticalAlign:"middle",
     backgroundColor:"#80808033",
     color:"gray"
-  }}><span style={{verticalAlign:"middle",display:"inline-block",marginTop:"10px"}}>无封面</span></span>
+  }}><span style={{verticalAlign:"middle",display:"inline-block",marginTop:"10px", userSelect:"none"}}>无封面</span></span>
   
   if(isImageSafeLoadable(data.cover)){
     image_div = <><span style={{display:"inline-block",width:"0",height:"0",position:"relative",verticalAlign:"top"}}><img src={data.cover as string} style={{
@@ -256,13 +257,18 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
     
     <div className="card-body">
         <div className="card-title">
+            <div style={{height:"0"}}><div style={{marginRight:"-10px",marginTop:"-20px", marginBottom:"100px",fontSize:"small",textAlign:"right", marginLeft:"-40px", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>
+              {eng_checkbox}{cover_link}{version_selector}
+            </div></div>
+            <div style={{height:"0", marginTop:"8px", marginLeft:"-8px", fontSize:"small",transform:"translateX(-50%) scale(0.7) translateX(50%)"}}>
+              {core_mod}{is_library}{cn_source}
+            </div>
+            <div style={{marginTop:"22px"}}></div>
+
           <div style={{display:"inline-block",width:"20%",verticalAlign:"top"}}>{image_div}</div>
           <div style={{display:"inline-block", width:"79%"}}>
             <div style={{marginLeft:"4px",marginBottom:"-6px"}}><b>{data.name}</b></div>
             <div>{author}</div>
-            <div style={{fontSize:"small",textAlign:"right", marginLeft:"-40px", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>
-              {core_mod}{is_library}{cn_source}{eng_checkbox}{cover_link}{version_selector}
-            </div>
           </div>
         </div>
         
