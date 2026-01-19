@@ -28,6 +28,7 @@ function App() {
 
   }}>
     <h1>bsqmods中文源</h1>
+    <div style={{marginBottom:"12px"}}><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod源</small></div>
     <p>
     游戏版本：<select style={{display:"inline",width:"fit-content"}} className="form-select form-select-sm" onChange={(x) => {
       set_show_version(x.target.value)
@@ -98,7 +99,7 @@ function ModWithSameIdCard({ datas }:{datas:Array<ModItem>}) {
     options.push(<li><a className="dropdown-item" href="javascript:void" onClick={()=>setver(_i)}>{x.version}</a></li>)
   }
 
-  const selector = <div className="dropdown" style={{display:"inline-block"}}>
+  const selector = <div className="btn-group dropup" style={{display:"inline-block"}}>
     <button className="btn btn-sm btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       {datas[Math.min(datas.length-1, ver)].version}
     </button>
@@ -106,14 +107,6 @@ function ModWithSameIdCard({ datas }:{datas:Array<ModItem>}) {
       {options}
     </ul>
   </div>
-
-
-  // const selector = <select style={{
-  //   display:"inline",
-  //   width:"fit-content"
-  // }} className="form-select form-select-sm" defaultValue={datas.length - 1} onChange={x => setver(+(x.target.value))}>
-  //   {options}
-  // </select>
 
   return <>
     <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3">
