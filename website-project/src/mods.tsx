@@ -6,8 +6,30 @@ const mods = await import("./mods.json")
 const versions = (await import("./versions.json")).default
 const build_info = await import("./build_info.json")
 const buildDate = new Date(build_info.buildTimestamp).toLocaleString("zh-CN", { timeZone: "Asia/ShangHai" })
+const core_mods = (await import("./core_mods.json")).default as any as Record<string, {
+  mods:[{
+    id:string
+  }]
+}>
 
 import "./mods.css"
+
+const core_mod_ids:Record<string, Set<string> > = {}
+for(const version in core_mods){
+  core_mod_ids[version] = new Set()
+  for(const mod of core_mods[version].mods){
+    core_mod_ids[version].add(mod.id)
+  }
+}
+function hasCoreMod(gameVer:string){
+  return !!core_mod_ids[gameVer]
+}
+function isCoreMod(gameVer:string, id:string){
+  const set = core_mod_ids[gameVer]
+  if(set == undefined)
+    return false
+  return set.has(id)
+}
 
 function isCoverUrlLoadable(url:unknown){
   if(url == null || url == undefined)
@@ -23,23 +45,32 @@ createRoot(document.getElementById('root')!).render(
 )
 
 function App() {
-  const [show_version, set_show_version] = useState(versions[0])
-  return <div className="root-container" style={{
-
-  }}>
+  let default_version = versions[0]
+  for(const ver of versions){
+    if(hasCoreMod(ver)){
+      default_version = ver
+      break
+    }
+  }
+  const [show_version, set_show_version] = useState(default_version)
+  return <div className="root-container">
     <h1>bsqmods中文源</h1>
     <div style={{marginBottom:"12px"}}><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod源</small></div>
     <p>
     游戏版本：<select style={{display:"inline",width:"fit-content"}} className="form-select form-select-sm" onChange={(x) => {
       set_show_version(x.target.value)
-    }}>
+    }}
+      defaultValue={default_version}
+    >
       {
-        versions.map(ver => <option key={ver}>{ver}</option>)
+        versions.map(ver => <option key={ver}>{hasCoreMod(ver)?"":"(不可用)"}{ver}</option>)
       }
     </select>&nbsp;
     <span className="badge text-bg-success">最后同步时间：{buildDate}</span></p>
-    <div className="alert alert-warning" role="alert">
-      <b>部分游戏版本不可用</b><br/>
+    <div style={{
+      display:hasCoreMod(show_version) ? "none" : ""
+    }} className="alert alert-warning" role="alert">
+      <b>该游戏版本不可用</b><br/>
       此页面上的部分游戏版本号，无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为那些版本的核心模组还没有准备好。请选择你正在使用、或者能够使用的游戏版本。
     </div>
 
@@ -83,12 +114,12 @@ function ModList({ gameVersion }:{gameVersion:string}) {
 
   const arr = []
   for (const id of group_by_ids) {
-    arr.push(<ModWithSameIdCard key={id[1][0].id} datas={id[1]} />)
+    arr.push(<ModWithSameIdCard key={id[1][0].id} datas={id[1]} gameVersion={gameVersion}/>)
   }
   return <><div className="row">{arr}</div></>
 }
 
-function ModWithSameIdCard({ datas }:{datas:Array<ModItem>}) {
+function ModWithSameIdCard({ datas , gameVersion}:{datas:Array<ModItem>, gameVersion:string}) {
   const [ver, setver] = useState(datas.length - 1)
 
   const options = []
@@ -96,7 +127,7 @@ function ModWithSameIdCard({ datas }:{datas:Array<ModItem>}) {
   for (let i = 0; i < datas.length; i++) {
     const x = datas[i]
     const _i = i
-    options.push(<li><a className="dropdown-item" href="javascript:void" onClick={()=>setver(_i)}>{x.version}</a></li>)
+    options.push(<li key={_i}><a className="dropdown-item" href="javascript:void" onClick={()=>setver(_i)}>{x.version}</a></li>)
   }
 
   const selector = <div className="btn-group dropup" style={{display:"inline-block"}}>
@@ -116,14 +147,15 @@ function ModWithSameIdCard({ datas }:{datas:Array<ModItem>}) {
       margin:"4px",
       width:"100%"
     }}>
-      <ModCard key={ver} data={datas[Math.min(ver, datas.length-1)]} version_selector={selector} />
+      <ModCard key={ver} data={datas[Math.min(ver, datas.length-1)]} version_selector={selector} gamever={gameVersion} />
     </div>
     </div></>
 }
 
 
-function ModCard({ data, version_selector }:{data:ModItem, version_selector:any}) {
+function ModCard({ data, version_selector, gamever }:{data:ModItem, version_selector:any, gamever:string}) {
   const [zh_mode, set_zh_mode] = useState(true)
+  const [showFloat, setShowFloat] = useState(false)
   if(data == undefined)
     return <>错误，数据为空</>
   let eng_checkbox = null
@@ -143,6 +175,11 @@ function ModCard({ data, version_selector }:{data:ModItem, version_selector:any}
     //  </div>
   }
 
+  let core_mod = null
+  if(isCoreMod(gamever, data.id)){
+    core_mod = "核心"
+  }
+
   let cover_link = null
   if(isCoverUrlLoadable(data.cover)){
     cover_link = <a href={data.cover as string} target="_blank" className="btn btn-link btn-sm">封面</a>
@@ -156,8 +193,6 @@ function ModCard({ data, version_selector }:{data:ModItem, version_selector:any}
     color:"gray"
   }}><span style={{verticalAlign:"middle",display:"inline-block",marginTop:"10px"}}>无封面</span></span>
   
-  
-  const [showFloat, setShowFloat] = useState(false)
   if(isCoverUrlLoadable(data.cover)){
 
     image_div = <><span style={{display:"inline-block",width:"0",height:"0",position:"relative",verticalAlign:"top"}}><img src={data.cover as string} style={{
@@ -180,7 +215,7 @@ function ModCard({ data, version_selector }:{data:ModItem, version_selector:any}
           <div style={{display:"inline-block", width:"79%"}}>
             <div style={{marginLeft:"4px",marginBottom:"-6px"}}><b>{data.name}</b></div>
             <div style={{fontSize:"small",textAlign:"right", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>
-              {eng_checkbox}{cover_link}{version_selector}
+              {core_mod}{eng_checkbox}{cover_link}{version_selector}
             </div>
           </div>
         </div>

@@ -1,18 +1,23 @@
 import os
 from glob import glob
 from pathlib import Path
-
+import urllib.request
 def copy_file(src:str,dst:str):
     with open(dst, 'wb') as f:
         with open(src,'rb') as ff:
             f.write(ff.read())
 
+# 生成实时信息相关的源码
 copy_file("dist/mods.json", "website-project/src/mods.json")
 copy_file("dist/build_info.json", "website-project/src/build_info.json")
 copy_file("dist/versions.json", "website-project/src/versions.json")
+with open("website-project/src/core_mods.json", "w", encoding="utf-8") as f:
+    f.write(urllib.request.urlopen("https://raw.githubusercontent.com/QuestPackageManager/bs-coremods/refs/heads/main/core_mods.json").read().decode("utf8"))
 
+# 编译
 os.system("cd website-project && npm install && npm run build")
 
+# 拷贝编译结果至dist目录
 for f in glob("website-project/dist/**/*", recursive=True):
     dst = "dist" + f[len("website-project/dist"):]
     assert f.startswith("website-project/dist") or f.startswith("website-project/dist")
