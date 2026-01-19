@@ -37,11 +37,16 @@ function App() {
       }
     </select>&nbsp;
     <span className="badge text-bg-success">最后同步时间：{buildDate}</span></p>
-    <div className="alert alert-primary" role="alert">
-      <a href="https://github.com/BeatSaberCN/bsqmods-cn">该中文镜像源</a>由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。<br/>
-      中文均人工制作，任何问题请通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。同时欢迎提交PR。
+    <div className="alert alert-warning" role="alert">
+      <b>部分游戏版本不可用</b><br/>
+      此页面上的部分游戏版本号，无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为那些版本的核心模组还没有准备好。请选择你正在使用、或者能够使用的游戏版本。
     </div>
 
+    <div className="alert alert-primary" role="alert">
+      <b>数据源与内容反馈</b><br/>
+      此中文源数据位于<a href="https://github.com/BeatSaberCN/bsqmods-cn">GitHub</a>，由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。
+      中文内容均人工制作，任何问题请通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。同时欢迎提交PR。
+    </div>
 
     <hr />
     <ModList gameVersion={show_version} />
@@ -177,8 +182,16 @@ function ModCard({ data, version_selector }:{data:ModItem, version_selector:any}
   return <>
     
     <div className="card-body">
-        <h5 className="card-title"><div style={{display:"inline-block",width:"20%",verticalAlign:"top"}}>{image_div}</div> <div style={{display:"inline-block", width:"70%"}}>{data.name}</div></h5>
-        <div style={{fontSize:"small",textAlign:"right", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>{eng_checkbox}{cover_link}{version_selector}</div>
+        <div className="card-title">
+          <div style={{display:"inline-block",width:"20%",verticalAlign:"top"}}>{image_div}</div>
+          <div style={{display:"inline-block", width:"79%"}}>
+            <div style={{marginLeft:"4px",marginBottom:"-6px"}}><b>{data.name}</b></div>
+            <div style={{fontSize:"small",textAlign:"right", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>
+              {eng_checkbox}{cover_link}{version_selector}
+            </div>
+          </div>
+        </div>
+        
         <p>{zh_mode ? data.description : data.description_en}</p>
     </div>
   </>
