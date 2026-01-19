@@ -15,6 +15,6 @@
   "funding": [],
   "website": null,
   "hash": "dfe4c1c50abc6a9effe8b5fe19126e5d53afe606",
-  "description_zh": "此模组为其它库提供支持功能。",
+  "description_zh": "此库为其它模组提供支持功能。",
   "name_zh": "自定义数据类型"
 }
