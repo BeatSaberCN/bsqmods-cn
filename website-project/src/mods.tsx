@@ -92,7 +92,8 @@ interface ModItem {
   description_en?:string,
   version:string,
   cover?:string|null,
-  _isAddedByCNSource?:boolean
+  _isAddedByCNSource?:boolean,
+  isLibrary:boolean
 }
 interface ModJson {
   default:Record<string, Array<ModItem>>
@@ -113,9 +114,31 @@ function ModList({ gameVersion }:{gameVersion:string}) {
     group_by_ids.get(mod.id)!.push(mod)
   }
 
+  const group_by_ids_mods_only: Array<Array<ModItem>> = []
+  for(const entry of group_by_ids){
+    group_by_ids_mods_only.push(entry[1])
+  }
+
+  group_by_ids_mods_only.sort((a:Array<ModItem>,b:Array<ModItem>)=>{
+    const acore = isCoreMod(gameVersion, a[0].id)
+    const bcore = isCoreMod(gameVersion, b[0].id)
+    const acn = a[0]._isAddedByCNSource
+    const bcn = b[0]._isAddedByCNSource
+
+    if(acore != bcore){
+      return acore ? -1 : 1
+    }
+
+    if(acn != bcn){
+      return acn ? -1 : 1
+    }
+
+    return NaN
+  })
+
   const arr = []
-  for (const id of group_by_ids) {
-    arr.push(<ModWithSameIdCard key={id[1][0].id} datas={id[1]} gameVersion={gameVersion}/>)
+  for (const mods of group_by_ids_mods_only) {
+    arr.push(<ModWithSameIdCard key={mods[0].id} datas={mods} gameVersion={gameVersion}/>)
   }
   return <><div className="row">{arr}</div></>
 }
@@ -166,25 +189,20 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
       <input type="checkbox" className="btn-check" id={cbid} autoComplete="off" onChange={e=>set_zh_mode(!e.target.checked)} />
       <label className="btn btn-sm" style={{color:"var(--bs-link-color)"}} htmlFor={cbid}>原文</label>
     </>
-
-
-    //  eng_checkbox = <div className="form-check form-switch" style={{display:"inline-block"}}>
-    //      <input type="checkbox" className="form-check-input" role="switch"  id={cbid} onChange={e=>{
-    //        set_zh_mode(!e.target.checked)
-    //      }}></input>
-    //      <label className="form-check-label" htmlFor={cbid}>原文</label>
-    //  </div>
   }
 
   let cn_source = null
   if(data._isAddedByCNSource){
-    cn_source = "中文源"
+    cn_source = <span class="badge text-bg-info">中文源</span>
   }
   let core_mod = null
   if(isCoreMod(gamever, data.id)){
-    core_mod = "核心"
+    core_mod = <span class="badge text-bg-danger">核心</span>
   }
-
+  let is_library = null
+  if(data.isLibrary){
+    is_library =  <>&nbsp;<span class="badge text-bg-secondary">库</span></>
+  }
   let cover_link = null
   if(isCoverUrlLoadable(data.cover)){
     cover_link = <a href={data.cover as string} target="_blank" className="btn btn-link btn-sm">封面</a>
@@ -219,8 +237,8 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
           <div style={{display:"inline-block",width:"20%",verticalAlign:"top"}}>{image_div}</div>
           <div style={{display:"inline-block", width:"79%"}}>
             <div style={{marginLeft:"4px",marginBottom:"-6px"}}><b>{data.name}</b></div>
-            <div style={{fontSize:"small",textAlign:"right", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>
-              {core_mod}{cn_source}{eng_checkbox}{cover_link}{version_selector}
+            <div style={{fontSize:"small",textAlign:"right", marginLeft:"-40px", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>
+              {core_mod}{is_library}{cn_source}{eng_checkbox}{cover_link}{version_selector}
             </div>
           </div>
         </div>
