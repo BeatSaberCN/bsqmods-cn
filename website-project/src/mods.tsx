@@ -31,7 +31,7 @@ function isCoreMod(gameVer:string, id:string){
   return set.has(id)
 }
 
-function isCoverUrlLoadable(url:unknown){
+function isImageSafeLoadable(url:unknown){
   if(url == null || url == undefined)
     return false
   if(typeof(url) == "string"){
@@ -93,7 +93,9 @@ interface ModItem {
   version:string,
   cover?:string|null,
   _isAddedByCNSource?:boolean,
-  isLibrary:boolean
+  isLibrary:boolean,
+  author?:string|null,
+  authorIcon?:string|null
 }
 interface ModJson {
   default:Record<string, Array<ModItem>>
@@ -180,6 +182,7 @@ function ModWithSameIdCard({ datas , gameVersion}:{datas:Array<ModItem>, gameVer
 function ModCard({ data, version_selector, gamever }:{data:ModItem, version_selector:any, gamever:string}) {
   const [zh_mode, set_zh_mode] = useState(true)
   const [showFloat, setShowFloat] = useState(false)
+  const [largeAuthorIcon, setLargeAuthorIcon] = useState(false)
   if(data == undefined)
     return <>错误，数据为空</>
   let eng_checkbox = null
@@ -204,8 +207,28 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
     is_library =  <>&nbsp;<span className="badge text-bg-secondary">库</span></>
   }
   let cover_link = null
-  if(isCoverUrlLoadable(data.cover)){
+  if(isImageSafeLoadable(data.cover)){
     cover_link = <a href={data.cover as string} target="_blank" className="btn btn-link btn-sm">封面</a>
+  }
+
+  let author = null
+  if(typeof(data.author)=="string"){
+    author = <span style={{color:"gray",verticalAlign:"middle",fontSize:"small"}}>{data.author}</span>
+    if(isImageSafeLoadable(data.authorIcon)){
+      author = <><img src={data.authorIcon || ""} style={{
+        width:"16px",
+        borderRadius:largeAuthorIcon ? "0" : "20px",
+        transform: largeAuthorIcon ? "scale(3)" : "",
+        transitionProperty:"all",
+        transitionDuration:"200ms",
+        transitionTimingFunction:"ease-in",
+      }} onMouseEnter={()=>setLargeAuthorIcon(true)} onMouseLeave={()=>setLargeAuthorIcon(false)} />{author}</>
+    }
+    author = <span style={{
+      marginLeft:"16px",
+      marginTop:"4px",
+      display:"inline-block"
+    }}>{author}</span>
   }
 
   let image_div = <span style={{
@@ -216,8 +239,7 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
     color:"gray"
   }}><span style={{verticalAlign:"middle",display:"inline-block",marginTop:"10px"}}>无封面</span></span>
   
-  if(isCoverUrlLoadable(data.cover)){
-
+  if(isImageSafeLoadable(data.cover)){
     image_div = <><span style={{display:"inline-block",width:"0",height:"0",position:"relative",verticalAlign:"top"}}><img src={data.cover as string} style={{
         zIndex:999,
         position:"absolute",
@@ -237,6 +259,7 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
           <div style={{display:"inline-block",width:"20%",verticalAlign:"top"}}>{image_div}</div>
           <div style={{display:"inline-block", width:"79%"}}>
             <div style={{marginLeft:"4px",marginBottom:"-6px"}}><b>{data.name}</b></div>
+            <div>{author}</div>
             <div style={{fontSize:"small",textAlign:"right", marginLeft:"-40px", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>
               {core_mod}{is_library}{cn_source}{eng_checkbox}{cover_link}{version_selector}
             </div>
