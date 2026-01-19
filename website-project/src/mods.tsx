@@ -91,7 +91,8 @@ interface ModItem {
   description:string,
   description_en?:string,
   version:string,
-  cover?:string|null
+  cover?:string|null,
+  _isAddedByCNSource?:boolean
 }
 interface ModJson {
   default:Record<string, Array<ModItem>>
@@ -175,6 +176,10 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
     //  </div>
   }
 
+  let cn_source = null
+  if(data._isAddedByCNSource){
+    cn_source = "中文源"
+  }
   let core_mod = null
   if(isCoreMod(gamever, data.id)){
     core_mod = "核心"
@@ -215,7 +220,7 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
           <div style={{display:"inline-block", width:"79%"}}>
             <div style={{marginLeft:"4px",marginBottom:"-6px"}}><b>{data.name}</b></div>
             <div style={{fontSize:"small",textAlign:"right", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>
-              {core_mod}{eng_checkbox}{cover_link}{version_selector}
+              {core_mod}{cn_source}{eng_checkbox}{cover_link}{version_selector}
             </div>
           </div>
         </div>

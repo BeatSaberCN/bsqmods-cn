@@ -38,7 +38,9 @@ function add_cn_mods(mod_json:ModJson){
 
             const mod_json_for_this_version = []
             for(const mod_json_file of globSync(join(version_folder, "*.json"))){
-                const mod:ModItem = JSON.parse(readFileSync(mod_json_file, {encoding:"utf-8"}))
+                const mod:ModItem = JSON.parse(readFileSync(mod_json_file, {encoding:"utf-8"}));
+                // deno-lint-ignore no-explicit-any
+                (mod as any)._isAddedByCNSource = true
                 mod_json_for_this_version.push(mod)
             }
             mod_json_for_this_version.sort((a,b)=>{
