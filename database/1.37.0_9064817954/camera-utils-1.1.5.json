@@ -24,6 +24,6 @@
   "funding": [],
   "website": "https://github.com/Reezonate/CameraUtils-Quest/",
   "hash": "da098dbfb4212b17036deb0017d8d49a326886dc",
-  "description_zh": null,
-  "name_zh": null
+  "description_zh": "这是一个模组库，可以为GameObject提供统一的Layer设置/使用方式。同时提供能轻松修改渲染管线的工具。",
+  "name_zh": "相机工具"
 }

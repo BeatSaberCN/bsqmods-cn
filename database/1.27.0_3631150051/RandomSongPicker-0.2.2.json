@@ -28,6 +28,6 @@
   "funding": [],
   "website": null,
   "hash": "3c41aef3bbed8ab0589094a2f6031cb3e550d883",
-  "description_zh": "添加一个按钮，从当前列表中随机选择一个歌曲",
-  "name_zh": null
+  "description_zh": "添加一个按钮，从当前列表中随机选择一个歌曲。",
+  "name_zh": "随机歌曲选择工具"
 }

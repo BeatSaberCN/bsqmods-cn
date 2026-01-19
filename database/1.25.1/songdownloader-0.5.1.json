@@ -36,6 +36,6 @@
   ],
   "website": null,
   "hash": "608f34a634a8b9d7a141c254f3469207018bed63",
-  "description_zh": "运行时下载自制谱面",
-  "name_zh": null
+  "description_zh": "在游戏运行过程中下载社区谱面。",
+  "name_zh": "谱面下载器"
 }

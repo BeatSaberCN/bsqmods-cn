@@ -15,6 +15,6 @@
   "funding": [],
   "website": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/",
   "hash": "1081fcbb4c2392083b74630cad4d9c4e97af6ce1",
-  "description_zh": "一个为其它模组提供支持的核心模组。",
-  "name_zh": null
+  "description_zh": "此模组为其它库提供支持功能。",
+  "name_zh": "自定义数据类型"
 }

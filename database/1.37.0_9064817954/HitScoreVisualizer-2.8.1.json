@@ -28,6 +28,6 @@
   "funding": [],
   "website": "https://github.com/christopherweinhardt/HitScoreVisualizer/",
   "hash": "d94e4dd63ac7eb18d9e2706894ab564da6561dcc",
-  "description_zh": null,
-  "name_zh": null
+  "description_zh": "修改击打音符时的文字提示。",
+  "name_zh": "打击分数可视化"
 }

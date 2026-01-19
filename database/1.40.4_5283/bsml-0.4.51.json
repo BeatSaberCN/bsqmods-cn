@@ -32,6 +32,6 @@
   "funding": [],
   "website": "https://github.com/bsq-ports/Quest-BSML/",
   "hash": "d64ae56811f3cf4b71c85be5f66796d446b00d91",
-  "description_zh": "一个UI库，解析BeatSaberMarkupLanguage（节奏光剑标记语言）来创建UI界面",
-  "name_zh": null
+  "description_zh": "一个UI库，可以让其它模组使用BSML描述来创建UI界面。",
+  "name_zh": "节奏光剑标记语言"
 }

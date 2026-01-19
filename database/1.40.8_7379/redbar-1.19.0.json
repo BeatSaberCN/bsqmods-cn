@@ -32,6 +32,6 @@
   "funding": [],
   "website": "https://github.com/vcmikuu/Red-bar/",
   "hash": "2fb853432226cd43a70205ccc87fce8a756864f6",
-  "description_zh": null,
-  "name_zh": null
+  "description_zh": "根据当前生命值来改变生命条的颜色。",
+  "name_zh": "红条"
 }

@@ -31,6 +31,6 @@
   ],
   "website": null,
   "hash": "fc78edc54adcc583274218622f7f42fcd13ccaa8",
-  "description_zh": "谱面加载、谱面依赖处理和游戏相关工具",
-  "name_zh": null
+  "description_zh": "处理游戏内谱面加载、谱面依赖等操作。",
+  "name_zh": "谱面核心"
 }

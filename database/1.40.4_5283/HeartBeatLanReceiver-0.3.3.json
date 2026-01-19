@@ -36,6 +36,6 @@
   "funding": [],
   "website": "https://github.com/frto027/HeartBeatQuest/",
   "hash": "1a67958cf0ec799f168317100ac0ba95ff5f0486",
-  "description_zh": null,
-  "name_zh": null
+  "description_zh": "在Quest游戏中显示、记录你的心率。支持多种数据源，包括HypeRate、蓝牙、OSC。如要使用蓝牙，则需要蓝牙权限。",
+  "name_zh": "Quest心率显示"
 }

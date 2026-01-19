@@ -36,6 +36,6 @@
   "funding": [],
   "website": "https://github.com/darknight1050/SongDownloader/",
   "hash": "fa1a134b44c3047d90c3552920eb1b3af081e42f",
-  "description_zh": "运行时下载自制谱面",
-  "name_zh": null
+  "description_zh": "在游戏运行过程中下载社区谱面。",
+  "name_zh": "谱面下载器"
 }

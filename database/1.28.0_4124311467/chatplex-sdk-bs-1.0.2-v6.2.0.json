@@ -34,6 +34,6 @@
   ],
   "website": "https://github.com/hardcpp/QuestChatPlexSDK-BS/",
   "hash": "8bfd26ccc46ee48d0583a1250d275f43468fce13",
-  "description_zh": null,
+  "description_zh": "ChatPlex的节奏光剑模组SDK（被其它模组依赖）。",
   "name_zh": null
 }

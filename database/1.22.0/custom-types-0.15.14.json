@@ -15,6 +15,6 @@
   "funding": [],
   "website": "https://github.com/sc2ad/Il2CppQuestTypePatching/",
   "hash": "310e31c15eb27c3491cd65fbc1779ba88e8ddcd6",
-  "description_zh": "一个为其它模组提供支持的核心模组。",
-  "name_zh": null
+  "description_zh": "此模组为其它库提供支持功能。",
+  "name_zh": "自定义数据类型"
 }

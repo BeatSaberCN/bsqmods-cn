@@ -26,6 +26,6 @@
   ],
   "website": null,
   "hash": "409d78097dd8895a9513d2470d762ff426ba9818",
-  "description_zh": "在菜单中平滑控制器位置来减少震动，让UI更容易操控等等",
-  "name_zh": null
+  "description_zh": "在菜单中平滑手柄位置，用于减少抖动，让UI更容易操作。",
+  "name_zh": "手柄平滑"
 }

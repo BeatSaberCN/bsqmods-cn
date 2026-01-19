@@ -36,6 +36,6 @@
   "funding": [],
   "website": null,
   "hash": "0e86c6098ec145f2bfaaf0ceb132099605cd7d35",
-  "description_zh": "运行时下载自制谱面",
-  "name_zh": null
+  "description_zh": "在游戏运行过程中下载社区谱面。",
+  "name_zh": "谱面下载器"
 }

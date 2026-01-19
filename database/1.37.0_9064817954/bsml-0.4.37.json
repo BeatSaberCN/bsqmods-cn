@@ -32,6 +32,6 @@
   ],
   "website": "https://github.com/RedBrumbler/Quest-BSML/",
   "hash": "a560f26475e61c22240249d2b6f8fe6860e1fc4f",
-  "description_zh": "一个UI库，解析BeatSaberMarkupLanguage（节奏光剑标记语言）来创建UI界面",
-  "name_zh": null
+  "description_zh": "一个UI库，可以让其它模组使用BSML描述来创建UI界面。",
+  "name_zh": "节奏光剑标记语言"
 }

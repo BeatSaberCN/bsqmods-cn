@@ -36,6 +36,6 @@
   ],
   "website": "https://github.com/EnderdracheLP/ClockMod/",
   "hash": "fafee8cf83cca8b58da2765d3a43afdba2e77915",
-  "description_zh": "游戏内显示时间。还能显示电量百分比。",
-  "name_zh": null
+  "description_zh": "游戏内显示时间。亦可显示电量百分比。",
+  "name_zh": "时钟模组"
 }

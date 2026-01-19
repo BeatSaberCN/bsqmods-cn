@@ -28,6 +28,6 @@
   "funding": [],
   "website": null,
   "hash": "aff8baaa0d3e0453c0492efd83cf579ef92c2996",
-  "description_zh": null,
-  "name_zh": null
+  "description_zh": "修改击打音符时的文字提示。",
+  "name_zh": "打击分数可视化"
 }
