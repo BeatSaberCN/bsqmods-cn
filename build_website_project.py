@@ -2,6 +2,9 @@ import os
 from glob import glob
 from pathlib import Path
 import urllib.request
+import subprocess
+import json
+
 def copy_file(src:str,dst:str):
     with open(dst, 'wb') as f:
         with open(src,'rb') as ff:
@@ -25,3 +28,14 @@ for f in glob("website-project/dist/**/*", recursive=True):
         Path(dst).mkdir(exist_ok=True)
     else:
         copy_file(f, dst)
+
+# 贡献者列表
+contributors = []
+for contrib in subprocess.check_output("git shortlog database -sn").decode("utf-8").splitlines():
+    [count, author] = contrib.split("\t")
+    contributors.append({
+        "author":author,
+        "count":int(count)
+    })
+with open("website-project/src/contributors.json", "w", encoding="utf-8") as f:
+    json.dump(contributors, f)

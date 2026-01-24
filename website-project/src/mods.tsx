@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
-
+import cc_icon from "./by-nc-sa.svg"
 const mods = await import("./mods.json")
 const versions = (await import("./versions.json")).default
 const build_info = await import("./build_info.json")
@@ -11,7 +11,7 @@ const core_mods = (await import("./core_mods.json")).default as any as Record<st
     id:string
   }]
 }>
-
+const contributors = (await import("./contributors.json")).default
 import "./mods.css"
 
 const core_mod_ids:Record<string, Set<string> > = {}
@@ -55,7 +55,7 @@ function App() {
   const [show_version, set_show_version] = useState(default_version)
   return <div className="root-container">
     <h1>bsqmods中文源</h1>
-    <div style={{marginBottom:"12px"}}><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod源</small></div>
+    <div style={{marginBottom:"12px"}}><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod名称/简介源</small></div>
     <p>
     游戏版本：<select style={{display:"inline",width:"fit-content"}} className="form-select form-select-sm" onChange={(x) => {
       set_show_version(x.target.value)
@@ -73,15 +73,24 @@ function App() {
       <b>该游戏版本不可用</b><br/>
       此页面上的部分游戏版本号，无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为那些版本的核心模组还没有准备好。请选择你正在使用、或者能够使用的游戏版本。
     </div>
-
     <div className="alert alert-primary" role="alert">
       <b>数据源与内容反馈</b><br/>
-      此中文源提供模组名称及简介的汉化。数据位于<a href="https://github.com/BeatSaberCN/bsqmods-cn">GitHub</a>，由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。
-      中文内容均人工制作，任何问题请通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。同时欢迎提交PR。
+      中文内容均人工制作，任何问题可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。
     </div>
 
     <hr />
     <ModList gameVersion={show_version} />
+
+    <hr />
+
+    
+    <div className="alert alert-warning" role="alert">
+    <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans'><img src={cc_icon} width={"60px"}/></a>&nbsp;数据依照CC-BY-NC-SA 4.0国际许可协议授权。贡献者：{contributors.map((e)=><span style={{marginLeft:"8px"}}>{e.author}</span>)}。
+    <hr/>
+      贡献数据请向<a href="https://github.com/BeatSaberCN/bsqmods-cn/blob/master/database/translates.json">此文件</a>提交Pull Request！
+      数据由上游<a href="https://mods.bsquest.xyz">bsqmods</a>同步汉化而来，每日自动更新。
+    </div>
+
   </div>
 }
 

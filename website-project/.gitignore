@@ -27,3 +27,4 @@ src/build_info.json
 src/mods.json
 src/versions.json
 src/core_mods.json
+src/contributors.json
