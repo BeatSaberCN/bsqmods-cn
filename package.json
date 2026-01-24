@@ -1,0 +1,23 @@
+{
+  "name": "bsqmods-cn",
+  "version": "1.0.0",
+  "description": "此项目为[bsqmods](https://github.com/QuestPackageManager/bsqmods)的一个中文本地化下游。",
+  "homepage": "https://github.com/BeatSaberCN/bsqmods-cn#readme",
+  "bugs": {
+    "url": "https://github.com/BeatSaberCN/bsqmods-cn/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeatSaberCN/bsqmods-cn.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10"
+  }
+}

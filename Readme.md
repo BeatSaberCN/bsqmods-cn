@@ -4,17 +4,15 @@
 
 # 更新方式
 
-请[安装deno](https://docs.deno.com/runtime/getting_started/installation/)。
-
 初始化依赖
 ```
-deno install
+npm install
 ```
 
 以下命令更新databse并生成dist目录。dist是发布目录，格式与bsqmods保持一致。
 
 ```cmd
-deno run update
+npm run update
 ```
 
 每次运行上述指令，会：
@@ -25,7 +23,7 @@ deno run update
 database仅用于增量翻译，新增mod不会合并至dist中。
 
 
-有多个json存在可以只翻译其中一个，运行`deno run update`就会自动全同步。如果同一个英文有多个不同的中文，就会“随机”选择一个。
+有多个json存在可以只翻译其中一个，运行`npm run update`就会自动全同步。如果同一个英文有多个不同的中文，就会“随机”选择一个。
 
 中英文同步是根据相同mod ID来的。如果一个mod ID下旧版本与新版本的英文相同，就会自动同步中文内容。
 
@@ -34,7 +32,7 @@ database仅用于增量翻译，新增mod不会合并至dist中。
 需要按顺序运行以下指令:
 
 ```cmd
-deno run update
+npm run update
 python build_website_project.py
 ```
 

@@ -1,5 +1,5 @@
-import https from "node:https";
-import {ManagedModJson, ModItem, ModJson} from "./mod_types.ts"
+import * as https from "node:https";
+import {ManagedModJson, type ModItem, type ModJson} from "./mod_types.ts"
 import { globSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { buildConfig } from "./build_info.ts";

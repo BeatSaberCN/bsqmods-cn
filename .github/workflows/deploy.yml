@@ -1,4 +1,4 @@
-name: Deno
+name: Update Pages
 
 on:
   push:
@@ -19,13 +19,12 @@ jobs:
     steps:
       - name: Setup repo
         uses: actions/checkout@v4
-
-      - name: Setup Deno
-        # uses: denoland/setup-deno@v1
-        uses: denoland/setup-deno@v2
         
+      - name: init npm
+        run: npm install
+
       - name: update mods
-        run: deno run update
+        run: npm run update
 
       - name: generate site
         run: python build_website_project.py
