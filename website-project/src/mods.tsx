@@ -11,7 +11,10 @@ const core_mods = (await import("./core_mods.json")).default as any as Record<st
     id:string
   }]
 }>
-const contributors = (await import("./contributors.json")).default
+const contributors = (await import("./contributors.json")).default as any as {
+  author:string,
+  count:number
+}[]
 import "./mods.css"
 
 const core_mod_ids:Record<string, Set<string> > = {}
