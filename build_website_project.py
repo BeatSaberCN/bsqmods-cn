@@ -19,7 +19,7 @@ with open("website-project/src/core_mods.json", "w", encoding="utf-8") as f:
 
 # 生成贡献者列表
 contributors = []
-for contrib in subprocess.check_output("git shortlog database -sn").decode("utf-8").splitlines():
+for contrib in subprocess.check_output("git shortlog database -sn", shell=True).decode("utf-8").splitlines():
     [count, author] = contrib.split("\t")
     contributors.append({
         "author":author,
