@@ -17,6 +17,17 @@ copy_file("dist/versions.json", "website-project/src/versions.json")
 with open("website-project/src/core_mods.json", "w", encoding="utf-8") as f:
     f.write(urllib.request.urlopen("https://raw.githubusercontent.com/QuestPackageManager/bs-coremods/refs/heads/main/core_mods.json").read().decode("utf8"))
 
+# 生成贡献者列表
+contributors = []
+for contrib in subprocess.check_output("git shortlog database -sn").decode("utf-8").splitlines():
+    [count, author] = contrib.split("\t")
+    contributors.append({
+        "author":author,
+        "count":int(count)
+    })
+with open("website-project/src/contributors.json", "w", encoding="utf-8") as f:
+    json.dump(contributors, f)
+
 # 编译
 os.system("cd website-project && npm install && npm run build")
 
@@ -29,13 +40,3 @@ for f in glob("website-project/dist/**/*", recursive=True):
     else:
         copy_file(f, dst)
 
-# 贡献者列表
-contributors = []
-for contrib in subprocess.check_output("git shortlog database -sn").decode("utf-8").splitlines():
-    [count, author] = contrib.split("\t")
-    contributors.append({
-        "author":author,
-        "count":int(count)
-    })
-with open("website-project/src/contributors.json", "w", encoding="utf-8") as f:
-    json.dump(contributors, f)
