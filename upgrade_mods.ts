@@ -1,8 +1,9 @@
 import * as https from "node:https";
 import {ManagedModJson, type ModItem, type ModJson} from "./mod_types.ts"
-import { globSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, globSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { buildConfig } from "./build_info.ts";
+import { TranslateDB } from "./translate_database.ts";
 
 function get_mod_json():Promise<ModJson>{
     return new Promise<ModJson>((resolve,reject)=>{
@@ -80,11 +81,15 @@ if(import.meta.main){
     const managed = new ManagedModJson(mod_json)
 
     // apply translate from database
-    managed.applyTranslateFromDisk("database")
-    managed.applyTranslateFromOldVersion()
+    const translateDB = new TranslateDB()
+    const translateDBPath = "database/translates.json"
+    if(existsSync(translateDBPath))
+        translateDB.load(translateDBPath)
+    managed.applyTranslate(translateDB)
+    translateDB.store(translateDBPath)
 
     // save database
-    managed.saveTranslateToDisk("database")
+    // managed.saveTranslateToDisk("database")
 
     // the reference is kept by managed, so it works
     add_cn_mods(mod_json)

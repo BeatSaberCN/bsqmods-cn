@@ -15,7 +15,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "update":"node upgrade_mods.ts"
   },
   "devDependencies": {
     "@types/node": "^25.0.10"

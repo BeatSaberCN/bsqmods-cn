@@ -1,5 +1,6 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import type { TranslateDB } from "./translate_database.ts";
 
 export interface ModItem {
       name: string,
@@ -44,89 +45,15 @@ export class ManagedModJson{
         return new ManagedVersionMods(version, mods, true)
     }
 
-    applyTranslateFromDisk(folder:string){
+    applyTranslate(translateDB:TranslateDB){
         for(const version in this.json){
             for(const mod of this.json[version]){
-                const json_file_name = `${mod.id}-${mod.version}.json`
-                if(!path_safe(json_file_name))
-                    continue
-                const json_full_path = join(folder, version, json_file_name)
-                if(existsSync(json_full_path)){
-                    const old_mod:ModItem = JSON.parse(readFileSync(json_full_path, {encoding:'utf-8'}))
-                    if(old_mod.description == mod.description && mod.description_zh == undefined){
-                        mod.description_zh = old_mod.description_zh
-                    }
-                    if(old_mod.name == mod.name && mod.name_zh == undefined){
-                        mod.name_zh = old_mod.name_zh
-                    }
-                }
+                translateDB.addTranslates(mod)
             }
         }
     }
 
-    applyTranslateFromOldVersion(){
-        const translateDictionary = new Map<string,Map<string,string>>()
-
-        // get translates
-        for(const version in this.json){
-            if(!path_safe(version)) // wtf...
-                continue
-            for(const mod of this.json[version]){
-                if(!translateDictionary.has(mod.id))
-                    translateDictionary.set(mod.id, new Map())
-
-                const dictForThisMod = translateDictionary.get(mod.id)
-
-                if(mod.name_zh && mod.name_zh != null)
-                    dictForThisMod!.set(mod.name, mod.name_zh)
-                if(mod.description_zh && mod.description_zh != null)
-                    dictForThisMod!.set(mod.description, mod.description_zh)
-            }
-        }
-
-        // apply translates
-        for(const version in this.json){
-            for(const mod of this.json[version]){
-                const dictForThisMod = translateDictionary.get(mod.id)
-                if(dictForThisMod == undefined)
-                    continue
-
-                if(mod.name_zh == undefined || mod.name_zh == null)
-                    mod.name_zh = dictForThisMod.get(mod.name)
-                if(mod.description_zh == undefined || mod.description_zh == null)
-                    mod.description_zh = dictForThisMod.get(mod.description)
-                if(!mod.name_zh)
-                    mod.name_zh = null
-                if(!mod.description_zh)
-                    mod.description_zh = null
-            }
-        }
-
-    }
-
-    saveTranslateToDisk(folder:string){
-        if(!existsSync(folder))
-            mkdirSync(folder)
-        for(const version in this.json){
-            if(!path_safe(version))
-                continue
-            const folderForVersion = join(folder, version)
-            if(!existsSync(folderForVersion))
-                mkdirSync(folderForVersion, { recursive: true })
-            for(const mod of this.json[version]){
-                const mod_json_name = `${mod.id}-${mod.version}.json`
-                if(!path_safe(mod_json_name))
-                {
-                    console.error(`warning: can't store mod json file ${mod_json_name} because path is dangerous`)
-                    continue
-                }
-                const json_text = JSON.stringify(mod, null, 2)
-                writeFileSync(join(folderForVersion, mod_json_name), json_text, {encoding:"utf-8"})
-            }
-        }
-    }
-
-
+    // 这会保存以description和description_en为结果的输出
     saveRenderedJsonsToDisk(folder:string){
         const versions:Array<string> = []
         for(const version of Object.getOwnPropertyNames(this.json)){
