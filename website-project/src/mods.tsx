@@ -76,7 +76,7 @@ function App() {
 
     <div className="alert alert-primary" role="alert">
       <b>数据源与内容反馈</b><br/>
-      此中文源数据位于<a href="https://github.com/BeatSaberCN/bsqmods-cn">GitHub</a>，由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。
+      此中文源提供模组名称及简介的汉化。数据位于<a href="https://github.com/BeatSaberCN/bsqmods-cn">GitHub</a>，由上游<a href="https://mods.bsquest.xyz">bsqmods</a>汉化而来，每日自动更新。
       中文内容均人工制作，任何问题请通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。同时欢迎提交PR。
     </div>
 
