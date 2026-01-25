@@ -93,7 +93,7 @@ function App() {
       贡献数据请向<a href="https://github.com/BeatSaberCN/bsqmods-cn/blob/master/database/translates.json">此文件</a>提交Pull Request！
       数据由上游<a href="https://mods.bsquest.xyz">bsqmods</a>同步汉化而来，每日自动更新。
     </div>
-    <div style={{color:"gray"}}>项目亦在提供一个中文交流平台，相关站点与bsaber.com无关。</div>
+    <div style={{color:"gray"}}>项目旨在提供中文信息，站点与bsaber.com无关。</div>
   </div>
 }
 
