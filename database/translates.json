@@ -626,11 +626,10 @@
     "chatui": {
         "id": "chatui",
         "names": {
-            "ChatUI": null,
-            "Shows your Twitch Chat Ingame": null
+            "ChatUI": "聊天UI"
         },
         "descriptions": {
-            "Shows your Twitch Chat Ingame": null
+            "Shows your Twitch Chat Ingame": "在游戏内显示Twitch聊天。"
         }
     },
     "chroma": {
@@ -1248,7 +1247,7 @@
     "slicedetails": {
         "id": "slicedetails",
         "names": {
-            "Slice Details": null
+            "Slice Details": "挥动细节"
         },
         "descriptions": {
             "View extra information about your swings": "显示有关挥剑的额外信息。"
@@ -1379,7 +1378,7 @@
             "Tracks": null
         },
         "descriptions": {
-            "Animation for Noodle and Chroma. Requires CustomJSONData. Don't delete": "Noodle和Chroma的动画。依赖CustomJSONData。别删掉了。"
+            "Animation for Noodle and Chroma. Requires CustomJSONData. Don't delete": "Noodle和Chroma的动画。依赖CustomJSONData。请勿删除。"
         }
     },
     "vent": {
@@ -2676,12 +2675,12 @@
         "names": {
             "Better Song List": "更好的谱面列表",
             "Adds Various improvements to the Basegame Map list like Filters, a persisted state and much more": null,
-            "Improvement upon SongBrowser with similiar functionality": null,
+            "Improvement upon SongBrowser with similiar functionality": "改进的SongBrowser模组，提供类似功能。",
             "Improvement upon SongBrowser with similiar functionality. Adds filters and sort options to the song list.": null
         },
         "descriptions": {
             "Adds Various improvements to the Basegame Map list like Filters, a persisted state and much more": null,
-            "Improvement upon SongBrowser with similiar functionality": null,
+            "Improvement upon SongBrowser with similiar functionality": "改进的SongBrowser模组，提供类似功能。",
             "Improvement upon SongBrowser with similiar functionality. Adds filters and sort options to the song list.": null
         }
     },
@@ -2715,15 +2714,15 @@
     "spotify-search": {
         "id": "spotify-search",
         "names": {
-            "Spotify Search": null,
-            "Access your Spotify playlists and quickly search for matching custom maps.": null,
-            "Access your Spotify playlists and quickly search for matching custom maps": null,
-            "Access your Spotify playlists and quickly search for matching custom maps!": null
+            "Spotify Search": "Spotify搜索",
+            "Access your Spotify playlists and quickly search for matching custom maps.": "访问Spotify歌单，并快速搜索匹配自制谱面。",
+            "Access your Spotify playlists and quickly search for matching custom maps": "访问Spotify歌单，并快速搜索匹配自制谱面。",
+            "Access your Spotify playlists and quickly search for matching custom maps!": "访问Spotify歌单，并快速搜索匹配自制谱面。"
         },
         "descriptions": {
-            "Access your Spotify playlists and quickly search for matching custom maps.": null,
-            "Access your Spotify playlists and quickly search for matching custom maps": null,
-            "Access your Spotify playlists and quickly search for matching custom maps!": null
+            "Access your Spotify playlists and quickly search for matching custom maps.": "访问Spotify歌单，并快速搜索匹配自制谱面。",
+            "Access your Spotify playlists and quickly search for matching custom maps": "访问Spotify歌单，并快速搜索匹配自制谱面。",
+            "Access your Spotify playlists and quickly search for matching custom maps!": "访问Spotify歌单，并快速搜索匹配自制谱面。"
         }
     },
     "assimp": {
