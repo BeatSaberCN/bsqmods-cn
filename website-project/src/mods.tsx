@@ -66,15 +66,15 @@ function App() {
       defaultValue={default_version}
     >
       {
-        versions.map(ver => <option key={ver} value={ver}>{hasCoreMod(ver)?"":"[不可用]"}{ver}</option>)
+        versions.map(ver => <option key={ver} value={ver}>{hasCoreMod(ver)?<></>:<>【无效】</>}{ver}</option>)
       }
     </select>&nbsp;
     <span className="badge text-bg-success">最后同步时间：{buildDate}</span></p>
     <div style={{
       display:hasCoreMod(show_version) ? "none" : ""
     }} className="alert alert-warning" role="alert">
-      <b>该游戏版本不可用</b><br/>
-      此版本无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为该版本的核心模组未就绪。请选择你正在使用、或者能够使用的游戏版本。
+      <b>该游戏版本无法使用</b><br/>
+      此版本无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为该版本的核心模组没有就绪。请选择你正在使用、或者能够使用的游戏版本。
     </div>
     <div className="alert alert-primary" role="alert">
       <b>数据源与内容反馈</b><br/>
