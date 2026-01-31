@@ -56,25 +56,86 @@ function App() {
     }
   }
   const [show_version, set_show_version] = useState(default_version)
+  const [show_non_core_versions, set_show_non_core_versions] = useState(false)
+  const [show_old_versions, set_show_old_versions] = useState(false)
   return <div className="root-container">
-    <h1>bsqmods中文源</h1>
-    <div style={{marginBottom:"12px"}}><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod名称/简介源</small></div>
-    <p>
-    游戏版本：<select style={{display:"inline",width:"fit-content"}} className="form-select form-select-sm" onChange={(x) => {
-      set_show_version(x.target.value)
-    }}
-      defaultValue={default_version}
-    >
-      {
-        versions.map(ver => <option key={ver} value={ver}>{hasCoreMod(ver)?<></>:<>【无效】</>}{ver}</option>)
-      }
-    </select>&nbsp;
-    <span className="badge text-bg-success">最后同步时间：{buildDate}</span></p>
+    <h1>bsqmods中文源</h1><span className="badge text-bg-success">最后同步时间：{buildDate}</span>
+    <div style={{marginBottom:"8px"}}><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod名称/简介源</small></div>
+    <div className="card" style={{marginBottom:"8px"}}>
+      <div className="card-body">
+        <h5 className="card-title">版本设置</h5>
+        <div className="card-text">
+          <div className="row g-3 align-items-center">
+            <div className="col-auto">
+              <label htmlFor="version_textbox_show" className="col-form-label">游戏版本号</label>
+            </div>
+            <div className="col-auto">
+              <input id="version_textbox_show" readOnly value={show_version} className="form-control form-control-sm" aria-describedby="version_select_below"/>
+            </div>
+            <div className="col-auto">
+              <span id="version_select_below" className="form-text">
+                请在下面选项中切换游戏版本
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <div className="form-check form-switch" style={{display:"inline-block", marginRight:"16px"}}>
+              <input className="form-check-input" type="checkbox" role="switch" id="showOldGameSwitch" onChange={(e)=>set_show_old_versions(e.target.checked)} />
+              <label className="form-check-label" htmlFor="showOldGameSwitch">显示旧版本</label>
+            </div>
+            <div className="form-check form-switch" style={{display:"inline-block"}}>
+              <input className="form-check-input" type="checkbox" role="switch" id="showNonCoreGameSwitch" onChange={(e)=>set_show_non_core_versions(e.target.checked)} />
+              <label className="form-check-label" htmlFor="showNonCoreGameSwitch">显示不可用版本</label>
+            </div>
+          </div>
+
+          <div style={{marginTop:"8px"}}>
+            {
+              versions.map(ver=><button
+                key={ver} 
+                type="button" 
+                hidden={
+                  (()=>{
+                    if(!hasCoreMod(ver)){
+                      if(!show_non_core_versions)
+                        return true
+                    }
+                    if(ver == "global" || ver == "undefined" || ver < "1.37.0"){
+                      if(!show_old_versions)
+                        return true
+                    }
+                    return false;
+                  })()
+                }
+                className={"btn btn-sm " + (
+                    "btn-" + (ver == show_version ? "" : "outline-") + (hasCoreMod(ver) ? "success" : "warning")
+                  )}
+                style={{
+                  borderRadius:"20px",
+                  padding:"0 10px",
+                  margin:"0 2px"
+                }}
+                onClick={()=>{
+                  set_show_version(ver)
+                }}
+                >{ver.split("_")[0]}</button>
+              )
+            }
+          </div>
+          <hr/>
+          请勿随机选择“非旧版本”的游戏：<br/>玩家应当<b>尽量选择最新可用版本</b>，以享受模组更新与Bug修复。
+
+        </div>
+      </div>
+    </div>
+    
+    
     <div style={{
       display:hasCoreMod(show_version) ? "none" : ""
     }} className="alert alert-warning" role="alert">
-      <b>该游戏版本无法使用</b><br/>
-      此版本无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为该版本的核心模组没有就绪。请选择你正在使用、或者能够使用的游戏版本。
+      <b>该游戏版本不可用</b><br/>
+      {show_version}版本无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为该版本的核心模组没有就绪。
     </div>
     <div className="alert alert-primary" role="alert">
       <b>数据源与内容反馈</b><br/>
@@ -88,7 +149,7 @@ function App() {
 
     
     <div className="alert alert-warning" role="alert">
-    <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans'><img src={cc_icon} width={"60px"}/></a>&nbsp;中文翻译数据依照CC-BY-NC-SA 4.0国际许可协议授权。贡献者：{contributors.map((e)=><span style={{marginLeft:"8px"}}>{e.author}</span>)}。
+    <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans'><img src={cc_icon} width={"60px"}/></a>&nbsp;中文翻译数据依照CC-BY-NC-SA 4.0国际许可协议授权。贡献者：{contributors.map((e)=><span key={e.author} style={{marginLeft:"8px"}}>{e.author}</span>)}。
     <hr/>
       贡献数据请向<a href="https://github.com/BeatSaberCN/bsqmods-cn/blob/master/database/translates.json">此文件</a>提交Pull Request！
       数据由上游<a href="https://mods.bsquest.xyz">bsqmods</a>同步汉化而来，每日自动更新。
