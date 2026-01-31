@@ -58,14 +58,18 @@ function App() {
   const [show_version, set_show_version] = useState(default_version)
   const [show_non_core_versions, set_show_non_core_versions] = useState(false)
   const [show_old_versions, set_show_old_versions] = useState(false)
+  const [detail_configs, set_detail_configs] = useState(false)
   return <div className="root-container">
     <h1>bsqmods中文源</h1><span className="badge text-bg-success">最后同步时间：{buildDate}</span>
     <div style={{marginBottom:"8px"}}><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod名称/简介源</small></div>
     <div className="card" style={{marginBottom:"8px"}}>
       <div className="card-body">
-        <h5 className="card-title">版本设置</h5>
+        <h5 className="card-title">版本设置
+          <button className='btn btn-sm btn-link' hidden={detail_configs} onClick={()=>set_detail_configs(true)}>更多</button>
+          <button className='btn btn-sm btn-link' hidden={!detail_configs} onClick={()=>set_detail_configs(false)}>更少</button>
+        </h5>
         <div className="card-text">
-          <div className="row g-3 align-items-center">
+          <div className="row g-3 align-items-center" hidden={!detail_configs}>
             <div className="col-auto">
               <label htmlFor="version_textbox_show" className="col-form-label">游戏版本号</label>
             </div>
@@ -79,7 +83,7 @@ function App() {
             </div>
           </div>
 
-          <div>
+          <div hidden={!detail_configs}>
             <div className="form-check form-switch" style={{display:"inline-block", marginRight:"16px"}}>
               <input className="form-check-input" type="checkbox" role="switch" id="showOldGameSwitch" onChange={(e)=>set_show_old_versions(e.target.checked)} />
               <label className="form-check-label" htmlFor="showOldGameSwitch">显示旧版本</label>
@@ -124,7 +128,7 @@ function App() {
             }
           </div>
           <hr/>
-          请勿随机选择“非旧版本”的游戏：<br/>玩家应当<b>尽量选择最新可用版本</b>，以享受模组更新与Bug修复。
+          版本选择建议：<br/>尽量<b>选择最新可用版本</b>，以享受模组更新与Bug修复。
 
         </div>
       </div>
