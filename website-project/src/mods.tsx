@@ -66,7 +66,7 @@ function App() {
       defaultValue={default_version}
     >
       {
-        versions.map(ver => <option key={ver} value={ver}>{hasCoreMod(ver)?"":"(不可用)"}{ver}</option>)
+        versions.map(ver => <option key={ver} value={ver}>{hasCoreMod(ver)?"":"[不可用]"}{ver}</option>)
       }
     </select>&nbsp;
     <span className="badge text-bg-success">最后同步时间：{buildDate}</span></p>
@@ -74,11 +74,11 @@ function App() {
       display:hasCoreMod(show_version) ? "none" : ""
     }} className="alert alert-warning" role="alert">
       <b>该游戏版本不可用</b><br/>
-      此页面上的部分游戏版本号，无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为那些版本的核心模组还没有准备好。请选择你正在使用、或者能够使用的游戏版本。
+      此版本无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为该版本的核心模组未就绪。请选择你正在使用、或者能够使用的游戏版本。
     </div>
     <div className="alert alert-primary" role="alert">
       <b>数据源与内容反馈</b><br/>
-      中文内容均人工制作，任何问题可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。
+      中文内容均人工制作，任何问题或需求可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。
     </div>
 
     <hr />
@@ -93,7 +93,7 @@ function App() {
       贡献数据请向<a href="https://github.com/BeatSaberCN/bsqmods-cn/blob/master/database/translates.json">此文件</a>提交Pull Request！
       数据由上游<a href="https://mods.bsquest.xyz">bsqmods</a>同步汉化而来，每日自动更新。
     </div>
-    <div style={{color:"gray"}}>项目旨在提供中文信息，站点与bsaber.com无关。</div>
+    <div style={{color:"gray"}}>此站点与bsaber.com无关。</div>
   </div>
 }
 
