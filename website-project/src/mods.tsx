@@ -59,15 +59,26 @@ function App() {
   const [show_non_core_versions, set_show_non_core_versions] = useState(false)
   const [show_old_versions, set_show_old_versions] = useState(false)
   const [detail_configs, set_detail_configs] = useState(false)
+
+  const [display_related_software, set_display_related_software] = useState(false)
+  
   return <div className="root-container">
     <h1>bsqmods中文源</h1><span className="badge text-bg-success">最后同步时间：{buildDate}</span>
     <div style={{marginBottom:"8px"}}><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod名称/简介源</small></div>
-    <div className="card" style={{marginBottom:"8px"}}>
-      <div className="card-body">
-        <h5 className="card-title">版本设置
+
+    <div className="alert alert-primary" role="alert">
+      <b>数据源与内容反馈</b><br/>
+      中文内容均人工制作，任何问题或需求可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。
+    </div>
+
+
+    <div className="card border-secondary" style={{marginBottom:"8px",width:"fit-content"}}>
+      <div className='card-header border-secondary'>
+        版本设置
           <button className='btn btn-sm btn-link' hidden={detail_configs} onClick={()=>set_detail_configs(true)}>更多</button>
           <button className='btn btn-sm btn-link' hidden={!detail_configs} onClick={()=>set_detail_configs(false)}>更少</button>
-        </h5>
+      </div>
+      <div className="card-body">
         <div className="card-text">
           <div className="row g-3 align-items-center" hidden={!detail_configs}>
             <div className="col-auto">
@@ -128,9 +139,9 @@ function App() {
             }
           </div>
           <hr/>
-          版本选择建议：<br/>尽量<b>选择最新可用版本</b>，以享受模组更新与Bug修复。
-
+          版本选择建议：尽量安装/降级至<b>最新可用版本</b>，以享受模组更新与Bug修复。
         </div>
+        
       </div>
     </div>
     
@@ -141,17 +152,59 @@ function App() {
       <b>该游戏版本不可用</b><br/>
       {show_version}版本无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为该版本的核心模组没有就绪。
     </div>
-    <div className="alert alert-primary" role="alert">
-      <b>数据源与内容反馈</b><br/>
-      中文内容均人工制作，任何问题或需求可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。
-    </div>
 
     <hr />
     <ModList gameVersion={show_version} />
 
     <hr />
 
-    
+    <div style={{textAlign:"left"}}>
+      <div className="card text-center border-dark" style={{margin:"0", maxWidth:"1000px"}}>
+        <div className="card-header bg-transparent">
+          相关软件
+            <button className='btn btn-link btn-sm' onClick={()=>set_display_related_software(true)} hidden={display_related_software}>展开</button>
+            <button className='btn btn-link btn-sm' onClick={()=>set_display_related_software(false)} hidden={!display_related_software}>收起</button>
+        </div>
+        <div className="card-body" hidden={!display_related_software}>
+
+          <div className="card-group">
+
+              <div className="card">
+                <div className="card-header">QuestPatcherCN</div>
+                <div className="card-body">
+                  <p>
+                    <span className='badge rounded-pill text-bg-light m-1'>中文</span>
+                    <span className='badge rounded-pill text-bg-light m-1'>一键降级安装模组</span>
+                    <span className='badge rounded-pill text-bg-light m-1'>本地ADB兼容</span>
+                    <span className='badge rounded-pill text-bg-info m-1'>需电脑联网</span>
+                  </p>
+                  <p className="card-text">由中文社区开发者维护的QuestPatcher。可以下载安装后使用。可选择切换此中文源。</p>
+                  <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows-standalone.zip" className="btn btn-success m-1">下载链接</a>
+                  <a href="https://github.com/BeatSaberCN/QuestPatcher" className="btn btn-primary m-1">项目主页</a>
+                </div>
+              </div>
+
+              <div className="card">
+                  <div className="card-header">ModsBeforeFriday中文分支</div>
+                <div className="card-body">
+                    <span className='badge rounded-pill text-bg-light m-1'>中文</span>
+                    <span className='badge rounded-pill text-bg-light m-1'>一键降级安装模组</span>
+                    <span className='badge rounded-pill text-bg-light m-1'>网页即开即用</span>
+                    <span className='badge rounded-pill text-bg-info m-1'>需Quest联网</span>
+
+                  <p className="card-text">ModsBeforeFriday是英文模组社区BSMG主流推荐的模组工具。此为中文分支，使用此中文源。</p>
+                  <a href="https://mbf.bsaber.cn/" className="btn btn-success m-1">使用链接</a>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr />
+
     <div className="alert alert-warning" role="alert">
     <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans'><img src={cc_icon} width={"60px"}/></a>&nbsp;中文翻译数据依照CC-BY-NC-SA 4.0国际许可协议授权。贡献者：{contributors.map((e)=><span key={e.author} style={{marginLeft:"8px"}}>{e.author}</span>)}。
     <hr/>
