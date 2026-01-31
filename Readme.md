@@ -36,6 +36,18 @@ npm run update
 python build_website_project.py
 ```
 
+# 网页开发指南
+
+使用以下命令从零进入交互开发
+
+```cmd
+npm install
+npm run update
+python build_website_project.py
+cd website-project
+npm run dev
+```
+
 # 中文镜像源新增mod
 
 请将新mod放置于cn_mods下，注意json格式需要直接匹配镜像源mod格式。格式中的hash为qmod文件的sha-1。
