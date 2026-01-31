@@ -190,6 +190,7 @@ function App() {
                     <span className='badge rounded-pill text-bg-light m-1'>中文</span>
                     <span className='badge rounded-pill text-bg-light m-1'>一键降级安装模组</span>
                     <span className='badge rounded-pill text-bg-light m-1'>网页即开即用</span>
+                    <span className='badge rounded-pill text-bg-light m-1'>支持手机/平板</span>
                     <span className='badge rounded-pill text-bg-info m-1'>需Quest联网</span>
 
                   <p className="card-text">ModsBeforeFriday是英文模组社区BSMG主流推荐的模组工具。此为中文分支，使用此中文源。</p>
