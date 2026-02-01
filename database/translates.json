@@ -818,7 +818,7 @@
             "null": null,
             "Posts scores to https://beatleader.xyz/ and shows in-game leaderboards.": null,
             "Open source custom maps leaderboard": null,
-            "beatleader.xyz | In-game leaderboards for custom and OST maps | Score replays | Clans, events, playlists and much more": null,
+            "beatleader.xyz | In-game leaderboards for custom and OST maps | Score replays | Clans, events, playlists and much more": "beatleader.xyz | 自制谱面/OST排行榜 | 录制回放 | 战队、赛事、歌单等等",
             "beatleader.com | In-game leaderboards for custom and OST maps | Score replays | Clans, events, playlists and much more": "beatleader.com | 自制谱面/OST排行榜 | 录制回放 | 战队、赛事、歌单等等"
         }
     },
@@ -985,7 +985,7 @@
     "NoodleExtensions": {
         "id": "NoodleExtensions",
         "names": {
-            "NoodleExtensions": null
+            "NoodleExtensions": "面条扩展"
         },
         "descriptions": {
             "This adds a host of new things you can do with your maps. Original mod for PC by Aeroluna. Contributions by Fern and Sc2ad.": "给谱面增加一大堆新东西。原PC版本作者为Aeroluna。这个版本由Fern和Sc2ad贡献。"
@@ -2213,10 +2213,10 @@
     "bsdc": {
         "id": "bsdc",
         "names": {
-            "discord-presence": null
+            "discord-presence": "discord状态"
         },
         "descriptions": {
-            "Allows discord rich presence to see which song you're playing, the current time, and much more.": null
+            "Allows discord rich presence to see which song you're playing, the current time, and much more.": "显示更丰富的discord状态，包括正在游玩的歌曲、时间等等信息。"
         }
     },
     "changeablebutton": {
@@ -2334,7 +2334,7 @@
         "id": "too-many-fireworks",
         "names": {
             "Too Many Fireworks": null,
-            "TooManyFireworks": "一大捆烟花"
+            "TooManyFireworks": "好多烟花"
         },
         "descriptions": {
             "Don't think there's enough fireworks? This mod adds a variety of settings that can make fireworks powerful enough to explode the game itself!": "烟花没看够？这个模组加了各种选项，能让游戏中的烟花效果更加炸裂！"
