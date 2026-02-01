@@ -73,8 +73,15 @@ function App() {
 
   return <div className="root-container">
     <h1>bsqmods中文源</h1>
-    
-    <div>
+    <div className=''><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod名称/简介源</small></div>
+    <hr className='m-1'/>
+    <div className='mb-1'>
+      <a style={{
+          display:"inline-block",
+          minWidth:"165px" // 避免LayoutShift
+        }} href="https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml" >
+        <img className='me-1' src="https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml/badge.svg" />
+      </a>
       <span className="badge text-bg-success">最后同步时间：{buildDate}</span>
       <div className="form-check form-switch d-inline-block align-middle m-auto ms-2">
         <input className="form-check-input" type="checkbox" role="switch" id="dayNightColorToggle" onChange={(e)=>{
@@ -86,7 +93,7 @@ function App() {
         <label className="form-check-label" style={{userSelect:"none"}} htmlFor="dayNightColorToggle">夜间模式</label>
       </div>
     </div>
-    <div style={{marginBottom:"8px"}}><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod名称/简介源</small></div>
+
 
     <div className="alert alert-primary" role="alert">
       <b>数据源与内容反馈</b><br/>
@@ -175,10 +182,10 @@ function App() {
       {show_version}版本无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为该版本的核心模组没有就绪。
     </div>
 
-    <hr />
+    <hr className="m-1"/>
     <ModList gameVersion={show_version} />
 
-    <hr />
+    <hr className='m-1'/>
 
     <div style={{textAlign:"left"}}>
       <div className="card text-center border-dark" style={{margin:"0", maxWidth:"1000px"}}>
@@ -228,11 +235,9 @@ function App() {
 
     </div>
 
-    <hr />
-
-    <div className="alert alert-warning" role="alert">
+    <div className="alert alert-warning mt-2" role="alert">
     <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans'><img src={cc_icon} width={"60px"}/></a>&nbsp;中文翻译数据依照CC-BY-NC-SA 4.0国际许可协议授权。贡献者：{contributors.map((e)=><span key={e.author} style={{marginLeft:"8px"}}>{e.author}</span>)}。
-    <hr/>
+    <hr className='m-3'/>
       贡献数据请向<a href="https://github.com/BeatSaberCN/bsqmods-cn/blob/master/database/translates.json">此文件</a>提交Pull Request！
       数据由上游<a href="https://mods.bsquest.xyz">bsqmods</a>同步汉化而来，每日自动更新。
     </div>
