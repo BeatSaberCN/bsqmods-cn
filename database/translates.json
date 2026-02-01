@@ -2,8 +2,7 @@
     "BetterMenu": {
         "id": "BetterMenu",
         "names": {
-            "Better Menu": null,
-            "A modod that rearranges the main menu into a more organized grid layout.\\r\\nThis is a port of the original mod created by AceofShovels\r\n\r\nRemoved BTS advertisement from the main menu. (Implemented by Laurie)": null
+            "Better Menu": null
         },
         "descriptions": {
             "A modod that rearranges the main menu into a more organized grid layout.\\r\\nThis is a port of the original mod created by AceofShovels\r\n\r\nRemoved BTS advertisement from the main menu. (Implemented by Laurie)": null
@@ -13,9 +12,7 @@
         "id": "goodbyebug",
         "names": {
             "Goodbye Bug": null,
-            "GoodbyeBug": null,
-            "Fixed bug:\r\n    - Fixes playlist scrolling in the wrong direction when you got more than 8 playlists.": null,
-            "Fixes playlist scrolling in the wrong direction when you got more than 8 playlists": null
+            "GoodbyeBug": null
         },
         "descriptions": {
             "Fixed bug:\r\n    - Fixes playlist scrolling in the wrong direction when you got more than 8 playlists.": null,
@@ -25,8 +22,7 @@
     "MotionBlurDisabler": {
         "id": "MotionBlurDisabler",
         "names": {
-            "Motion Blur Disabler": null,
-            "It disables the white area on the trail.": null
+            "Motion Blur Disabler": null
         },
         "descriptions": {
             "It disables the white area on the trail.": null
@@ -37,9 +33,7 @@
         "names": {
             "Quest Particles": null,
             "Particles": null,
-            "ParticleTuner": "粒子调整工具",
-            "Partially ported ParticleOverdrive to the Quest. Particles (a.k.a. ParticleTuner) allows you to adjust the particles spawned after slicing a note, remove saber clashing effects, and reduce environmental dust. There's also a built-in rainbow mode for particles :)": null,
-            "Quest Particles allows you to boost/reduce/remove note slash particles, saber clash particles, remove environmental dust, and make particle rainbow.\r\n\r\nThis mod does nothing out of the box. You will need to use the in-game mod config UI (Settings -> Mod Settings -> ParticleTuner) to change the particle behaviors.\r\n\r\nKnown Issues:\r\n* Particles having white tints in rainbow mode (colorOverLifetime?)\r\n* Sometimes the preset buttons may fail to work (please lmk if you can reproduce this issue consistently)": null
+            "ParticleTuner": "粒子调整工具"
         },
         "descriptions": {
             "Partially ported ParticleOverdrive to the Quest. Particles (a.k.a. ParticleTuner) allows you to adjust the particles spawned after slicing a note, remove saber clashing effects, and reduce environmental dust. There's also a built-in rainbow mode for particles :)": null,
@@ -50,8 +44,7 @@
     "preciseplayerheight": {
         "id": "preciseplayerheight",
         "names": {
-            "MorePrecisePlayerHeight": null,
-            "Original mod made by Eris for PC (Ported by Lillie)\r\n\r\nA very small Beat Saber mod that's let you view your own height with higher precision... at least one more decimal.\r\n\r\nConfig:\r\n    - enabled (true | false) - Enables the mod\r\n    - measureInFeet (true | false ) - Changes from meter to Feet.": null
+            "MorePrecisePlayerHeight": null
         },
         "descriptions": {
             "Original mod made by Eris for PC (Ported by Lillie)\r\n\r\nA very small Beat Saber mod that's let you view your own height with higher precision... at least one more decimal.\r\n\r\nConfig:\r\n    - enabled (true | false) - Enables the mod\r\n    - measureInFeet (true | false ) - Changes from meter to Feet.": null
@@ -61,9 +54,7 @@
         "id": "QuestSounds",
         "names": {
             "QuestSounds": "Quest音效",
-            "Quest Sounds": null,
-            "QuestSounds or QSounds for short, allows the user to change sounds without asset mods, \r\njust drop them into default path or your custom path!\r\n\r\nFeatures:\r\n  Support for OGG, MP3 and WAV file formats!\r\n  Creates QuestSounds folder at /sdcard/ModData/com.beatgames.beatsaber/Mods/\r\n  AFTER YOU HAVE RAN THE MOD ONCE\r\n  Config for disabling and enabling Custom Sounds!\r\n  Custom filepaths in config, so you can decide where you want the sounds!\r\n\r\nPlanned features:\r\n- Settings Menu to select Sounds.\r\n- More Sounds to customize": null,
-            "Allows users to change their sfx sounds and in-game music easily!\n\n  Avoid using any files that use MPEG format like MP3 or MP2 unless you don't mind brief freezing upon loading\n\nSounds you can change and their default folder Path:\n-  HitSounds:                       sdcard/ModData/com.beatgames.beatsaber/Mods/QuestSounds/HitSounds/\n-  BadHitSounds:        sdcard/ModData/com.beatgames.beatsaber/Mods/QuestSounds/BadHitSounds/\n-  NoteMissedSounds:    sdcard/ModData/com.beatgames.beatsaber/Mods/QuestSounds/NoteMissedSounds/\n-  MenuMusic:                sdcard/ModData/com.beatgames.beatsaber/Mods/QuestSounds/MenuMusic/\n-  MenuClicks:                sdcard/ModData/com.beatgames.beatsaber/Mods/QuestSounds/MenuClicks/\n-  Firework:                          sdcard/ModData/com.beatgames.beatsaber/Mods/QuestSounds/Fireworks/\n-  LevelCleared:                sdcard/ModData/com.beatgames.beatsaber/Mods/QuestSounds/LevelCleared/\n-  LevelFailed:                sdcard/ModData/com.beatgames.beatsaber/Mods/QuestSounds/LevelFailed/\n-  LobbyMusic:                sdcard/ModData/com.beatgames.beatsaber/Mods/QuestSounds/LobbyMusic/": null
+            "Quest Sounds": null
         },
         "descriptions": {
             "QuestSounds or QSounds for short, allows the user to change sounds without asset mods, \r\njust drop them into default path or your custom path!\r\n\r\nFeatures:\r\n  Support for OGG, MP3 and WAV file formats!\r\n  Creates QuestSounds folder at /sdcard/ModData/com.beatgames.beatsaber/Mods/\r\n  AFTER YOU HAVE RAN THE MOD ONCE\r\n  Config for disabling and enabling Custom Sounds!\r\n  Custom filepaths in config, so you can decide where you want the sounds!\r\n\r\nPlanned features:\r\n- Settings Menu to select Sounds.\r\n- More Sounds to customize": null,
@@ -74,8 +65,7 @@
     "rumblerumblequest": {
         "id": "rumblerumblequest",
         "names": {
-            "RumbleRumbleQuest": null,
-            "RumbleRumbleQuest allows you to adjust controller haptics \"rumbles\" in-game. RumbleRumbleQuest is a Quest port of the popular RumbleMod.": null
+            "RumbleRumbleQuest": null
         },
         "descriptions": {
             "RumbleRumbleQuest allows you to adjust controller haptics \"rumbles\" in-game. RumbleRumbleQuest is a Quest port of the popular RumbleMod.": null
@@ -84,8 +74,7 @@
     "ScorePercentage": {
         "id": "ScorePercentage",
         "names": {
-            "Score Percentage": null,
-            "Now with Settings UI! wait does pc even have that????\r\n\r\nChangelog:\r\n-Added Settings UI\r\n-Revamped Config code thanks to darknight1050 \r\n-Updated for 1.12.2\r\n-Fixed a bug with the average option": null
+            "Score Percentage": null
         },
         "descriptions": {
             "Now with Settings UI! wait does pc even have that????\r\n\r\nChangelog:\r\n-Added Settings UI\r\n-Revamped Config code thanks to darknight1050 \r\n-Updated for 1.12.2\r\n-Fixed a bug with the average option": null
@@ -94,8 +83,7 @@
     "TrailOverlap": {
         "id": "TrailOverlap",
         "names": {
-            "QuestTrailOverlap": null,
-            "Makes the saber trails overlap instead of cut into eachother": null
+            "QuestTrailOverlap": null
         },
         "descriptions": {
             "Makes the saber trails overlap instead of cut into eachother": null
@@ -105,13 +93,7 @@
         "id": "AntiVertigo",
         "names": {
             "AntiVertigo": "防眩晕",
-            "Anti Vertigo": null,
-            "Spawns a plane or circle under you to help you deal with vertigo issues.": null,
-            "Spawn a bigger base platform for people with vertigo so they can play comfortably": null,
-            "Spawn a bigger base platform for people with vertigo so they can play comfortably, AntiVertigo v1.0.4": null,
-            "Spawn a bigger base platform for people with vertigo so they can play comfortably, AntiVertigo v1.0.5": null,
-            "Spawn a bigger base platform for people with vertigo so they can play comfortably, AntiVertigo v1.0.6": null,
-            "Spawn a bigger base platform for people with vertigo so they can play comfortably, AntiVertigo v1.0.8": null
+            "Anti Vertigo": null
         },
         "descriptions": {
             "Spawns a plane or circle under you to help you deal with vertigo issues.": null,
@@ -127,8 +109,7 @@
     "auto-debris": {
         "id": "auto-debris",
         "names": {
-            "AutoDebris": null,
-            "Automatically enables or disables debris based on the NPS of the song, or playlist that a song is in.": null
+            "AutoDebris": null
         },
         "descriptions": {
             "Automatically enables or disables debris based on the NPS of the song, or playlist that a song is in.": null
@@ -147,8 +128,7 @@
     "bts-yeeter": {
         "id": "bts-yeeter",
         "names": {
-            "BTS Yeeter": null,
-            "This is a little mod that removes the BTS gremlins that fly around their maps.": null
+            "BTS Yeeter": null
         },
         "descriptions": {
             "This is a little mod that removes the BTS gremlins that fly around their maps.": null,
@@ -158,8 +138,7 @@
     "BurnMarksKeeper": {
         "id": "BurnMarksKeeper",
         "names": {
-            "Burn Marks Keeper": null,
-            "Stops your burn marks from ever disappearing when you collide your sabers with the ground! \r\nRequires PinkCore.": null
+            "Burn Marks Keeper": null
         },
         "descriptions": {
             "Stops your burn marks from ever disappearing when you collide your sabers with the ground! \r\nRequires PinkCore.": null
@@ -168,8 +147,7 @@
     "clockmod": {
         "id": "clockmod",
         "names": {
-            "Clock Mod": null,
-            "Features:\r\n- Toggle Clock off in maps.\r\n- Change Clock between 24/12 Hour format.\r\n- Toggle Seconds on/off\r\n- Added HoverText explanations to the config menu.\r\n\r\nMissing Features:\r\n- Change size\r\n- Change color\r\n\r\nNote:\r\nSince the original source code only had the code to show the clock, I had to rewrite things like changing the format to 12 from 24 hours and toggling seconds on and off.\r\nWhich means any previous config values will not load. You will have to set the settings again.": null
+            "Clock Mod": null
         },
         "descriptions": {
             "Features:\r\n- Toggle Clock off in maps.\r\n- Change Clock between 24/12 Hour format.\r\n- Toggle Seconds on/off\r\n- Added HoverText explanations to the config menu.\r\n\r\nMissing Features:\r\n- Change size\r\n- Change color\r\n\r\nNote:\r\nSince the original source code only had the code to show the clock, I had to rewrite things like changing the format to 12 from 24 hours and toggling seconds on and off.\r\nWhich means any previous config values will not load. You will have to set the settings again.": null,
@@ -180,9 +158,7 @@
         "id": "custom-fail-text",
         "names": {
             "Custom Fail Text": null,
-            "CustomFailText": null,
-            "Allows you to customise the text that appears when you fail a level.\r\nThe text can be changed in the mod settings menu.": null,
-            "Allows you to customise the text that you see when you fail a level.": null
+            "CustomFailText": null
         },
         "descriptions": {
             "Allows you to customise the text that appears when you fail a level.\r\nThe text can be changed in the mod settings menu.": null,
@@ -192,8 +168,7 @@
     "DarthMaul": {
         "id": "DarthMaul",
         "names": {
-            "Darth Maul": null,
-            "A long awated rewrite of the original Darth Maul mod by Henwill8, which was originally created by riku1227!\r\nThis also contains many config options and is initially toggleable via the in-game modifiers.": null
+            "Darth Maul": null
         },
         "descriptions": {
             "A long awated rewrite of the original Darth Maul mod by Henwill8, which was originally created by riku1227!\r\nThis also contains many config options and is initially toggleable via the in-game modifiers.": null
@@ -202,9 +177,7 @@
     "DebrisTweaks": {
         "id": "DebrisTweaks",
         "names": {
-            "DebrisTweaks": null,
-            "Allows for full customization of various note debris parameters, including scale, lifetime and velocity.": null,
-            "Adds various debris tweaks!": null
+            "DebrisTweaks": null
         },
         "descriptions": {
             "Allows for full customization of various note debris parameters, including scale, lifetime and velocity.": null,
@@ -214,10 +187,7 @@
     "discord-presence": {
         "id": "discord-presence",
         "names": {
-            "Discord Presence": null,
-            "Allows discord rich presence to see which song you're playing, the current time, and much more.\r\n\r\nMod Installation: https://github.com/Lauriethefish/Quest-Discord-Presence-Client/blob/main/README.md\r\nYou must follow this to set up the client on your PC and the mod on your Quest.\r\nIf you get a virus warning during installation, ignore it, this isn't a virus - Windows is oversensitive.\r\n\r\nAlternatively, follow this guide to use MadMagic's app for general presence of any Quest app: https://github.com/madmagic007/Oculus-Quest-Presence\r\n\r\nIf it's not working, try these:\r\n- Make sure your Quest IP hasn't changed, if so, update it in the app, see installation.\r\n- Make sure you've opened the app.\r\n- Make sure Beat Saber is open and your headset is on your head.\r\n- You have discord on your PC not in the browser.\r\n- Try restarting discord.": null,
-            "null": null,
-            "Allows discord rich presence to see which song you're playing, the current time, and much more.": null
+            "Discord Presence": null
         },
         "descriptions": {
             "Allows discord rich presence to see which song you're playing, the current time, and much more.\r\n\r\nMod Installation: https://github.com/Lauriethefish/Quest-Discord-Presence-Client/blob/main/README.md\r\nYou must follow this to set up the client on your PC and the mod on your Quest.\r\nIf you get a virus warning during installation, ignore it, this isn't a virus - Windows is oversensitive.\r\n\r\nAlternatively, follow this guide to use MadMagic's app for general presence of any Quest app: https://github.com/madmagic007/Oculus-Quest-Presence\r\n\r\nIf it's not working, try these:\r\n- Make sure your Quest IP hasn't changed, if so, update it in the app, see installation.\r\n- Make sure you've opened the app.\r\n- Make sure Beat Saber is open and your headset is on your head.\r\n- You have discord on your PC not in the browser.\r\n- Try restarting discord.": null,
@@ -228,8 +198,7 @@
     "instafailaccuracy": {
         "id": "instafailaccuracy",
         "names": {
-            "InstaFailAccuracy": null,
-            "InstaFailAccuracy allows you to set a certain accuracy threshold that if you go below, you will fail the level! All of these can be changed through a simple in-game GUI too!\r\n\r\nKnown bugs:\r\n- Your game will crash if you watch a replay that includes you dying to going below your accuracy threshold.": null
+            "InstaFailAccuracy": null
         },
         "descriptions": {
             "InstaFailAccuracy allows you to set a certain accuracy threshold that if you go below, you will fail the level! All of these can be changed through a simple in-game GUI too!\r\n\r\nKnown bugs:\r\n- Your game will crash if you watch a replay that includes you dying to going below your accuracy threshold.": null
@@ -238,8 +207,7 @@
     "InvertedArrows": {
         "id": "InvertedArrows",
         "names": {
-            "Inverted Arrows": null,
-            "Customize all arrow directions on a beatmap": null
+            "Inverted Arrows": null
         },
         "descriptions": {
             "Customize all arrow directions on a beatmap": null
@@ -248,8 +216,7 @@
     "MappingExtensions": {
         "id": "MappingExtensions",
         "names": {
-            "Mapping Extensions": "谱面扩展",
-            "This adds a host of new things you can do with your maps as a mapper, and allows you to play said maps as a player. An update of the port of the PC original mod by Kyle 1413. Previously maintained by zoller27osu.\n\nReminder: difficulties that require both Mapping Extensions and Noodle Extensions at the same time do not work. This is intended behaviour on Noodle's part.": null
+            "Mapping Extensions": "谱面扩展"
         },
         "descriptions": {
             "This adds a host of new things you can do with your maps as a mapper, and allows you to play said maps as a player. An update of the port of the PC original mod by Kyle 1413. Previously maintained by zoller27osu.": "为谱师设计谱面提供一些新的东西。如果你是玩家，这个模组能让你游玩一些依赖此模组的谱面。这是一个移植自PC版本的模组（来自Kyle 1413）。原先由zoller27osu维护。",
@@ -259,8 +226,7 @@
     "mod-list": {
         "id": "mod-list",
         "names": {
-            "ModList": "模组列表",
-            "Allows you to see which mods have loaded correctly ingame, and tells you why a mod failed to load. Useful for support and troubleshooting.\r\n\r\nTo view loaded mods, go to the settings icon in the main menu, then select mod settings and go to mod list.": null
+            "ModList": "模组列表"
         },
         "descriptions": {
             "Allows you to see which mods have loaded correctly ingame, and tells you why a mod failed to load. Useful for support and troubleshooting.\r\n\r\nTo view loaded mods, go to the settings icon in the main menu, then select mod settings and go to mod list.": null,
@@ -270,8 +236,7 @@
     "mplighting": {
         "id": "mplighting",
         "names": {
-            "MultiplayerLighting": null,
-            "A mod that adds basic full color lighting to multiplayer, including ChromaLite (rainbow) support!": null
+            "MultiplayerLighting": null
         },
         "descriptions": {
             "A mod that adds basic full color lighting to multiplayer, including ChromaLite (rainbow) support!": null
@@ -280,8 +245,7 @@
     "no-health-and-safety": {
         "id": "no-health-and-safety",
         "names": {
-            "No Health And Safety": null,
-            "Removes that annoying health and safety pop-up after starting the game.": null
+            "No Health And Safety": null
         },
         "descriptions": {
             "Removes that annoying health and safety pop-up after starting the game.": null
@@ -290,8 +254,7 @@
     "NoBoom": {
         "id": "NoBoom",
         "names": {
-            "No Boom": null,
-            "A Port of Spookys NoBoom mod. Disables the bomb particle effects, mainly used for recording.": null
+            "No Boom": null
         },
         "descriptions": {
             "A Port of Spookys NoBoom mod. Disables the bomb particle effects, mainly used for recording.": null
@@ -300,8 +263,7 @@
     "NoItalics": {
         "id": "NoItalics",
         "names": {
-            "No Italics": null,
-            "Unslants everything in the menu! WARNING, THIS LOOKS VERY WEIRD. THE GAME WAS NOT DESIGNED FOR THIS.": null
+            "No Italics": null
         },
         "descriptions": {
             "Unslants everything in the menu! WARNING, THIS LOOKS VERY WEIRD. THE GAME WAS NOT DESIGNED FOR THIS.": null
@@ -310,8 +272,7 @@
     "nomisstext": {
         "id": "nomisstext",
         "names": {
-            "No Miss Text": null,
-            "Made with permission from Pink. Original mod by Pink and CyanSnow.\r\n\r\nRemoves the miss and bad cut text along with the combo break animation! You can also hide how bad you are :thonkerguns:": null
+            "No Miss Text": null
         },
         "descriptions": {
             "Made with permission from Pink. Original mod by Pink and CyanSnow.\r\n\r\nRemoves the miss and bad cut text along with the combo break animation! You can also hide how bad you are :thonkerguns:": null
@@ -320,8 +281,7 @@
     "pause-confirm": {
         "id": "pause-confirm",
         "names": {
-            "PauseConfirm": null,
-            "Makes you confirm before going back to the menu, restarting or pressing continue when in the pause menu. This is to avoid you accidentally doing it when you're about to set a really good play, which I'm sure you've all done many times.\r\n\r\nTo choose which buttons require confirmation go to the Settings Icon in the main menu -> Mod Settings -> PauseConfirm. The default is that all three buttons require confirmation, but some might not want that.": null
+            "PauseConfirm": null
         },
         "descriptions": {
             "Makes you confirm before going back to the menu, restarting or pressing continue when in the pause menu. This is to avoid you accidentally doing it when you're about to set a really good play, which I'm sure you've all done many times.\r\n\r\nTo choose which buttons require confirmation go to the Settings Icon in the main menu -> Mod Settings -> PauseConfirm. The default is that all three buttons require confirmation, but some might not want that.": null
@@ -330,9 +290,7 @@
     "PinkCore": {
         "id": "PinkCore",
         "names": {
-            "PinkCore": null,
-            "PinkCore, formerly known as PinkUtils is a core mod that ports over many required features which ensures a smooth PC-Like experience.": null,
-            "PinkCore is a core mod that ports over the rest of SongCore's features.\nThis includes adding information to your game such as Mappers names, Mod Requirements, Custom Colours, Custom Difficulty names, Burn Marks, and more!": null
+            "PinkCore": null
         },
         "descriptions": {
             "PinkCore, formerly known as PinkUtils is a core mod that ports over many required features which ensures a smooth PC-Like experience.": null,
@@ -342,8 +300,7 @@
     "PracticePlus": {
         "id": "PracticePlus",
         "names": {
-            "PracticePlus": null,
-            "A mod that adds a few features to the practice mode menu\r\n\r\n - Set the NJS and note offset for the song\r\n - Expands the speed slider from 50%-200% to 25%-300% (because why not)\r\n\r\nThis is an updated/refactored version of the mod originally made by L_, and should hopefully be easy to update in the future.\r\n\r\nNOTE: The in-game menu for setting njs/offset is gone for now, until I can figure out why new buttons in the pause menu aren't clickable": null
+            "PracticePlus": null
         },
         "descriptions": {
             "A mod that adds a few features to the practice mode menu\r\n\r\n - Set the NJS and note offset for the song\r\n - Expands the speed slider from 50%-200% to 25%-300% (because why not)\r\n\r\nThis is an updated/refactored version of the mod originally made by L_, and should hopefully be easy to update in the future.\r\n\r\nNOTE: The in-game menu for setting njs/offset is gone for now, until I can figure out why new buttons in the pause menu aren't clickable": null
@@ -352,8 +309,7 @@
     "practice_skipper": {
         "id": "practice_skipper",
         "names": {
-            "Practice Skipper": null,
-            "Adds the ability to seek and change song speed while in practice mode. Double tap left or right with your left controller's analog stick to skip through the song, and double tap up or down to adjust the song speed. Options are available to change which controller to use, how long to skip, and how much to change speed.": null
+            "Practice Skipper": null
         },
         "descriptions": {
             "Adds the ability to seek and change song speed while in practice mode. Double tap left or right with your left controller's analog stick to skip through the song, and double tap up or down to adjust the song speed. Options are available to change which controller to use, how long to skip, and how much to change speed.": null
@@ -362,8 +318,7 @@
     "Qosmetics": {
         "id": "Qosmetics",
         "names": {
-            "Qosmetics": null,
-            "Quest Cosmetics on a whole new level!": null
+            "Qosmetics": null
         },
         "descriptions": {
             "Quest Cosmetics on a whole new level!": null
@@ -372,8 +327,7 @@
     "QuestHitscoreVisualizer": {
         "id": "QuestHitscoreVisualizer",
         "names": {
-            "Hitscore Visualizer": null,
-            "Displays your scores for each note with customizable colors, text, images, and even sound!": null
+            "Hitscore Visualizer": null
         },
         "descriptions": {
             "Displays your scores for each note with customizable colors, text, images, and even sound!": null
@@ -382,10 +336,7 @@
     "RedBar": {
         "id": "RedBar",
         "names": {
-            "RedBar": null,
-            "Change the color of your health bar according to your health\n\nFeatures:\n- Custom color for your energy bar which changes according to your health\n- Rainbow mode": null,
-            "null": null,
-            "Change the color of your health bar according to your health": null
+            "RedBar": null
         },
         "descriptions": {
             "Change the color of your health bar according to your health\n\nFeatures:\n- Custom color for your energy bar which changes according to your health\n- Rainbow mode": null,
@@ -398,10 +349,7 @@
         "names": {
             "Recorder": null,
             "Replay Lite": null,
-            "Replay": "回放录像",
-            "A temporary pre-replay update mod that makes replay files.": null,
-            "null": null,
-            "OUTDATED: USE REPLAY INSTEAD.\r\n\r\n Lets you view your replay of your best attempt or score on a song. Replays can be sped up or slowed down and paired with death replays (the replays that show on the level failed screen), this can be an excellent practice tool. View your death replay and slow it down a lot to see exactly why you died.\r\n\r\nFull replay will still take a while but I am definitely making progress.\r\n\r\nMy Patreon (If you join then you get some perks): https://www.patreon.com/henwill8?fan_landing=true": null
+            "Replay": "回放录像"
         },
         "descriptions": {
             "A temporary pre-replay update mod that makes replay files.": null,
@@ -413,8 +361,7 @@
     "slow-resume": {
         "id": "slow-resume",
         "names": {
-            "SlowResume": null,
-            "Allows you to change how long the countdown takes to resume when paused. Disables score submission if the amount of time is increased, since this makes pausing an easier method to get back your stamina.\r\n\r\nTo change the amount of time, go to the Settings Icon in the main menu -> Mod Settings -> SlowResume.\r\n\r\nThis mod was commissioned": null
+            "SlowResume": null
         },
         "descriptions": {
             "Allows you to change how long the countdown takes to resume when paused. Disables score submission if the amount of time is increased, since this makes pausing an easier method to get back your stamina.\r\n\r\nTo change the amount of time, go to the Settings Icon in the main menu -> Mod Settings -> SlowResume.\r\n\r\nThis mod was commissioned": null
@@ -423,8 +370,7 @@
     "AddedModifiers": {
         "id": "AddedModifiers",
         "names": {
-            "Added Modifiers": null,
-            "Adds additional modifiers to your game": null
+            "Added Modifiers": null
         },
         "descriptions": {
             "Adds additional modifiers to your game": null
@@ -433,8 +379,7 @@
     "Codegen": {
         "id": "Codegen",
         "names": {
-            "Codegen": null,
-            "A core library used by almost every mod. DO NOT ATTEMPT TO UNINSTALL IT!": null
+            "Codegen": null
         },
         "descriptions": {
             "A core library used by almost every mod. DO NOT ATTEMPT TO UNINSTALL IT!": null
@@ -444,10 +389,7 @@
         "id": "CrashMod",
         "names": {
             "CrashMod": null,
-            "Crash Mod": null,
-            "Crash your game if you are bad and good\nFeatures:\n- Crash your mod via various triggers. e. g. Crash on Play, Miss, Good cut, Turn and way more": null,
-            "null": null,
-            "Crash your game if you are bad and good": null
+            "Crash Mod": null
         },
         "descriptions": {
             "Crash your game if you are bad and good\nFeatures:\n- Crash your mod via various triggers. e. g. Crash on Play, Miss, Good cut, Turn and way more": null,
@@ -458,8 +400,7 @@
     "CustomBackgrounds": {
         "id": "CustomBackgrounds",
         "names": {
-            "Custom Backgrounds": null,
-            "Import your own 360 images as custom skyboxes!\nScans the 'CustomBackgrounds' ModData folder for imported images.": null
+            "Custom Backgrounds": null
         },
         "descriptions": {
             "Import your own 360 images as custom skyboxes!\nScans the 'CustomBackgrounds' ModData folder for imported images.": null
@@ -468,8 +409,7 @@
     "CustomPillowsQuest": {
         "id": "CustomPillowsQuest",
         "names": {
-            "Custom Pillows Quest": null,
-            "This mod is a spiritual port of the mod for PC of the same name by Toni Macaroni!\r\nThese pillows can be anything you want them to be, as long as you can put it on a flat texture. This mod was Commissioned by @TKC \r\n\r\n - Pillows Take their texture from a pool of active textures, enabled in the mod settings and listed from sdcard/ModData/com.beatgames.beatsaber/Mods/CustomPillowsQuest/images\r\n - Pillows spawn using a constellation, configured in the mod settings and located at sdcard/ModData/com.beatgames.beatsaber/Mods/CustomPillowsQuest/constellations\r\n - The mod can be disabled in the menu\r\n - Features a shuffle button in the menu for shuffling the current iteration of textures\r\n\r\nExtra Pillow Textures:\r\nhttps://github.com/RedBrumbler/CustomPillowsQuest/releases/download/1.0.0/ExtraPillows.zip": null
+            "Custom Pillows Quest": null
         },
         "descriptions": {
             "This mod is a spiritual port of the mod for PC of the same name by Toni Macaroni!\r\nThese pillows can be anything you want them to be, as long as you can put it on a flat texture. This mod was Commissioned by @TKC \r\n\r\n - Pillows Take their texture from a pool of active textures, enabled in the mod settings and listed from sdcard/ModData/com.beatgames.beatsaber/Mods/CustomPillowsQuest/images\r\n - Pillows spawn using a constellation, configured in the mod settings and located at sdcard/ModData/com.beatgames.beatsaber/Mods/CustomPillowsQuest/constellations\r\n - The mod can be disabled in the menu\r\n - Features a shuffle button in the menu for shuffling the current iteration of textures\r\n\r\nExtra Pillow Textures:\r\nhttps://github.com/RedBrumbler/CustomPillowsQuest/releases/download/1.0.0/ExtraPillows.zip": null
@@ -487,8 +427,7 @@
     "fastfail": {
         "id": "fastfail",
         "names": {
-            "Fast Fail": null,
-            "Speeds up the fail animation!": null
+            "Fast Fail": null
         },
         "descriptions": {
             "Speeds up the fail animation!": null
@@ -507,9 +446,7 @@
         "id": "play3rdper",
         "names": {
             "Third Person Mod": "第三人称模组",
-            "Third Person mod": null,
-            "View yourself in 3rd person while playing. Features include a spinning camera, flying through the whole beat saber environment and way more": null,
-            "A mod which lets you play in third person\r\n\r\nFeatures:\r\n- Play with a fixed camera position\r\n- Fly anywhere\r\n- Fix the camera to your saber\r\n- And more options to keep you away from motion sickness": null
+            "Third Person mod": null
         },
         "descriptions": {
             "View yourself in 3rd person while playing. Features include a spinning camera, flying through the whole beat saber environment and way more": null,
@@ -519,8 +456,7 @@
     "qounters-minus": {
         "id": "qounters-minus",
         "names": {
-            "Qounters-": null,
-            "Store brand version of Counters+ for the Quest version of Beat Saber. Adds a variety of configurable Qounters to display statistics in-game.": null
+            "Qounters-": null
         },
         "descriptions": {
             "Store brand version of Counters+ for the Quest version of Beat Saber. Adds a variety of configurable Qounters to display statistics in-game.": null
@@ -529,9 +465,7 @@
     "questui": {
         "id": "questui",
         "names": {
-            "QuestUI": null,
-            "A library used to add Mod Settings and other UI.": null,
-            "null": null
+            "QuestUI": null
         },
         "descriptions": {
             "A library used to add Mod Settings and other UI.": null,
@@ -541,8 +475,7 @@
     "slicevisualizer": {
         "id": "slicevisualizer",
         "names": {
-            "Slice Visualizer": null,
-            "See your slices right in front of you": null
+            "Slice Visualizer": null
         },
         "descriptions": {
             "See your slices right in front of you": null
@@ -551,8 +484,7 @@
     "SongDifficultyChart": {
         "id": "SongDifficultyChart",
         "names": {
-            "Song Difficulty Chart": null,
-            "null": null
+            "Song Difficulty Chart": null
         },
         "descriptions": {
             "null": null
@@ -561,8 +493,7 @@
     "TrickSaber": {
         "id": "TrickSaber",
         "names": {
-            "TrickSaber": null,
-            "Do tricks and stuff": null
+            "TrickSaber": null
         },
         "descriptions": {
             "Do tricks and stuff": null
@@ -572,9 +503,7 @@
         "id": "codegen",
         "names": {
             "Codegen": null,
-            "codegen": null,
-            "A core library used by almost every mod. DO NOT ATTEMPT TO UNINSTALL IT!": null,
-            "null": null
+            "codegen": null
         },
         "descriptions": {
             "A core library used by almost every mod. DO NOT ATTEMPT TO UNINSTALL IT!": null,
@@ -595,8 +524,7 @@
         "id": "qinst",
         "names": {
             "qInstaller": null,
-            "AwesomeOldQosmeticsModelInstaller": "很棒的旧版本Qosmetics安装器",
-            "Literally just a json file which allows you to install .qsaber, .qwall and .qbloq files using ModsBeforeFriday. NOTE: These are outdated formats. New models should be compiled to the newer formats!": null
+            "AwesomeOldQosmeticsModelInstaller": "很棒的旧版本Qosmetics安装器"
         },
         "descriptions": {
             "Literally just a json file which allows you to install .qsaber, .qwall and .qbloq files using ModsBeforeFriday. NOTE: These are outdated formats. New models should be compiled to the newer formats!": null,
@@ -606,8 +534,7 @@
     "anxiety": {
         "id": "anxiety",
         "names": {
-            "anxiety": null,
-            "i got bored (again)": null
+            "anxiety": null
         },
         "descriptions": {
             "i got bored (again)": null
@@ -616,8 +543,7 @@
     "Bandoot-SoundPack": {
         "id": "Bandoot-SoundPack",
         "names": {
-            "Bandoot SoundPack": null,
-            "The Bandoot Sound Pack contains Sounds used by Bandoot.": null
+            "Bandoot SoundPack": null
         },
         "descriptions": {
             "The Bandoot Sound Pack contains Sounds used by Bandoot.": null
@@ -644,8 +570,7 @@
     "ComboSplitter": {
         "id": "ComboSplitter",
         "names": {
-            "Combo Splitter": null,
-            "Features:\r\nSplits the combo into two different counters--one for each hand.\r\nFollows the selected saber color scheme (can be disabled)": null
+            "Combo Splitter": null
         },
         "descriptions": {
             "Features:\r\nSplits the combo into two different counters--one for each hand.\r\nFollows the selected saber color scheme (can be disabled)": null
@@ -654,8 +579,7 @@
     "CustomPillows": {
         "id": "CustomPillows",
         "names": {
-            "Custom Pillows": null,
-            "Custom Pillow mod for Quest\nOriginal by Toni Macaroni for PC": null
+            "Custom Pillows": null
         },
         "descriptions": {
             "Custom Pillow mod for Quest\nOriginal by Toni Macaroni for PC": null
@@ -665,9 +589,7 @@
         "id": "darthmaul",
         "names": {
             "darthmaul": null,
-            "Darth Maul": null,
-            "i got bored (again)": null,
-            "Double saber thing": null
+            "Darth Maul": null
         },
         "descriptions": {
             "i got bored (again)": null,
@@ -677,8 +599,7 @@
     "fasterscroll": {
         "id": "fasterscroll",
         "names": {
-            "Faster Scroll": null,
-            "Find your song faster with this customizable faster scrolling mod.": null
+            "Faster Scroll": null
         },
         "descriptions": {
             "Find your song faster with this customizable faster scrolling mod.": null
@@ -687,9 +608,7 @@
     "feetsaber": {
         "id": "feetsaber",
         "names": {
-            "feetsaber": null,
-            "i got bored": null,
-            "Phazed became bored": null
+            "feetsaber": null
         },
         "descriptions": {
             "i got bored": null,
@@ -699,9 +618,7 @@
     "fish-utils": {
         "id": "fish-utils",
         "names": {
-            "FishUtils": null,
-            "null": null,
-            "A general quality-of-life mod with many small improvements, e.g. automatically changing settings based on the level, and various pause tweaks.": null
+            "FishUtils": null
         },
         "descriptions": {
             "null": null,
@@ -711,8 +628,7 @@
     "FlailSaber001": {
         "id": "FlailSaber001",
         "names": {
-            "FlailSaber": null,
-            "Supposedly sabers are like flails": null
+            "FlailSaber": null
         },
         "descriptions": {
             "Supposedly sabers are like flails": null
@@ -721,8 +637,7 @@
     "FNF-SoundPack": {
         "id": "FNF-SoundPack",
         "names": {
-            "Friday Night Funkin SoundPack": null,
-            "The Friday Night Funkin Sound Pack contains Sounds from the Game Friday Night Funkint to funk along to in Beat Saber.": null
+            "Friday Night Funkin SoundPack": null
         },
         "descriptions": {
             "The Friday Night Funkin Sound Pack contains Sounds from the Game Friday Night Funkint to funk along to in Beat Saber.": null
@@ -731,9 +646,7 @@
     "hitscore": {
         "id": "hitscore",
         "names": {
-            "Hit Score Visualizer": null,
-            "Changes the scores that pop up when you hit notes.": null,
-            "null": null
+            "Hit Score Visualizer": null
         },
         "descriptions": {
             "Changes the scores that pop up when you hit notes.": null,
@@ -742,16 +655,15 @@
     },
     "IForgor": {
         "id": "IForgor",
-        "names": {
+        "names": {},
+        "descriptions": {
             "I Forgor": null
-        },
-        "descriptions": {}
+        }
     },
     "Osu-SoundPack": {
         "id": "Osu-SoundPack",
         "names": {
-            "Osu SoundPack": null,
-            "The Osu Sound Pack contains Sounds from Osu.": null
+            "Osu SoundPack": null
         },
         "descriptions": {
             "The Osu Sound Pack contains Sounds from Osu.": null
@@ -761,9 +673,7 @@
         "id": "Play3rdPer",
         "names": {
             "Third Person mod": null,
-            "Third Person Mod": "第三人称模组",
-            "null": null,
-            "Features:\n- Play in third person\n- Fix your camera to your saber\n- Fix your camera\n- Fly through the enviorment": null
+            "Third Person Mod": "第三人称模组"
         },
         "descriptions": {
             "null": null,
@@ -775,10 +685,7 @@
         "id": "playlistmanager",
         "names": {
             "PlaylistManager": "歌单管理器",
-            "playlistmanager": null,
-            "null": null,
-            "Adds custom playlists to the game": null,
-            "Create and manage playlists ingame!": null
+            "playlistmanager": null
         },
         "descriptions": {
             "null": null,
@@ -790,9 +697,7 @@
     "QonsistentSaberColors": {
         "id": "QonsistentSaberColors",
         "names": {
-            "QonsistentSaberColors": null,
-            "Menu saber colors reflect in game saber colors.": null,
-            "Menu saber colors reflect in game saber colors. @drumtool#4435": null
+            "QonsistentSaberColors": null
         },
         "descriptions": {
             "Menu saber colors reflect in game saber colors.": null,
@@ -802,8 +707,7 @@
     "QustomMenuText": {
         "id": "QustomMenuText",
         "names": {
-            "Quest Custom Menu Text": null,
-            "Changes the menu text to a user-configurable text object": null
+            "Quest Custom Menu Text": null
         },
         "descriptions": {
             "Changes the menu text to a user-configurable text object": null
@@ -812,8 +716,7 @@
     "songbrowser": {
         "id": "songbrowser",
         "names": {
-            "SongBrowser": null,
-            "Browsing your songs has never been easier!": null
+            "SongBrowser": null
         },
         "descriptions": {
             "Browsing your songs has never been easier!": null
@@ -823,8 +726,7 @@
         "id": "songdownloader",
         "names": {
             "SongDownloader": "谱面下载器",
-            "songdownloader": null,
-            "null": null
+            "songdownloader": null
         },
         "descriptions": {
             "null": null,
@@ -835,9 +737,7 @@
         "id": "songloader",
         "names": {
             "SongLoader": null,
-            "songloader": null,
-            "null": null,
-            "Load Custom Songs at Runtime": null
+            "songloader": null
         },
         "descriptions": {
             "null": null,
@@ -847,8 +747,7 @@
     "streamer-tools": {
         "id": "streamer-tools",
         "names": {
-            "Streamer Tools": null,
-            "Allows applications to get information from the game like, currently played song.": null
+            "Streamer Tools": null
         },
         "descriptions": {
             "Allows applications to get information from the game like, currently played song.": null
@@ -857,8 +756,7 @@
     "crash-reporter": {
         "id": "crash-reporter",
         "names": {
-            "Crash Reporter": null,
-            "Automatically reports crash logs": null
+            "Crash Reporter": null
         },
         "descriptions": {
             "Automatically reports crash logs": null
@@ -867,8 +765,7 @@
     "MorePrecisePlayerHeight": {
         "id": "MorePrecisePlayerHeight",
         "names": {
-            "More Precise Player Height": null,
-            "Let's you view your own height... but more precise.": null
+            "More Precise Player Height": null
         },
         "descriptions": {
             "Let's you view your own height... but more precise.": null
@@ -877,8 +774,7 @@
     "MRCPlus": {
         "id": "MRCPlus",
         "names": {
-            "MRCPlus": null,
-            "Unlock additional options for Oculus Mixed Reality Capture. Requires a PC running the MRC OBS plugin.": null
+            "MRCPlus": null
         },
         "descriptions": {
             "Unlock additional options for Oculus Mixed Reality Capture. Requires a PC running the MRC OBS plugin.": null
@@ -887,8 +783,7 @@
     "pinkcore": {
         "id": "pinkcore",
         "names": {
-            "PinkCore": null,
-            "PinkCore is a core mod that ports over the rest of SongCore's features.\nThis includes adding information to your game such as Mappers names, Mod Requirements, Custom Colours, Custom Difficulty names, Burn Marks, and more!": null
+            "PinkCore": null
         },
         "descriptions": {
             "PinkCore is a core mod that ports over the rest of SongCore's features.\nThis includes adding information to your game such as Mappers names, Mod Requirements, Custom Colours, Custom Difficulty names, Burn Marks, and more!": null
@@ -897,8 +792,7 @@
     "SongInfoPlus": {
         "id": "SongInfoPlus",
         "names": {
-            "SongInfoPlus": null,
-            "View extra song info by clicking the cover art": null
+            "SongInfoPlus": null
         },
         "descriptions": {
             "View extra song info by clicking the cover art": null
@@ -907,8 +801,7 @@
     "aikatweaks": {
         "id": "aikatweaks",
         "names": {
-            "AikaTweaks": null,
-            "Various tweaks for Beat Saber.": null
+            "AikaTweaks": null
         },
         "descriptions": {
             "Various tweaks for Beat Saber.": null
@@ -917,11 +810,7 @@
     "BeatLeader": {
         "id": "BeatLeader",
         "names": {
-            "BeatLeader": "BL排行榜",
-            "null": null,
-            "Posts scores to https://beatleader.xyz/ and shows in-game leaderboards.": null,
-            "Open source custom maps leaderboard": null,
-            "beatleader.xyz | In-game leaderboards for custom and OST maps | Score replays | Clans, events, playlists and much more": null
+            "BeatLeader": "BL排行榜"
         },
         "descriptions": {
             "null": null,
@@ -935,9 +824,7 @@
         "id": "beatsaviordata",
         "names": {
             "BeatSaviorJustData": null,
-            "BeatSaviorData": null,
-            "null": null,
-            "Gives a detailed overview of your performance when finishing a level!": null
+            "BeatSaviorData": null
         },
         "descriptions": {
             "null": null,
@@ -947,8 +834,7 @@
     "BetterSaberQolors": {
         "id": "BetterSaberQolors",
         "names": {
-            "Better Saber Qolors": null,
-            "Allows for a better experience when choosing your saber colors": null
+            "Better Saber Qolors": null
         },
         "descriptions": {
             "Allows for a better experience when choosing your saber colors": null
@@ -957,8 +843,7 @@
     "burnmarkqeeper": {
         "id": "burnmarkqeeper",
         "names": {
-            "BurnMarkQeeper": null,
-            "Welp you can kinda guess by the name it keeps your BurnMarks": null
+            "BurnMarkQeeper": null
         },
         "descriptions": {
             "Welp you can kinda guess by the name it keeps your BurnMarks": null
@@ -967,8 +852,7 @@
     "Burnout": {
         "id": "Burnout",
         "names": {
-            "Burnout": null,
-            "Allows for full customization of saber burn marks.": null
+            "Burnout": null
         },
         "descriptions": {
             "Allows for full customization of saber burn marks.": null
@@ -977,9 +861,7 @@
     "colorama": {
         "id": "colorama",
         "names": {
-            "Colorama": null,
-            "Change the colors of the menu and other neat color related options.": null,
-            "Change all the colors!": null
+            "Colorama": null
         },
         "descriptions": {
             "Change the colors of the menu and other neat color related options.": null,
@@ -989,8 +871,7 @@
     "custom-json-data": {
         "id": "custom-json-data",
         "names": {
-            "CustomJSONData": "自定义JSON数据",
-            "Funny maps go brrr": null
+            "CustomJSONData": "自定义JSON数据"
         },
         "descriptions": {
             "Funny maps go brrr": null
@@ -999,8 +880,7 @@
     "DrinkWater": {
         "id": "DrinkWater",
         "names": {
-            "Drink Water": null,
-            "Tells you to drink water": null
+            "Drink Water": null
         },
         "descriptions": {
             "Tells you to drink water": null
@@ -1009,8 +889,7 @@
     "FingerSaber": {
         "id": "FingerSaber",
         "names": {
-            "FingerSaber": null,
-            "Beat Saber At Your Finger Tips. @drumtool#4435": null
+            "FingerSaber": null
         },
         "descriptions": {
             "Beat Saber At Your Finger Tips. @drumtool#4435": null
@@ -1019,8 +898,7 @@
     "fuckmaps": {
         "id": "fuckmaps",
         "names": {
-            "FuckMaps": null,
-            "This mod crashes your game if you play a song below or above a configurable BPM.": null
+            "FuckMaps": null
         },
         "descriptions": {
             "This mod crashes your game if you play a song below or above a configurable BPM.": null
@@ -1029,8 +907,7 @@
     "FullComboEffects": {
         "id": "FullComboEffects",
         "names": {
-            "Full Combo Effects": null,
-            "Modify the result view when getting full combo.": null
+            "Full Combo Effects": null
         },
         "descriptions": {
             "Modify the result view when getting full combo.": null
@@ -1039,8 +916,7 @@
     "GayFrogs": {
         "id": "GayFrogs",
         "names": {
-            "GAY FROGS!": null,
-            "I DON'T LIKE EM' PUTTIN' CHEMICALS IN THE WATER THAT TURNED THE FREAKIN' FROGS GAY!!!": null
+            "GAY FROGS!": null
         },
         "descriptions": {
             "I DON'T LIKE EM' PUTTIN' CHEMICALS IN THE WATER THAT TURNED THE FREAKIN' FROGS GAY!!!": null
@@ -1049,9 +925,7 @@
     "HotSwappableMods": {
         "id": "HotSwappableMods",
         "names": {
-            "Hot-Swappable Mods": null,
-            "Allows you to enable and disable your mods from in game!": null,
-            "Allows you to easily reload mods from in game": null
+            "Hot-Swappable Mods": null
         },
         "descriptions": {
             "Allows you to enable and disable your mods from in game!": null,
@@ -1061,9 +935,7 @@
     "JDFixer": {
         "id": "JDFixer",
         "names": {
-            "JDFixer": null,
-            "null": null,
-            "This mod allows you to change the spawn offset of any map at will to a desired jump distance. Features also include setting the jump distance to the map's default or to a configurable reaction time.\r\n\r\nThis is a port of the PC mod with the same name, created by Zephyr: https://discord.com/channels/441805394323439646/889894313763422218/895936512938623056\r\nIf you find any bugs, please let me know.": null
+            "JDFixer": null
         },
         "descriptions": {
             "null": null,
@@ -1073,9 +945,7 @@
     "menuquotes": {
         "id": "menuquotes",
         "names": {
-            "Menu Quotes": null,
-            "Like minecraft but for beat saber": null,
-            "Like minecraft but for beat saber!": null
+            "Menu Quotes": null
         },
         "descriptions": {
             "Like minecraft but for beat saber": null,
@@ -1085,9 +955,7 @@
     "multiquestensions": {
         "id": "multiquestensions",
         "names": {
-            "MultiQuestensions": null,
-            "Lightweight port of MultiplayerExtensions, the PC mod that adds features to Multiplayer.": null,
-            "Lightweight port of MultiplayerExtensions, the PC mod that adds features to official Multiplayer.\r\n\r\nFeatures:\r\n- Lets you play Multiplayer with Custom Songs between PC and Quest.\r\n- Automatically downloads songs when missing.\r\n- Shows a loading indicator that shows how many players have the song downloaded and are ready\r\n- Shows a downloading indicator when downloading songs you're missing\r\n- Shows a platform icon for each player\r\n- Has a download history in the GameplaySetupMenu (GameplaySetupMenu is sometimes a bit buggy)\r\n- Auto-Delete Toggle to automatically delete songs that were downloaded in Multiplayer after playing them.\r\n- Lag Reducer Toggle that hides notes/bombs and walls from other players. (Specifically useful when playing ME maps)\r\n- Lets you select a custom color for your platform and name tag for everyone to see.\r\n- Increases the Max Players amount for Lobby creation to 10.\r\n- Disabled Avatar Pose Restrictions, you can freely walk over to others if you so desire.\r\n\r\nWarning: This mod is still not fully stable and you may experience issues such as crashes when playing with others. \r\n\r\nOther incompatible mods:\r\nChroma versions below v2.5.7\r\nDiscord Presence v0.3.5 and below\r\n\r\nRequires: Beat Together Mod post in this channel https://discord.com/channels/441805394323439646/885555565760237598/909500373465698355": null
+            "MultiQuestensions": null
         },
         "descriptions": {
             "Lightweight port of MultiplayerExtensions, the PC mod that adds features to Multiplayer.": null,
@@ -1097,8 +965,7 @@
     "noboom": {
         "id": "noboom",
         "names": {
-            "No Boom": null,
-            "Gets rid of the boom particle affect": null
+            "No Boom": null
         },
         "descriptions": {
             "Gets rid of the boom particle affect": null
@@ -1107,8 +974,7 @@
     "noitalics": {
         "id": "noitalics",
         "names": {
-            "NoItalics": null,
-            "Port from PC mod I made it mainly to practice porting": null
+            "NoItalics": null
         },
         "descriptions": {
             "Port from PC mod I made it mainly to practice porting": null
@@ -1126,8 +992,7 @@
     "noParticles": {
         "id": "noParticles",
         "names": {
-            "No Particles": null,
-            "A simple Beat Saber mod for 1.17.1 that disables various particle effects": null
+            "No Particles": null
         },
         "descriptions": {
             "A simple Beat Saber mod for 1.17.1 that disables various particle effects": null
@@ -1136,8 +1001,7 @@
     "noteVortex": {
         "id": "noteVortex",
         "names": {
-            "Note Vortex": null,
-            "A simple beat saber mod for 1.17.1 that allows control over notes": null
+            "Note Vortex": null
         },
         "descriptions": {
             "A simple beat saber mod for 1.17.1 that allows control over notes": null
@@ -1146,8 +1010,7 @@
     "ParticleTuner": {
         "id": "ParticleTuner",
         "names": {
-            "ParticleTuner": null,
-            "A partial port of the Particle Overdrive mod from PC with colorful sparckles and custom parameters including ambiend dust.": null
+            "ParticleTuner": null
         },
         "descriptions": {
             "A partial port of the Particle Overdrive mod from PC with colorful sparckles and custom parameters including ambiend dust.": null
@@ -1156,8 +1019,7 @@
     "playlisteditor": {
         "id": "playlisteditor",
         "names": {
-            "Playlist Editor": null,
-            "Modify the playlist in game.": null
+            "Playlist Editor": null
         },
         "descriptions": {
             "Modify the playlist in game.": null
@@ -1166,9 +1028,7 @@
     "qubes": {
         "id": "qubes",
         "names": {
-            "Qubes": null,
-            "null": null,
-            "Highly customizable Qubes(tm) that you can play with. Currently updated by speecil": null
+            "Qubes": null
         },
         "descriptions": {
             "null": null,
@@ -1178,8 +1038,7 @@
     "RandomSongPicker": {
         "id": "RandomSongPicker",
         "names": {
-            "RandomSongPicker": "随机歌曲选择工具",
-            "Pick a random custom song!": null
+            "RandomSongPicker": "随机歌曲选择工具"
         },
         "descriptions": {
             "Pick a random custom song!": null,
@@ -1189,8 +1048,7 @@
     "RumbleMod": {
         "id": "RumbleMod",
         "names": {
-            "RumbleMod": null,
-            "Customisable controller feedback": null
+            "RumbleMod": null
         },
         "descriptions": {
             "Customisable controller feedback": null
@@ -1217,8 +1075,7 @@
     "scribble": {
         "id": "scribble",
         "names": {
-            "Scribble": null,
-            "Let the Bob Ross in you take over!": null
+            "Scribble": null
         },
         "descriptions": {
             "Let the Bob Ross in you take over!": null
@@ -1227,8 +1084,7 @@
     "SearchFixes": {
         "id": "SearchFixes",
         "names": {
-            "SearchFixes": null,
-            "An improved search algorithm for Beat Saber": null
+            "SearchFixes": null
         },
         "descriptions": {
             "An improved search algorithm for Beat Saber": null
@@ -1237,8 +1093,7 @@
     "ServerBrowserQuest": {
         "id": "ServerBrowserQuest",
         "names": {
-            "Server Browser": null,
-            "Lets you browse and join Multiplayer Servers right from within the headset": null
+            "Server Browser": null
         },
         "descriptions": {
             "Lets you browse and join Multiplayer Servers right from within the headset": null
@@ -1265,28 +1120,7 @@
     "socket_lib": {
         "id": "socket_lib",
         "names": {
-            "SocketLib": null,
-            "socket_lib, version 0.4.0!": null,
-            "socket_lib, version 0.4.1!": null,
-            "socket_lib, version 0.4.2!": null,
-            "socket_lib, version 0.4.3!": null,
-            "socket_lib, version 0.5.0!": null,
-            "socket_lib, version 0.5.1!": null,
-            "socket_lib, version 0.6.0!": null,
-            "socket_lib, version 0.6.1!": null,
-            "socket_lib, version 0.7.0!": null,
-            "socket_lib, version 0.7.1!": null,
-            "socket_lib, version 0.7.2!": null,
-            "socket_lib, version 0.8.0!": null,
-            "socket_lib, version 0.8.1!": null,
-            "socket_lib, version 0.8.2!": null,
-            "socket_lib, version 0.8.3!": null,
-            "socket_lib, version 0.8.4!": null,
-            "socket_lib, version 0.9.0!": null,
-            "socket_lib, version 0.9.1!": null,
-            "socket_lib, version 0.10.0!": null,
-            "socket_lib, version 0.11.0!": null,
-            "socket_lib, version 0.11.1!": null
+            "SocketLib": null
         },
         "descriptions": {
             "socket_lib, version 0.4.0!": null,
@@ -1315,8 +1149,7 @@
     "SpaghettiExtensions": {
         "id": "SpaghettiExtensions",
         "names": {
-            "SpaghettiExtensions": null,
-            "i got bored": null
+            "SpaghettiExtensions": null
         },
         "descriptions": {
             "i got bored": null
@@ -1325,8 +1158,7 @@
     "TeamSeas": {
         "id": "TeamSeas",
         "names": {
-            "TeamSeas": null,
-            "Shows teamseas stats in-game": null
+            "TeamSeas": null
         },
         "descriptions": {
             "Shows teamseas stats in-game": null
@@ -1335,8 +1167,7 @@
     "technicolour": {
         "id": "technicolour",
         "names": {
-            "Technicolour": null,
-            "Yes, it's colour with a U\r\n\r\nUltra-customisable rainbow lights/sabers/walls/blocks/bombs mod, originally made by Aeroluna for PC.\r\nSettings are accessible in the gameplay setup tab.\r\n\r\nPorted for the questmas trivia event.": null
+            "Technicolour": null
         },
         "descriptions": {
             "Yes, it's colour with a U\r\n\r\nUltra-customisable rainbow lights/sabers/walls/blocks/bombs mod, originally made by Aeroluna for PC.\r\nSettings are accessible in the gameplay setup tab.\r\n\r\nPorted for the questmas trivia event.": null
@@ -1345,8 +1176,7 @@
     "ThiccSaber": {
         "id": "ThiccSaber",
         "names": {
-            "Thicc Saber": null,
-            "A simple mod which allows you to control the dimensions of notes!": null
+            "Thicc Saber": null
         },
         "descriptions": {
             "A simple mod which allows you to control the dimensions of notes!": null
@@ -1355,8 +1185,7 @@
     "ThickSaber": {
         "id": "ThickSaber",
         "names": {
-            "Thick Saber": null,
-            "A simple mod which allows you to control the dimensions of notes!": null
+            "Thick Saber": null
         },
         "descriptions": {
             "A simple mod which allows you to control the dimensions of notes!": null
@@ -1365,8 +1194,7 @@
     "thinsabers": {
         "id": "thinsabers",
         "names": {
-            "ThinSabers": null,
-            "Change saber thickness without qosmetics": null
+            "ThinSabers": null
         },
         "descriptions": {
             "Change saber thickness without qosmetics": null
@@ -1384,9 +1212,7 @@
     "vent": {
         "id": "vent",
         "names": {
-            "Vent": null,
-            "Failed so hard you wanted to vent out of the game? Then here it is. (Launches amongus vr if installed)": null,
-            "I swear you just vented...": null
+            "Vent": null
         },
         "descriptions": {
             "Failed so hard you wanted to vent out of the game? Then here it is. (Launches amongus vr if installed)": null,
@@ -1396,13 +1222,7 @@
     "diglett": {
         "id": "diglett",
         "names": {
-            "Diglett": null,
-            "library that allows you to easily add localisation for your quest mods - v1.0.0!": null,
-            "library that allows you to easily add localisation for your quest mods - v2.0.0!": null,
-            "library that allows you to easily add localisation for your quest mods - v2.0.1!": null,
-            "library that allows you to easily add localisation for your quest mods - v2.0.2!": null,
-            "library that allows you to easily add localisation for your quest mods - v2.0.3!": null,
-            "library that allows you to easily add localisation for your quest mods - v2.1.1!": null
+            "Diglett": null
         },
         "descriptions": {
             "library that allows you to easily add localisation for your quest mods - v1.0.0!": null,
@@ -1434,8 +1254,7 @@
     "PressJToPlay": {
         "id": "PressJToPlay",
         "names": {
-            "PressJToPlay": null,
-            "PressJToPlay is a small mod that allows the user to customize the Play and Practice button text to whatever they like (except for emojis)": null
+            "PressJToPlay": null
         },
         "descriptions": {
             "PressJToPlay is a small mod that allows the user to customize the Play and Practice button text to whatever they like (except for emojis)": null
@@ -1444,9 +1263,7 @@
     "Streamer-Tools": {
         "id": "Streamer-Tools",
         "names": {
-            "Streamer Tools": null,
-            "Allows applications to get information from the game like, currently played song.": null,
-            "Allows applications to get information from the game like, currently played song.\n\nMod Features:\n- Provide information about your game via wifi (more info: https://github.com/EnderdracheLP/streamer-tools/wiki)\n- Provide your watchers with information about your song\nby @EnderdracheLP and @ComputerElite\n\nClient features:\n- Various Overlays to add to OBS (including a overlay builder)\n- Fetching of information from your Quest\nby @ComputerElite\n\nClient Download (needed on PC): https://github.com/ComputerElite/streamer-tools-client/releases\nMod Setup video: https://www.youtube.com/watch?v=1OMHjjSi-5s": null
+            "Streamer Tools": null
         },
         "descriptions": {
             "Allows applications to get information from the game like, currently played song.": null,
@@ -1456,8 +1273,7 @@
     "paper": {
         "id": "paper",
         "names": {
-            "Paper": null,
-            "Logging library for mods light as paper": null
+            "Paper": null
         },
         "descriptions": {
             "Logging library for mods light as paper": null
@@ -1466,8 +1282,7 @@
     "breaktime": {
         "id": "breaktime",
         "names": {
-            "Breaktime": null,
-            "Shows how long of a break you have in a song": null
+            "Breaktime": null
         },
         "descriptions": {
             "Shows how long of a break you have in a song": null
@@ -1475,16 +1290,15 @@
     },
     "tinyxml2": {
         "id": "tinyxml2",
-        "names": {
+        "names": {},
+        "descriptions": {
             "tinyxml2": null
-        },
-        "descriptions": {}
+        }
     },
     "AniPic": {
         "id": "AniPic",
         "names": {
-            "AniPic": null,
-            "Ever get anger that you cant beat a map? Then look at animal pictures until you feel calm :)": null
+            "AniPic": null
         },
         "descriptions": {
             "Ever get anger that you cant beat a map? Then look at animal pictures until you feel calm :)": null
@@ -1493,8 +1307,7 @@
     "anytweaks": {
         "id": "anytweaks",
         "names": {
-            "AnyTweaks": null,
-            "Level up your Beat Saber experience on Quest! AnyTweaks provides various tweaks to help boost your experience on Quest, such as Bloom, FPS Counter and more.": null
+            "AnyTweaks": null
         },
         "descriptions": {
             "Level up your Beat Saber experience on Quest! AnyTweaks provides various tweaks to help boost your experience on Quest, such as Bloom, FPS Counter and more.": null
@@ -1503,8 +1316,7 @@
     "CustomMainMenu": {
         "id": "CustomMainMenu",
         "names": {
-            "Custom Main Menu": null,
-            "Customize the text on the main menu of Beat Saber": null
+            "Custom Main Menu": null
         },
         "descriptions": {
             "Customize the text on the main menu of Beat Saber": null
@@ -1522,8 +1334,7 @@
     "environments": {
         "id": "environments",
         "names": {
-            "StopForgettingMyEnvironments": null,
-            "Makes the game stop forgetting it if you have an environment override enabled.": null
+            "StopForgettingMyEnvironments": null
         },
         "descriptions": {
             "Makes the game stop forgetting it if you have an environment override enabled.": null
@@ -1532,9 +1343,7 @@
     "FasterScroll": {
         "id": "FasterScroll",
         "names": {
-            "Faster Scroll": "滚动加速",
-            "Find your songs faster using this mod.": null,
-            "Find your song faster with this customizable faster scrolling mod.": null
+            "Faster Scroll": "滚动加速"
         },
         "descriptions": {
             "Find your songs faster using this mod.": null,
@@ -1546,8 +1355,7 @@
     "ImageCoverExpander": {
         "id": "ImageCoverExpander",
         "names": {
-            "ImageCoverExpander": null,
-            "Expands the Cover Image to the full right side of the song select menu!": null
+            "ImageCoverExpander": null
         },
         "descriptions": {
             "Expands the Cover Image to the full right side of the song select menu!": null
@@ -1565,8 +1373,7 @@
     "MultiplayerCore": {
         "id": "MultiplayerCore",
         "names": {
-            "MultiplayerCore": null,
-            "Port of MultiplayerCore, the PC mod that adds features to BeatTogether Multiplayer.": null
+            "MultiplayerCore": null
         },
         "descriptions": {
             "Port of MultiplayerCore, the PC mod that adds features to BeatTogether Multiplayer.": null
@@ -1575,8 +1382,7 @@
     "QustomBanners": {
         "id": "QustomBanners",
         "names": {
-            "Qustom Banners": null,
-            "adds banners to your game!": null
+            "Qustom Banners": null
         },
         "descriptions": {
             "adds banners to your game!": null
@@ -1594,8 +1400,7 @@
     "acculight": {
         "id": "acculight",
         "names": {
-            "Acculight": null,
-            "changes the lighting on the result screen depending on the accuracy gained in the song": null
+            "Acculight": null
         },
         "descriptions": {
             "changes the lighting on the result screen depending on the accuracy gained in the song": null
@@ -1604,9 +1409,7 @@
     "BeatmapPlayCount": {
         "id": "BeatmapPlayCount",
         "names": {
-            "Simple Beatmap Play Count": null,
-            "null": null,
-            "Keep track of how many times you've played a song": null
+            "Simple Beatmap Play Count": null
         },
         "descriptions": {
             "null": null,
@@ -1616,9 +1419,7 @@
     "BroYouReallyPaused": {
         "id": "BroYouReallyPaused",
         "names": {
-            "Bro You Really Paused": null,
-            "Damn you really paused cringe": null,
-            "Damn you really paused? cringe. This Mod creates a customiseable text underneath the pause menu! Can be used for: Bullying yourself for pausing, Funny stuff and reminders to do the dishes.": null
+            "Bro You Really Paused": null
         },
         "descriptions": {
             "Damn you really paused cringe": null,
@@ -1628,8 +1429,7 @@
     "bs-utils": {
         "id": "bs-utils",
         "names": {
-            "bs-utils": null,
-            "Utils library": null
+            "bs-utils": null
         },
         "descriptions": {
             "Utils library": null
@@ -1647,9 +1447,7 @@
     "burnmarktweaks": {
         "id": "burnmarktweaks",
         "names": {
-            "Burn Mark Tweaks": null,
-            "#{description}": null,
-            "Burn mark Tweaker": null
+            "Burn Mark Tweaks": null
         },
         "descriptions": {
             "#{description}": null,
@@ -1668,8 +1466,7 @@
     "custom-pillows": {
         "id": "custom-pillows",
         "names": {
-            "Custom Pillows": null,
-            "Custom Pillow mod for Quest\nOriginal by Toni Macaroni for PC": null
+            "Custom Pillows": null
         },
         "descriptions": {
             "Custom Pillow mod for Quest\nOriginal by Toni Macaroni for PC": null
@@ -1678,8 +1475,7 @@
     "Difficulty-Saver": {
         "id": "Difficulty-Saver",
         "names": {
-            "Difficulty Saver": null,
-            "Once upon a time someone thought of a great mod idea. That happened to be male (not me). I, the great KRAK, went on the quest to fetch all the knowledge needed to create a mind blowing mod which saves your difficulty after changing it in the blink of an eye.": null
+            "Difficulty Saver": null
         },
         "descriptions": {
             "Once upon a time someone thought of a great mod idea. That happened to be male (not me). I, the great KRAK, went on the quest to fetch all the knowledge needed to create a mind blowing mod which saves your difficulty after changing it in the blink of an eye.": null
@@ -1688,8 +1484,7 @@
     "lapiz": {
         "id": "lapiz",
         "names": {
-            "Lapiz": null,
-            "Lapiz makes modders' lives easier by exposing utilities to them cleanly. This mod does nothing on it's own.": null
+            "Lapiz": null
         },
         "descriptions": {
             "Lapiz makes modders' lives easier by exposing utilities to them cleanly. This mod does nothing on it's own.": null,
@@ -1699,12 +1494,7 @@
     "morebycore": {
         "id": "morebycore",
         "names": {
-            "More By Core": null,
-            "More By Core, version 1.1.0 for 1.24! Lets you customize BeatSaber with added stuff!": null,
-            "More By Core, version 1.2.0 for 1.24! Lets you customize BeatSaber with added stuff!": null,
-            "More By Core, version 1.2.1 for 1.24! Lets you customize BeatSaber with added stuff!": null,
-            "More By Core, for 1.24.0! Lets you customize BeatSaber with added stuff!": null,
-            "More By Core, for 1.25.1! Lets you customize BeatSaber with added stuff!": null
+            "More By Core": null
         },
         "descriptions": {
             "More By Core, version 1.1.0 for 1.24! Lets you customize BeatSaber with added stuff!": null,
@@ -1717,9 +1507,7 @@
     "NoParticles": {
         "id": "NoParticles",
         "names": {
-            "NoParticles": null,
-            "Allows you to disable note/bomb cut particles": null,
-            "Allows you to disable various particles throughout the game": null
+            "NoParticles": null
         },
         "descriptions": {
             "Allows you to disable note/bomb cut particles": null,
@@ -1729,8 +1517,7 @@
     "noplay": {
         "id": "noplay",
         "names": {
-            "No Play": null,
-            "This mod disables the play button on toggle": null
+            "No Play": null
         },
         "descriptions": {
             "This mod disables the play button on toggle": null
@@ -1748,8 +1535,7 @@
     "peripheralhud": {
         "id": "peripheralhud",
         "names": {
-            "PeripheralHUD": null,
-            "Move your in-game HUD into your peripheral vision, allowing for easy at-a-glance viewing of your combo, score, etc!": null
+            "PeripheralHUD": null
         },
         "descriptions": {
             "Move your in-game HUD into your peripheral vision, allowing for easy at-a-glance viewing of your combo, score, etc!": null
@@ -1767,8 +1553,7 @@
     "PromotionYeeter": {
         "id": "PromotionYeeter",
         "names": {
-            "Promotion Yeeter": null,
-            "Yeets the Music Pack Promotion Button/Banner from the main menu": null
+            "Promotion Yeeter": null
         },
         "descriptions": {
             "Yeets the Music Pack Promotion Button/Banner from the main menu": null
@@ -1786,8 +1571,7 @@
     "qosmetics-notes": {
         "id": "qosmetics-notes",
         "names": {
-            "Qosmetics Cyoobs": null,
-            "Qosmetics module that adds Cyoob capabilities": null
+            "Qosmetics Cyoobs": null
         },
         "descriptions": {
             "Qosmetics module that adds Cyoob capabilities": null
@@ -1796,8 +1580,7 @@
     "qosmetics-sabers": {
         "id": "qosmetics-sabers",
         "names": {
-            "Qosmetics Whackers": null,
-            "Qosmetics module that adds Whacker capabilities": null
+            "Qosmetics Whackers": null
         },
         "descriptions": {
             "Qosmetics module that adds Whacker capabilities": null
@@ -1806,8 +1589,7 @@
     "qosmetics-walls": {
         "id": "qosmetics-walls",
         "names": {
-            "Qosmetics Boxes": null,
-            "Qosmetics module that adds Box capabilities": null
+            "Qosmetics Boxes": null
         },
         "descriptions": {
             "Qosmetics module that adds Box capabilities": null
@@ -1816,8 +1598,7 @@
     "RainbowQuest": {
         "id": "RainbowQuest",
         "names": {
-            "Rainbow Quest": null,
-            "Makes blocks and obstacles rainbow :D. By: Unifox": null
+            "Rainbow Quest": null
         },
         "descriptions": {
             "Makes blocks and obstacles rainbow :D. By: Unifox": null
@@ -1826,9 +1607,7 @@
     "settings": {
         "id": "settings",
         "names": {
-            "StopForgettingMySettings": null,
-            "Makes the game remember override environment settings and boost colors.": null,
-            "Makes the game remember override environment settings.": null
+            "StopForgettingMySettings": null
         },
         "descriptions": {
             "Makes the game remember override environment settings and boost colors.": null,
@@ -1838,8 +1617,7 @@
     "ShortSaber": {
         "id": "ShortSaber",
         "names": {
-            "ShortSaber": null,
-            "Change the length of the saber": null
+            "ShortSaber": null
         },
         "descriptions": {
             "Change the length of the saber": null
@@ -1848,9 +1626,7 @@
     "SmallQubes": {
         "id": "SmallQubes",
         "names": {
-            "SmallQubes": "小方块",
-            "null": null,
-            "Your lovely default cubes, but smoll. Modifiers compatible!": null
+            "SmallQubes": "小方块"
         },
         "descriptions": {
             "null": null,
@@ -1861,8 +1637,7 @@
     "thiccMod": {
         "id": "thiccMod",
         "names": {
-            "Thicc Mod": null,
-            "Have you ever wanted to play beat saber, but the bloqs were the size of your mother? Well look no further! Thicc Mod has got you covered!": null
+            "Thicc Mod": null
         },
         "descriptions": {
             "Have you ever wanted to play beat saber, but the bloqs were the size of your mother? Well look no further! Thicc Mod has got you covered!": null
@@ -1871,8 +1646,7 @@
     "adblock": {
         "id": "adblock",
         "names": {
-            "Adblock": null,
-            "???": null
+            "Adblock": null
         },
         "descriptions": {
             "???": null
@@ -1890,8 +1664,7 @@
     "BSNightcoreQuest": {
         "id": "BSNightcoreQuest",
         "names": {
-            "BSNightcoreQuest": null,
-            "Removes pitch compensation to make songs go nightcore on different speed": null
+            "BSNightcoreQuest": null
         },
         "descriptions": {
             "Removes pitch compensation to make songs go nightcore on different speed": null
@@ -1900,8 +1673,7 @@
     "crashinfo": {
         "id": "crashinfo",
         "names": {
-            "CrashInfo": null,
-            "Shows backtraces for recent crashes ingame if crash reporter uploads crashes. Mainly intended for those who dont know how to read logs.": null
+            "CrashInfo": null
         },
         "descriptions": {
             "Shows backtraces for recent crashes ingame if crash reporter uploads crashes. Mainly intended for those who dont know how to read logs.": null
@@ -1910,8 +1682,7 @@
     "FailButton": {
         "id": "FailButton",
         "names": {
-            "Fail Button": null,
-            "Adds a button that forces a fail": null
+            "Fail Button": null
         },
         "descriptions": {
             "Adds a button that forces a fail": null
@@ -1920,8 +1691,7 @@
     "hollywood": {
         "id": "hollywood",
         "names": {
-            "Hollywood": "好莱坞",
-            "hollywood, version 0.1.2!": null
+            "Hollywood": "好莱坞"
         },
         "descriptions": {
             "hollywood, version 0.1.2!": null,
@@ -1931,8 +1701,7 @@
     "ImageFactory": {
         "id": "ImageFactory",
         "names": {
-            "ImageFactory": null,
-            "Place and customize images throughout your game.": null
+            "ImageFactory": null
         },
         "descriptions": {
             "Place and customize images throughout your game.": null
@@ -1941,8 +1710,7 @@
     "invertedarrows": {
         "id": "invertedarrows",
         "names": {
-            "InvertedArrows": null,
-            "Customize all arrow directions on a beatmap": null
+            "InvertedArrows": null
         },
         "descriptions": {
             "Customize all arrow directions on a beatmap": null
@@ -1951,8 +1719,7 @@
     "multiplayer-core": {
         "id": "multiplayer-core",
         "names": {
-            "MultiplayerCore": "多人游戏核心",
-            "Port of MultiplayerCore, the PC mod that adds features to BeatTogether Multiplayer.": null
+            "MultiplayerCore": "多人游戏核心"
         },
         "descriptions": {
             "Port of MultiplayerCore, the PC mod that adds features to BeatTogether Multiplayer.": null,
@@ -1962,9 +1729,7 @@
     "noplaybeatsaber": {
         "id": "noplaybeatsaber",
         "names": {
-            "No Play Beat Saber": null,
-            "Literally does not allow you to play beat saber. Why do you even want this?": null,
-            "This literally does not allow you to play beat saber. Why do you even want this?": null
+            "No Play Beat Saber": null
         },
         "descriptions": {
             "Literally does not allow you to play beat saber. Why do you even want this?": null,
@@ -1974,10 +1739,7 @@
     "PauseRemapper": {
         "id": "PauseRemapper",
         "names": {
-            "Pause Remapper": null,
-            "Allows the user to change which button pauses a map": null,
-            "Allows the user to change which buttons pause the game!": null,
-            "Allows the user to change which buttons pause and resume the game!": null
+            "Pause Remapper": null
         },
         "descriptions": {
             "Allows the user to change which button pauses a map": null,
@@ -1988,9 +1750,7 @@
     "PitchBlaq": {
         "id": "PitchBlaq",
         "names": {
-            "PitchBlaq": null,
-            "null": null,
-            "Simple plugin that can completely disable lights (events) and spectrogram (if the environment has one). Config menu include light and spectrogram.": null
+            "PitchBlaq": null
         },
         "descriptions": {
             "null": null,
@@ -2000,8 +1760,7 @@
     "pythonlib": {
         "id": "pythonlib",
         "names": {
-            "PythonLib": null,
-            "Run Python at Runtime": null
+            "PythonLib": null
         },
         "descriptions": {
             "Run Python at Runtime": null
@@ -2010,8 +1769,7 @@
     "questrpc": {
         "id": "questrpc",
         "names": {
-            "QuestDiscordRPC": null,
-            "Quest Discord RPC to show that your playing discord.": null
+            "QuestDiscordRPC": null
         },
         "descriptions": {
             "Quest Discord RPC to show that your playing discord.": null
@@ -2020,8 +1778,7 @@
     "ScoreQolour": {
         "id": "ScoreQolour",
         "names": {
-            "ScoreQolour": null,
-            "Changes your note, bomb and obstacle colours based on your score": null
+            "ScoreQolour": null
         },
         "descriptions": {
             "Changes your note, bomb and obstacle colours based on your score": null
@@ -2030,8 +1787,7 @@
     "SessionQombo": {
         "id": "SessionQombo",
         "names": {
-            "SessionQombo": null,
-            "A mod for beat saber that makes the combo counter persist across level load, like in the game `In The Groove`": null
+            "SessionQombo": null
         },
         "descriptions": {
             "A mod for beat saber that makes the combo counter persist across level load, like in the game `In The Groove`": null
@@ -2040,10 +1796,7 @@
     "SpeecilTweaks": {
         "id": "SpeecilTweaks",
         "names": {
-            "Speecil Tweaks": null,
-            "Cool little tweaks i think are pretty cool such as: Results menu tweaks, Play button tweaks, and more": null,
-            "This mod brings a bunch of tweaks to the table, such as: Menu Tweaks, Gameplay Tweaks, Results Tweaks and more!": null,
-            "This mod brings a bunch of tweaks to the table, such as: Menu Tweaks, Gameplay Tweaks, Quality of Life Tweaks and more!": null
+            "Speecil Tweaks": null
         },
         "descriptions": {
             "Cool little tweaks i think are pretty cool such as: Results menu tweaks, Play button tweaks, and more": null,
@@ -2054,8 +1807,7 @@
     "toomanytweaks": {
         "id": "toomanytweaks",
         "names": {
-            "TooManyTweaks": null,
-            "Adds many togglable tweaks and options to tailor the game to your desire.": null
+            "TooManyTweaks": null
         },
         "descriptions": {
             "Adds many togglable tweaks and options to tailor the game to your desire.": null
@@ -2064,8 +1816,7 @@
     "trick-saber": {
         "id": "trick-saber",
         "names": {
-            "Trick Saber": null,
-            "Mod that lets you throw and spin your sabers every which way you want!": null
+            "Trick Saber": null
         },
         "descriptions": {
             "Mod that lets you throw and spin your sabers every which way you want!": null
@@ -2074,8 +1825,7 @@
     "accmiss": {
         "id": "accmiss",
         "names": {
-            "AccMiss": null,
-            "Miss when you acc bad": null
+            "AccMiss": null
         },
         "descriptions": {
             "Miss when you acc bad": null
@@ -2084,8 +1834,7 @@
     "bsml-lite": {
         "id": "bsml-lite",
         "names": {
-            "bsml-lite": null,
-            "Library that provides access to BSML items through programming instead of bsml files": null
+            "bsml-lite": null
         },
         "descriptions": {
             "Library that provides access to BSML items through programming instead of bsml files": null
@@ -2094,8 +1843,7 @@
     "leaderboardcore": {
         "id": "leaderboardcore",
         "names": {
-            "LeaderboardCore": null,
-            "Adds the capability to add custom leaderboards to Beat Saber with relative ease!": null
+            "LeaderboardCore": null
         },
         "descriptions": {
             "Adds the capability to add custom leaderboards to Beat Saber with relative ease!": null
@@ -2104,8 +1852,7 @@
     "overswing": {
         "id": "overswing",
         "names": {
-            "Overswing": null,
-            "Library to find overswings": null
+            "Overswing": null
         },
         "descriptions": {
             "Library to find overswings": null
@@ -2114,8 +1861,7 @@
     "practiceaddons": {
         "id": "practiceaddons",
         "names": {
-            "Practice Addons": null,
-            "#{description}": null
+            "Practice Addons": null
         },
         "descriptions": {
             "#{description}": null
@@ -2133,8 +1879,7 @@
     "sabertrailer": {
         "id": "sabertrailer",
         "names": {
-            "SaberTrailer": null,
-            "Make simple but powerful changes to your saber trail": null
+            "SaberTrailer": null
         },
         "descriptions": {
             "Make simple but powerful changes to your saber trail": null
@@ -2143,8 +1888,7 @@
     "song-details": {
         "id": "song-details",
         "names": {
-            "SongDetails": null,
-            "Library that provides details about songs from BeatSaver": null
+            "SongDetails": null
         },
         "descriptions": {
             "Library that provides details about songs from BeatSaver": null
@@ -2153,8 +1897,7 @@
     "songcore": {
         "id": "songcore",
         "names": {
-            "SongCore": "谱面核心",
-            "A library/mod for Quest Beat Saber that handles song loading, song requirements and capabilities.": null
+            "SongCore": "谱面核心"
         },
         "descriptions": {
             "Adds songloading, map requirement handling and related utilities to the game.": "处理游戏内谱面加载、谱面依赖等操作。",
@@ -2173,8 +1916,7 @@
     "camera-utils": {
         "id": "camera-utils",
         "names": {
-            "CameraUtils": "相机工具",
-            "null": null
+            "CameraUtils": "相机工具"
         },
         "descriptions": {
             "null": null,
@@ -2184,8 +1926,7 @@
     "chatplex-sdk-bs": {
         "id": "chatplex-sdk-bs",
         "names": {
-            "ChatPlexSDK-BS": null,
-            "chatplex-sdk-bs, version 0.1.1-v6.2.0!": null
+            "ChatPlexSDK-BS": null
         },
         "descriptions": {
             "ChatPlex BeatSaber modding SDK (Dependence for other mods)": "ChatPlex的节奏光剑模组SDK（被其它模组依赖）。",
@@ -2195,9 +1936,7 @@
     "fingersaber": {
         "id": "fingersaber",
         "names": {
-            "FingerSaber": "指尖光剑",
-            "Beat Saber At Your Finger Tips. @drumtool#4435 @NoneThing#7502": null,
-            "Beat Saber At Your Finger Tips. @drumtool": null
+            "FingerSaber": "指尖光剑"
         },
         "descriptions": {
             "Beat Saber At Your Finger Tips. @drumtool#4435 @NoneThing#7502": null,
@@ -2217,8 +1956,7 @@
     "Puro": {
         "id": "Puro",
         "names": {
-            "Puro": null,
-            "A fluffy latex monster.": null
+            "Puro": null
         },
         "descriptions": {
             "A fluffy latex monster.": null
@@ -2263,9 +2001,7 @@
     "safestorage": {
         "id": "safestorage",
         "names": {
-            "SafeStorage": null,
-            "Allows for safe storage and encryption of strings to prevent users from accidentally doxxing themselfs": null,
-            "Allows for safe storage and encryption of strings to prevent users from accidentally doxxing themselves": null
+            "SafeStorage": null
         },
         "descriptions": {
             "Allows for safe storage and encryption of strings to prevent users from accidentally doxxing themselfs": null,
@@ -2275,8 +2011,7 @@
     "simply-max-fps": {
         "id": "simply-max-fps",
         "names": {
-            "SimplyMaxFPS": null,
-            "Bump up FPS. No fuss, just maximum framage.": null
+            "SimplyMaxFPS": null
         },
         "descriptions": {
             "Bump up FPS. No fuss, just maximum framage.": null
@@ -2285,8 +2020,7 @@
     "songchartvisualizer": {
         "id": "songchartvisualizer",
         "names": {
-            "SongChartVisualizer": "谱面图表可视化",
-            "null": null
+            "SongChartVisualizer": "谱面图表可视化"
         },
         "descriptions": {
             "null": null
@@ -2295,8 +2029,7 @@
     "songinfoplus": {
         "id": "songinfoplus",
         "names": {
-            "SongInfoPlus": null,
-            "View extra details about a map in Beat Saber!": null
+            "SongInfoPlus": null
         },
         "descriptions": {
             "View extra details about a map in Beat Saber!": null
@@ -2305,8 +2038,7 @@
     "songrankedbadge": {
         "id": "songrankedbadge",
         "names": {
-            "SongRankedBadge": null,
-            "null": null
+            "SongRankedBadge": null
         },
         "descriptions": {
             "null": null
@@ -2315,8 +2047,7 @@
     "thinsaberui": {
         "id": "thinsaberui",
         "names": {
-            "ThinSaberUI": null,
-            "A frontend for the mod, ThinSaberCore": null
+            "ThinSaberUI": null
         },
         "descriptions": {
             "A frontend for the mod, ThinSaberCore": null
@@ -2325,8 +2056,7 @@
     "TwitchSongReQuest": {
         "id": "TwitchSongReQuest",
         "names": {
-            "TwitchSongReQuest": null,
-            "Let your Twitch viewers suggest maps": null
+            "TwitchSongReQuest": null
         },
         "descriptions": {
             "Let your Twitch viewers suggest maps": null,
@@ -2336,8 +2066,7 @@
     "vrm-qavatars": {
         "id": "vrm-qavatars",
         "names": {
-            "VRM Qavatars": null,
-            "A VRM based Custom Avatar mod for Beat Saber": null
+            "VRM Qavatars": null
         },
         "descriptions": {
             "A VRM based Custom Avatar mod for Beat Saber": null
@@ -2346,9 +2075,7 @@
     "weebsaber": {
         "id": "weebsaber",
         "names": {
-            "Weeb Saber": null,
-            "Webbyfies your Beat Saber": null,
-            "Weeb-ifies your Beat Saber": null
+            "Weeb Saber": null
         },
         "descriptions": {
             "Webbyfies your Beat Saber": null,
@@ -2394,8 +2121,7 @@
     "haptic-revert": {
         "id": "haptic-revert",
         "names": {
-            "Haptic Revert": null,
-            "Reverts haptics to pre-1.35 behavior": null
+            "Haptic Revert": null
         },
         "descriptions": {
             "Reverts haptics to pre-1.35 behavior": null
@@ -2405,10 +2131,7 @@
         "id": "HeartBeatLanReceiver",
         "names": {
             "HeartBeatLanReceiver": null,
-            "HeartBeatQuest": "Quest心率显示",
-            "Receive and display heart rate data from an external apk. The apk can be installed in quest headset itself or an android device via local network.": null,
-            "Receive and display heart rate data. Need patch the game with bluetooth permission or install an external apk.": null,
-            "This mod displays your heart rate in the quest game. Supported multiple data sources and Bluetooth data source requires a permission patch via ModsBeforeFriday.": null
+            "HeartBeatQuest": "Quest心率显示"
         },
         "descriptions": {
             "Receive and display heart rate data from an external apk. The apk can be installed in quest headset itself or an android device via local network.": null,
@@ -2421,8 +2144,7 @@
     "morebuttons": {
         "id": "morebuttons",
         "names": {
-            "MoreButtons": "更多按钮",
-            "Use all the special characters you could possibly want, now accessible through the keyboard's number pad!": null
+            "MoreButtons": "更多按钮"
         },
         "descriptions": {
             "Use all the special characters you could possibly want, now accessible through the keyboard's number pad!": null,
@@ -2450,8 +2172,7 @@
     "playlistdownloader": {
         "id": "playlistdownloader",
         "names": {
-            "PlaylistDownloader": "歌单下载器",
-            "Adds a in-game playlist downloader, similar to MorePlaylists on PC. Supports AccSaber, BeatSaver, BeatLeader, and Hitbloq.": null
+            "PlaylistDownloader": "歌单下载器"
         },
         "descriptions": {
             "Adds a in-game playlist downloader, similar to MorePlaylists on PC. Supports AccSaber, BeatSaver, BeatLeader, and Hitbloq.": null,
@@ -2479,8 +2200,7 @@
     "BetterHaptics": {
         "id": "BetterHaptics",
         "names": {
-            "BetterHaptics": null,
-            "Reverts haptic feedback changes without breaking arc and chain notes.": null
+            "BetterHaptics": null
         },
         "descriptions": {
             "Reverts haptic feedback changes without breaking arc and chain notes.": null
@@ -2489,8 +2209,7 @@
     "bsdc": {
         "id": "bsdc",
         "names": {
-            "discord-presence": null,
-            "Allows discord rich presence to see which song you're playing, the current time, and much more.": null
+            "discord-presence": null
         },
         "descriptions": {
             "Allows discord rich presence to see which song you're playing, the current time, and much more.": null
@@ -2518,8 +2237,7 @@
     "endless": {
         "id": "endless",
         "names": {
-            "Endless": "无尽模式",
-            "Allows you to play endlessly, or at least until you fail.\n\nIMPORTANT: This mod has issues with Replay; you will most likely encounter crashes with Replay enabled": null
+            "Endless": "无尽模式"
         },
         "descriptions": {
             "Allows you to play endlessly, or at least until you fail.\n\nIMPORTANT: This mod has issues with Replay; you will most likely encounter crashes with Replay enabled": null,
@@ -2529,8 +2247,7 @@
     "FakeId": {
         "id": "FakeId",
         "names": {
-            "Fake ID": "假身份",
-            "Sets the player age to an adult when the game fails to run the check.": null
+            "Fake ID": "假身份"
         },
         "descriptions": {
             "Sets the player age to an adult.": "把玩家年龄设为成人。",
@@ -2594,8 +2311,7 @@
     "selfcompete": {
         "id": "selfcompete",
         "names": {
-            "SelfCompete": null,
-            "Displays a ranking of how you're doing on the map you're playing compared to all other times you played that map.": null
+            "SelfCompete": null
         },
         "descriptions": {
             "Displays a ranking of how you're doing on the map you're playing compared to all other times you played that map.": null
@@ -2623,9 +2339,7 @@
     "HitsoundTweaqs": {
         "id": "HitsoundTweaqs",
         "names": {
-            "HitsoundTweaqs": "击打音效变更",
-            "Adds more configurability to hitsounds, and fixes several base game bugs to make them more reliable and consistent": null,
-            "Adds a slider to change default cubes size": null
+            "HitsoundTweaqs": "击打音效变更"
         },
         "descriptions": {
             "Adds more configurability to hitsounds, and fixes several base game bugs to make them more reliable and consistent": null,
@@ -2663,8 +2377,7 @@
     "tricksaberlite": {
         "id": "tricksaberlite",
         "names": {
-            "TrickSaber Lite": null,
-            "This mod is not that stable like it seems, improvements will be rolling out soon!\nPerform spins and throws with your sabers!": null
+            "TrickSaber Lite": null
         },
         "descriptions": {
             "This mod is not that stable like it seems, improvements will be rolling out soon!\nPerform spins and throws with your sabers!": null
@@ -2674,9 +2387,7 @@
         "id": "bsl",
         "names": {
             "Better Song List": "更好的谱面列表",
-            "Adds Various improvements to the Basegame Map list like Filters, a persisted state and much more": null,
-            "Improvement upon SongBrowser with similiar functionality": "改进的SongBrowser模组，提供类似功能。",
-            "Improvement upon SongBrowser with similiar functionality. Adds filters and sort options to the song list.": null
+            "Improvement upon SongBrowser with similiar functionality": "改进的SongBrowser模组，提供类似功能。"
         },
         "descriptions": {
             "Adds Various improvements to the Basegame Map list like Filters, a persisted state and much more": null,
@@ -2728,10 +2439,7 @@
     "assimp": {
         "id": "assimp",
         "names": {
-            "assimp": null,
-            "assimp, version 5.3.1!": null,
-            "assimp, version 5.3.2!": null,
-            "assimp, version 5.3.3!": null
+            "assimp": null
         },
         "descriptions": {
             "assimp, version 5.3.1!": null,
@@ -2742,8 +2450,7 @@
     "beatsaber-hook": {
         "id": "beatsaber-hook",
         "names": {
-            "beatsaber-hook": null,
-            "Provides modding utilities for unity il2cpp games": null
+            "beatsaber-hook": null
         },
         "descriptions": {
             "Provides modding utilities for unity il2cpp games": null
@@ -2752,8 +2459,7 @@
     "beatsaverplusplus": {
         "id": "beatsaverplusplus",
         "names": {
-            "BeatSaverPlusPlus": null,
-            "C++ library to interact with beatsaver": null
+            "BeatSaverPlusPlus": null
         },
         "descriptions": {
             "C++ library to interact with beatsaver": null
@@ -2762,8 +2468,7 @@
     "flamingo": {
         "id": "flamingo",
         "names": {
-            "flamingo": null,
-            "General purpose Android hook library": null
+            "flamingo": null
         },
         "descriptions": {
             "General purpose Android hook library": null
@@ -2772,8 +2477,7 @@
     "ScoreUtils": {
         "id": "ScoreUtils",
         "names": {
-            "Score Utils": null,
-            "retrieves score information about the selected map": null
+            "Score Utils": null
         },
         "descriptions": {
             "retrieves score information about the selected map": null
@@ -2791,8 +2495,7 @@
     "thinsabercore": {
         "id": "thinsabercore",
         "names": {
-            "ThinSaberCore": null,
-            "thinsabercore, version 1.0.0-alpha1!": null
+            "ThinSaberCore": null
         },
         "descriptions": {
             "thinsabercore, version 1.0.0-alpha1!": null
@@ -2801,8 +2504,7 @@
     "thinsaberlite": {
         "id": "thinsaberlite",
         "names": {
-            "ThinSaberLite": null,
-            "An incredibly lightweight mod that should remain unbroken between Beat Saber updates.": null
+            "ThinSaberLite": null
         },
         "descriptions": {
             "An incredibly lightweight mod that should remain unbroken between Beat Saber updates.": null
@@ -2811,8 +2513,7 @@
     "web-utils": {
         "id": "web-utils",
         "names": {
-            "WebUtils": null,
-            "library to provide easier ways of downloading things from the web": null
+            "WebUtils": null
         },
         "descriptions": {
             "library to provide easier ways of downloading things from the web": null
