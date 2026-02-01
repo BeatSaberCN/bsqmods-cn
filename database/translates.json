@@ -655,7 +655,9 @@
     },
     "IForgor": {
         "id": "IForgor",
-        "names": {},
+        "names": {
+            "I Forgor": null
+        },
         "descriptions": {
             "I Forgor": null
         }
@@ -1290,7 +1292,9 @@
     },
     "tinyxml2": {
         "id": "tinyxml2",
-        "names": {},
+        "names": {
+            "tinyxml2": null
+        },
         "descriptions": {
             "tinyxml2": null
         }

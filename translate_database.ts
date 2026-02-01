@@ -72,6 +72,17 @@ export class TranslateDB {
         if(desc_maybe)
             mod.description_zh = desc_maybe
         else
-            dbitem.names[mod.description] = null
+            dbitem.descriptions[mod.description] = null
+
+        // for(const k in dbitem.descriptions){
+        //     if(dbitem.descriptions[k] === null && dbitem.names[k] === null){
+        //         if(dbitem.translates == undefined){
+        //             dbitem.translates = {}
+        //         }
+        //         dbitem.translates[k] = null
+        //         delete dbitem.descriptions[k]
+        //         delete dbitem.names[k]
+        //     }
+        // }
     }
 }
