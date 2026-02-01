@@ -8,4 +8,70 @@
 .root-container{
     margin: 20px 80px
 }
+
+}
+
+[data-bs-theme="dark"] {
+    .card{
+        --bs-card-cap-color: #e1e1e1;
+        --bs-card-color: #acacac;
+    }
+}
+
+.cover-inpage-img {
+    width: 100%;
+    background-color: black;
+}
+[data-bs-theme="dark"] {
+    
+.cover-inpage-img {
+filter: brightness(0.7);
+}
+
+}
+
+.cover-float-span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: relative;
+    vertical-align: top;
+}
+
+.cover-img {
+    z-index: 999;
+    position: absolute;
+    max-width: 300px;
+    left: -8px;
+    bottom: 8px;
+    border: 4px solid #1ed8f6;
+}
+
+[data-bs-theme="dark"] {
+.cover-img {
+    border: 4px solid #4e6164;
+
+}
+}
+
+.author-img {
+    width:16px;
+    border-radius:20px;
+    transition-property:all;
+    transition-duration:100ms;
+    transition-timing-function:ease-in;
+    margin-right: 4px;
+}
+.author-img-larger {
+    border-radius:0;
+    transform: scale(3);
+}
+
+[data-bs-theme="dark"]{
+.author-img {
+    filter: brightness(0.7);
+}
+.author-img-larger {
+    filter: brightness(1);
+}
 }

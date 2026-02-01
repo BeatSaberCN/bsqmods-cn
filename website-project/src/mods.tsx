@@ -62,8 +62,30 @@ function App() {
 
   const [display_related_software, set_display_related_software] = useState(false)
   
+  const [theme, set_theme] = useState(localStorage.getItem("theme") == "dark" ? "dark" : "light")
+
+  function setDarkMode(dark:boolean){
+    document.documentElement.setAttribute("data-bs-theme", dark ? "dark" : "light")
+  }
+
+  // 在html中也要设置一下theme，以防止加载闪烁
+  setDarkMode(theme == "dark")
+
   return <div className="root-container">
-    <h1>bsqmods中文源</h1><span className="badge text-bg-success">最后同步时间：{buildDate}</span>
+    <h1>bsqmods中文源</h1>
+    
+    <div>
+      <span className="badge text-bg-success">最后同步时间：{buildDate}</span>
+      <div className="form-check form-switch d-inline-block align-middle m-auto ms-2">
+        <input className="form-check-input" type="checkbox" role="switch" id="dayNightColorToggle" onChange={(e)=>{
+          const dark = e.target.checked;
+          set_theme(dark ? "dark" : "light")
+          localStorage.setItem("theme", dark ? "dark" : "light");
+          setDarkMode(dark);
+        }} checked={theme == "dark"} />
+        <label className="form-check-label" style={{userSelect:"none"}} htmlFor="dayNightColorToggle">夜间模式</label>
+      </div>
+    </div>
     <div style={{marginBottom:"8px"}}><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod名称/简介源</small></div>
 
     <div className="alert alert-primary" role="alert">
@@ -346,14 +368,11 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
   if(typeof(data.author)=="string"){
     author = <span style={{color:"gray",verticalAlign:"middle",fontSize:"small"}}>{data.author}</span>
     if(isImageSafeLoadable(data.authorIcon)){
-      author = <><img src={data.authorIcon || ""} style={{
-        width:"16px",
-        borderRadius:largeAuthorIcon ? "0" : "20px",
-        transform: largeAuthorIcon ? "scale(3)" : "",
-        transitionProperty:"all",
-        transitionDuration:"200ms",
-        transitionTimingFunction:"ease-in",
-      }} onMouseEnter={()=>setLargeAuthorIcon(true)} onMouseLeave={()=>setLargeAuthorIcon(false)} />{author}</>
+      author = <>
+        <img
+          src={data.authorIcon || ""} 
+          className={"author-img " + (largeAuthorIcon ? "author-img-larger" : "")}
+          onMouseEnter={()=>setLargeAuthorIcon(true)} onMouseLeave={()=>setLargeAuthorIcon(false)} />{author}</>
     }
     author = <span style={{
       marginLeft:"16px",
@@ -372,16 +391,16 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
   }}><span style={{verticalAlign:"middle",display:"inline-block",marginTop:"10px", userSelect:"none"}}>无封面</span></span>
   
   if(isImageSafeLoadable(data.cover)){
-    image_div = <><span style={{display:"inline-block",width:"0",height:"0",position:"relative",verticalAlign:"top"}}><img src={data.cover as string} style={{
-        zIndex:999,
-        position:"absolute",
-        display:(showFloat ? "" : "none"),
-        maxWidth:"300px",
-        left:"-8px",
-        bottom:"8px",
-        border:"4px solid #1ed8f6"
-        }} /></span><img src={data.cover as string} onMouseEnter={()=>setShowFloat(true)} onMouseLeave={()=>setShowFloat(false)} style={{width:"100%",backgroundColor:"black"}} />
-      
+    image_div = <>
+      <span className="cover-float-span">
+        <img className='cover-img' src={data.cover as string} hidden={!showFloat} />
+      </span>
+      <img 
+        src={data.cover as string}
+        onMouseEnter={()=>setShowFloat(true)}
+        onMouseLeave={()=>setShowFloat(false)}
+        className='cover-inpage-img'
+         />
       </>
   }
   return <>
