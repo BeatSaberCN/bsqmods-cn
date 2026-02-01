@@ -201,8 +201,10 @@ function App() {
                     <span className='badge rounded-pill text-bg-info m-1'>需电脑联网</span>
                   </p>
                   <p className="card-text">由中文社区开发者维护的QuestPatcher。可以下载安装后使用。可选择切换此中文源。</p>
-                  <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows-standalone.zip" className="btn btn-success m-1">下载链接</a>
-                  <a href="https://github.com/BeatSaberCN/QuestPatcher" className="btn btn-primary m-1">项目主页</a>
+                  <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows-standalone.zip"
+                    className="btn btn-secondary btn-sm m-1">下载链接</a>
+                  <a href="https://github.com/BeatSaberCN/QuestPatcher"
+                    className="btn btn-link btn-sm m-1">项目主页</a>
                 </div>
               </div>
 
@@ -216,7 +218,7 @@ function App() {
                     <span className='badge rounded-pill text-bg-info m-1'>需Quest联网</span>
 
                   <p className="card-text">ModsBeforeFriday是英文模组社区BSMG主流推荐的模组工具。此为中文分支，使用此中文源。</p>
-                  <a href="https://mbf.bsaber.cn/" className="btn btn-success m-1">使用链接</a>
+                  <a href="https://mbf.bsaber.cn/" className="btn btn-secondary btn-sm m-1">使用链接</a>
                 </div>
               </div>
 
