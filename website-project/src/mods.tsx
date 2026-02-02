@@ -302,7 +302,17 @@ function ModList({ gameVersion }:{gameVersion:string}) {
   for (const mods of group_by_ids_mods_only) {
     arr.push(<ModWithSameIdCard key={mods[0].id} datas={mods} gameVersion={gameVersion}/>)
   }
-  return <><div className="row">{arr}</div></>
+  return <><div className="
+    row g-2
+    row-cols-1
+    row-cols-sm-2
+    row-cols-md-2
+    row-cols-lg-3
+    row-cols-xl-4
+    row-cols-xxl-5
+    ">
+    {arr}
+  </div></>
 }
 
 function ModWithSameIdCard({ datas , gameVersion}:{datas:Array<ModItem>, gameVersion:string}) {
@@ -326,16 +336,13 @@ function ModWithSameIdCard({ datas , gameVersion}:{datas:Array<ModItem>, gameVer
   </div>
 
   return <>
-    <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-      <div className="card" style={{
-      display:"inline-block",
-      minHeight:"200px",
-      margin:"4px",
-      width:"100%"
-    }}>
-      <ModCard key={ver} data={datas[Math.min(ver, datas.length-1)]} version_selector={selector} gamever={gameVersion} />
+    <div className='col'>
+      <div className="card h-100 w-100">
+        <ModCard key={ver} data={datas[Math.min(ver, datas.length-1)]} version_selector={selector} gamever={gameVersion} />
+      </div>
     </div>
-    </div></>
+
+    </>
 }
 
 
