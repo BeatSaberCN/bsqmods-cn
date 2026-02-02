@@ -2,19 +2,16 @@
   "name": "PolyglotInject / 中文模组",
   "description": "这是中文翻译模组。",
   "id": "PolyglotInject",
-  "version": "0.8.0",
+  "version": "0.4.0",
   "author": "qe201020335",
   "authorIcon": "https://avatars.githubusercontent.com/u/31044781?v=4",
   "modloader": "Scotland2",
-  "download": "https://github.com/qe201020335/PolyglotInject/releases/download/v0.8.0%2Bbs1.40.8_7379/PolyglotInject-0.8.0-bs1.40.8_7379.qmod",
+  "download": "https://github.com/qe201020335/PolyglotInject/releases/download/v0.4.0/PolyglotInject.qmod",
   "dependencies": [
     {
-      "version": "^6.0.0",
-      "id": "beatsaber-hook"
-    },
-    {
-      "version": "^4.0.0",
-      "id": "paper2_scotland2"
+      "version": "^3.0.0",
+      "id": "paper",
+      "downloadIfMissing": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.4/paperlog.qmod"
     }
   ],
   "isLibrary": false,
@@ -23,5 +20,5 @@
   "ogCover": null,
   "funding": [],
   "website": "https://github.com/qe201020335/PolyglotInject/",
-  "hash": "cc94137fd0cd09d0e6c5e407db12137d76bb783a"
+  "hash": "6925da776ca8d30ed59d9f265b29104f4340eecf"
 }
