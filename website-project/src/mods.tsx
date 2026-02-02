@@ -103,27 +103,8 @@ function App() {
 
     <div className="card border-secondary" style={{marginBottom:"8px",width:"fit-content"}}>
       <div className='card-header border-secondary'>
-        版本设置
-          <button className='btn btn-sm btn-link' hidden={detail_configs} onClick={()=>set_detail_configs(true)}>更多</button>
-          <button className='btn btn-sm btn-link' hidden={!detail_configs} onClick={()=>set_detail_configs(false)}>更少</button>
-      </div>
-      <div className="card-body">
-        <div className="card-text">
-          <div className="row g-3 align-items-center" hidden={!detail_configs}>
-            <div className="col-auto">
-              <label htmlFor="version_textbox_show" className="col-form-label">游戏版本号</label>
-            </div>
-            <div className="col-auto">
-              <input id="version_textbox_show" readOnly value={show_version} className="form-control form-control-sm" aria-describedby="version_select_below"/>
-            </div>
-            <div className="col-auto">
-              <span id="version_select_below" className="form-text">
-                请在下面选项中切换游戏版本
-              </span>
-            </div>
-          </div>
-
-          <div hidden={!detail_configs}>
+        <div className='d-inline-block align-top'>版本设置</div>
+          <div className='d-inline-block ms-2 align-bottom'>
             <div className="form-check form-switch" style={{display:"inline-block", marginRight:"16px"}}>
               <input className="form-check-input" type="checkbox" role="switch" id="showOldGameSwitch" onChange={(e)=>set_show_old_versions(e.target.checked)} />
               <label className="form-check-label" htmlFor="showOldGameSwitch">显示旧版本</label>
@@ -134,7 +115,26 @@ function App() {
             </div>
           </div>
 
-          <div style={{marginTop:"8px"}}>
+          {/* <button className='btn btn-sm btn-link' hidden={detail_configs} onClick={()=>set_detail_configs(true)}>更多</button>
+          <button className='btn btn-sm btn-link' hidden={!detail_configs} onClick={()=>set_detail_configs(false)}>更少</button> */}
+          <br/>
+      </div>
+      <div className="card-body pb-2 pt-0">
+        <small className='text-secondary'>选择建议：尽量安装/降级至<b>最新可用版本</b>，以享受模组更新与Bug修复。</small>
+        <div className="card-text">
+          <div className="row g-3 align-items-center pt-2" hidden={!detail_configs}>
+            <div className="col-auto">
+              <label htmlFor="version_textbox_show" className="col-form-label">游戏版本号</label>
+            </div>
+            <div className="col-auto">
+              <input id="version_textbox_show" readOnly value={show_version} className="form-control form-control-sm" aria-describedby="version_select_below"/>
+            </div>
+          </div>
+
+          <div hidden={!detail_configs}>
+          </div>
+
+          <div className='my-1'>
             {
               versions.map(ver=><button
                 key={ver} 
@@ -167,10 +167,8 @@ function App() {
               )
             }
           </div>
-          <hr/>
-          版本选择建议：尽量安装/降级至<b>最新可用版本</b>，以享受模组更新与Bug修复。
         </div>
-        
+        <small className='text-secondary'>详细版本号：{show_version}</small>
       </div>
     </div>
     
