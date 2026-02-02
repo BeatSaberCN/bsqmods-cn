@@ -255,7 +255,10 @@ interface ModItem {
   _isAddedByCNSource?:boolean,
   isLibrary:boolean,
   author?:string|null,
-  authorIcon?:string|null
+  authorIcon?:string|null,
+  source?:string,
+  download?:string,
+  website?:string
 }
 interface ModJson {
   default:Record<string, Array<ModItem>>
@@ -263,7 +266,7 @@ interface ModJson {
 
 
 function ModList({ gameVersion }:{gameVersion:string}) {
-  const version_mods = (mods as ModJson).default[gameVersion]
+  const version_mods = (mods as unknown as ModJson).default[gameVersion]
   if (!version_mods) {
     return <>该版本无可展示模组信息</>
   }
@@ -417,6 +420,21 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
          />
       </>
   }
+
+  const references = []
+  {
+    if(data.source && data.source.startsWith("https://")){
+      references.push(<a className='btn btn-link btn-tiny pe-2' key="source" href={data.source} target='_blank'>{
+        data.source == data.website ? "源码/主页" : "源码"
+      }</a>)
+    }
+    if(data.website && data.website != data.source && data.website.startsWith("https://")){
+      references.push(<a className='btn btn-warning btn-tiny me-2' key="website" href={data.website} target='_blank'>主页</a>)
+    }
+    if(data.download && data.download.startsWith("https://")){
+      references.push(<a className='btn btn-success btn-tiny m2-1' key="download" href={data.download} target='_blank'>下载</a>)
+    }
+  }
   return <>
     
     <div className="card-body">
@@ -437,6 +455,11 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
         </div>
         
         <p>{zh_mode ? data.description : data.description_en}</p>
+
+        {references.length > 0 ? <>
+          <div className='text-end'><div className=''
+          >{references}</div></div>
+        </>:<></>}
     </div>
   </>
   

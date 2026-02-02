@@ -75,3 +75,9 @@ filter: brightness(0.7);
     filter: brightness(1);
 }
 }
+
+.btn-tiny{
+    --bs-btn-padding-y: .1rem;
+    --bs-btn-padding-x: .4rem;
+    --bs-btn-font-size: .75rem;
+}
