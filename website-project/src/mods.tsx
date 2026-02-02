@@ -115,12 +115,14 @@ function App() {
             </div>
           </div>
 
-          {/* <button className='btn btn-sm btn-link' hidden={detail_configs} onClick={()=>set_detail_configs(true)}>更多</button>
-          <button className='btn btn-sm btn-link' hidden={!detail_configs} onClick={()=>set_detail_configs(false)}>更少</button> */}
+          <div hidden>
+            <button className='btn btn-sm btn-link' hidden={detail_configs} onClick={()=>set_detail_configs(true)}>更多</button>
+            <button className='btn btn-sm btn-link' hidden={!detail_configs} onClick={()=>set_detail_configs(false)}>更少</button>
+          </div>
           <br/>
       </div>
       <div className="card-body pb-2 pt-0">
-        <small className='text-secondary'>选择建议：尽量安装/降级至<b>最新可用版本</b>，以享受模组更新与Bug修复。</small>
+        <small className='text-secondary'>选择建议：尽量安装/降级至<b>最新可用版本</b>，及时更新游戏，以享受<b>模组更新</b>与<b>Bug修复</b>。请放心，模组及歌单数据与游戏独立，删除/更新游戏不会丢失。</small>
         <div className="card-text">
           <div className="row g-3 align-items-center pt-2" hidden={!detail_configs}>
             <div className="col-auto">
