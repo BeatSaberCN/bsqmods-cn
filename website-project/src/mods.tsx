@@ -188,7 +188,7 @@ function App() {
     <hr className='m-1'/>
 
     <div style={{textAlign:"left"}}>
-      <div className="card text-center border-dark" style={{margin:"0", maxWidth:"1000px"}}>
+      <div className="card shadow text-center" style={{margin:"0", maxWidth:"1000px"}}>
         <div className="card-header bg-transparent">
           相关软件
             <button className='btn btn-link btn-sm' onClick={()=>set_display_related_software(true)} hidden={display_related_software}>展开</button>
@@ -235,7 +235,7 @@ function App() {
 
     </div>
 
-    <div className="alert alert-warning mt-2" role="alert">
+    <div className="alert alert-warning mt-2 shadow" role="alert">
     <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans'><img src={cc_icon} width={"60px"}/></a>&nbsp;中文翻译数据依照CC-BY-NC-SA 4.0国际许可协议授权。贡献者：{contributors.map((e)=><span key={e.author} style={{marginLeft:"8px"}}>{e.author}</span>)}。
     <hr className='m-3'/>
       贡献数据请向<a href="https://github.com/BeatSaberCN/bsqmods-cn/blob/master/database/translates.json">此文件</a>提交Pull Request！
@@ -308,11 +308,11 @@ function ModList({ gameVersion }:{gameVersion:string}) {
   return <><div className="
     row g-2
     row-cols-1
-    row-cols-sm-2
+    row-cols-sm-1
     row-cols-md-2
-    row-cols-lg-3
-    row-cols-xl-4
-    row-cols-xxl-5
+    row-cols-lg-2
+    row-cols-xl-3
+    row-cols-xxl-4
     ">
     {arr}
   </div></>
@@ -340,7 +340,7 @@ function ModWithSameIdCard({ datas , gameVersion}:{datas:Array<ModItem>, gameVer
 
   return <>
     <div className='col'>
-      <div className="card h-100 w-100">
+      <div className="card h-100 w-100 shadow">
         <ModCard key={ver} data={datas[Math.min(ver, datas.length-1)]} version_selector={selector} gamever={gameVersion} />
       </div>
     </div>
@@ -454,7 +454,9 @@ function ModCard({ data, version_selector, gamever }:{data:ModItem, version_sele
           </div>
         </div>
         
-        <p>{zh_mode ? data.description : data.description_en}</p>
+        <div className='rounded-2 shadow-sm bg-body-tertiary px-2 py-1 mb-2'>{zh_mode ? <>{(data.description || "").split("\n").map((v,i)=>(
+          <p className='p-0 m-0' style={{textIndent:data.description_en ? "1em" : ""}} key={i}>{v}</p>
+          ))}</> : data.description_en}</div>
 
         {references.length > 0 ? <>
           <div className='text-end'><div className=''
