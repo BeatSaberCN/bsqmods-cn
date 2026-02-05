@@ -2522,5 +2522,23 @@
         "descriptions": {
             "library to provide easier ways of downloading things from the web": null
         }
+    },
+    "airbuds-search": {
+        "id": "airbuds-search",
+        "names": {
+            "Airbuds Search": "Airbuds搜索"
+        },
+        "descriptions": {
+            "Use your Airbuds (support Spotify, Apple Music, SoundCloud, Deezer, Amazon Music, Audiomack) listening history to quickly search BeatSaver maps!\nFor better Japanese search results, install the 'Airbuds Search Kakasi' mod.\nForked from Tycho Bellers' original Spotify Search.": "使用Airbuds听歌历史(支持Spotify, Apple Music, SoundCloud, Deezer, Amazon Music, Audiomack)快速搜索BeatSaver谱面！\n如需提升日语搜索体验，安装“Airbuds搜索(kakasi适配)”模组。\nFork自Tycho Bellers的原始模组Spotify Search。"
+        }
+    },
+    "airbuds-search-kakasi": {
+        "id": "airbuds-search-kakasi",
+        "names": {
+            "Airbuds Search Kakasi": "Airbuds搜索(kakasi适配)"
+        },
+        "descriptions": {
+            "Kakasi-based romaji adapter for Airbuds Search.": "为Airbuds搜索引入基于kakasi的罗马音适配。"
+        }
     }
 }
