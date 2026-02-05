@@ -97,7 +97,7 @@ function App() {
 
     <div className="alert alert-primary" role="alert">
       <b>数据源与内容反馈</b><br/>
-      中文内容均人工制作，任何问题或需求可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。
+      <p className='m-0' style={{textIndent:"1.5em"}}>中文内容均人工制作，任何问题或需求可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。</p>
     </div>
 
 
@@ -122,7 +122,7 @@ function App() {
           <br/>
       </div>
       <div className="card-body pb-2 pt-0">
-        <small className='text-secondary'>选择建议：尽量安装/降级至<b>最新可用版本</b>，及时更新游戏，以享受<b>模组更新</b>与<b>Bug修复</b>。请放心，模组及歌单数据与游戏独立，删除/更新游戏不会丢失。</small>
+        <small className='text-secondary'><p style={{textIndent:"1em"}}>选择建议：尽量安装/降级至<b>最新可用版本</b>，及时更新游戏，以享受<b>模组更新</b>与<b>Bug修复</b>。请放心，模组及歌单数据与游戏独立，删除/更新游戏不会丢失。</p></small>
         <div className="card-text">
           <div className="row g-3 align-items-center pt-2" hidden={!detail_configs}>
             <div className="col-auto">
@@ -170,7 +170,7 @@ function App() {
             }
           </div>
         </div>
-        <small className='text-secondary'>详细版本号：{show_version}</small>
+        <small className='text-secondary'><p style={{textIndent:"1em"}}>详细版本号：{show_version}</p></small>
       </div>
     </div>
     
@@ -207,7 +207,7 @@ function App() {
                     <span className='badge rounded-pill text-bg-light m-1'>本地ADB兼容</span>
                     <span className='badge rounded-pill text-bg-info m-1'>需电脑联网</span>
                   </p>
-                  <p className="card-text">由中文社区开发者维护的QuestPatcher。可以下载安装后使用。可选择切换此中文源。</p>
+                  <p className="card-text" style={{textAlign:"left", textIndent:"1.5em"}}>由中文社区开发者维护的QuestPatcher。可以下载安装后使用。可选择切换此中文源。</p>
                   <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows-standalone.zip"
                     className="btn btn-secondary btn-sm m-1">下载链接</a>
                   <a href="https://github.com/BeatSaberCN/QuestPatcher"
@@ -224,7 +224,7 @@ function App() {
                     <span className='badge rounded-pill text-bg-light m-1'>支持手机/平板</span>
                     <span className='badge rounded-pill text-bg-info m-1'>需Quest联网</span>
 
-                  <p className="card-text">ModsBeforeFriday是英文模组社区BSMG主流推荐的模组工具。此为中文分支，使用此中文源。</p>
+                  <p className="card-text" style={{textAlign:"left", textIndent:"1.5em"}}>ModsBeforeFriday是英文模组社区BSMG主流推荐的模组工具。此为中文分支，使用此中文源。</p>
                   <a href="https://mbf.bsaber.cn/" className="btn btn-secondary btn-sm m-1">使用链接</a>
                 </div>
               </div>
