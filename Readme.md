@@ -48,6 +48,7 @@ npm install
 npm run update
 python build_website_project.py
 cd website-project
+npm install
 npm run dev
 ```
 
