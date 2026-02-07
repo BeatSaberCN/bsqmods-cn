@@ -404,7 +404,7 @@ function ModCard({datas, selectedIndex, onSelectModVersion, gamever }: { datas:A
     <div className="card-body">
       <div className="mb-2">
         <div className='d-flex justify-content-between'>
-          <div className='d-inline-block'>
+          <div className={'d-inline-block' + (isImageSafeLoadable(data.cover) ? " col-9" :"")}>
             <div className='my-0 mx-2 fw-bold'>{data.name}</div>
             <div className='mx-0'><ModAuthor data={data} /></div>
           </div>
