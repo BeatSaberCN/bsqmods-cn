@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import cc_icon from "./by-nc-sa.svg"
+import { Masonry } from 'masonic'
 const mods = await import("./mods.json")
 const versions = (await import("./versions.json")).default
 const build_info = await import("./build_info.json")
@@ -201,7 +202,6 @@ function Body() {
     <div className='row gy-2'>
       <div className='col col-12 col-md-6 col-lg-5 col-xl-4'>
         <div className='card h-100 w-100 bg-body-tertiary'>
-          {/* <div className='card-header'>相关软件</div> */}
           <div className='card-body'>
             <div className='card-title tool-title'>
               <h4 className='text-center text-body-emphasis mt-4'>QuestPatcher 中文版</h4>
@@ -309,21 +309,21 @@ function ModList({ gameVersion }: { gameVersion: string }) {
     return NaN
   })
 
-  const arr = []
-  for (const mods of group_by_ids_mods_only) {
-    arr.push(<ModWithSameIdCard key={mods[0].id} datas={mods} gameVersion={gameVersion} />)
-  }
-  return <><div className="
-    row g-2
-    row-cols-1
-    row-cols-sm-1
-    row-cols-md-2
-    row-cols-lg-2
-    row-cols-xl-2
-    row-cols-xxl-3
-    ">
-    {arr}
-  </div></>
+  // const arr = []
+  // for (const mods of group_by_ids_mods_only) {
+  //   arr.push(<ModWithSameIdCard key={mods[0].id} datas={mods} gameVersion={gameVersion} />)
+  // }
+
+  const MasonryCard = ({data}:{data:ModItem[], width:number})=><>
+    <ModWithSameIdCard datas={data} gameVersion={gameVersion} />
+  </>
+
+  return <Masonry
+    columnGutter={16}
+    columnWidth={330}
+    items={group_by_ids_mods_only}
+    render={MasonryCard}
+  />
 }
 
 function ModWithSameIdCard({ datas, gameVersion }: { datas: Array<ModItem>, gameVersion: string }) {
