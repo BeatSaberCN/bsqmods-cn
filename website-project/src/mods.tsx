@@ -262,14 +262,16 @@ function Body() {
     </div>
 
     <hr/>
-    <div className='text-body-secondary p-2 mb-2 small'>
+    <div className='text-body-secondary pt-1 pb-0 small'>
         <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans'><img src={cc_icon} width={"60px"} /></a>&nbsp;中文翻译数据依照CC-BY-NC-SA 4.0国际许可协议授权。贡献者：{contributors.map((e) => <span key={e.author} style={{ marginLeft: "8px" }}>{e.author}</span>)}。
         <br/>贡献数据请向<a href="https://github.com/BeatSaberCN/bsqmods-cn/blob/master/database/translates.json">此文件</a>提交Pull Request！
         数据由上游<a href="https://mods.bsquest.xyz">bsqmods</a>同步汉化而来，每日自动更新。
 
       本站点与bsaber.com无关。
-
     </div>
+    <hr className='my-1 p-0'/>
+    <div className='text-body-secondary small'>页面布局bootstrap，超帅气的瀑布流渲染来自masonic。</div>
+
   </div>
 }
 
@@ -378,7 +380,7 @@ function ModVersionSelector({datas, selectedIndex, onSelect}: {datas:Array<ModIt
   for (let i = 0; i < datas.length; i++) {
     const x = datas[i]
     const _i = i
-    options.push(<li key={_i}><a className="dropdown-item" href="#" onClick={() => onSelect(_i)}>{x.version}</a></li>)
+    options.push(<li key={_i}><button className="dropdown-item" onClick={() => onSelect(_i)}>{x.version}</button></li>)
   }
 
   return <div className='d-inline-block w-auto dropdown'>
