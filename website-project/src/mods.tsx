@@ -192,7 +192,7 @@ function Body() {
     <hr className='my-1'/>
     <p className='ms-2'>以下软件支持使用此源作为数据来源。</p>
 
-    <div className='mt-2 mb-2 alert alert-warning'>
+    <div className='mt-2 mb-2 alert alert-info'>
       <b><i className="me-2 bi bi-exclamation-octagon-fill"></i>兼容性提示</b><br/>QuestPatcher与ModsBeforeFriday安装之后互不兼容，请勿同时使用。
       <details>
         QuestPatcher与ModsBeforeFriday无法获取对方已安装的模组数据，因此存在兼容使用问题。请谨慎互换使用。如需切换，建议删除并重新安装游戏后，使用另一个软件打补丁。
@@ -201,12 +201,13 @@ function Body() {
 
     <div className='row gy-2'>
       <div className='col col-12 col-md-6 col-lg-5 col-xl-4'>
-        <div className='card h-100 w-100 bg-body-tertiary'>
+        <div className='card rounded-4 h-100 w-100'>
           <div className='card-body'>
             <div className='card-title tool-title'>
-              <h4 className='text-center text-body-emphasis mt-4'>QuestPatcher 中文版</h4>
-              <div className='text-center small mt-1 mb-4 text-body-tertiary'>PC联网使用/一键自动降级安装/兼容本地ADB</div>
+              <h4 className='text-center text-body-emphasis mt-3'>QuestPatcher 中文版</h4>
+              <div className='text-center small mt-1 mb-4 text-body-tertiary'>PC联网使用/一键自动降级安装/兼容本地ADB<span className='d-none d-md-inline'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{/* 此span用于对齐横线 */}</span></div>
             </div>
+            <hr/>
             <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>这是用于Quest一体机的节奏光剑模组安装工具。由中文社区开发者维护的补丁工具。可以下载安装后使用。</p>
             <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>可选择切换此中文源。</p>
             <div>
@@ -221,13 +222,14 @@ function Body() {
         </div>
       </div>
       <div className='col col-12 col-md-6 col-lg-5 col-xl-4'>
-        <div className='card h-100 w-100 bg-body-tertiary'>
+        <div className='card rounded-4 h-100 w-100'>
           {/* <div className='card-header'>相关软件</div> */}
           <div className='card-body'>
             <div className='card-title tool-title'>
-              <h4 className='text-center text-body-emphasis mt-4'>ModsBeforeFriday 中文版</h4>
+              <h4 className='text-center text-body-emphasis mt-3'>ModsBeforeFriday 中文版</h4>
               <div className='text-center small mt-1 mb-4 text-body-tertiary'>Quest联网使用/一键自动降级安装/支持手机平板/无需下载</div>
             </div>
+            <hr/>
             <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>这是用于Quest一体机的节奏光剑模组安装工具。此软件（简称MBF）是英文模组社区BSMG主流推荐的模组工具。</p>
             <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>此为中文分支，使用此中文源。</p>
             <div>
@@ -328,11 +330,11 @@ function ModList({ gameVersion }: { gameVersion: string }) {
 
 function ModWithSameIdCard({ datas, gameVersion }: { datas: Array<ModItem>, gameVersion: string }) {
   const [selectedIndex, setSelectedIndex] = useState(datas.length - 1)
-
+  const safe_index = Math.min(selectedIndex, datas.length - 1);
   return <>
     <div className='col'>
-      <div className="card h-100 w-100 shadow">
-        <ModCard key={selectedIndex} datas={datas} selectedIndex={Math.min(selectedIndex, datas.length - 1)} onSelectModVersion={index=>setSelectedIndex(index)} gamever={gameVersion} />
+      <div className={"card h-100 w-100 shadow" + (isCoreMod(gameVersion, datas[safe_index]?.id ?? "") ? " border-warning-subtle" : "")}>
+        <ModCard key={selectedIndex} datas={datas} selectedIndex={safe_index} onSelectModVersion={index=>setSelectedIndex(index)} gamever={gameVersion} />
       </div>
     </div>
 
@@ -345,16 +347,16 @@ function ModVersionSelector({datas, selectedIndex, onSelect}: {datas:Array<ModIt
   for (let i = 0; i < datas.length; i++) {
     const x = datas[i]
     const _i = i
-    options.push(<li key={_i}><a className="dropdown-item" href="javascript:void" onClick={() => onSelect(_i)}>{x.version}</a></li>)
+    options.push(<li key={_i}><a className="dropdown-item" href="#" onClick={() => onSelect(_i)}>{x.version}</a></li>)
   }
 
-  return <div className="btn-group dropup" style={{ display: "inline-block" }}>
-    <button className="btn btn-sm btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      {datas[Math.min(datas.length - 1, selectedIndex)].version}
-    </button>
-    <ul className="dropdown-menu">
-      {options}
-    </ul>
+  return <div className='d-inline-block w-auto dropdown'>
+      <button className="btn btn-sm btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        {datas[Math.min(datas.length - 1, selectedIndex)].version}
+      </button>
+      <ul className="dropdown-menu">
+        {options}
+      </ul>
   </div>
 }
 
@@ -367,22 +369,25 @@ function ModCard({datas, selectedIndex, onSelectModVersion, gamever }: { datas:A
 
   return <>
     <div className="card-body">
-      <div className="card-title">
-        <div style={{ height: "0" }}><div style={{ marginRight: "-10px", marginTop: "-20px", marginBottom: "100px", fontSize: "small", textAlign: "right", marginLeft: "-40px", transform: "translateX(50%) scale(0.7) translateX(-50%)" }}>
-          <ModEngButton data={data} onSet={eng=>set_zh_mode(!eng)} /><ModVersionSelector datas={datas} selectedIndex={selectedIndex} onSelect={onSelectModVersion}/>
-        </div></div>
-        <div style={{ height: "0", marginTop: "8px", marginLeft: "-8px", fontSize: "small", transform: "translateX(-50%) scale(0.7) translateX(50%)" }}>
-          <ModLabels data={data} gamever={gamever}/>
+      <div className="mb-2">
+        <div className='d-flex justify-content-between'>
+          <div className='d-inline-block'>
+            <div className='my-0 mx-2 fw-bold'>{data.name}</div>
+            <div className='mx-0'><ModAuthor data={data} /></div>
+          </div>
+          <ModCover data={data} />
         </div>
-        <div style={{ marginTop: "22px" }}></div>
-        <div style={{ display: "inline-block", width: "20%", verticalAlign: "top" }}><ModCover data={data} /></div>
-        <div style={{ display: "inline-block", width: "79%" }}>
-          <div style={{ marginLeft: "4px", marginBottom: "-6px" }}><b>{data.name}</b></div>
-          <div><ModAuthor data={data} /></div>
+        <div className='mt-2 d-flex justify-content-between'>
+          <small className='ms-2' style={{fontSize:"12px"}}><ModLabels data={data} gamever={gamever}/></small>
         </div>
       </div>
+
       <ModDescription data={data} eng={!zh_mode} />
-      <ModLinkButtons data={data} />
+      <div className='d-flex flex-column flex-sm-row justify-content-between'>
+        <div className='m-0 p-0'><ModEngButton data={data} onSet={eng=>set_zh_mode(!eng)}/></div>
+        <div className='mt-sm-2 align-self-end'><ModVersionSelector datas={datas} selectedIndex={selectedIndex} onSelect={onSelectModVersion}/><ModLinkButtons data={data} /></div>
+
+      </div>
     </div>
   </>
 }
@@ -394,7 +399,7 @@ function ModLabels({data, gamever}:{data:ModItem, gamever:string}){
   }
   let core_mod = null
   if (isCoreMod(gamever, data.id)) {
-    core_mod = <span className="badge text-bg-danger">核心</span>
+    core_mod = <span className="badge text-bg-warning">核心</span>
   }
   let is_library = null
   if (data.isLibrary) {
@@ -406,17 +411,11 @@ function ModLabels({data, gamever}:{data:ModItem, gamever:string}){
 function ModCover({data}:{data:ModItem}){
   const [showFloat, setShowFloat] = useState(false)
 
-  let image_div = <span style={{
-    width: "100%", height: "40px",
-    fontSize: "xx-small", display: "inline-block",
-    textAlign: "center", verticalAlign: "middle",
-    backgroundColor: "#80808033",
-    color: "gray"
-  }}><span style={{ verticalAlign: "middle", display: "inline-block", marginTop: "10px", userSelect: "none" }}>无封面</span></span>
+  let image_div = <></>
 
   if (isImageSafeLoadable(data.cover)) {
     image_div = <>
-      <span className="cover-float-span">
+      <div className='col-3'><span className="cover-float-span">
         <img className='cover-img' src={data.cover as string} hidden={!showFloat} />
       </span>
       <img
@@ -424,7 +423,7 @@ function ModCover({data}:{data:ModItem}){
         onMouseEnter={() => setShowFloat(true)}
         onMouseLeave={() => setShowFloat(false)}
         className='cover-inpage-img'
-      />
+      /></div>
     </>
   }
   return image_div
@@ -463,20 +462,17 @@ function ModLinkButtons({data}:{data:ModItem}){
       }</a>)
     }
     if (data.website && data.website != data.source && data.website.startsWith("https://")) {
-      references.push(<a className='btn btn-warning btn-tiny me-2' key="website" href={data.website} target='_blank'>{icon(data.website)}主页</a>)
+      references.push(<a className='btn btn-link btn-tiny me-2' key="website" href={data.website} target='_blank'>{icon(data.website)}主页</a>)
     }
     if (data.download && data.download.startsWith("https://")) {
-      references.push(<a className='btn btn-success btn-tiny m2-1' key="download" href={data.download} target='_blank'><i className="me-1 bi bi-download"></i>下载</a>)
+      references.push(<a className='btn btn-link btn-tiny m2-1' key="download" href={data.download} target='_blank'><i className="me-1 bi bi-download"></i>下载</a>)
     }
   }
-  return references.length > 0 ? <>
-        <div className='text-end'><div className=''
-        >{references}</div></div>
-      </> : <></>
+  return references
 }
 
 function ModDescription({data, eng}:{data:ModItem, eng:boolean}){
-    return  <div className='rounded-2 shadow-sm bg-body-tertiary px-2 py-1 mb-2'>{!eng ? <>{(data.description || "").split("\n").map((v, i) => (
+    return  <div className='shadow-sm bg-body-tertiary px-2 py-1 mb-0' style={{borderRadius:"2px 2px 2px 0"}}>{!eng ? <>{(data.description || "").split("\n").map((v, i) => (
         <p className='p-0 m-0' style={{ textIndent: data.description_en ? "1em" : "" }} key={i}>{v}</p>
       ))}</> : data.description_en}</div>
 
@@ -488,7 +484,7 @@ function ModEngButton({data, onSet}:{data:ModItem, onSet:(eng:boolean)=>void}){
     const cbid = `cb-${data.id}-${data.version}`
     eng_checkbox = <>
       <input type="checkbox" className="btn-check" id={cbid} autoComplete="off" onChange={e => onSet(e.target.checked)} />
-      <label className="btn btn-sm" style={{ color: "var(--bs-link-color)" }} htmlFor={cbid}><i className="me-1 bi bi-translate"></i>原文</label>
+      <label className="btn btn-sm shadow-sm px-1 py-0 mx-0 bg-body-tertiary" style={{ borderRadius:"0 0 4px 4px", verticalAlign:"top", fontSize:"12px", color: "var(--bs-link-color)" }} htmlFor={cbid}><i className="me-1 bi bi-translate"></i>原文</label>
     </>
   }
   return eng_checkbox
