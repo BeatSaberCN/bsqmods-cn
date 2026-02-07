@@ -321,6 +321,7 @@ function ModList({ gameVersion }: { gameVersion: string }) {
   </>
 
   return <Masonry
+    key={gameVersion}
     columnGutter={16}
     columnWidth={330}
     items={group_by_ids_mods_only}
