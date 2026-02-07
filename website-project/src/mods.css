@@ -55,16 +55,9 @@ filter: brightness(0.7);
 }
 
 .author-img {
-    width:16px;
-    border-radius:20px;
-    transition-property:all;
-    transition-duration:100ms;
-    transition-timing-function:ease-in;
+    width:20px;
     margin-right: 4px;
-}
-.author-img-larger {
-    border-radius:0;
-    transform: scale(3);
+    border: 0 solid var(--bs-info-border-subtle);
 }
 
 [data-bs-theme="dark"]{
@@ -121,3 +114,26 @@ filter: brightness(0.7);
 
 }
 
+
+
+.my-container {
+    margin: 16px;
+}
+
+
+@media screen and (min-width: 900px) {
+.my-container {
+    margin: 16px;
+}
+}
+
+@media screen and (min-width: 1370px) {
+.my-container {
+    margin: 32px;
+}
+}
+@media screen and (min-width: 1900px) {
+.my-container {
+    margin: 64px;
+}
+}

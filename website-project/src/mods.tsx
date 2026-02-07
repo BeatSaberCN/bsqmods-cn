@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import cc_icon from "./by-nc-sa.svg"
 import { Masonry } from 'masonic'
+import { motion } from "motion/react"
+
 const mods = await import("./mods.json")
 const versions = (await import("./versions.json")).default
 const build_info = await import("./build_info.json")
@@ -56,7 +58,7 @@ function App() {
 }
 
 function Head(){
-  return <div className='container'>
+  return <div className='my-container'>
       <div className='p-5 bg-body-tertiary rounded-3'>
         <div className='container-fluid py-5'>
           <h1 className='display-5 fw-bold' >
@@ -79,9 +81,15 @@ function Body() {
       break
     }
   }
+
+  if(!localStorage.getItem("grid-render")){
+    localStorage.setItem("grid-render", "masonry")
+  }
+
   const [show_version, set_show_version] = useState(default_version)
   const [show_non_core_versions, set_show_non_core_versions] = useState(false)
   const [show_old_versions, set_show_old_versions] = useState(false)
+  const [useMasonry, setUseMasonry] = useState(localStorage.getItem("grid-render") == "masonry");
 
   const [theme, set_theme] = useState(localStorage.getItem("theme") == "dark" ? "dark" : "light")
 
@@ -92,7 +100,7 @@ function Body() {
   // 在html中也要设置一下theme，以防止加载闪烁
   setDarkMode(theme == "dark")
 
-  return <div className="container">
+  return <div className="my-container">
     <div className="alert alert-light mt-3" role="alert">
       <b><i className="m-1 bi bi-highlighter"></i>数据源与内容反馈</b><br />
       <p className='m-0' style={{ textIndent: "1.5em" }}>中文内容均人工制作，任何问题或需求可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。</p>
@@ -102,25 +110,35 @@ function Body() {
       <b className=''><i className="m-1 bi bi-toggles"></i>设置</b>
       <hr className='mx-1 my-1'/>
       <div className='ms-2 row'>
-        <div className="form-check form-switch col col-12 col-md-3">
-          <input className="form-check-input" type="checkbox" role="switch" id="dayNightColorToggle" onChange={(e) => {
-            const dark = e.target.checked;
-            set_theme(dark ? "dark" : "light")
-            localStorage.setItem("theme", dark ? "dark" : "light");
-            setDarkMode(dark);
-          }} checked={theme == "dark"} />
-          <label className="form-check-label" style={{ userSelect: "none" }} htmlFor="dayNightColorToggle"><i className="me-1 bi bi-moon"></i>夜间模式</label>
-        </div>
 
-          <div className="form-check form-switch col col-6 col-md-3">
-            <input className="form-check-input" type="checkbox" role="switch" id="showOldGameSwitch" onChange={(e) => set_show_old_versions(e.target.checked)} />
+          <div className="form-check form-switch col col-12 col-sm-6 col-lg-3">
+            <motion.input animate={{scale: show_old_versions ? 1.1 : 0.9}} className="form-check-input" type="checkbox" role="switch" id="showOldGameSwitch" onChange={(e) => set_show_old_versions(e.target.checked)} />
             <label className="form-check-label" htmlFor="showOldGameSwitch"><i className="me-1 bi bi-clock-history"></i>显示旧版本</label>
           </div>
 
-          <div className="form-check form-switch col col-12 col-sm-6">
-            <input className="form-check-input" type="checkbox" role="switch" id="showNonCoreGameSwitch" onChange={(e) => set_show_non_core_versions(e.target.checked)} />
+          <div className="form-check form-switch col col-12 col-sm-6 col-lg-3">
+            <motion.input animate={{scale: show_non_core_versions ? 1.1 : 0.9}}  className="form-check-input" type="checkbox" role="switch" id="showNonCoreGameSwitch" onChange={(e) => set_show_non_core_versions(e.target.checked)} />
             <label className="form-check-label" htmlFor="showNonCoreGameSwitch"><i className="me-1 bi bi-patch-exclamation"></i>显示不可用版本</label>
           </div>
+
+          <div className="form-check form-switch col col-12 col-sm-6 col-lg-3">
+            <motion.input animate={{scale: useMasonry ? 1.1 : 0.9}}  className="form-check-input" type="checkbox" role="switch" id="enableMasonary" checked={useMasonry} onChange={(e) => {
+              setUseMasonry(e.target.checked)
+              localStorage.setItem("grid-render", e.target.checked ? "masonry" : "normal")
+              }} />
+            <label className="form-check-label" htmlFor="enableMasonary"><i className="me-1 bi bi-columns-gap"></i>瀑布流渲染<span className='ms-2 badge text-bg-warning p-1' style={{fontSize:"10px", verticalAlign:"text-bottom"}}>高开销</span></label>
+          </div>
+
+          <div className="form-check form-switch col col-12 col-sm-6 col-lg-3">
+            <motion.input initial={false} animate={{scale: theme == "dark" ? 1.1 : 0.9}} className="form-check-input" type="checkbox" role="switch" id="dayNightColorToggle" onChange={(e) => {
+              const dark = e.target.checked;
+              set_theme(dark ? "dark" : "light")
+              localStorage.setItem("theme", dark ? "dark" : "light");
+              setDarkMode(dark);
+            }} checked={theme == "dark"} />
+            <label className="form-check-label" style={{ userSelect: "none" }} htmlFor="dayNightColorToggle"><i className="me-1 bi bi-moon"></i>夜间模式</label>
+          </div>
+
       </div>
 
       <hr className='mx-1 my-1' />
@@ -186,7 +204,7 @@ function Body() {
       {show_version}版本无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为该版本的核心模组没有就绪。
     </div>
 
-    <ModList gameVersion={show_version} />
+    <ModList useMasonry={useMasonry} gameVersion={show_version} />
 
     <h3 className='mt-4'>相关软件</h3>
     <hr className='my-1'/>
@@ -275,7 +293,8 @@ interface ModJson {
 }
 
 
-function ModList({ gameVersion }: { gameVersion: string }) {
+function ModList({useMasonry, gameVersion }: { useMasonry:boolean, gameVersion: string }) {
+
   const version_mods = (mods as unknown as ModJson).default[gameVersion]
   if (!version_mods) {
     return <>该版本无可展示模组信息</>
@@ -316,29 +335,40 @@ function ModList({ gameVersion }: { gameVersion: string }) {
   //   arr.push(<ModWithSameIdCard key={mods[0].id} datas={mods} gameVersion={gameVersion} />)
   // }
 
-  const MasonryCard = ({data}:{data:ModItem[], width:number})=><>
-    <ModWithSameIdCard datas={data} gameVersion={gameVersion} />
-  </>
+  if(useMasonry){
+    const MasonryCard = ({data}:{data:ModItem[], width:number})=><>
+      <ModWithSameIdCard datas={data} gameVersion={gameVersion} />
+    </>
 
-  return <Masonry
-    key={gameVersion}
-    columnGutter={16}
-    columnWidth={330}
-    items={group_by_ids_mods_only}
-    render={MasonryCard}
-  />
+    return <Masonry
+      key={gameVersion}
+      columnGutter={16}
+      columnWidth={350}
+      maxColumnWidth={460}
+      items={group_by_ids_mods_only}
+      render={MasonryCard}
+    >
+    </Masonry>
+  }else{
+    return <div className='row row-cols-1 row-cols-sm-2 row-cols-xl-3 row-cols-xxl-4'>
+        {group_by_ids_mods_only.map(mods=><div key={mods[0].id} className='col p-2'>
+          <ModWithSameIdCard datas={mods} gameVersion={gameVersion} />
+        </div>)}
+    </div>
+  }
+
+
+
 }
 
 function ModWithSameIdCard({ datas, gameVersion }: { datas: Array<ModItem>, gameVersion: string }) {
   const [selectedIndex, setSelectedIndex] = useState(datas.length - 1)
   const safe_index = Math.min(selectedIndex, datas.length - 1);
   return <>
-    <div className='col'>
-      <div className={"card h-100 w-100 shadow" + (isCoreMod(gameVersion, datas[safe_index]?.id ?? "") ? " border-warning-subtle" : "")}>
-        <ModCard key={selectedIndex} datas={datas} selectedIndex={safe_index} onSelectModVersion={index=>setSelectedIndex(index)} gamever={gameVersion} />
-      </div>
-    </div>
-
+        <div
+          className={"card h-100 w-100 shadow" + (isCoreMod(gameVersion, datas[safe_index]?.id ?? "") ? " border-warning-subtle" : "")}>
+          <ModCard key={selectedIndex} datas={datas} selectedIndex={safe_index} onSelectModVersion={index=>setSelectedIndex(index)} gamever={gameVersion} />
+        </div>
   </>
 }
 
@@ -355,7 +385,7 @@ function ModVersionSelector({datas, selectedIndex, onSelect}: {datas:Array<ModIt
       <button className="btn btn-sm btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
         {datas[Math.min(datas.length - 1, selectedIndex)].version}
       </button>
-      <ul className="dropdown-menu">
+      <ul  className="dropdown-menu">
         {options}
       </ul>
   </div>
@@ -383,12 +413,15 @@ function ModCard({datas, selectedIndex, onSelectModVersion, gamever }: { datas:A
         </div>
       </div>
 
-      <ModDescription data={data} eng={!zh_mode} />
-      <div className='d-flex flex-column flex-sm-row justify-content-between'>
-        <div className='m-0 p-0'><ModEngButton data={data} onSet={eng=>set_zh_mode(!eng)}/></div>
-        <div className='mt-sm-2 align-self-end'><ModVersionSelector datas={datas} selectedIndex={selectedIndex} onSelect={onSelectModVersion}/><ModLinkButtons data={data} /></div>
+      <motion.div layout>
+        <ModDescription data={data} eng={!zh_mode} />
+        <div className='d-flex flex-column flex-sm-row justify-content-between'>
+          <div className='m-0 p-0'><ModEngButton data={data} onSet={eng=>set_zh_mode(!eng)}/></div>
+          <div className='mt-sm-2 align-self-end'><ModVersionSelector datas={datas} selectedIndex={selectedIndex} onSelect={onSelectModVersion}/><ModLinkButtons data={data} /></div>
 
-      </div>
+        </div>
+
+      </motion.div>
     </div>
   </>
 }
@@ -417,7 +450,11 @@ function ModCover({data}:{data:ModItem}){
   if (isImageSafeLoadable(data.cover)) {
     image_div = <>
       <div className='col-3'><span className="cover-float-span">
-        <img className='cover-img' src={data.cover as string} hidden={!showFloat} />
+        <motion.img className='cover-img' initial={false} src={data.cover as string} animate={{
+          opacity: showFloat ? 1 : 0,
+          x:showFloat ? 0 : -80,
+          scale: showFloat ? 1 : 0
+        }}/>
       </span>
       <img
         src={data.cover as string}
@@ -438,9 +475,15 @@ function ModAuthor({data}:{data:ModItem}){
     author = <span style={{ color: "gray", verticalAlign: "middle", fontSize: "small" }}>{data.author}</span>
     if (isImageSafeLoadable(data.authorIcon)) {
       author = <>
-        <img
+        <motion.img
           src={data.authorIcon || ""}
-          className={"author-img " + (largeAuthorIcon ? "author-img-larger" : "")}
+          className="author-img"
+          initial={false}
+          animate={{
+            scale: largeAuthorIcon ? 3 : 1,
+            borderRadius: largeAuthorIcon ? 0 : 16,
+            borderWidth: largeAuthorIcon ? 1 : 0
+          }}
           onMouseEnter={() => setLargeAuthorIcon(true)} onMouseLeave={() => setLargeAuthorIcon(false)} />{author}</>
     }
     author = <span style={{
@@ -473,9 +516,18 @@ function ModLinkButtons({data}:{data:ModItem}){
 }
 
 function ModDescription({data, eng}:{data:ModItem, eng:boolean}){
-    return  <div className='shadow-sm bg-body-tertiary px-2 py-1 mb-0' style={{borderRadius:"2px 2px 2px 0"}}>{!eng ? <>{(data.description || "").split("\n").map((v, i) => (
+    const cn_elem = <>{(data.description || "").split("\n").map((v, i) => (
         <p className='p-0 m-0' style={{ textIndent: data.description_en ? "1em" : "" }} key={i}>{v}</p>
-      ))}</> : data.description_en}</div>
+      ))}</>
+    const en_elem = <>{data.description_en ?? ""}</>
+
+    return <>
+        <div className='shadow-sm bg-body-tertiary px-2 py-1 mb-0' style={{borderRadius:"2px 2px 2px 0"}}>
+      
+        {eng ? <motion.div key={data.id + "-" + data.version + "-en"} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>{en_elem}</motion.div> : 
+        <motion.div key={data.id+ "-" + data.version+"-zh"} initial={{opacity:0}} animate={{ opacity:1}} exit={{opacity:0}}>{cn_elem}</motion.div>}
+      
+    </div></>
 
 }
 
