@@ -55,28 +55,16 @@ function App() {
 }
 
 function Head(){
-  return <div className='head-container'>
-      <div className='head-block'>
-        <div className='container head-border'>
-          <h1 className='' >
+  return <div className='container'>
+      <div className='p-5 bg-body-tertiary rounded-3'>
+        <div className='container-fluid py-5'>
+          <h1 className='display-5 fw-bold' >
             <span>bs</span> <span>qmods</span>中文源
           </h1>
-          <hr className='my-1' />
-    
-          <div className='text-body-secondary'>
-            <a style={{
-              display: "inline-block",
-              marginLeft: "2px",
-              minWidth: "165px" // 避免LayoutShift
-            }} href="https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml" >
-              <img className='me-1' src="https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml/badge.svg" />
-            </a>
-            
-            <span style={{verticalAlign:"sub", textWrap:"nowrap"}}>{buildDate} （上次同步时间）</span></div>
-          <div className='text-body-secondary'>节奏光剑Quest一体机模组的中文源</div>
-
+          <div className='col-md-8 fs-4'>节奏光剑Quest一体机模组的中文源</div>
         </div>
       </div>
+
     </div>
 }
 
@@ -104,19 +92,13 @@ function Body() {
   setDarkMode(theme == "dark")
 
   return <div className="container">
-
-    <div className='mb-1'>
-      <span className="badge text-bg-success"></span>
-    </div>
-
-    <div className="alert alert-light" role="alert">
-      <b><i className="m-1 bi bi-highlighter"></i>
-数据源与内容反馈</b><br />
+    <div className="alert alert-light mt-3" role="alert">
+      <b><i className="m-1 bi bi-highlighter"></i>数据源与内容反馈</b><br />
       <p className='m-0' style={{ textIndent: "1.5em" }}>中文内容均人工制作，任何问题或需求可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。</p>
     </div>
 
-    <div className='alert alert-light fade show'>
-      <b className=''><i className="m-1 bi bi-gear"></i>设置</b>
+    <div className='alert alert-light fade show pb-3 pb-sm-2'>
+      <b className=''><i className="m-1 bi bi-toggles"></i>设置</b>
       <hr className='mx-1 my-1'/>
       <div className='ms-2 row'>
         <div className="form-check form-switch col col-12 col-md-3">
@@ -134,11 +116,20 @@ function Body() {
             <label className="form-check-label" htmlFor="showOldGameSwitch"><i className="me-1 bi bi-clock-history"></i>显示旧版本</label>
           </div>
 
-          <div className="form-check form-switch col col-6">
+          <div className="form-check form-switch col col-12 col-sm-6">
             <input className="form-check-input" type="checkbox" role="switch" id="showNonCoreGameSwitch" onChange={(e) => set_show_non_core_versions(e.target.checked)} />
             <label className="form-check-label" htmlFor="showNonCoreGameSwitch"><i className="me-1 bi bi-patch-exclamation"></i>显示不可用版本</label>
           </div>
       </div>
+
+      <hr className='mx-1 my-1' />
+      <div className='px-2 small d-flex flex-column flex-sm-row justify-content-between'>
+        <span  className='text-secondary' style={{verticalAlign:"sub", textWrap:"nowrap"}}>{buildDate} （上次同步时间）</span>
+        <a     className='align-self-end' href="https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml" >
+          <img src="https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml/badge.svg" />
+        </a>
+      </div> 
+
     </div>
 
 
@@ -147,7 +138,7 @@ function Body() {
 版本选择</b>
       <div className="">
           <hr className='my-1 mx-1'/>
-          <div className='ms-2'>
+          <div className='m-2'>
             {
               versions.map(ver => <button
                 key={ver}
@@ -166,7 +157,7 @@ function Body() {
                   })()
                 }
                 className={"btn btn-sm " + (
-                  "btn-" + (ver == show_version ? "" : "outline-") + (hasCoreMod(ver) ? "primary" : "secondary")
+                  "btn-" + (ver == show_version ? "" : "outline-") + (hasCoreMod(ver) ? "success" : "secondary")
                 )}
                 style={{
                   borderRadius: "20px",
