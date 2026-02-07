@@ -327,51 +327,67 @@ function ModList({ gameVersion }: { gameVersion: string }) {
 }
 
 function ModWithSameIdCard({ datas, gameVersion }: { datas: Array<ModItem>, gameVersion: string }) {
-  const [ver, setver] = useState(datas.length - 1)
-
-  const options = []
-
-  for (let i = 0; i < datas.length; i++) {
-    const x = datas[i]
-    const _i = i
-    options.push(<li key={_i}><a className="dropdown-item" href="javascript:void" onClick={() => setver(_i)}>{x.version}</a></li>)
-  }
-
-  const selector = <div className="btn-group dropup" style={{ display: "inline-block" }}>
-    <button className="btn btn-sm btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      {datas[Math.min(datas.length - 1, ver)].version}
-    </button>
-    <ul className="dropdown-menu">
-      {options}
-    </ul>
-  </div>
+  const [selectedIndex, setSelectedIndex] = useState(datas.length - 1)
 
   return <>
     <div className='col'>
       <div className="card h-100 w-100 shadow">
-        <ModCard key={ver} data={datas[Math.min(ver, datas.length - 1)]} version_selector={selector} gamever={gameVersion} />
+        <ModCard key={selectedIndex} datas={datas} selectedIndex={Math.min(selectedIndex, datas.length - 1)} onSelectModVersion={index=>setSelectedIndex(index)} gamever={gameVersion} />
       </div>
     </div>
 
   </>
 }
 
+function ModVersionSelector({datas, selectedIndex, onSelect}: {datas:Array<ModItem>, selectedIndex:number, onSelect:(index:number)=>void}){
+  const options = []
 
-function ModCard({ data, version_selector, gamever }: { data: ModItem, version_selector: any, gamever: string }) {
-  const [zh_mode, set_zh_mode] = useState(true)
-  const [showFloat, setShowFloat] = useState(false)
-  const [largeAuthorIcon, setLargeAuthorIcon] = useState(false)
-  if (data == undefined)
-    return <>错误，数据为空</>
-  let eng_checkbox = null
-  if (data.description_en) {
-    const cbid = `cb-${data.id}-${data.version}`
-    eng_checkbox = <>
-      <input type="checkbox" className="btn-check" id={cbid} autoComplete="off" onChange={e => set_zh_mode(!e.target.checked)} />
-      <label className="btn btn-sm" style={{ color: "var(--bs-link-color)" }} htmlFor={cbid}><i className="me-1 bi bi-translate"></i>原文</label>
-    </>
+  for (let i = 0; i < datas.length; i++) {
+    const x = datas[i]
+    const _i = i
+    options.push(<li key={_i}><a className="dropdown-item" href="javascript:void" onClick={() => onSelect(_i)}>{x.version}</a></li>)
   }
 
+  return <div className="btn-group dropup" style={{ display: "inline-block" }}>
+    <button className="btn btn-sm btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      {datas[Math.min(datas.length - 1, selectedIndex)].version}
+    </button>
+    <ul className="dropdown-menu">
+      {options}
+    </ul>
+  </div>
+}
+
+function ModCard({datas, selectedIndex, onSelectModVersion, gamever }: { datas:Array<ModItem>, selectedIndex:number, onSelectModVersion:(index:number)=>void, gamever: string }) {
+  const [zh_mode, set_zh_mode] = useState(true)
+
+  const data = datas[selectedIndex]
+  if (data == undefined)
+    return <>错误，数据为空</>
+
+  return <>
+    <div className="card-body">
+      <div className="card-title">
+        <div style={{ height: "0" }}><div style={{ marginRight: "-10px", marginTop: "-20px", marginBottom: "100px", fontSize: "small", textAlign: "right", marginLeft: "-40px", transform: "translateX(50%) scale(0.7) translateX(-50%)" }}>
+          <ModEngButton data={data} onSet={eng=>set_zh_mode(!eng)} /><ModVersionSelector datas={datas} selectedIndex={selectedIndex} onSelect={onSelectModVersion}/>
+        </div></div>
+        <div style={{ height: "0", marginTop: "8px", marginLeft: "-8px", fontSize: "small", transform: "translateX(-50%) scale(0.7) translateX(50%)" }}>
+          <ModLabels data={data} gamever={gamever}/>
+        </div>
+        <div style={{ marginTop: "22px" }}></div>
+        <div style={{ display: "inline-block", width: "20%", verticalAlign: "top" }}><ModCover data={data} /></div>
+        <div style={{ display: "inline-block", width: "79%" }}>
+          <div style={{ marginLeft: "4px", marginBottom: "-6px" }}><b>{data.name}</b></div>
+          <div><ModAuthor data={data} /></div>
+        </div>
+      </div>
+      <ModDescription data={data} eng={!zh_mode} />
+      <ModLinkButtons data={data} />
+    </div>
+  </>
+}
+
+function ModLabels({data, gamever}:{data:ModItem, gamever:string}){
   let cn_source = null
   if (data._isAddedByCNSource) {
     cn_source = <span className="badge text-bg-info">中文源</span>
@@ -384,28 +400,11 @@ function ModCard({ data, version_selector, gamever }: { data: ModItem, version_s
   if (data.isLibrary) {
     is_library = <>&nbsp;<span className="badge text-bg-secondary">库</span></>
   }
-  let cover_link = null
-  if (isImageSafeLoadable(data.cover)) {
-    cover_link = <a href={data.cover as string} target="_blank" className="btn btn-link btn-sm">封面</a>
-  }
+  return <>{cn_source}{core_mod}{is_library}</>
+}
 
-  let author = null
-  if (typeof (data.author) == "string") {
-    author = <span style={{ color: "gray", verticalAlign: "middle", fontSize: "small" }}>{data.author}</span>
-    if (isImageSafeLoadable(data.authorIcon)) {
-      author = <>
-        <img
-          src={data.authorIcon || ""}
-          className={"author-img " + (largeAuthorIcon ? "author-img-larger" : "")}
-          onMouseEnter={() => setLargeAuthorIcon(true)} onMouseLeave={() => setLargeAuthorIcon(false)} />{author}</>
-    }
-    author = <span style={{
-      marginLeft: "16px",
-      marginTop: "4px",
-      display: "inline-block",
-      lineHeight: "normal"
-    }}>{author}</span>
-  }
+function ModCover({data}:{data:ModItem}){
+  const [showFloat, setShowFloat] = useState(false)
 
   let image_div = <span style={{
     width: "100%", height: "40px",
@@ -428,7 +427,33 @@ function ModCard({ data, version_selector, gamever }: { data: ModItem, version_s
       />
     </>
   }
+  return image_div
+}
 
+function ModAuthor({data}:{data:ModItem}){
+  const [largeAuthorIcon, setLargeAuthorIcon] = useState(false)
+
+  let author = <></>
+  if (typeof (data.author) == "string") {
+    author = <span style={{ color: "gray", verticalAlign: "middle", fontSize: "small" }}>{data.author}</span>
+    if (isImageSafeLoadable(data.authorIcon)) {
+      author = <>
+        <img
+          src={data.authorIcon || ""}
+          className={"author-img " + (largeAuthorIcon ? "author-img-larger" : "")}
+          onMouseEnter={() => setLargeAuthorIcon(true)} onMouseLeave={() => setLargeAuthorIcon(false)} />{author}</>
+    }
+    author = <span style={{
+      marginLeft: "16px",
+      marginTop: "4px",
+      display: "inline-block",
+      lineHeight: "normal"
+    }}>{author}</span>
+  }
+  return author
+}
+
+function ModLinkButtons({data}:{data:ModItem}){
   const references = []
   {
     const icon = (url:string)=>url.startsWith("https://github.com") ? <i className="me-1 bi bi-github"></i> : <></>;
@@ -444,36 +469,27 @@ function ModCard({ data, version_selector, gamever }: { data: ModItem, version_s
       references.push(<a className='btn btn-success btn-tiny m2-1' key="download" href={data.download} target='_blank'><i className="me-1 bi bi-download"></i>下载</a>)
     }
   }
-  return <>
+  return references.length > 0 ? <>
+        <div className='text-end'><div className=''
+        >{references}</div></div>
+      </> : <></>
+}
 
-    <div className="card-body">
-      <div className="card-title">
-        <div style={{ height: "0" }}><div style={{ marginRight: "-10px", marginTop: "-20px", marginBottom: "100px", fontSize: "small", textAlign: "right", marginLeft: "-40px", transform: "translateX(50%) scale(0.7) translateX(-50%)" }}>
-          {eng_checkbox}{cover_link}{version_selector}
-        </div></div>
-        <div style={{ height: "0", marginTop: "8px", marginLeft: "-8px", fontSize: "small", transform: "translateX(-50%) scale(0.7) translateX(50%)" }}>
-          {core_mod}{is_library}{cn_source}
-        </div>
-        <div style={{ marginTop: "22px" }}></div>
-
-        <div style={{ display: "inline-block", width: "20%", verticalAlign: "top" }}>{image_div}</div>
-        <div style={{ display: "inline-block", width: "79%" }}>
-          <div style={{ marginLeft: "4px", marginBottom: "-6px" }}><b>{data.name}</b></div>
-          <div>{author}</div>
-        </div>
-      </div>
-
-      <div className='rounded-2 shadow-sm bg-body-tertiary px-2 py-1 mb-2'>{zh_mode ? <>{(data.description || "").split("\n").map((v, i) => (
+function ModDescription({data, eng}:{data:ModItem, eng:boolean}){
+    return  <div className='rounded-2 shadow-sm bg-body-tertiary px-2 py-1 mb-2'>{!eng ? <>{(data.description || "").split("\n").map((v, i) => (
         <p className='p-0 m-0' style={{ textIndent: data.description_en ? "1em" : "" }} key={i}>{v}</p>
       ))}</> : data.description_en}</div>
 
-      {references.length > 0 ? <>
-        <div className='text-end'><div className=''
-        >{references}</div></div>
-      </> : <></>}
-    </div>
-  </>
+}
 
-
-
+function ModEngButton({data, onSet}:{data:ModItem, onSet:(eng:boolean)=>void}){
+  let eng_checkbox = <></>
+  if (data.description_en) {
+    const cbid = `cb-${data.id}-${data.version}`
+    eng_checkbox = <>
+      <input type="checkbox" className="btn-check" id={cbid} autoComplete="off" onChange={e => onSet(e.target.checked)} />
+      <label className="btn btn-sm" style={{ color: "var(--bs-link-color)" }} htmlFor={cbid}><i className="me-1 bi bi-translate"></i>原文</label>
+    </>
+  }
+  return eng_checkbox
 }
