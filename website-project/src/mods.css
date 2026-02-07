@@ -81,3 +81,43 @@ filter: brightness(0.7);
     --bs-btn-padding-x: .4rem;
     --bs-btn-font-size: .75rem;
 }
+.head-container{
+    min-height: 180px;
+}
+.head-border{
+    --color-a: rgb(228, 27, 27);
+    --color-b: rgb(36, 25, 245);
+    --dist-a:19.4px;
+    --dist-b:calc(var(--dist-a));
+
+    /* border-top: 12px dashed; */
+    border-bottom: 12px dotted;
+
+    border-image: repeating-linear-gradient(90deg, 
+        var(--color-a) calc(0*var(--dist-b) + 0*var(--dist-a))  , var(--color-a)  calc(0*var(--dist-b) + 1*var(--dist-a)) , 
+        transparent    calc(0*var(--dist-b) + 1*var(--dist-a))  , transparent     calc(1*var(--dist-b) + 1*var(--dist-a)) ,
+        var(--color-b) calc(1*var(--dist-b) + 1*var(--dist-a))  , var(--color-b)  calc(1*var(--dist-b) + 2*var(--dist-a)) , 
+        transparent    calc(1*var(--dist-b) + 2*var(--dist-a))  , transparent     calc(2*var(--dist-b) + 2*var(--dist-a)) 
+        ) 20;
+    
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.head-block{
+    margin-top: 20px;
+    padding-top: 10px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 60px;
+}
+
+
+[data-bs-theme="dark"]{
+
+.head-border {
+    --color-a: rgb(174, 60, 142);
+    --color-b: rgb(179, 176, 106);
+}
+
+}
+

@@ -7,37 +7,37 @@ const versions = (await import("./versions.json")).default
 const build_info = await import("./build_info.json")
 const buildDate = new Date(build_info.buildTimestamp).toLocaleString("zh-CN", { timeZone: "Asia/ShangHai" })
 const core_mods = (await import("./core_mods.json")).default as any as Record<string, {
-  mods:[{
-    id:string
+  mods: [{
+    id: string
   }]
 }>
 const contributors = (await import("./contributors.json")).default as any as {
-  author:string,
-  count:number
+  author: string,
+  count: number
 }[]
 import "./mods.css"
 
-const core_mod_ids:Record<string, Set<string> > = {}
-for(const version in core_mods){
+const core_mod_ids: Record<string, Set<string>> = {}
+for (const version in core_mods) {
   core_mod_ids[version] = new Set()
-  for(const mod of core_mods[version].mods){
+  for (const mod of core_mods[version].mods) {
     core_mod_ids[version].add(mod.id)
   }
 }
-function hasCoreMod(gameVer:string){
+function hasCoreMod(gameVer: string) {
   return !!core_mod_ids[gameVer]
 }
-function isCoreMod(gameVer:string, id:string){
+function isCoreMod(gameVer: string, id: string) {
   const set = core_mod_ids[gameVer]
-  if(set == undefined)
+  if (set == undefined)
     return false
   return set.has(id)
 }
 
-function isImageSafeLoadable(url:unknown){
-  if(url == null || url == undefined)
+function isImageSafeLoadable(url: unknown) {
+  if (url == null || url == undefined)
     return false
-  if(typeof(url) == "string"){
+  if (typeof (url) == "string") {
     return url.startsWith("http://") || url.startsWith("https://")
   }
   return false
@@ -48,9 +48,44 @@ createRoot(document.getElementById('root')!).render(
 )
 
 function App() {
+  return <>
+    <Head />
+    <Body />
+  </>
+}
+
+function Head(){
+  return <div className='head-container'>
+      <div className='head-block'>
+        <div className='container head-border'>
+          <h1 className='' >
+            <span>bs</span> <span>qmods</span>中文源
+          </h1>
+          <hr className='my-1' />
+    
+          <div className='text-body-secondary'>
+            <a style={{
+              display: "inline-block",
+              marginLeft: "2px",
+              minWidth: "165px" // 避免LayoutShift
+            }} href="https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml" >
+              <img className='me-1' src="https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml/badge.svg" />
+            </a>
+            
+            <span style={{verticalAlign:"sub", textWrap:"nowrap"}}>{buildDate} （上次同步时间）</span></div>
+          <div className='text-body-secondary'>节奏光剑Quest一体机模组的中文源</div>
+
+        </div>
+      </div>
+    </div>
+}
+
+
+
+function Body() {
   let default_version = versions[0]
-  for(const ver of versions){
-    if(hasCoreMod(ver)){
+  for (const ver of versions) {
+    if (hasCoreMod(ver)) {
       default_version = ver
       break
     }
@@ -58,214 +93,196 @@ function App() {
   const [show_version, set_show_version] = useState(default_version)
   const [show_non_core_versions, set_show_non_core_versions] = useState(false)
   const [show_old_versions, set_show_old_versions] = useState(false)
-  const [detail_configs, set_detail_configs] = useState(false)
 
-  const [display_related_software, set_display_related_software] = useState(false)
-  
   const [theme, set_theme] = useState(localStorage.getItem("theme") == "dark" ? "dark" : "light")
 
-  function setDarkMode(dark:boolean){
+  function setDarkMode(dark: boolean) {
     document.documentElement.setAttribute("data-bs-theme", dark ? "dark" : "light")
   }
 
   // 在html中也要设置一下theme，以防止加载闪烁
   setDarkMode(theme == "dark")
 
-  return <div className="root-container">
-    <h1>bsqmods中文源</h1>
-    <div className=''><small style={{color:"gray"}}>这是一个节奏光剑Quest一体机模组的中文mod名称/简介源</small></div>
-    <hr className='m-1'/>
+  return <div className="container">
+
     <div className='mb-1'>
-      <a style={{
-          display:"inline-block",
-          minWidth:"165px" // 避免LayoutShift
-        }} href="https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml" >
-        <img className='me-1' src="https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml/badge.svg" />
-      </a>
-      <span className="badge text-bg-success">最后同步时间：{buildDate}</span>
-      <div className="form-check form-switch d-inline-block align-middle m-auto ms-2">
-        <input className="form-check-input" type="checkbox" role="switch" id="dayNightColorToggle" onChange={(e)=>{
-          const dark = e.target.checked;
-          set_theme(dark ? "dark" : "light")
-          localStorage.setItem("theme", dark ? "dark" : "light");
-          setDarkMode(dark);
-        }} checked={theme == "dark"} />
-        <label className="form-check-label" style={{userSelect:"none"}} htmlFor="dayNightColorToggle">夜间模式</label>
+      <span className="badge text-bg-success"></span>
+    </div>
+
+    <div className="alert alert-light" role="alert">
+      <b><i className="m-1 bi bi-highlighter"></i>
+数据源与内容反馈</b><br />
+      <p className='m-0' style={{ textIndent: "1.5em" }}>中文内容均人工制作，任何问题或需求可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。</p>
+    </div>
+
+    <div className='alert alert-light fade show'>
+      <b className=''><i className="m-1 bi bi-gear"></i>设置</b>
+      <hr className='mx-1 my-1'/>
+      <div className='ms-2 row'>
+        <div className="form-check form-switch col col-12 col-md-3">
+          <input className="form-check-input" type="checkbox" role="switch" id="dayNightColorToggle" onChange={(e) => {
+            const dark = e.target.checked;
+            set_theme(dark ? "dark" : "light")
+            localStorage.setItem("theme", dark ? "dark" : "light");
+            setDarkMode(dark);
+          }} checked={theme == "dark"} />
+          <label className="form-check-label" style={{ userSelect: "none" }} htmlFor="dayNightColorToggle"><i className="me-1 bi bi-moon"></i>夜间模式</label>
+        </div>
+
+          <div className="form-check form-switch col col-6 col-md-3">
+            <input className="form-check-input" type="checkbox" role="switch" id="showOldGameSwitch" onChange={(e) => set_show_old_versions(e.target.checked)} />
+            <label className="form-check-label" htmlFor="showOldGameSwitch"><i className="me-1 bi bi-clock-history"></i>显示旧版本</label>
+          </div>
+
+          <div className="form-check form-switch col col-6">
+            <input className="form-check-input" type="checkbox" role="switch" id="showNonCoreGameSwitch" onChange={(e) => set_show_non_core_versions(e.target.checked)} />
+            <label className="form-check-label" htmlFor="showNonCoreGameSwitch"><i className="me-1 bi bi-patch-exclamation"></i>显示不可用版本</label>
+          </div>
       </div>
     </div>
 
 
-    <div className="alert alert-primary" role="alert">
-      <b>数据源与内容反馈</b><br/>
-      <p className='m-0' style={{textIndent:"1.5em"}}>中文内容均人工制作，任何问题或需求可以通过<a href="https://github.com/BeatSaberCN/bsqmods-cn/issues">issue</a>联系，会第一时间进行处理。</p>
-    </div>
-
-
-    <div className="card border-secondary" style={{marginBottom:"8px",width:"fit-content"}}>
-      <div className='card-header border-secondary'>
-        <div className='d-inline-block align-top'>版本设置</div>
-          <div className='d-inline-block ms-2 align-bottom'>
-            <div className="form-check form-switch" style={{display:"inline-block", marginRight:"16px"}}>
-              <input className="form-check-input" type="checkbox" role="switch" id="showOldGameSwitch" onChange={(e)=>set_show_old_versions(e.target.checked)} />
-              <label className="form-check-label" htmlFor="showOldGameSwitch">显示旧版本</label>
-            </div>
-            <div className="form-check form-switch" style={{display:"inline-block"}}>
-              <input className="form-check-input" type="checkbox" role="switch" id="showNonCoreGameSwitch" onChange={(e)=>set_show_non_core_versions(e.target.checked)} />
-              <label className="form-check-label" htmlFor="showNonCoreGameSwitch">显示不可用版本</label>
-            </div>
-          </div>
-
-          <div hidden>
-            <button className='btn btn-sm btn-link' hidden={detail_configs} onClick={()=>set_detail_configs(true)}>更多</button>
-            <button className='btn btn-sm btn-link' hidden={!detail_configs} onClick={()=>set_detail_configs(false)}>更少</button>
-          </div>
-          <br/>
-      </div>
-      <div className="card-body pb-2 pt-0">
-        <small className='text-secondary'><p style={{textIndent:"1em"}}>选择建议：尽量安装/降级至<b>最新可用版本</b>，及时更新游戏，以享受<b>模组更新</b>与<b>Bug修复</b>。请放心，模组及歌单数据与游戏独立，删除/更新游戏不会丢失。</p></small>
-        <div className="card-text">
-          <div className="row g-3 align-items-center pt-2" hidden={!detail_configs}>
-            <div className="col-auto">
-              <label htmlFor="version_textbox_show" className="col-form-label">游戏版本号</label>
-            </div>
-            <div className="col-auto">
-              <input id="version_textbox_show" readOnly value={show_version} className="form-control form-control-sm" aria-describedby="version_select_below"/>
-            </div>
-          </div>
-
-          <div hidden={!detail_configs}>
-          </div>
-
-          <div className='my-1'>
+    <div className="alert alert-light">
+        <b className=''><i className="m-1 bi bi-option"></i>
+版本选择</b>
+      <div className="">
+          <hr className='my-1 mx-1'/>
+          <div className='ms-2'>
             {
-              versions.map(ver=><button
-                key={ver} 
-                type="button" 
+              versions.map(ver => <button
+                key={ver}
+                type="button"
                 hidden={
-                  (()=>{
-                    if(!hasCoreMod(ver)){
-                      if(!show_non_core_versions)
+                  (() => {
+                    if (!hasCoreMod(ver)) {
+                      if (!show_non_core_versions)
                         return true
                     }
-                    if(ver == "global" || ver == "undefined" || ver < "1.37.0"){
-                      if(!show_old_versions)
+                    if (ver == "global" || ver == "undefined" || ver < "1.37.0") {
+                      if (!show_old_versions)
                         return true
                     }
                     return false;
                   })()
                 }
                 className={"btn btn-sm " + (
-                    "btn-" + (ver == show_version ? "" : "outline-") + (hasCoreMod(ver) ? "success" : "warning")
-                  )}
+                  "btn-" + (ver == show_version ? "" : "outline-") + (hasCoreMod(ver) ? "primary" : "secondary")
+                )}
                 style={{
-                  borderRadius:"20px",
-                  padding:"0 10px",
-                  margin:"0 2px"
+                  borderRadius: "20px",
+                  padding: "0 10px",
+                  margin: "0 2px"
                 }}
-                onClick={()=>{
+                onClick={() => {
                   set_show_version(ver)
                 }}
-                >{ver.split("_")[0]}</button>
+              >{ver.split("_")[0]}</button>
               )
             }
           </div>
-        </div>
-        <small className='text-secondary'><p style={{textIndent:"1em"}}>详细版本号：{show_version}</p></small>
+          <small className='text-secondary'><p className='mb-1' style={{ textIndent: "1em" }}>尽量安装/降级至<b>最新可用版本</b>，及时更新游戏，以享受<b>模组更新</b>与<b>Bug修复</b>。请放心，模组及歌单数据与游戏独立，删除/更新游戏不会丢失。</p></small>
+
+          <small className='text-secondary'><p className='mt-1 mb-0' style={{ textIndent: "1em" }}>当前详细版本号：{show_version}</p></small>
       </div>
     </div>
-    
-    
+
+
     <div style={{
-      display:hasCoreMod(show_version) ? "none" : ""
+      display: hasCoreMod(show_version) ? "none" : ""
     }} className="alert alert-warning" role="alert">
-      <b>该游戏版本不可用</b><br/>
+      <b>版本不可用<i className="m-1 bi bi-exclamation-octagon-fill"></i></b><br />
       {show_version}版本无法在MBF或QuestPatcher中使用，也不会在上游网站中展示。这是因为该版本的核心模组没有就绪。
     </div>
 
-    <hr className="m-1"/>
     <ModList gameVersion={show_version} />
 
-    <hr className='m-1'/>
+    <h3 className='mt-4'>相关软件</h3>
+    <hr className='my-1'/>
+    <p className='ms-2'>以下软件支持使用此源作为数据来源。</p>
 
-    <div style={{textAlign:"left"}}>
-      <div className="card shadow text-center" style={{margin:"0", maxWidth:"1000px"}}>
-        <div className="card-header bg-transparent">
-          相关软件
-            <button className='btn btn-link btn-sm' onClick={()=>set_display_related_software(true)} hidden={display_related_software}>展开</button>
-            <button className='btn btn-link btn-sm' onClick={()=>set_display_related_software(false)} hidden={!display_related_software}>收起</button>
-        </div>
-        <div className="card-body" hidden={!display_related_software}>
+    <div className='mt-2 mb-2 alert alert-warning'>
+      <b><i className="me-2 bi bi-exclamation-octagon-fill"></i>兼容性提示</b><br/>QuestPatcher与ModsBeforeFriday安装之后互不兼容，请勿同时使用。
+      <details>
+        QuestPatcher与ModsBeforeFriday无法获取对方已安装的模组数据，因此存在兼容使用问题。请谨慎互换使用。如需切换，建议删除并重新安装游戏后，使用另一个软件打补丁。
+      </details>
+    </div>
 
-          <div className="card-group">
-
-              <div className="card">
-                <div className="card-header">QuestPatcherCN</div>
-                <div className="card-body">
-                  <p>
-                    <span className='badge rounded-pill text-bg-light m-1'>中文</span>
-                    <span className='badge rounded-pill text-bg-light m-1'>一键降级安装模组</span>
-                    <span className='badge rounded-pill text-bg-light m-1'>本地ADB兼容</span>
-                    <span className='badge rounded-pill text-bg-info m-1'>需电脑联网</span>
-                  </p>
-                  <p className="card-text" style={{textAlign:"left", textIndent:"1.5em"}}>由中文社区开发者维护的QuestPatcher。可以下载安装后使用。可选择切换此中文源。</p>
-                  <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows-standalone.zip"
-                    className="btn btn-secondary btn-sm m-1">下载链接</a>
-                  <a href="https://github.com/BeatSaberCN/QuestPatcher"
-                    className="btn btn-link btn-sm m-1">项目主页</a>
-                </div>
-              </div>
-
-              <div className="card">
-                  <div className="card-header">ModsBeforeFriday中文分支</div>
-                <div className="card-body">
-                    <span className='badge rounded-pill text-bg-light m-1'>中文</span>
-                    <span className='badge rounded-pill text-bg-light m-1'>一键降级安装模组</span>
-                    <span className='badge rounded-pill text-bg-light m-1'>网页即开即用</span>
-                    <span className='badge rounded-pill text-bg-light m-1'>支持手机/平板</span>
-                    <span className='badge rounded-pill text-bg-info m-1'>需Quest联网</span>
-
-                  <p className="card-text" style={{textAlign:"left", textIndent:"1.5em"}}>ModsBeforeFriday是英文模组社区BSMG主流推荐的模组工具。此为中文分支，使用此中文源。</p>
-                  <a href="https://mbf.bsaber.cn/" className="btn btn-secondary btn-sm m-1">使用链接</a>
-                </div>
-              </div>
-
+    <div className='row gy-2'>
+      <div className='col col-12 col-md-6 col-lg-5 col-xl-4'>
+        <div className='card h-100 w-100 bg-body-tertiary'>
+          {/* <div className='card-header'>相关软件</div> */}
+          <div className='card-body'>
+            <div className='card-title tool-title'>
+              <h4 className='text-center text-body-emphasis mt-4'>QuestPatcher 中文版</h4>
+              <div className='text-center small mt-1 mb-4 text-body-tertiary'>PC联网使用/一键自动降级安装/兼容本地ADB</div>
+            </div>
+            <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>这是用于Quest一体机的节奏光剑模组安装工具。由中文社区开发者维护的补丁工具。可以下载安装后使用。</p>
+            <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>可选择切换此中文源。</p>
+            <div>
+              <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows-standalone.zip"
+                className="btn btn-link me-1"><i className="me-1 bi bi-file-zip"></i>下载便携版</a>
+              <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows.exe"
+                className="btn btn-link me-1"><i className="me-1 bi bi-filetype-exe"></i>下载安装器</a>
+              <a href="https://github.com/BeatSaberCN/QuestPatcher"
+                className="btn btn-link me-1"><i className="me-1 bi bi-github"></i>项目主页</a>
+            </div>
           </div>
         </div>
       </div>
-
+      <div className='col col-12 col-md-6 col-lg-5 col-xl-4'>
+        <div className='card h-100 w-100 bg-body-tertiary'>
+          {/* <div className='card-header'>相关软件</div> */}
+          <div className='card-body'>
+            <div className='card-title tool-title'>
+              <h4 className='text-center text-body-emphasis mt-4'>ModsBeforeFriday 中文版</h4>
+              <div className='text-center small mt-1 mb-4 text-body-tertiary'>Quest联网使用/一键自动降级安装/支持手机平板/无需下载</div>
+            </div>
+            <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>这是用于Quest一体机的节奏光剑模组安装工具。此软件（简称MBF）是英文模组社区BSMG主流推荐的模组工具。</p>
+            <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>此为中文分支，使用此中文源。</p>
+            <div>
+              <a href="https://mbf.bsaber.cn/"
+                className="btn btn-link me-1"><i className="me-1 bi bi-hand-index-thumb"></i>打开</a>
+              <a href="https://github.com/BeatSaberCN/ModsBeforeFriday"
+                className="btn btn-link me-1"><i className="me-1 bi bi-github"></i>项目主页</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div className="alert alert-warning mt-2 shadow" role="alert">
-    <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans'><img src={cc_icon} width={"60px"}/></a>&nbsp;中文翻译数据依照CC-BY-NC-SA 4.0国际许可协议授权。贡献者：{contributors.map((e)=><span key={e.author} style={{marginLeft:"8px"}}>{e.author}</span>)}。
-    <hr className='m-3'/>
-      贡献数据请向<a href="https://github.com/BeatSaberCN/bsqmods-cn/blob/master/database/translates.json">此文件</a>提交Pull Request！
-      数据由上游<a href="https://mods.bsquest.xyz">bsqmods</a>同步汉化而来，每日自动更新。
+    <hr/>
+    <div className='text-body-secondary p-2 mb-2 small'>
+        <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans'><img src={cc_icon} width={"60px"} /></a>&nbsp;中文翻译数据依照CC-BY-NC-SA 4.0国际许可协议授权。贡献者：{contributors.map((e) => <span key={e.author} style={{ marginLeft: "8px" }}>{e.author}</span>)}。
+        <br/>贡献数据请向<a href="https://github.com/BeatSaberCN/bsqmods-cn/blob/master/database/translates.json">此文件</a>提交Pull Request！
+        数据由上游<a href="https://mods.bsquest.xyz">bsqmods</a>同步汉化而来，每日自动更新。
+
+      本站点与bsaber.com无关。
+
     </div>
-    <div style={{color:"gray"}}>此站点与bsaber.com无关。</div>
   </div>
 }
 
 interface ModItem {
-  id:string,
-  name:string,
-  description:string,
-  description_en?:string,
-  version:string,
-  cover?:string|null,
-  _isAddedByCNSource?:boolean,
-  isLibrary:boolean,
-  author?:string|null,
-  authorIcon?:string|null,
-  source?:string,
-  download?:string,
-  website?:string
+  id: string,
+  name: string,
+  description: string,
+  description_en?: string,
+  version: string,
+  cover?: string | null,
+  _isAddedByCNSource?: boolean,
+  isLibrary: boolean,
+  author?: string | null,
+  authorIcon?: string | null,
+  source?: string,
+  download?: string,
+  website?: string
 }
 interface ModJson {
-  default:Record<string, Array<ModItem>>
+  default: Record<string, Array<ModItem>>
 }
 
 
-function ModList({ gameVersion }:{gameVersion:string}) {
+function ModList({ gameVersion }: { gameVersion: string }) {
   const version_mods = (mods as unknown as ModJson).default[gameVersion]
   if (!version_mods) {
     return <>该版本无可展示模组信息</>
@@ -280,21 +297,21 @@ function ModList({ gameVersion }:{gameVersion:string}) {
   }
 
   const group_by_ids_mods_only: Array<Array<ModItem>> = []
-  for(const entry of group_by_ids){
+  for (const entry of group_by_ids) {
     group_by_ids_mods_only.push(entry[1])
   }
 
-  group_by_ids_mods_only.sort((a:Array<ModItem>,b:Array<ModItem>)=>{
+  group_by_ids_mods_only.sort((a: Array<ModItem>, b: Array<ModItem>) => {
     const acore = isCoreMod(gameVersion, a[0].id)
     const bcore = isCoreMod(gameVersion, b[0].id)
     const acn = a[0]._isAddedByCNSource
     const bcn = b[0]._isAddedByCNSource
 
-    if(acore != bcore){
+    if (acore != bcore) {
       return acore ? -1 : 1
     }
 
-    if(acn != bcn){
+    if (acn != bcn) {
       return acn ? -1 : 1
     }
 
@@ -303,7 +320,7 @@ function ModList({ gameVersion }:{gameVersion:string}) {
 
   const arr = []
   for (const mods of group_by_ids_mods_only) {
-    arr.push(<ModWithSameIdCard key={mods[0].id} datas={mods} gameVersion={gameVersion}/>)
+    arr.push(<ModWithSameIdCard key={mods[0].id} datas={mods} gameVersion={gameVersion} />)
   }
   return <><div className="
     row g-2
@@ -311,14 +328,14 @@ function ModList({ gameVersion }:{gameVersion:string}) {
     row-cols-sm-1
     row-cols-md-2
     row-cols-lg-2
-    row-cols-xl-3
-    row-cols-xxl-4
+    row-cols-xl-2
+    row-cols-xxl-3
     ">
     {arr}
   </div></>
 }
 
-function ModWithSameIdCard({ datas , gameVersion}:{datas:Array<ModItem>, gameVersion:string}) {
+function ModWithSameIdCard({ datas, gameVersion }: { datas: Array<ModItem>, gameVersion: string }) {
   const [ver, setver] = useState(datas.length - 1)
 
   const options = []
@@ -326,12 +343,12 @@ function ModWithSameIdCard({ datas , gameVersion}:{datas:Array<ModItem>, gameVer
   for (let i = 0; i < datas.length; i++) {
     const x = datas[i]
     const _i = i
-    options.push(<li key={_i}><a className="dropdown-item" href="javascript:void" onClick={()=>setver(_i)}>{x.version}</a></li>)
+    options.push(<li key={_i}><a className="dropdown-item" href="javascript:void" onClick={() => setver(_i)}>{x.version}</a></li>)
   }
 
-  const selector = <div className="btn-group dropup" style={{display:"inline-block"}}>
+  const selector = <div className="btn-group dropup" style={{ display: "inline-block" }}>
     <button className="btn btn-sm btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      {datas[Math.min(datas.length-1, ver)].version}
+      {datas[Math.min(datas.length - 1, ver)].version}
     </button>
     <ul className="dropdown-menu">
       {options}
@@ -341,130 +358,131 @@ function ModWithSameIdCard({ datas , gameVersion}:{datas:Array<ModItem>, gameVer
   return <>
     <div className='col'>
       <div className="card h-100 w-100 shadow">
-        <ModCard key={ver} data={datas[Math.min(ver, datas.length-1)]} version_selector={selector} gamever={gameVersion} />
+        <ModCard key={ver} data={datas[Math.min(ver, datas.length - 1)]} version_selector={selector} gamever={gameVersion} />
       </div>
     </div>
 
-    </>
+  </>
 }
 
 
-function ModCard({ data, version_selector, gamever }:{data:ModItem, version_selector:any, gamever:string}) {
+function ModCard({ data, version_selector, gamever }: { data: ModItem, version_selector: any, gamever: string }) {
   const [zh_mode, set_zh_mode] = useState(true)
   const [showFloat, setShowFloat] = useState(false)
   const [largeAuthorIcon, setLargeAuthorIcon] = useState(false)
-  if(data == undefined)
+  if (data == undefined)
     return <>错误，数据为空</>
   let eng_checkbox = null
-  if(data.description_en){
+  if (data.description_en) {
     const cbid = `cb-${data.id}-${data.version}`
     eng_checkbox = <>
-      <input type="checkbox" className="btn-check" id={cbid} autoComplete="off" onChange={e=>set_zh_mode(!e.target.checked)} />
-      <label className="btn btn-sm" style={{color:"var(--bs-link-color)"}} htmlFor={cbid}>原文</label>
+      <input type="checkbox" className="btn-check" id={cbid} autoComplete="off" onChange={e => set_zh_mode(!e.target.checked)} />
+      <label className="btn btn-sm" style={{ color: "var(--bs-link-color)" }} htmlFor={cbid}><i className="me-1 bi bi-translate"></i>原文</label>
     </>
   }
 
   let cn_source = null
-  if(data._isAddedByCNSource){
+  if (data._isAddedByCNSource) {
     cn_source = <span className="badge text-bg-info">中文源</span>
   }
   let core_mod = null
-  if(isCoreMod(gamever, data.id)){
+  if (isCoreMod(gamever, data.id)) {
     core_mod = <span className="badge text-bg-danger">核心</span>
   }
   let is_library = null
-  if(data.isLibrary){
-    is_library =  <>&nbsp;<span className="badge text-bg-secondary">库</span></>
+  if (data.isLibrary) {
+    is_library = <>&nbsp;<span className="badge text-bg-secondary">库</span></>
   }
   let cover_link = null
-  if(isImageSafeLoadable(data.cover)){
+  if (isImageSafeLoadable(data.cover)) {
     cover_link = <a href={data.cover as string} target="_blank" className="btn btn-link btn-sm">封面</a>
   }
 
   let author = null
-  if(typeof(data.author)=="string"){
-    author = <span style={{color:"gray",verticalAlign:"middle",fontSize:"small"}}>{data.author}</span>
-    if(isImageSafeLoadable(data.authorIcon)){
+  if (typeof (data.author) == "string") {
+    author = <span style={{ color: "gray", verticalAlign: "middle", fontSize: "small" }}>{data.author}</span>
+    if (isImageSafeLoadable(data.authorIcon)) {
       author = <>
         <img
-          src={data.authorIcon || ""} 
+          src={data.authorIcon || ""}
           className={"author-img " + (largeAuthorIcon ? "author-img-larger" : "")}
-          onMouseEnter={()=>setLargeAuthorIcon(true)} onMouseLeave={()=>setLargeAuthorIcon(false)} />{author}</>
+          onMouseEnter={() => setLargeAuthorIcon(true)} onMouseLeave={() => setLargeAuthorIcon(false)} />{author}</>
     }
     author = <span style={{
-      marginLeft:"16px",
-      marginTop:"4px",
-      display:"inline-block",
-      lineHeight:"normal"
+      marginLeft: "16px",
+      marginTop: "4px",
+      display: "inline-block",
+      lineHeight: "normal"
     }}>{author}</span>
   }
 
   let image_div = <span style={{
-    width:"100%",height:"40px",
-    fontSize:"xx-small",display:"inline-block",
-    textAlign:"center",verticalAlign:"middle",
-    backgroundColor:"#80808033",
-    color:"gray"
-  }}><span style={{verticalAlign:"middle",display:"inline-block",marginTop:"10px", userSelect:"none"}}>无封面</span></span>
-  
-  if(isImageSafeLoadable(data.cover)){
+    width: "100%", height: "40px",
+    fontSize: "xx-small", display: "inline-block",
+    textAlign: "center", verticalAlign: "middle",
+    backgroundColor: "#80808033",
+    color: "gray"
+  }}><span style={{ verticalAlign: "middle", display: "inline-block", marginTop: "10px", userSelect: "none" }}>无封面</span></span>
+
+  if (isImageSafeLoadable(data.cover)) {
     image_div = <>
       <span className="cover-float-span">
         <img className='cover-img' src={data.cover as string} hidden={!showFloat} />
       </span>
-      <img 
+      <img
         src={data.cover as string}
-        onMouseEnter={()=>setShowFloat(true)}
-        onMouseLeave={()=>setShowFloat(false)}
+        onMouseEnter={() => setShowFloat(true)}
+        onMouseLeave={() => setShowFloat(false)}
         className='cover-inpage-img'
-         />
-      </>
+      />
+    </>
   }
 
   const references = []
   {
-    if(data.source && data.source.startsWith("https://")){
-      references.push(<a className='btn btn-link btn-tiny pe-2' key="source" href={data.source} target='_blank'>{
+    const icon = (url:string)=>url.startsWith("https://github.com") ? <i className="me-1 bi bi-github"></i> : <></>;
+    if (data.source && data.source.startsWith("https://")) {
+      references.push(<a className='btn btn-link btn-tiny pe-2' key="source" href={data.source} target='_blank'>{icon(data.source)}{
         data.source == data.website ? "源码/主页" : "源码"
       }</a>)
     }
-    if(data.website && data.website != data.source && data.website.startsWith("https://")){
-      references.push(<a className='btn btn-warning btn-tiny me-2' key="website" href={data.website} target='_blank'>主页</a>)
+    if (data.website && data.website != data.source && data.website.startsWith("https://")) {
+      references.push(<a className='btn btn-warning btn-tiny me-2' key="website" href={data.website} target='_blank'>{icon(data.website)}主页</a>)
     }
-    if(data.download && data.download.startsWith("https://")){
-      references.push(<a className='btn btn-success btn-tiny m2-1' key="download" href={data.download} target='_blank'>下载</a>)
+    if (data.download && data.download.startsWith("https://")) {
+      references.push(<a className='btn btn-success btn-tiny m2-1' key="download" href={data.download} target='_blank'><i className="me-1 bi bi-download"></i>下载</a>)
     }
   }
   return <>
-    
+
     <div className="card-body">
-        <div className="card-title">
-            <div style={{height:"0"}}><div style={{marginRight:"-10px",marginTop:"-20px", marginBottom:"100px",fontSize:"small",textAlign:"right", marginLeft:"-40px", transform:"translateX(50%) scale(0.7) translateX(-50%)"}}>
-              {eng_checkbox}{cover_link}{version_selector}
-            </div></div>
-            <div style={{height:"0", marginTop:"8px", marginLeft:"-8px", fontSize:"small",transform:"translateX(-50%) scale(0.7) translateX(50%)"}}>
-              {core_mod}{is_library}{cn_source}
-            </div>
-            <div style={{marginTop:"22px"}}></div>
-
-          <div style={{display:"inline-block",width:"20%",verticalAlign:"top"}}>{image_div}</div>
-          <div style={{display:"inline-block", width:"79%"}}>
-            <div style={{marginLeft:"4px",marginBottom:"-6px"}}><b>{data.name}</b></div>
-            <div>{author}</div>
-          </div>
+      <div className="card-title">
+        <div style={{ height: "0" }}><div style={{ marginRight: "-10px", marginTop: "-20px", marginBottom: "100px", fontSize: "small", textAlign: "right", marginLeft: "-40px", transform: "translateX(50%) scale(0.7) translateX(-50%)" }}>
+          {eng_checkbox}{cover_link}{version_selector}
+        </div></div>
+        <div style={{ height: "0", marginTop: "8px", marginLeft: "-8px", fontSize: "small", transform: "translateX(-50%) scale(0.7) translateX(50%)" }}>
+          {core_mod}{is_library}{cn_source}
         </div>
-        
-        <div className='rounded-2 shadow-sm bg-body-tertiary px-2 py-1 mb-2'>{zh_mode ? <>{(data.description || "").split("\n").map((v,i)=>(
-          <p className='p-0 m-0' style={{textIndent:data.description_en ? "1em" : ""}} key={i}>{v}</p>
-          ))}</> : data.description_en}</div>
+        <div style={{ marginTop: "22px" }}></div>
 
-        {references.length > 0 ? <>
-          <div className='text-end'><div className=''
-          >{references}</div></div>
-        </>:<></>}
+        <div style={{ display: "inline-block", width: "20%", verticalAlign: "top" }}>{image_div}</div>
+        <div style={{ display: "inline-block", width: "79%" }}>
+          <div style={{ marginLeft: "4px", marginBottom: "-6px" }}><b>{data.name}</b></div>
+          <div>{author}</div>
+        </div>
+      </div>
+
+      <div className='rounded-2 shadow-sm bg-body-tertiary px-2 py-1 mb-2'>{zh_mode ? <>{(data.description || "").split("\n").map((v, i) => (
+        <p className='p-0 m-0' style={{ textIndent: data.description_en ? "1em" : "" }} key={i}>{v}</p>
+      ))}</> : data.description_en}</div>
+
+      {references.length > 0 ? <>
+        <div className='text-end'><div className=''
+        >{references}</div></div>
+      </> : <></>}
     </div>
   </>
-  
 
-    
+
+
 }
