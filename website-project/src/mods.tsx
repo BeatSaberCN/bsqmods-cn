@@ -419,7 +419,10 @@ function ModCard({datas, selectedIndex, onSelectModVersion, gamever }: { datas:A
         <ModDescription data={data} eng={!zh_mode} />
         <div className='d-flex flex-column flex-sm-row justify-content-between'>
           <div className='m-0 p-0'><ModEngButton data={data} onSet={eng=>set_zh_mode(!eng)}/></div>
-          <div className='mt-sm-2 align-self-end'><ModVersionSelector datas={datas} selectedIndex={selectedIndex} onSelect={onSelectModVersion}/><ModLinkButtons data={data} /></div>
+          <div className='mt-sm-2 align-self-end'>
+            <ModVersionSelector datas={datas} selectedIndex={selectedIndex} onSelect={onSelectModVersion}/>
+            <ModLinkButtons data={data} />
+          </div>
 
         </div>
 
@@ -454,7 +457,8 @@ function ModCover({data}:{data:ModItem}){
       <div className='col-3'><span className="cover-float-span">
         <motion.img className='cover-img' initial={false} src={data.cover as string} animate={{
           opacity: showFloat ? 1 : 0,
-          x:showFloat ? 0 : -80,
+          x:showFloat ? 0 : 100,
+          y:showFloat ? 0 : 80,
           scale: showFloat ? 1 : 0
         }}/>
       </span>
@@ -524,7 +528,7 @@ function ModDescription({data, eng}:{data:ModItem, eng:boolean}){
     const en_elem = <>{data.description_en ?? ""}</>
 
     return <>
-        <div className='shadow-sm bg-body-tertiary px-2 py-1 mb-0' style={{borderRadius:"2px 2px 2px 0"}}>
+        <div className={'shadow-sm px-2 py-1 mb-0 ' + (eng ? "background-desc-color" : "background-desc-color")} style={{borderRadius: data.description_en ? "8px 8px 8px 0" : "8px 8px 8px 8px"}}>
       
         {eng ? <motion.div key={data.id + "-" + data.version + "-en"} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>{en_elem}</motion.div> : 
         <motion.div key={data.id+ "-" + data.version+"-zh"} initial={{opacity:0}} animate={{ opacity:1}} exit={{opacity:0}}>{cn_elem}</motion.div>}
@@ -539,7 +543,7 @@ function ModEngButton({data, onSet}:{data:ModItem, onSet:(eng:boolean)=>void}){
     const cbid = `cb-${data.id}-${data.version}`
     eng_checkbox = <>
       <input type="checkbox" className="btn-check" id={cbid} autoComplete="off" onChange={e => onSet(e.target.checked)} />
-      <label className="btn btn-sm shadow-sm px-1 py-0 mx-0 bg-body-tertiary" style={{ borderRadius:"0 0 4px 4px", verticalAlign:"top", fontSize:"12px", color: "var(--bs-link-color)" }} htmlFor={cbid}><i className="me-1 bi bi-translate"></i>原文</label>
+      <label className="btn btn-sm shadow-eng-button px-1 py-0 mx-0 background-translate-btn-color" style={{ borderRadius:"0 0 4px 4px", verticalAlign:"top", fontSize:"12px", color: "var(--bs-link-color)" }} htmlFor={cbid}><i className="me-1 bi bi-translate"></i>原文</label>
     </>
   }
   return eng_checkbox
