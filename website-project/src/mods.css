@@ -153,7 +153,6 @@ filter: brightness(0.7);
 .shadow-eng-button{
     box-shadow: 4px 0.325rem 0.25rem -2px rgba(0, 0, 0, 0.075)
 }
-
 [data-bs-theme="dark"]{
 .background-desc-color {
     background-color: rgb(58, 48, 6);
@@ -167,3 +166,13 @@ filter: brightness(0.7);
     --bs-btn-active-border-color: rgb(43, 35, 5);
 
 }
+}
+
+/* .title-bg{
+    background:linear-gradient(18deg, #ff9595, #adb3ff)
+}
+[data-bs-theme="dark"]{
+.title-bg{
+    background:linear-gradient(18deg, #5e5211, rgb(39, 45, 87))
+}
+} */

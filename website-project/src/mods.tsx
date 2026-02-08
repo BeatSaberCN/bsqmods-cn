@@ -59,7 +59,7 @@ function App() {
 
 function Head(){
   return <div className='my-container'>
-      <div className='p-5 bg-body-tertiary rounded-3'>
+      <div className='p-5 bg-body-tertiary rounded-3 title-bg'>
         <div className='container-fluid py-5'>
           <h1 className='display-5 fw-bold' >
             <span>bs</span> <span>qmods</span>中文源
@@ -526,6 +526,10 @@ function ModDescription({data, eng}:{data:ModItem, eng:boolean}){
         <p className='p-0 m-0' style={{ textIndent: data.description_en ? "1em" : "" }} key={i}>{v}</p>
       ))}</>
     const en_elem = <>{data.description_en ?? ""}</>
+
+      if(data.description == null && !data.description_en){
+        return <><div style={{width:"1px",height:"1px",marginBottom:"-32px"}}></div></> /* 返回一个div做坐标补偿 */
+      }
 
     return <>
         <div className={'shadow-sm px-2 py-1 mb-0 ' + (eng ? "background-desc-color" : "background-desc-color")} style={{borderRadius: data.description_en ? "8px 8px 8px 0" : "8px 8px 8px 8px"}}>
