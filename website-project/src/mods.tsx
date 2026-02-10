@@ -206,10 +206,58 @@ function Body() {
 
     <ModList useMasonry={useMasonry} gameVersion={show_version} />
 
-    <h3 className='mt-4'>相关软件</h3>
-    <hr className='my-1'/>
-    <p className='ms-2'>以下软件支持使用此源作为数据来源。</p>
+    <hr />
 
+    <div className=''>
+      <div className='text-sm-center text-lg-start ms-lg-3 p-3'>
+        <h3 className='display-5 text-body-emphasis'>相关软件</h3>
+        <p className='fs-5 text-body-secondary'>这些软件支持使用此源作为数据来源。</p>
+      </div>
+
+      <div className='row gy-2 ms-md-2'>
+        <div className='col col-12 col-md-6 soft-card'>
+          <div className='card rounded-4 h-100 w-100'>
+            <div className='card-body'>
+              <div className='card-title tool-title'>
+                <h4 className='text-center text-body-emphasis mt-3'>QuestPatcher 中文版</h4>
+                <div className='text-center small mt-1 mb-4 text-body-tertiary'>PC联网使用/一键自动降级安装/兼容本地ADB<span className='d-none d-md-inline'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{/* 此span用于对齐横线 */}</span></div>
+              </div>
+              <hr/>
+              <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>这是用于Quest一体机的节奏光剑模组安装工具。由中文社区开发者维护的补丁工具。可以下载安装后使用。</p>
+              <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>可选择切换此中文源。</p>
+              <div>
+                <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows-standalone.zip"
+                  className="btn btn-link me-1"><i className="me-1 bi bi-file-zip"></i>下载便携版</a>
+                <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows.exe"
+                  className="btn btn-link me-1"><i className="me-1 bi bi-filetype-exe"></i>下载安装器</a>
+                <a href="https://github.com/BeatSaberCN/QuestPatcher"
+                  className="btn btn-link me-1"><i className="me-1 bi bi-github"></i>项目主页</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='col col-12 col-md-6 soft-card'>
+          <div className='card rounded-4 h-100 w-100'>
+            <div className='card-body'>
+              <div className='card-title tool-title'>
+                <h4 className='text-center text-body-emphasis mt-3'>ModsBeforeFriday 中文版</h4>
+                <div className='text-center small mt-1 mb-4 text-body-tertiary'>Quest联网使用/一键自动降级安装/支持手机平板/无需下载</div>
+              </div>
+              <hr/>
+              <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>这是用于Quest一体机的节奏光剑模组安装工具。此软件（简称MBF）是英文模组社区BSMG主流推荐的模组工具。</p>
+              <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>此为中文分支，使用此中文源。</p>
+              <div>
+                <a href="https://mbf.bsaber.cn/"
+                  className="btn btn-link me-1"><i className="me-1 bi bi-hand-index-thumb"></i>打开</a>
+                <a href="https://github.com/BeatSaberCN/ModsBeforeFriday"
+                  className="btn btn-link me-1"><i className="me-1 bi bi-github"></i>项目主页</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <div className='mt-2 mb-2 alert alert-info'>
       <b><i className="me-2 bi bi-exclamation-octagon-fill"></i>兼容性提示</b><br/>QuestPatcher与ModsBeforeFriday安装之后互不兼容，请勿同时使用。
       <details>
@@ -218,47 +266,6 @@ function Body() {
     </div>
 
     <div className='row gy-2'>
-      <div className='col col-12 col-md-6 col-lg-5 col-xl-4'>
-        <div className='card rounded-4 h-100 w-100'>
-          <div className='card-body'>
-            <div className='card-title tool-title'>
-              <h4 className='text-center text-body-emphasis mt-3'>QuestPatcher 中文版</h4>
-              <div className='text-center small mt-1 mb-4 text-body-tertiary'>PC联网使用/一键自动降级安装/兼容本地ADB<span className='d-none d-md-inline'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{/* 此span用于对齐横线 */}</span></div>
-            </div>
-            <hr/>
-            <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>这是用于Quest一体机的节奏光剑模组安装工具。由中文社区开发者维护的补丁工具。可以下载安装后使用。</p>
-            <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>可选择切换此中文源。</p>
-            <div>
-              <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows-standalone.zip"
-                className="btn btn-link me-1"><i className="me-1 bi bi-file-zip"></i>下载便携版</a>
-              <a href="https://github.com/BeatSaberCN/QuestPatcher/releases/latest/download/QuestPatcher-windows.exe"
-                className="btn btn-link me-1"><i className="me-1 bi bi-filetype-exe"></i>下载安装器</a>
-              <a href="https://github.com/BeatSaberCN/QuestPatcher"
-                className="btn btn-link me-1"><i className="me-1 bi bi-github"></i>项目主页</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='col col-12 col-md-6 col-lg-5 col-xl-4'>
-        <div className='card rounded-4 h-100 w-100'>
-          {/* <div className='card-header'>相关软件</div> */}
-          <div className='card-body'>
-            <div className='card-title tool-title'>
-              <h4 className='text-center text-body-emphasis mt-3'>ModsBeforeFriday 中文版</h4>
-              <div className='text-center small mt-1 mb-4 text-body-tertiary'>Quest联网使用/一键自动降级安装/支持手机平板/无需下载</div>
-            </div>
-            <hr/>
-            <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>这是用于Quest一体机的节奏光剑模组安装工具。此软件（简称MBF）是英文模组社区BSMG主流推荐的模组工具。</p>
-            <p className="card-text mt-2 mb-1" style={{ textIndent: "1em" }}>此为中文分支，使用此中文源。</p>
-            <div>
-              <a href="https://mbf.bsaber.cn/"
-                className="btn btn-link me-1"><i className="me-1 bi bi-hand-index-thumb"></i>打开</a>
-              <a href="https://github.com/BeatSaberCN/ModsBeforeFriday"
-                className="btn btn-link me-1"><i className="me-1 bi bi-github"></i>项目主页</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <hr/>

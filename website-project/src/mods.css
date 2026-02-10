@@ -185,3 +185,9 @@ filter: brightness(0.7);
     background:linear-gradient(18deg, #5e5211, rgb(39, 45, 87))
 }
 } */
+
+@media screen and (min-width: 850px) {
+.soft-card{
+    max-width: 400px;
+}
+}
