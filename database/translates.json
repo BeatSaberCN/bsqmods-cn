@@ -2540,5 +2540,14 @@
         "descriptions": {
             "Kakasi-based romaji adapter for Airbuds Search.": "为Airbuds搜索引入基于kakasi的罗马音适配。"
         }
+    },
+    "imager": {
+        "id": "imager",
+        "names": {
+            "Imager": "图片"
+        },
+        "descriptions": {
+            "Create images & move them around | .jpg / .png / .gif files are all supported. You can either put them in: ModData/com.beatgames.beatsaber/Mods/Imager/Images or you can use the mod’s download feature!": "创建&移动图片 | 支持.jpg/.png/.gif文件。可以将文件放在ModData/com.beatgames.beatsaber/Mods/Imager/Images，或使用模组自带的下载功能！"
+        }
     }
 }
