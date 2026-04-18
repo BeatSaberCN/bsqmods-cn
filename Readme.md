@@ -4,11 +4,23 @@
 
 # 更新方式
 
-## 自动更新
+## 定期自动更新
 
-已配置Github Action，每天自动同步一次。
+已配置Github Action，每天自动同步一次。自动更新仅更新github page，不更新git仓库。
+
+## 手动更新
+
+可以全程在github页面上更新。
+
+维护者在[Github Action](https://github.com/BeatSaberCN/bsqmods-cn/actions/workflows/deploy.yml)手动触发workflow，即可重新部署并自动生成一个新的commit提交。新提交内包含新增mod。
+
+随后可以在github上手动更新json文件内容。
+
+# 代码调试
 
 如果要本地调试，需先更新mod数据库，再渲染网页。
+
+代码分为两部分，一部分是mod数据库，一部分是网页渲染，请按顺序操作。
 
 ## mod数据库
 
