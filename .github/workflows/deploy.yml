@@ -39,6 +39,8 @@ jobs:
       - name: Push changes
         if: github.event_name == 'workflow_dispatch'
         run: |
+          git config user.name "github-action-script"
+          git config user.email "github-action-script@example.com"
           git add .
           git commit -m "Auto update files" || echo "No changes"
           git push
