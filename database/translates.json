@@ -1145,7 +1145,9 @@
             "socket_lib, version 0.10.0!": null,
             "socket_lib, version 0.11.0!": null,
             "socket_lib, version 0.11.1!": null,
-            "socket_lib, version 0.9.1!": null
+            "socket_lib, version 0.9.1!": null,
+            "socket_lib, version 0.12.0!": null,
+            "socket_lib, version 0.12.1!": null
         }
     },
     "SpaghettiExtensions": {
