@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
   
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -18,12 +18,10 @@ jobs:
 
     steps:
       - name: Setup repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup node
         uses: actions/setup-node@v6
-        with:
-          node-version: 24
 
       - name: init npm
         run: npm install
@@ -37,6 +35,12 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
+      - name: Push changes
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git add .
+          git commit -m "Auto update files" || echo "No changes"
+          git push
       
   deploy:
     needs: build
