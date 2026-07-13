@@ -2361,7 +2361,7 @@
         },
         "descriptions": {
             "Provides way too many utilities for mod developers": "为其它模组的开发者提供好多好多实用的东西。",
-            "Generic utilities for mod developers": null
+            "Generic utilities for mod developers": "为模组开发者制作的泛用工具"
         }
     },
     "paper2_scotland2": {
@@ -2584,10 +2584,10 @@
     "SqoreToggler": {
         "id": "SqoreToggler",
         "names": {
-            "SqoreToggler": null
+            "SqoreToggler": "成绩开关"
         },
         "descriptions": {
-            "Toggle score submissions with the flip of a switch!": null
+            "Toggle score submissions with the flip of a switch!": "加一个开关，用于开启/关闭分数上传！"
         }
     }
 }
