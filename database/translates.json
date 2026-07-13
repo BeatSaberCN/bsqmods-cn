@@ -2360,7 +2360,8 @@
             "MetaCore": "MetaCore库"
         },
         "descriptions": {
-            "Provides way too many utilities for mod developers": "为其它模组的开发者提供好多好多实用的东西。"
+            "Provides way too many utilities for mod developers": "为其它模组的开发者提供好多好多实用的东西。",
+            "Generic utilities for mod developers": null
         }
     },
     "paper2_scotland2": {
@@ -2569,6 +2570,24 @@
         },
         "descriptions": {
             "A Beat Saber Quest mod for displaying stats on Discord": "一个用于在 Discord 上显示状态的模组。"
+        }
+    },
+    "BSMapLoader": {
+        "id": "BSMapLoader",
+        "names": {
+            "BSMapLoader": null
+        },
+        "descriptions": {
+            "\"A human-readable alternative to Beat Saber's v4 .dat format. Instead of editing raw JSON, write maps in plain .bsmap text files with simple keywords like NOTE, WALL, and LIGHT. Automatically converts to v4 .dat and lightshow files at startup. See https://github.com/VoidNachos/BSMapLoader for the full format guide. Requires SongCore.": null
+        }
+    },
+    "SqoreToggler": {
+        "id": "SqoreToggler",
+        "names": {
+            "SqoreToggler": null
+        },
+        "descriptions": {
+            "Toggle score submissions with the flip of a switch!": null
         }
     }
 }
