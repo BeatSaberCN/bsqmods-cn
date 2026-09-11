@@ -2388,7 +2388,8 @@
             "TrickSaber Lite": "花式光剑Lite"
         },
         "descriptions": {
-            "This mod is not that stable like it seems, improvements will be rolling out soon!\nPerform spins and throws with your sabers!": "花式光剑的精简版。目前可能不太稳定，改进将持续推出。可以旋转和抛掷光剑。"
+            "This mod is not that stable like it seems, improvements will be rolling out soon!\nPerform spins and throws with your sabers!": "花式光剑的精简版。目前可能不太稳定，改进将持续推出。可以旋转和抛掷光剑。",
+            "Perform spins and throws with your sabers!": null
         }
     },
     "bsl": {
