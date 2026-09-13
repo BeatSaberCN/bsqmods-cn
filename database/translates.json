@@ -2389,7 +2389,7 @@
         },
         "descriptions": {
             "This mod is not that stable like it seems, improvements will be rolling out soon!\nPerform spins and throws with your sabers!": "花式光剑的精简版。目前可能不太稳定，改进将持续推出。可以旋转和抛掷光剑。",
-            "Perform spins and throws with your sabers!": null
+            "Perform spins and throws with your sabers!": "旋转、抛掷手中的光剑！"
         }
     },
     "bsl": {
@@ -2579,7 +2579,8 @@
             "BSMapLoader": null
         },
         "descriptions": {
-            "\"A human-readable alternative to Beat Saber's v4 .dat format. Instead of editing raw JSON, write maps in plain .bsmap text files with simple keywords like NOTE, WALL, and LIGHT. Automatically converts to v4 .dat and lightshow files at startup. See https://github.com/VoidNachos/BSMapLoader for the full format guide. Requires SongCore.": null
+            "\"A human-readable alternative to Beat Saber's v4 .dat format. Instead of editing raw JSON, write maps in plain .bsmap text files with simple keywords like NOTE, WALL, and LIGHT. Automatically converts to v4 .dat and lightshow files at startup. See https://github.com/VoidNachos/BSMapLoader for the full format guide. Requires SongCore.":
+            "人类可读的用于替代v4数据的文件格式。在制谱过程中，无需编写原始的JSON，可以通过编辑纯文本的.bsmap文本文件，而是使用一些简单的关键字像NOTE、WALL、LIGHT。在启动时自动转换为v4的数据格式及灯光文件。完整格式指南参考https://github.com/VoidNachos/BSMapLoader。需要依赖“谱面核心”模组。"
         }
     },
     "SqoreToggler": {
