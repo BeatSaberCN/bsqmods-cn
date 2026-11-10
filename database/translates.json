@@ -103,7 +103,8 @@
             "Spawn a bigger base platform for people with vertigo so they can play comfortably, AntiVertigo v1.0.6": null,
             "Spawn a bigger base platform for people with vertigo so they can play comfortably, AntiVertigo v1.0.7": "生成一个很大的底部平台，这样晕3D的人就能更舒服点。",
             "Spawn a bigger base platform for people with vertigo so they can play comfortably, AntiVertigo v1.0.8": null,
-            "Spawn a bigger base platform for people with vertigo so they can play comfortably, AntiVertigo v1.0.9": "生成一个很大的底部平台，这样晕3D的人就能更舒服点。"
+            "Spawn a bigger base platform for people with vertigo so they can play comfortably, AntiVertigo v1.0.9": "生成一个很大的底部平台，这样晕3D的人就能更舒服点。",
+            "Spawn a bigger base platform for people with vertigo so they can play comfortably, AntiVertigo v1.0.10": null
         }
     },
     "auto-debris": {
@@ -2579,8 +2580,7 @@
             "BSMapLoader": null
         },
         "descriptions": {
-            "\"A human-readable alternative to Beat Saber's v4 .dat format. Instead of editing raw JSON, write maps in plain .bsmap text files with simple keywords like NOTE, WALL, and LIGHT. Automatically converts to v4 .dat and lightshow files at startup. See https://github.com/VoidNachos/BSMapLoader for the full format guide. Requires SongCore.":
-            "人类可读的用于替代v4数据的文件格式。在制谱过程中，无需编写原始的JSON，可以通过编辑纯文本的.bsmap文本文件，而是使用一些简单的关键字像NOTE、WALL、LIGHT。在启动时自动转换为v4的数据格式及灯光文件。完整格式指南参考https://github.com/VoidNachos/BSMapLoader。需要依赖“谱面核心”模组。"
+            "\"A human-readable alternative to Beat Saber's v4 .dat format. Instead of editing raw JSON, write maps in plain .bsmap text files with simple keywords like NOTE, WALL, and LIGHT. Automatically converts to v4 .dat and lightshow files at startup. See https://github.com/VoidNachos/BSMapLoader for the full format guide. Requires SongCore.": "人类可读的用于替代v4数据的文件格式。在制谱过程中，无需编写原始的JSON，可以通过编辑纯文本的.bsmap文本文件，而是使用一些简单的关键字像NOTE、WALL、LIGHT。在启动时自动转换为v4的数据格式及灯光文件。完整格式指南参考https://github.com/VoidNachos/BSMapLoader。需要依赖“谱面核心”模组。"
         }
     },
     "SqoreToggler": {
@@ -2590,6 +2590,146 @@
         },
         "descriptions": {
             "Toggle score submissions with the flip of a switch!": "加一个开关，用于开启/关闭分数上传！"
+        }
+    },
+    "SqoreDisabler": {
+        "id": "SqoreDisabler",
+        "names": {
+            "Sqore Disabler": null
+        },
+        "descriptions": {
+            "A simple mod to enable/disable sqore (score) submissions in the menu": null
+        }
+    },
+    "transparency": {
+        "id": "transparency",
+        "names": {
+            "Transparency": null
+        },
+        "descriptions": {
+            "See EVERYTHING (When playing Beat Saber) - Allows you to use the passthrough camera feed as the environment.": null
+        }
+    },
+    "beatsync": {
+        "id": "beatsync",
+        "names": {
+            "BeatSync": null
+        },
+        "descriptions": {
+            "Ports PC beatmaps over to Quest": null,
+            "Syncs beatmaps from PC over to Quest": null,
+            "Sync beatmaps from PC over to Quest": null
+        }
+    },
+    "CategoryTabs": {
+        "id": "CategoryTabs",
+        "names": {
+            "CategoryTabs": null
+        },
+        "descriptions": {
+            "Adds tabs to the solo category bar and pages them when they do not fit, CategoryTabs v0.1.1": null,
+            "Adds tabs to the solo category bar and pages them when they do not fit": null
+        }
+    },
+    "cyrillic-fix": {
+        "id": "cyrillic-fix",
+        "names": {
+            "CyrillicFix": null
+        },
+        "descriptions": {
+            "Fixes Cyrillic text (song names, artists, mappers) showing up as '?' and '.' by rendering Cyrillic with a real font (Android system Roboto or your own font.ttf). Works alongside Unicode.": null
+        }
+    },
+    "EasyOffsetQuest": {
+        "id": "EasyOffsetQuest",
+        "names": {
+            "Easy Offset Quest": null
+        },
+        "descriptions": {
+            "Native Quest offset adjustments with EasyOffset profiles": null
+        }
+    },
+    "ExpCounter": {
+        "id": "ExpCounter",
+        "names": {
+            "ExpCounter": null
+        },
+        "descriptions": {
+            "Qounters counter for BeatLeader experience system": null
+        }
+    },
+    "halloween": {
+        "id": "halloween",
+        "names": {
+            "Halloween": null
+        },
+        "descriptions": {
+            "Happy Halloween! Transform your Beat Saber menu into a spooky graveyard with falling autumn leaves.": null
+        }
+    },
+    "HidePacks": {
+        "id": "HidePacks",
+        "names": {
+            "HidePacks": null
+        },
+        "descriptions": {
+            "Hides official level packs in the solo menu, HidePacks v0.1.1": null
+        }
+    },
+    "skillissuecrasher": {
+        "id": "skillissuecrasher",
+        "names": {
+            "SkillIssueCrasher": null
+        },
+        "descriptions": {
+            "Crashes your game if you miss, do a bad cut, or hit a bomb": null
+        }
+    },
+    "snipefeed": {
+        "id": "snipefeed",
+        "names": {
+            "SnipeFeed": null
+        },
+        "descriptions": {
+            "See your own BeatLeader profile + your following feed in Beat Saber under your game selection window in the mods tab!": null,
+            "See your BeatLeader following feed in-game: your friends' latest scores in one list so you know exactly which maps to snipe.": null
+        }
+    },
+    "studiosync": {
+        "id": "studiosync",
+        "names": {
+            "Studio Sync": null
+        },
+        "descriptions": {
+            "Companion mod for Playlist Studio. Send and edit playlists from your browser; they show up on your headset on their own, with missing songs downloaded. Favorites sync both ways.": null
+        }
+    },
+    "thanksgiving": {
+        "id": "thanksgiving",
+        "names": {
+            "Thanksgiving": null
+        },
+        "descriptions": {
+            "Celebrate Thanksgiving with a golden autumn Beat Saber menu.": null,
+            "Transform your Beat Saber menu with golden harvest lighting, seasonal decorations, and falling leaves!": null
+        }
+    },
+    "metacore-bs": {
+        "id": "metacore-bs",
+        "names": {
+            "MetaCoreBS": null
+        },
+        "descriptions": {
+            "Beat Saber-specific utilities for mod developers": null
+        }
+    },
+    "BSFixes": {
+        "id": "BSFixes",
+        "names": {
+            "BS Fixes": null
+        },
+        "descriptions": {
+            "Fixes for bugs in the base game": null
         }
     }
 }
