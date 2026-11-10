@@ -295,7 +295,8 @@ interface ModItem {
   authorIcon?: string | null,
   source?: string,
   download?: string,
-  website?: string
+  website?: string,
+  ai: string,
 }
 interface ModJson {
   default: Record<string, Array<ModItem>>
@@ -451,7 +452,15 @@ function ModLabels({data, gamever}:{data:ModItem, gamever:string}){
   if (data.isLibrary) {
     is_library = <>&nbsp;<span className="badge text-bg-secondary">库</span></>
   }
-  return <>{cn_source}{core_mod}{is_library}</>
+  let is_ai_assisted = null
+  if (data.ai == "assisted"){
+    is_ai_assisted = <>&nbsp;<span className="badge text-bg-secondary">AI辅助</span></>
+  }
+  let is_vibecoded = null
+  if (data.ai == "fully-vibed"){
+    is_vibecoded = <>&nbsp;<span className="badge text-bg-secondary">AI制作</span></>
+  }
+  return <>{cn_source}{core_mod}{is_library}{is_ai_assisted}{is_vibecoded}</>
 }
 
 function ModCover({data}:{data:ModItem}){
