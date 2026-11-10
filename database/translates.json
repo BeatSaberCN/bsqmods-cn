@@ -2595,30 +2595,30 @@
     "SqoreDisabler": {
         "id": "SqoreDisabler",
         "names": {
-            "Sqore Disabler": null
+            "Sqore Disabler": "分数禁用器"
         },
         "descriptions": {
-            "A simple mod to enable/disable sqore (score) submissions in the menu": null
+            "A simple mod to enable/disable sqore (score) submissions in the menu": "在菜单中启用/禁用分数提交的简易模组。"
         }
     },
     "transparency": {
         "id": "transparency",
         "names": {
-            "Transparency": null
+            "Transparency": "透视"
         },
         "descriptions": {
-            "See EVERYTHING (When playing Beat Saber) - Allows you to use the passthrough camera feed as the environment.": null
+            "See EVERYTHING (When playing Beat Saber) - Allows you to use the passthrough camera feed as the environment.": "什么都能看见（在玩节奏光剑时）——用透视相机作为环境"
         }
     },
     "beatsync": {
         "id": "beatsync",
         "names": {
-            "BeatSync": null
+            "BeatSync": "节奏同步"
         },
         "descriptions": {
-            "Ports PC beatmaps over to Quest": null,
-            "Syncs beatmaps from PC over to Quest": null,
-            "Sync beatmaps from PC over to Quest": null
+            "Ports PC beatmaps over to Quest": "将PC上的beatmaps谱面同步到Quest",
+            "Syncs beatmaps from PC over to Quest": "将PC上的beatmaps谱面同步到Quest",
+            "Sync beatmaps from PC over to Quest": "将PC上的beatmaps谱面同步到Quest"
         }
     },
     "CategoryTabs": {
@@ -2720,16 +2720,16 @@
             "MetaCoreBS": null
         },
         "descriptions": {
-            "Beat Saber-specific utilities for mod developers": null
+            "Beat Saber-specific utilities for mod developers": "为模组开发者设计的节奏光剑辅助程序"
         }
     },
     "BSFixes": {
         "id": "BSFixes",
         "names": {
-            "BS Fixes": null
+            "BS Fixes": "节奏光剑修复"
         },
         "descriptions": {
-            "Fixes for bugs in the base game": null
+            "Fixes for bugs in the base game": "游戏本体的Bug修复"
         }
     }
 }
